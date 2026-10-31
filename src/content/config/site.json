@@ -1,0 +1,19 @@
+{
+  "companyName": "Arvion Global",
+  "legalEntity": "Arvion Global Industries Limited",
+  "tagline": "Engineering Materials. Empowering Tomorrow.",
+  "foundedYear": 1938,
+  "globalPresenceCountries": 54,
+  "headquarters": {
+    "address": "Arvion House, Innovation Boulevard, Naroda Industrial Estate",
+    "city": "Ahmedabad, Gujarat",
+    "country": "India - 382330",
+    "phone": "+91 (79) 6820 4000",
+    "email": "corporate@arvionglobal.com"
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/arvion-global",
+    "twitter": "https://twitter.com/arvionglobal",
+    "youtube": "https://youtube.com/@arvionglobal"
+  }
+}

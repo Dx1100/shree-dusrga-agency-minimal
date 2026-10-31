@@ -1,0 +1,64 @@
+{
+  "heroHeading": "Engineered for Environmental Regeneration",
+  "heroSummary": "At Arvion, sustainability is not an afterthought or compliance checkbox—it is the foundational engineering constraint under which every molecule, fiber, and pressure vessel is conceived.",
+  "keyPillars": [
+    {
+      "id": "water",
+      "title": "Industrial Water Neutrality & ZLD",
+      "metric": "98.2%",
+      "metricLabel": "Process Water Recycled",
+      "description": "Through multi-stage mechanical vapor recompression and forward osmosis, our zero liquid discharge installations eliminate polluted effluent completely.",
+      "targetYear": "Current Reality across 100% of wet processing sites",
+      "initiatives": [
+        "75 Million liters of industrial water recycled every 24 hours",
+        "Rainwater catchment reservoirs storing 4.2 million cubic meters across industrial parks",
+        "Zero freshwater extraction in regions classified as water-stressed"
+      ]
+    },
+    {
+      "id": "energy",
+      "title": "Renewable Energy Transition",
+      "metric": "64%",
+      "metricLabel": "Renewable Power Share",
+      "description": "Dedicated captive rooftop solar arrays and long-term wind power purchase agreements power our spinning, weaving, and heavy fabrication bays.",
+      "targetYear": "85% Renewable by 2030 (Net-Zero Scope 1 & 2 by 2040)",
+      "initiatives": [
+        "78 MW combined solar and wind captive generation capacity",
+        "Biomass steam boilers fueled exclusively by agricultural waste and briquettes",
+        "Smart factory load balancing reducing peak grid draw by 22%"
+      ]
+    },
+    {
+      "id": "chemistry",
+      "title": "Clean Chemistry & Safe Inputs",
+      "metric": "Level 3",
+      "metricLabel": "ZDHC MRSL Compliance",
+      "description": "Rigorous chemical management eliminating restricted substances, alkylphenols, and toxic heavy metals from all dye recipes and coatings.",
+      "targetYear": "100% Fully Certified",
+      "initiatives": [
+        "OEKO-TEX Standard 100 Class I certification across 100% of finished textiles",
+        "BlueSign® system partner for technical finishing chemicals",
+        "Enzymatic bio-scouring eliminating caustic soda from preparatory baths"
+      ]
+    },
+    {
+      "id": "circularity",
+      "title": "Material Circularity & Zero Waste to Landfill",
+      "metric": "94%",
+      "metricLabel": "Solid Waste Diverted",
+      "description": "Transforming industrial byproducts into raw materials for construction, agriculture, and recycled yarn production.",
+      "targetYear": "Zero Waste to Landfill across all plants by 2028",
+      "initiatives": [
+        "Recovered sodium sulfate reused directly in local detergent and glass industries",
+        "Combed cotton spinning waste recycled back into denim yarns",
+        "Sludge co-processing in cement kilns substituting fossil fuels"
+      ]
+    }
+  ],
+  "waterStewardship": {
+    "treatedPerDay": "75 Million Liters",
+    "recyclingRate": "98.2%",
+    "zeroLiquidDischargePlants": 42,
+    "summary": "Every droplet used in our dyeing and finishing processes is purified, desalinated, and returned to the boilers, closing the water loop entirely."
+  }
+}

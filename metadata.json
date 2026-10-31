@@ -1,0 +1,6 @@
+{
+  "name": "Arvion Global – Premier Industrial & Materials Conglomerate",
+  "description": "Modular enterprise corporate portal inspired by Arvind.com, featuring advanced materials, engineering, sustainability, and dynamic content-driven section management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

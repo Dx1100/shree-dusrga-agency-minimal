@@ -1,0 +1,232 @@
+{
+  "sectionsOrder": [
+    "hero",
+    "intro",
+    "stats",
+    "businesses",
+    "capabilities",
+    "innovation",
+    "sustainability",
+    "csr",
+    "investors",
+    "newsroom",
+    "careers",
+    "contactCta"
+  ],
+  "sections": {
+    "hero": {
+      "enabled": true,
+      "slides": [
+        {
+          "id": "slide-1",
+          "kicker": "Advanced Materials & Industrial Ingenuity",
+          "heading": "Pioneering the Next Century of Materials Science",
+          "subheading": "From aerospace-grade composites to carbon-smart performance textiles.",
+          "description": "We engineer next-generation advanced materials and critical process infrastructure that drive global energy transitions, protect lives, and reshape sustainable manufacturing.",
+          "desktopImage": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2000&q=80",
+          "mobileImage": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+          "ctaText": "Explore Our Businesses",
+          "ctaLink": "/businesses",
+          "secondaryCtaText": "View Sustainability Roadmap",
+          "secondaryCtaLink": "/sustainability",
+          "overlayStrength": 0.65
+        },
+        {
+          "id": "slide-2",
+          "kicker": "Zero Liquid Discharge & Circularity",
+          "heading": "Returning 98% of Industrial Water to Purity",
+          "subheading": "Closed-loop environmental stewardship engineered at unprecedented scale.",
+          "description": "Our proprietary membrane filtration and thermodynamic recovery systems process over 75 million liters of industrial water daily across high-demand processing plants.",
+          "desktopImage": "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=2000&q=80",
+          "mobileImage": "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80",
+          "ctaText": "Discover Clean Water Solutions",
+          "ctaLink": "/sustainability",
+          "secondaryCtaText": "Read Impact Report",
+          "secondaryCtaLink": "/investors",
+          "overlayStrength": 0.6
+        },
+        {
+          "id": "slide-3",
+          "kicker": "Heavy Process Engineering",
+          "heading": "Critical Energy & Petrochemical Equipment",
+          "subheading": "Precision metallurgy crafted for extreme pressures and critical operating conditions.",
+          "description": "Designing and manufacturing ASME-certified shell-and-tube heat exchangers, high-pressure reactors, and cryogenic systems for the world's most demanding clean energy pioneers.",
+          "desktopImage": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=2000&q=80",
+          "mobileImage": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
+          "ctaText": "Explore Heavy Engineering",
+          "ctaLink": "/businesses/heavy-engineering",
+          "secondaryCtaText": "Global Certifications",
+          "secondaryCtaLink": "/about",
+          "overlayStrength": 0.7
+        }
+      ]
+    },
+    "intro": {
+      "enabled": true,
+      "kicker": "The Arvion Ethos",
+      "heading": "Where Material Science Meets Global Responsibility",
+      "leadParagraph": "Founded in 1938 with a single spinning mill and a profound conviction in national self-reliance, Arvion Global has evolved into a multi-billion dollar diversified industrial powerhouse operating at the frontier of high-performance materials, heavy engineering, and environmental technologies.",
+      "secondaryParagraph": "Today, over 28,000 scientists, engineers, and manufacturing artisans across five continents synthesize advanced chemistry with responsible engineering. We do not merely manufacture products; we design the physical substrate of modern civilization.",
+      "quote": "Real innovation does not compete with nature; it learns from its cycles, honors its boundaries, and creates enduring industrial harmony.",
+      "quoteAuthor": "Vikramaditya Singhania, Executive Chairman",
+      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "ctaText": "Read Our 85-Year Heritage",
+      "ctaLink": "/about"
+    },
+    "stats": {
+      "enabled": true,
+      "heading": "Scale, Precision & Global Influence",
+      "subheading": "Measurable operational excellence validated across global supply chains.",
+      "items": [
+        {
+          "id": "stat-1",
+          "value": 86,
+          "suffix": "+",
+          "label": "Years of Industrial Heritage",
+          "sublabel": "Continuous operations since 1938"
+        },
+        {
+          "id": "stat-2",
+          "value": 54,
+          "suffix": "",
+          "label": "Export Destinations",
+          "sublabel": "Trusted by Fortune 500 corporations"
+        },
+        {
+          "id": "stat-3",
+          "value": 32,
+          "suffix": "",
+          "label": "Advanced Manufacturing Facilities",
+          "sublabel": "Spread across India, Europe & Americas"
+        },
+        {
+          "id": "stat-4",
+          "value": 28500,
+          "prefix": "",
+          "suffix": "+",
+          "label": "Global Workforce",
+          "sublabel": "Engineers, scientists & technicians"
+        },
+        {
+          "id": "stat-5",
+          "value": 142,
+          "suffix": "",
+          "label": "Active Global Patents",
+          "sublabel": "In advanced composites & water recycling"
+        }
+      ]
+    },
+    "businesses": {
+      "enabled": true,
+      "kicker": "Diversified Portfolio",
+      "heading": "Five Interconnected Pillars of Industrial Growth",
+      "subheading": "Each business unit operates autonomously while drawing synergistic strength from shared metallurgy, polymer science, and digital automation capabilities.",
+      "viewAllText": "View Complete Business Portfolios"
+    },
+    "capabilities": {
+      "enabled": true,
+      "kicker": "Infrastructure & Footprint",
+      "heading": "World-Class Manufacturing & Global Supply Chain",
+      "description": "With state-of-the-art manufacturing hubs conforming to Industry 4.0 standards, Arvion maintains stringent quality control, end-to-end traceability, and multi-modal logistics reach.",
+      "pillars": [
+        {
+          "title": "Smart Factory Automation",
+          "description": "IoT-integrated sensor grids and digital twin telemetry across all 32 manufacturing centers monitor thermal efficiency and predict maintenance.",
+          "stat": "99.4% On-Time Reliability"
+        },
+        {
+          "title": "Cleanroom Polymer Synthesis",
+          "description": "ISO Class 5 cleanrooms dedicated to specialized filtration membranes and aerospace-grade flame retardant woven textiles.",
+          "stat": "12,000 m² Controlled Space"
+        },
+        {
+          "title": "Heavy Metallurgy & Forging",
+          "description": "Heavy fabrication bays capable of lifting 350-metric-ton vessels and rolling alloy steel up to 160mm wall thickness.",
+          "stat": "350T Single Lift Capacity"
+        },
+        {
+          "title": "Global Logistics Corridors",
+          "description": "Direct port access and dedicated logistics hubs in Rotterdam, Singapore, and Mumbai ensuring resilient multi-continental shipping.",
+          "stat": "54 Active Trade Routes"
+        }
+      ]
+    },
+    "innovation": {
+      "enabled": true,
+      "kicker": "Research & Development",
+      "heading": "Engineering at the Atomic and Molecular Level",
+      "description": "Our three global R&D centers in Bengaluru, Frankfurt, and Ahmedabad collaborate closely with premier technical universities, converting fundamental material chemistry into commercial realities.",
+      "patentsCount": "140+ Granted Patents",
+      "rdSpendPercent": "3.8% Annual R&D Reinvestment",
+      "innovations": [
+        {
+          "title": "PyroShield™ Ultra-Dense Carbon Weave",
+          "category": "Advanced Protective Composites",
+          "description": "Next-generation flame resistant fabric withstanding direct thermal exposure up to 1,200°C without toxic outgassing or structural degradation."
+        },
+        {
+          "title": "HydroVortex™ Nanofiltration Membrane",
+          "category": "Industrial Water Recovery",
+          "description": "Graphene-augmented polymeric membrane delivering 40% higher flux and 60% lower fouling rate in hyper-saline textile effluents."
+        },
+        {
+          "title": "HelixCore™ High-Pressure Heat Exchanger",
+          "category": "Thermal Process Engineering",
+          "description": "Proprietary helical baffle geometry reducing fluid bypass by 85% and increasing thermal transfer efficiency by 34%."
+        }
+      ]
+    },
+    "sustainability": {
+      "enabled": true,
+      "kicker": "ESG & Planet Responsibility",
+      "heading": "Committed to Net-Zero and Absolute Circularity",
+      "description": "We believe industrial growth must replenish ecological systems. Our long-term roadmap aligns with the Science Based Targets initiative (SBTi) with aggressive targets for 2030 and 2040.",
+      "ctaText": "Explore Sustainability Details",
+      "highlights": [
+        { "metric": "98.2%", "label": "Water Recycled via ZLD" },
+        { "metric": "64%", "label": "Renewable Energy Share" },
+        { "metric": "100%", "label": "Zero Hazardous Chemical Discharge (ZDHC Level 3)" },
+        { "metric": "42,000 MT", "label": "Annual CO2 Avoided" }
+      ]
+    },
+    "csr": {
+      "enabled": true,
+      "kicker": "Social Impact",
+      "heading": "Empowering Communities, Transforming Generations",
+      "description": "Through the Arvion Foundation, our investments in educational academies, maternal healthcare clinics, and rural drinking water networks create tangible uplift across 180+ villages.",
+      "impactMetric": "1.2 Million+",
+      "impactLabel": "Lives touched through foundation initiatives over the last decade"
+    },
+    "investors": {
+      "enabled": true,
+      "kicker": "Financial Strength",
+      "heading": "Disciplined Capital Allocation, Consistent Shareholder Returns",
+      "subheading": "Robust balance sheet fundamentals, strong operating cash flows, and transparent governance recognized by global credit rating agencies."
+    },
+    "newsroom": {
+      "enabled": true,
+      "kicker": "Corporate Updates",
+      "heading": "Latest News, Press Announcements & Disclosures",
+      "subheading": "Stay informed on corporate milestones, global partnerships, and sustainability awards."
+    },
+    "careers": {
+      "enabled": true,
+      "kicker": "People & Culture",
+      "heading": "Build a Career That Shapes Tomorrow's World",
+      "description": "Join our community of engineers, research scientists, designers, and project managers tackling critical global challenges.",
+      "culturePoints": [
+        "Collaborative meritocracy with rapid career progression pathways",
+        "Continuous learning stipends and executive MBA sponsorships",
+        "Comprehensive health, wellness, and family sabbatical policies",
+        "Cross-continental internal mobility opportunities"
+      ]
+    },
+    "contactCta": {
+      "enabled": true,
+      "heading": "Partner with Arvion for Your Next Industrial Breakthrough",
+      "description": "Whether you require mission-critical heat exchangers, lightweight aerospace composites, or enterprise zero liquid discharge systems, our engineering teams are ready to collaborate.",
+      "primaryButtonText": "Connect with an Engineer",
+      "secondaryButtonText": "Locate Global Offices"
+    }
+  }
+}

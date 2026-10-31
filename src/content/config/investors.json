@@ -1,0 +1,81 @@
+{
+  "stockInfo": {
+    "symbol": "ARVION",
+    "exchange": "NSE / BSE",
+    "price": 384.50,
+    "change": 4.25,
+    "changePercent": 1.12,
+    "currency": "INR",
+    "lastUpdated": "Trading Session Active",
+    "marketCap": "₹10,240 Cr ($1.22B)",
+    "peRatio": "16.8x",
+    "dividendYield": "2.1%"
+  },
+  "quarterlyResults": [
+    {
+      "quarter": "Q3 FY26",
+      "fiscalYear": "FY 2025-26",
+      "revenue": "₹2,480 Cr",
+      "ebitda": "₹342 Cr (13.8%)",
+      "pat": "₹168 Cr",
+      "pdfUrl": "/documents/Arvion_Q3_FY26_Earnings_Report.pdf",
+      "pressReleaseUrl": "/newsroom/q3-fy26-financial-results"
+    },
+    {
+      "quarter": "Q2 FY26",
+      "fiscalYear": "FY 2025-26",
+      "revenue": "₹2,340 Cr",
+      "ebitda": "₹318 Cr (13.6%)",
+      "pat": "₹152 Cr",
+      "pdfUrl": "/documents/Arvion_Q2_FY26_Earnings_Report.pdf",
+      "pressReleaseUrl": "/newsroom/q2-fy26-financial-results"
+    },
+    {
+      "quarter": "Q1 FY26",
+      "fiscalYear": "FY 2025-26",
+      "revenue": "₹2,210 Cr",
+      "ebitda": "₹295 Cr (13.3%)",
+      "pat": "₹139 Cr",
+      "pdfUrl": "/documents/Arvion_Q1_FY26_Earnings_Report.pdf",
+      "pressReleaseUrl": "/newsroom/q1-fy26-financial-results"
+    },
+    {
+      "quarter": "Q4 FY25",
+      "fiscalYear": "FY 2024-25",
+      "revenue": "₹2,390 Cr",
+      "ebitda": "₹326 Cr (13.6%)",
+      "pat": "₹158 Cr",
+      "pdfUrl": "/documents/Arvion_Q4_FY25_Earnings_Report.pdf",
+      "pressReleaseUrl": "/newsroom/q4-fy25-financial-results"
+    }
+  ],
+  "annualReports": [
+    {
+      "year": "2024 - 2025",
+      "title": "Integrated Annual Report 2024-25",
+      "theme": "Resilient Chemistry, Sustainable Futures",
+      "fileSize": "14.2 MB PDF",
+      "downloadUrl": "/documents/Arvion_Annual_Report_2025.pdf"
+    },
+    {
+      "year": "2023 - 2024",
+      "title": "Integrated Annual Report 2023-24",
+      "theme": "Transforming Through Precision",
+      "fileSize": "12.8 MB PDF",
+      "downloadUrl": "/documents/Arvion_Annual_Report_2024.pdf"
+    },
+    {
+      "year": "2022 - 2023",
+      "title": "Integrated Annual Report 2022-23",
+      "theme": "Pioneering Green Industrialism",
+      "fileSize": "11.5 MB PDF",
+      "downloadUrl": "/documents/Arvion_Annual_Report_2023.pdf"
+    }
+  ],
+  "governanceCommittees": [
+    { "name": "Audit & Financial Risk Committee", "membersCount": 4, "chair": "Nandita Mehra (Independent Director)" },
+    { "name": "Nomination & Remuneration Committee", "membersCount": 3, "chair": "Kevalram Patel (Independent Director)" },
+    { "name": "Sustainability & ESG Oversight Council", "membersCount": 5, "chair": "Dr. Sunita Rao (Director & ESG Specialist)" },
+    { "name": "Stakeholders Relationship Committee", "membersCount": 3, "chair": "Rajiv Singhania (Non-Executive Director)" }
+  ]
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "biz-1",
+    "slug": "advanced-materials",
+    "title": "Advanced Materials & Technical Composites",
+    "category": "High-Performance Materials",
+    "summary": "Engineered multi-axial carbon fibers, heat-resistant meta-aramid fabrics, and nanofiber filtration media for aerospace, defense, and high-spec industrial applications.",
+    "fullDescription": "Arvion Advanced Materials division manufactures high-strength composite fabrics, ballistic protection materials, and thermal barrier systems. Operating certified cleanrooms and precision weaving looms, we partner with aerospace Tier-1 suppliers, emergency response agencies, and automotive innovators worldwide.",
+    "image": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80",
+    "metrics": [
+      { "label": "Tensile Strength", "value": "Up to 4,900 MPa" },
+      { "label": "Thermal Resistance", "value": "1,200°C Continuous" },
+      { "label": "Annual Fabric Capacity", "value": "45 Million Meters" }
+    ],
+    "keyOfferings": [
+      "Aerospace pre-pregs and multi-axial structural carbon fiber weaves",
+      "PyroShield™ flame-resistant firefighter and defense turnouts",
+      "Gas and liquid industrial micron-filtration membrane cloths",
+      "Automotive lightweight battery enclosure composite panels"
+    ],
+    "certifications": ["EN ISO 11612", "NFPA 1971", "AS9100D Aerospace", "OEKO-TEX Class 1"],
+    "caseStudy": {
+      "title": "Ultra-Lightweight Thermal Barrier for Next-Gen Electric Mobility",
+      "description": "Engineered an aerogel-infused aramid barrier that prevented thermal runaway propagation between 800V battery cells while trimming pack weight by 18%.",
+      "clientType": "Leading European EV OEM",
+      "impact": "18% Weight Reduction & Zero Thermal Runaway in 300+ crash tests"
+    }
+  },
+  {
+    "id": "biz-2",
+    "slug": "heavy-engineering",
+    "title": "Heavy Precision Process Engineering",
+    "category": "Critical Process Equipment",
+    "summary": "ASME-certified design and fabrication of shell-and-tube heat exchangers, high-pressure hydrogenation reactors, and cryogenic pressure vessels for clean energy and petrochemical industries.",
+    "fullDescription": "With a legacy of ultra-heavy metallurgy spanning five decades, Arvion Heavy Engineering manufactures critical static process equipment. Equipped with high-bay clean fabrication facilities, sub-arc narrow gap welding, and in-house non-destructive testing, we deliver custom-engineered equipment weighing up to 350 metric tons.",
+    "image": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+    "metrics": [
+      { "label": "Max Single Lift Weight", "value": "350 Metric Tons" },
+      { "label": "Operating Pressures", "value": "Up to 350 Bar" },
+      { "label": "Fabrication Footprint", "value": "95,000 m²" }
+    ],
+    "keyOfferings": [
+      "HelixCore™ high-efficiency shell & tube heat exchangers",
+      "Thick-walled catalytic hydrogenation reactors in Cr-Mo-V alloy steel",
+      "Cryogenic LNG vaporization units and column pressure towers",
+      "Green hydrogen electrolyzer pressure stack enclosures"
+    ],
+    "certifications": ["ASME U, U2, S, R Stamps", "ISO 3834-2", "CE-PED (Module H)", "AD 2000-Merkblatt"],
+    "caseStudy": {
+      "title": "Cryogenic Ethylene Fractionator for North Sea Energy Facility",
+      "description": "Fabricated and hydro-tested two 280-ton column fractionators using specialized nickel-alloy steel rated for sub-zero -104°C operation under harsh offshore marine conditions.",
+      "clientType": "Global Energy EPC Consortium",
+      "impact": "Delivered 3 weeks ahead of schedule with 100% radiographic weld pass rate"
+    }
+  },
+  {
+    "id": "biz-3",
+    "slug": "environmental-solutions",
+    "title": "Environmental Solutions & Water Stewardship",
+    "category": "Circular Water Systems",
+    "summary": "Turnkey Zero Liquid Discharge (ZLD) plants, municipal water reclamation, and advanced membrane desalination systems enabling circular industrial ecosystems.",
+    "fullDescription": "Arvion Environmental Solutions provides comprehensive wastewater engineering for demanding industrial sectors including textiles, pharmaceuticals, chemicals, and power generation. Our patented low-energy mechanical vapor recompression and crystallization units allow facilities to operate with zero effluent discharge.",
+    "image": "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
+    "metrics": [
+      { "label": "Wastewater Recycled Daily", "value": "75 Million Liters" },
+      { "label": "Recovery Efficiency", "value": "98.2% Clean Permeate" },
+      { "label": "Installed ZLD Systems", "value": "42 Turnkey Plants" }
+    ],
+    "keyOfferings": [
+      "Turnkey Zero Liquid Discharge (ZLD) wastewater recovery plants",
+      "Biological anaerobic digesters with methane biogas harvesting",
+      "HydroVortex™ anti-fouling polymeric ultrafiltration membranes",
+      "Salt and mineral recovery crystallizers for industrial reuse"
+    ],
+    "certifications": ["ISO 14001:2015", "ISO 45001:2018", "Water Positive Benchmark", "ZDHC Verified"],
+    "caseStudy": {
+      "title": "Comprehensive ZLD Transformation for Mega Textile Hub",
+      "description": "Commissioned a 12 MLD closed-loop wastewater recovery facility that recycles 98.4% of dye-bath water back into process streams while recovering 14 tons of commercial-grade sodium sulfate daily.",
+      "clientType": "Integrated Textile Complex",
+      "impact": "Saved 4.3 Billion Liters of groundwater annually and reduced freshwater draw to near zero"
+    }
+  },
+  {
+    "id": "biz-4",
+    "slug": "textiles-smart-fabrics",
+    "title": "Textiles & Smart Sustainable Fabrics",
+    "category": "Circular Fashion & Technical Apparel",
+    "summary": "Pioneering sustainable denim, organic luxury shirting fabrics, botanical indigo dyes, and IoT-integrated wearable smart sensing textiles.",
+    "fullDescription": "Building on an unbroken 85-year heritage of textile craftsmanship, Arvion Textiles is an innovation partner to the world's leading luxury and performance apparel houses. From pioneering waterless indigo dyeing to weaving recycled post-consumer denim, we define responsible fashion at industrial scale.",
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80",
+    "metrics": [
+      { "label": "Annual Denim Capacity", "value": "110 Million Meters" },
+      { "label": "Freshwater Saved in Dyeing", "value": "90% vs Conventional" },
+      { "label": "Organic & Recycled Fiber", "value": "78% Portfolio Share" }
+    ],
+    "keyOfferings": [
+      "AquaFree™ nitrogen-fixed indigo denim finishing",
+      "100% circular post-consumer recycled cotton and hemp blends",
+      "Thermal-regulating graphene-infused activewear textiles",
+      "Luxury 120s–160s Giza cotton shirting fabrics"
+    ],
+    "certifications": ["GOTS (Global Organic Textile Standard)", "GRS (Global Recycled Standard)", "OEKO-TEX Made in Green", "Cradle to Cradle Certified Gold"],
+    "caseStudy": {
+      "title": "Zero-Freshwater Denim Collection for Global Apparel Icon",
+      "description": "Developed a full-spectrum authentic vintage indigo collection utilizing 100% recycled domestic wastewater and organic natural mordants.",
+      "clientType": "Global Denim Brand",
+      "impact": "Eliminated 65 liters of freshwater per garment manufactured across 4 million units"
+    }
+  },
+  {
+    "id": "biz-5",
+    "slug": "telecom-digital-iot",
+    "title": "Industrial IoT & Connected Enterprise Solutions",
+    "category": "Smart Industrial Automation",
+    "summary": "Digital twin modeling, edge telematics, AI computer vision for quality inspection, and end-to-end industrial connectivity for smart factories.",
+    "fullDescription": "Arvion Telecom & Digital IoT converts industrial machines into intelligent, self-optimizing nodes. Originating from our internal drive to optimize our own 32 manufacturing centers, our edge platform now powers predictive maintenance and energy analytics for manufacturing conglomerates worldwide.",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "metrics": [
+      { "label": "Connected Telemetry Nodes", "value": "180,000+ Endpoints" },
+      { "label": "Unplanned Downtime Drop", "value": "42% Average Reduction" },
+      { "label": "Edge Processing Latency", "value": "< 12 Milliseconds" }
+    ],
+    "keyOfferings": [
+      "FactorySense™ industrial edge gateway and telemetry mesh",
+      "AI computer vision optical defect inspection systems",
+      "Energy telemetry and steam boiler heat-loss optimization suite",
+      "Private 5G enterprise wireless networks for manufacturing yards"
+    ],
+    "certifications": ["ISO 27001 Information Security", "SOC 2 Type II", "IEC 62443 Industrial Cybersecurity", "CE RED"],
+    "caseStudy": {
+      "title": "AI Defect Recognition for High-Speed Weaving Looms",
+      "description": "Deployed edge optical sensors inspecting 2,000 picks per minute, detecting warp and weft deviations in real time and automatically halting looms before costly fabric wastage occurs.",
+      "clientType": "High-Precision Technical Mill",
+      "impact": "Fabric defect rates plummeted from 3.2% to 0.18%, saving $1.9M annually in rejected rolls"
+    }
+  }
+]

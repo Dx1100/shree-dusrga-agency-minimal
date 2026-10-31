@@ -1,0 +1,58 @@
+{
+  "heading": "Build a Career That Shapes Tomorrow's World",
+  "subheading": "Join an enterprise where curiosity, material mastery, and global responsibility meet.",
+  "description": "At Arvion, you will work alongside world-renowned metallurgists, chemical engineers, machine learning pioneers, and sustainable designers on projects that shape critical global industries.",
+  "perks": [
+    { "title": "Meritocratic Advancement", "description": "Fast-track promotion ladders and mentorship programs directly paired with business unit leadership." },
+    { "title": "Advanced Education Sponsorship", "description": "Full or partial sponsorship for Executive MBAs, PhDs, and specialized technical certifications." },
+    { "title": "Global Mobility", "description": "Opportunities to transfer across our technical centers in Europe, Asia, and the Americas." },
+    { "title": "Holistic Well-being", "description": "Comprehensive medical coverage, mental health days, on-campus fitness centers, and flexible leave." }
+  ],
+  "jobOpenings": [
+    {
+      "id": "job-1",
+      "title": "Lead Materials Scientist – Carbon Composites",
+      "department": "R&D & Innovation",
+      "location": "Bengaluru Innovation Center, India",
+      "type": "Full-Time",
+      "experience": "6-10 Years",
+      "description": "Lead the synthesis and mechanical characterization of next-generation thermoplastic pre-pregs for aerospace structural applications."
+    },
+    {
+      "id": "job-2",
+      "title": "Senior Thermal Process Design Engineer",
+      "department": "Heavy Engineering",
+      "location": "Ahmedabad Manufacturing Hub, India",
+      "type": "Full-Time",
+      "experience": "5-8 Years",
+      "description": "Perform thermodynamic calculations, HTRI simulations, and mechanical design for ASME Section VIII high-pressure heat exchangers."
+    },
+    {
+      "id": "job-3",
+      "title": "ZLD Wastewater Project Commissioning Lead",
+      "department": "Environmental Solutions",
+      "location": "Surat / Client Sites, India",
+      "type": "Full-Time",
+      "experience": "7-12 Years",
+      "description": "Oversee on-site erection, hydraulic testing, and commissioning of multi-stage industrial forward osmosis and crystallization plants."
+    },
+    {
+      "id": "job-4",
+      "title": "Industrial IoT & Edge Solutions Architect",
+      "department": "Digital Technologies",
+      "location": "Hybrid / Bengaluru, India",
+      "type": "Full-Time",
+      "experience": "4-7 Years",
+      "description": "Architect telemetry collection pipelines, edge computing runtimes, and predictive maintenance models across factory floor PLCs."
+    },
+    {
+      "id": "job-5",
+      "title": "ESG Compliance & Carbon Accounting Specialist",
+      "department": "Corporate Sustainability",
+      "location": "Mumbai Corporate Office, India",
+      "type": "Full-Time",
+      "experience": "3-6 Years",
+      "description": "Drive Scope 1, 2, and 3 emissions inventory auditing, SBTi verification, and annual BRSR reporting frameworks."
+    }
+  ]
+}

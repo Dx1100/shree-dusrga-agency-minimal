@@ -1,0 +1,43 @@
+{
+  "headline": "Empowering Communities, Transforming Generations",
+  "subheadline": "Purpose-driven social investment rooted in human dignity, education, and health.",
+  "description": "Through the Arvion Foundation, our philanthropic initiatives partner directly with grassroots village councils, government schools, and rural primary health centers to deliver sustainable, measurable social change.",
+  "livesImpacted": "1,200,000+",
+  "villagesCovered": "180+",
+  "schoolsSupported": "120+",
+  "pillars": [
+    {
+      "id": "education",
+      "title": "Girls in STEM & Digital Classrooms",
+      "impact": "45,000+ Students Benefited",
+      "summary": "Equipping rural higher-secondary schools with modern robotics and coding labs, coupled with full academic scholarships for young women pursuing engineering degrees.",
+      "programs": [
+        "Arvion Pragati STEM scholarships covering 100% of engineering tuition",
+        "Smart interactive digital classrooms installed in 120 rural schools",
+        "Teacher training and science pedagogy modernization programs"
+      ]
+    },
+    {
+      "id": "healthcare",
+      "title": "Maternal Health & Preventive Care Vans",
+      "impact": "280,000 Consultations Annually",
+      "summary": "Operating mobile diagnostic medical clinics delivering prenatal ultrasound screenings, pediatric malnutrition management, and vision care to doorstep communities.",
+      "programs": [
+        "Fleet of 8 fully-equipped mobile medical vans with diagnostic tele-links",
+        "Nutritional support hampers for expectant mothers in high-risk talukas",
+        "Preventive diabetes and hypertension screening camps"
+      ]
+    },
+    {
+      "id": "skilling",
+      "title": "Artisanal Skilling & Women's Cooperatives",
+      "impact": "18,500 Women Micro-Entrepreneurs",
+      "summary": "Preserving traditional handloom weaving and natural dyeing techniques while providing micro-credit and supply chain linkages directly to global handicraft markets.",
+      "programs": [
+        "Heritage Handloom Craft Guild supporting indigenous weaver families",
+        "Financial literacy and micro-enterprise management workshops",
+        "Guaranteed buy-back agreements for artisanal Khadi and embroidered goods"
+      ]
+    }
+  ]
+}
