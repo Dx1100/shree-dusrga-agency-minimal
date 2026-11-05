@@ -18,38 +18,39 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onApplyJob }) => {
     : careersData.jobOpenings.filter((j) => j.department === selectedDept);
 
   return (
-    <div className="pt-24 pb-20 bg-white">
+    <div className="pt-24 pb-24 bg-[#FAF9F6]">
       {/* Hero Header */}
-      <div className="bg-slate-900 text-white py-20 lg:py-28 relative overflow-hidden">
+      <div className="bg-[#0B132B] text-white py-20 lg:py-28 relative overflow-hidden border-b border-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 block mb-3">
-            Talent & Leadership
+          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-400 block mb-3">
+            Who We Serve & Partnerships
           </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight max-w-3xl leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-tight max-w-3xl leading-[1.15] text-stone-100">
             {careersData.heading}
           </h1>
-          <p className="mt-6 text-lg text-slate-300 max-w-2xl leading-relaxed">
+          <p className="mt-6 text-base sm:text-lg text-stone-300 font-light max-w-2xl leading-relaxed">
             {careersData.description}
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        {/* Perks Grid */}
+        {/* Value Propositions */}
         <div className="mb-20">
           <SectionHeading
-            kicker="Workplace Pillars"
-            heading="Why Engineers and Scientists Choose Arvion"
-            lead="We foster an environment of intellectual rigor, continuous learning, and long-term career fulfillment."
+            kicker="Our Partner Advantage"
+            heading="Why Retailers & Trade Buyers Partner With Shree Durga Agency"
+            lead="We provide hands-on coordination across India's largest textile clusters, delivering price transparency and dependable quality."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
             {careersData.perks.map((perk, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-slate-50 border border-slate-200">
-                <h4 className="text-base font-bold text-slate-900 mb-2">
+              <div key={idx} className="card-3d-emerald p-7 rounded-2xl relative overflow-hidden group">
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/35 to-transparent" />
+                <h4 className="text-lg font-serif font-normal text-slate-950 mb-2 group-hover:text-emerald-900 transition-colors">
                   {perk.title}
                 </h4>
-                <p className="text-xs text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
                   {perk.description}
                 </p>
               </div>
@@ -57,13 +58,13 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onApplyJob }) => {
           </div>
         </div>
 
-        {/* Job Board */}
+        {/* Segments Board */}
         <div>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
             <SectionHeading
-              kicker="Open Opportunities"
-              heading="Explore Current Positions Across Global Hubs"
-              lead="Find the role that matches your technical mastery and global ambitions."
+              kicker="Customer Segments"
+              heading="Explore Sourcing Channels by Business Scale"
+              lead="Find the engagement structure tailored to your showroom volume, boutique curation, or wholesale distribution."
               className="mb-0"
             />
             {/* Department filters */}
@@ -72,13 +73,13 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onApplyJob }) => {
                 <button
                   key={dept}
                   onClick={() => setSelectedDept(dept)}
-                  className={`px-3 py-1.5 text-xs font-semibold rounded-lg capitalize transition-colors ${
+                  className={`px-3.5 py-2 text-xs font-medium rounded-lg capitalize transition-all ${
                     selectedDept === dept
-                      ? 'bg-blue-900 text-white'
-                      : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                      ? 'bg-[#0B132B] text-white shadow-md'
+                      : 'card-3d text-stone-700 hover:text-stone-950 hover:bg-stone-50'
                   }`}
                 >
-                  {dept === 'all' ? 'All Departments' : dept}
+                  {dept === 'all' ? 'All Segments' : dept}
                 </button>
               ))}
             </div>
@@ -88,18 +89,21 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onApplyJob }) => {
             {filteredJobs.map((job) => (
               <div
                 key={job.id}
-                className="p-6 bg-white rounded-2xl border border-slate-200 shadow-xs hover:border-blue-900/40 hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                className="card-3d p-7 rounded-2xl relative overflow-hidden flex flex-col md:flex-row md:items-center justify-between gap-6 group"
               >
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/30 to-transparent" />
                 <div className="space-y-2">
-                  <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500">
-                    <span className="font-semibold text-blue-900">{job.department}</span>
+                  <div className="flex flex-wrap items-center gap-2 text-xs text-stone-500 font-light">
+                    <span className="font-semibold text-emerald-800 uppercase tracking-wider text-[11px] bg-emerald-50 px-2 py-0.5 rounded border border-emerald-900/10 font-mono">
+                      {job.department}
+                    </span>
                     <span>·</span>
-                    <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5" />{job.location}</span>
+                    <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5 text-emerald-700" />{job.location}</span>
                     <span>·</span>
-                    <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" />{job.experience}</span>
+                    <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5 text-stone-400" />{job.experience}</span>
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900">{job.title}</h3>
-                  <p className="text-xs text-slate-600 max-w-2xl leading-relaxed">
+                  <h3 className="text-xl font-serif font-normal text-slate-950 group-hover:text-emerald-900 transition-colors">{job.title}</h3>
+                  <p className="text-xs sm:text-sm text-stone-600 font-light max-w-2xl leading-relaxed">
                     {job.description}
                   </p>
                 </div>
@@ -107,9 +111,9 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onApplyJob }) => {
                 <div className="shrink-0">
                   <button
                     onClick={() => onApplyJob(job)}
-                    className="px-5 py-2.5 text-xs font-bold uppercase tracking-wider bg-blue-900 text-white rounded-lg hover:bg-blue-950 transition-colors whitespace-nowrap"
+                    className="px-5 py-2.5 text-xs font-medium uppercase tracking-[0.15em] bg-[#0B132B] hover:bg-emerald-800 text-white rounded-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 whitespace-nowrap"
                   >
-                    Apply for Position
+                    Inquire for Segment
                   </button>
                 </div>
               </div>

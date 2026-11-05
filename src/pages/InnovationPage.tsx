@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { SectionHeading } from '../components/ui/SectionHeading';
-import { Atom, Lightbulb, Compass, Award, CheckCircle2, ArrowRight } from 'lucide-react';
-import { ImageWithFallback } from '../components/ui/ImageWithFallback';
+import { CheckCircle2, ArrowRight, ShieldCheck, Truck, Layers } from 'lucide-react';
 
 interface InnovationPageProps {
   onNavigate: (path: string) => void;
@@ -9,164 +8,168 @@ interface InnovationPageProps {
 }
 
 export const InnovationPage: React.FC<InnovationPageProps> = ({ onNavigate, onOpenInquiry }) => {
-  const [selectedDomain, setSelectedDomain] = useState<'all' | 'materials' | 'water' | 'metallurgy'>('all');
+  const [selectedDomain, setSelectedDomain] = useState<'all' | 'curation' | 'quality' | 'logistics'>('all');
 
-  const patents = [
+  const steps = [
     {
-      title: 'HydroVortex™ Multi-Chamber Forward Osmosis Architecture',
-      domain: 'water',
-      number: 'IN-PAT-2024-88419',
-      year: '2024',
-      impact: 'Reduces energy consumption in industrial brine concentration by 38% vs thermal evaporation.',
+      title: '1. Requirement Gathering & Catalog Selection',
+      domain: 'curation',
+      number: 'Step 01',
+      year: 'Planning Phase',
+      impact: 'We analyze your target price bands, seasonal retail requirements, fabric specifications, and design aesthetics.',
     },
     {
-      title: 'PyroShield™ Self-Extinguishing Carbon-Aramid Hybrid Fiber',
-      domain: 'materials',
-      number: 'EP-PAT-3940182',
-      year: '2023',
-      impact: 'Zero char flammability under direct 1,200°C flame exposure for aerospace interior bulkheads.',
+      title: '2. Physical Swatch & Sample Review',
+      domain: 'curation',
+      number: 'Step 02',
+      year: 'Validation Phase',
+      impact: 'Couriered fabric swatches, border samples, and shade cards allow you to verify drape and finish before production.',
     },
     {
-      title: 'HelixCore™ Helical Baffle Heat Transfer Matrix',
-      domain: 'metallurgy',
-      number: 'US-PAT-11849201',
-      year: '2023',
-      impact: 'Increases thermal coefficient by 34% while lowering pressure drop across viscous hydrocarbon flows.',
+      title: '3. Direct Mill & Weaver Price Negotiation',
+      domain: 'quality',
+      number: 'Step 03',
+      year: 'Execution Phase',
+      impact: 'Leveraging on-the-ground cluster relationships to secure genuine wholesale rates directly from production looms.',
     },
     {
-      title: 'NanoShield Anti-Biofouling Polysulfone Membrane Coating',
-      domain: 'water',
-      number: 'IN-PAT-2022-77192',
-      year: '2022',
-      impact: 'Extends ultrafiltration cartridge operating lifespan by 2.4x in high-COD effluent plants.',
+      title: '4. Batch Inspection & Pre-Shipment Audit',
+      domain: 'quality',
+      number: 'Step 04',
+      year: 'Verification Phase',
+      impact: 'On-site lot checking for GSM consistency, color bleeding, print sharpness, and packaging integrity before release.',
     },
     {
-      title: 'CryoWeld Cr-Mo-V Multi-Layer Submerged Arc Protocol',
-      domain: 'metallurgy',
-      number: 'EP-PAT-3829104',
-      year: '2021',
-      impact: 'Achieves sub-zero -104°C Charpy V-notch toughness without post-weld micro-fissuring.',
+      title: '5. Consolidated Logistics & ThreadLinc Settlement',
+      domain: 'logistics',
+      number: 'Step 05',
+      year: 'Fulfillment Phase',
+      impact: 'Multi-hub parcel consolidation under single billing, doorstep transport tracking, and structured credit support.',
     },
   ];
 
-  const filteredPatents = selectedDomain === 'all'
-    ? patents
-    : patents.filter((p) => p.domain === selectedDomain);
+  const filteredSteps = selectedDomain === 'all'
+    ? steps
+    : steps.filter((s) => s.domain === selectedDomain);
 
   return (
-    <div className="pt-24 pb-20 bg-white">
+    <div className="pt-24 pb-24 bg-[#FAF9F6]">
       {/* Hero Header */}
-      <div className="bg-slate-900 text-white py-20 lg:py-28 relative overflow-hidden">
+      <div className="bg-[#0B132B] text-white py-20 lg:py-28 relative overflow-hidden border-b border-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 block mb-3">
-            Research & Material Physics
+          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-400 block mb-3">
+            Sourcing Methodology & Consulting
           </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight max-w-3xl leading-tight">
-            Synthesizing Fundamental Chemistry into Applied Industrial Miracles
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-tight max-w-3xl leading-[1.15] text-stone-100">
+            A Structured, Transparent Approach to Textile Sourcing
           </h1>
-          <p className="mt-6 text-lg text-slate-300 max-w-2xl leading-relaxed">
-            Operating three world-class innovation campuses with over 240 research scientists and metallurgists, Arvion pioneers proprietary intellectual property shaping tomorrow's materials.
+          <p className="mt-6 text-base sm:text-lg text-stone-300 font-light max-w-2xl leading-relaxed">
+            Eliminate sourcing uncertainty. Our end-to-end consulting framework guides your procurement from initial requirement mapping to sample approval, factory audit, and secured doorstep dispatch.
           </p>
         </div>
       </div>
 
-      {/* R&D Centers Showcase */}
+      {/* Sourcing Pillars Showcase with 3D tactile elevation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-          <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200">
-            <span className="text-xs font-bold uppercase tracking-wider text-blue-900 block mb-2">Center 01</span>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Bengaluru Innovation Hub</h3>
-            <p className="text-xs text-slate-600 leading-relaxed mb-4">
-              Advanced polymers, carbon composite pre-pregs, and nanofiber cleanroom synthesis.
+          <div className="card-3d-emerald rounded-3xl p-8 sm:p-9 relative overflow-hidden group">
+            <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-emerald-600/50 to-transparent" />
+            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-800 block mb-2 px-3 py-1 bg-emerald-50 rounded-md border border-emerald-100/60 w-fit">Pillar 01</span>
+            <h3 className="text-2xl font-serif font-normal text-slate-950 mb-3 group-hover:text-emerald-900 transition-colors">Cluster-Direct Access</h3>
+            <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-6">
+              Direct integration with Surat mills, Varanasi karkhanas, Jaipur block printers, and Kolkata handlooms.
             </p>
-            <span className="text-xs font-semibold text-slate-500 font-mono">82 Full-Time Scientists · ISO Class 5</span>
+            <span className="text-[11px] font-medium text-stone-500 uppercase tracking-wider block pt-4 border-t border-stone-200/60">Verified Mill & Weaver Base</span>
           </div>
 
-          <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200">
-            <span className="text-xs font-bold uppercase tracking-wider text-blue-900 block mb-2">Center 02</span>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Frankfurt Materials Lab</h3>
-            <p className="text-xs text-slate-600 leading-relaxed mb-4">
-              Cryogenic metallurgy testing, stress-corrosion modeling, and aerospace certification.
+          <div className="card-3d-emerald rounded-3xl p-8 sm:p-9 relative overflow-hidden group">
+            <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-emerald-600/50 to-transparent" />
+            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-800 block mb-2 px-3 py-1 bg-emerald-50 rounded-md border border-emerald-100/60 w-fit">Pillar 02</span>
+            <h3 className="text-2xl font-serif font-normal text-slate-950 mb-3 group-hover:text-emerald-900 transition-colors">Rigorous Quality Checks</h3>
+            <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-6">
+              Lot-wise checking for yarn count, weight consistency, border alignment, and colorfastness standards.
             </p>
-            <span className="text-xs font-semibold text-slate-500 font-mono">48 Research Fellows · DIN/EN Accreditations</span>
+            <span className="text-[11px] font-medium text-stone-500 uppercase tracking-wider block pt-4 border-t border-stone-200/60">Pre-Dispatch Inspection Reports</span>
           </div>
 
-          <div className="p-8 rounded-2xl bg-slate-50 border border-slate-200">
-            <span className="text-xs font-bold uppercase tracking-wider text-blue-900 block mb-2">Center 03</span>
-            <h3 className="text-xl font-bold text-slate-900 mb-2">Ahmedabad Process Institute</h3>
-            <p className="text-xs text-slate-600 leading-relaxed mb-4">
-              Thermodynamic CFD modeling, Zero Liquid Discharge forward osmosis, and bio-scouring.
+          <div className="card-3d-emerald rounded-3xl p-8 sm:p-9 relative overflow-hidden group">
+            <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-emerald-600/50 to-transparent" />
+            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-800 block mb-2 px-3 py-1 bg-emerald-50 rounded-md border border-emerald-100/60 w-fit">Pillar 03</span>
+            <h3 className="text-2xl font-serif font-normal text-slate-950 mb-3 group-hover:text-emerald-900 transition-colors">Consolidated Logistics & Credit</h3>
+            <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-6">
+              Multi-supplier consignment consolidation with single billing and ThreadLinc working capital financing options.
             </p>
-            <span className="text-xs font-semibold text-slate-500 font-mono">110 Engineers · Pilot ZLD Testing Rig</span>
+            <span className="text-[11px] font-medium text-stone-500 uppercase tracking-wider block pt-4 border-t border-stone-200/60">Doorstep Freight Tracking</span>
           </div>
         </div>
 
-        {/* Patents Registry */}
+        {/* Workflow Registry */}
         <div className="mt-16">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
             <SectionHeading
-              kicker="Intellectual Property"
-              heading="Selected Patents & Granted Claims"
-              lead="Explore our proprietary patents deployed across industrial customer complexes."
+              kicker="Sourcing Lifecycle"
+              heading="The 5-Step Sourcing Workflow"
+              lead="How we coordinate every order from requirement scoping to final store delivery."
               className="mb-0"
             />
             {/* Filter buttons */}
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2.5">
               <button
                 onClick={() => setSelectedDomain('all')}
-                className={`px-3 py-1.5 text-xs font-semibold rounded-md ${
-                  selectedDomain === 'all' ? 'bg-blue-900 text-white' : 'bg-slate-100 text-slate-700'
+                className={`px-4 py-2 text-xs font-semibold rounded-xl transition-all ${
+                  selectedDomain === 'all' ? 'bg-[#0B132B] text-white shadow-sm' : 'bg-white text-stone-700 border border-stone-200/80 hover:bg-stone-50'
                 }`}
               >
-                All Patents
+                All Steps
               </button>
               <button
-                onClick={() => setSelectedDomain('water')}
-                className={`px-3 py-1.5 text-xs font-semibold rounded-md ${
-                  selectedDomain === 'water' ? 'bg-blue-900 text-white' : 'bg-slate-100 text-slate-700'
+                onClick={() => setSelectedDomain('curation')}
+                className={`px-4 py-2 text-xs font-semibold rounded-xl transition-all ${
+                  selectedDomain === 'curation' ? 'bg-[#0B132B] text-white shadow-sm' : 'bg-white text-stone-700 border border-stone-200/80 hover:bg-stone-50'
                 }`}
               >
-                Water (ZLD)
+                Curation & Swatches
               </button>
               <button
-                onClick={() => setSelectedDomain('materials')}
-                className={`px-3 py-1.5 text-xs font-semibold rounded-md ${
-                  selectedDomain === 'materials' ? 'bg-blue-900 text-white' : 'bg-slate-100 text-slate-700'
+                onClick={() => setSelectedDomain('quality')}
+                className={`px-4 py-2 text-xs font-semibold rounded-xl transition-all ${
+                  selectedDomain === 'quality' ? 'bg-[#0B132B] text-white shadow-sm' : 'bg-white text-stone-700 border border-stone-200/80 hover:bg-stone-50'
                 }`}
               >
-                Composites
+                Pricing & Quality
               </button>
               <button
-                onClick={() => setSelectedDomain('metallurgy')}
-                className={`px-3 py-1.5 text-xs font-semibold rounded-md ${
-                  selectedDomain === 'metallurgy' ? 'bg-blue-900 text-white' : 'bg-slate-100 text-slate-700'
+                onClick={() => setSelectedDomain('logistics')}
+                className={`px-4 py-2 text-xs font-semibold rounded-xl transition-all ${
+                  selectedDomain === 'logistics' ? 'bg-[#0B132B] text-white shadow-sm' : 'bg-white text-stone-700 border border-stone-200/80 hover:bg-stone-50'
                 }`}
               >
-                Metallurgy
+                Logistics & Credit
               </button>
             </div>
           </div>
 
-          <div className="space-y-4">
-            {filteredPatents.map((pat, idx) => (
+          <div className="space-y-5">
+            {filteredSteps.map((st, idx) => (
               <div
                 key={idx}
-                className="p-6 bg-slate-50 rounded-xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-blue-900/40 transition-colors"
+                className="card-3d rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6 relative overflow-hidden group"
               >
-                <div className="space-y-1">
-                  <div className="flex items-center gap-2 text-xs text-slate-500">
-                    <span className="font-mono font-semibold text-blue-900">{pat.number}</span>
+                <div className="absolute top-0 left-0 bottom-0 w-[3px] bg-gradient-to-b from-emerald-500 to-emerald-800" />
+                <div className="space-y-1.5 pl-2">
+                  <div className="flex items-center gap-2 text-xs text-stone-500 font-light">
+                    <span className="font-mono font-semibold text-emerald-800 uppercase tracking-wider">{st.number}</span>
                     <span>·</span>
-                    <span>Granted {pat.year}</span>
+                    <span className="text-stone-400">{st.year}</span>
                   </div>
-                  <h4 className="text-base font-bold text-slate-900">{pat.title}</h4>
-                  <p className="text-xs text-slate-600">{pat.impact}</p>
+                  <h4 className="text-xl font-serif font-normal text-slate-950 group-hover:text-emerald-900 transition-colors">{st.title}</h4>
+                  <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed max-w-3xl">{st.impact}</p>
                 </div>
                 <button
                   onClick={onOpenInquiry}
-                  className="px-4 py-2 text-xs font-semibold text-blue-900 border border-blue-900/40 rounded-md hover:bg-blue-900 hover:text-white transition-colors whitespace-nowrap self-start sm:self-center"
+                  className="px-5 py-2.5 text-xs font-medium tracking-wider uppercase text-slate-900 bg-white border border-stone-300 rounded-xl hover:bg-emerald-700 hover:text-white hover:border-emerald-700 transition-all shadow-xs whitespace-nowrap self-start sm:self-center"
                 >
-                  License / Consult
+                  Consult on Process
                 </button>
               </div>
             ))}

@@ -5,18 +5,18 @@
     "path": "/about",
     "dropdown": [
       {
-        "title": "Heritage & Vision",
-        "description": "Eight decades of materials science leadership and purpose-driven manufacturing.",
+        "title": "About Shree Durga Agency",
+        "description": "Your trusted textile sourcing and consulting partner across key Indian manufacturing hubs.",
         "path": "/about"
       },
       {
-        "title": "Leadership & Governance",
-        "description": "Meet our board of directors and senior executive committee.",
+        "title": "Our Sourcing Approach",
+        "description": "Transparent procurement, quality checks, and direct producer connections.",
         "path": "/about#leadership"
       },
       {
-        "title": "Global Presence",
-        "description": "Manufacturing hubs, design studios, and sales offices across 50+ nations.",
+        "title": "Sourcing Reach",
+        "description": "Connecting businesses to leading textile markets across India.",
         "path": "/about#footprint"
       }
     ]
@@ -27,29 +27,29 @@
     "path": "/businesses",
     "dropdown": [
       {
-        "title": "Advanced Materials",
-        "description": "High-performance composites, protective wear, and industrial filtration solutions.",
-        "path": "/businesses/advanced-materials"
+        "title": "Sarees",
+        "description": "Banarasi silk, georgette, chiffon, cotton, and party-wear saree collections.",
+        "path": "/businesses/sarees"
       },
       {
-        "title": "Heavy Engineering",
-        "description": "Critical process equipment, heat exchangers, reactors, and pressure vessels.",
-        "path": "/businesses/heavy-engineering"
+        "title": "Suit Sets & Dress Materials",
+        "description": "Cotton, chanderi, georgette, unstitched and semi-stitched ethnic sets.",
+        "path": "/businesses/suit-sets-dress-materials"
       },
       {
-        "title": "Environmental Solutions",
-        "description": "Zero liquid discharge, industrial wastewater recycling, and membrane technology.",
-        "path": "/businesses/environmental-solutions"
+        "title": "Lehengas & Occasion Wear",
+        "description": "Bridal lehengas, festive collections, and semi-stitched occasion wear.",
+        "path": "/businesses/lehengas-occasion-wear"
       },
       {
-        "title": "Textiles & Smart Fabrics",
-        "description": "Sustainable denim, performance technical apparel, and circular fiber yarns.",
-        "path": "/businesses/textiles-smart-fabrics"
+        "title": "Fabrics & Running Material",
+        "description": "Printed, dyed, embroidered, raw silk, and boutique running materials.",
+        "path": "/businesses/fabrics-running-material"
       },
       {
-        "title": "Telecom & Digital IoT",
-        "description": "Smart factory telematics, industrial asset intelligence, and edge connectivity.",
-        "path": "/businesses/telecom-digital-iot"
+        "title": "Traditional Textiles & Brocades",
+        "description": "Authentic jacquard, brocades, dupattas, and heritage handloom weaves.",
+        "path": "/businesses/traditional-textiles"
       }
     ]
   },

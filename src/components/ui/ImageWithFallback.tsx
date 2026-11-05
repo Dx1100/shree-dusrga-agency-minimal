@@ -9,7 +9,7 @@ interface ImageWithFallbackProps extends React.ImgHTMLAttributes<HTMLImageElemen
 export const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
   src,
   alt = '',
-  fallbackTitle = 'Arvion Industrial Asset',
+  fallbackTitle = 'Shree Durga Agency Textile Asset',
   className = '',
   aspectRatio = 'auto',
   ...props
@@ -33,7 +33,7 @@ export const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
             </svg>
           </div>
           <span className="text-xs uppercase tracking-widest text-cyan-400 font-semibold block mb-1">
-            Arvion Infrastructure
+            Sourcing Network
           </span>
           <p className="text-sm font-medium text-slate-200 line-clamp-2">
             {fallbackTitle}

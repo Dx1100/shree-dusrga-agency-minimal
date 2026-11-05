@@ -273,12 +273,12 @@ export default function App() {
         onNavigate={handleNavigate}
       />
 
-      {/* Global Inquiry Modal */}
+      {/* Sourcing & Consultation Inquiry Modal */}
       <Modal
         isOpen={isInquiryOpen}
         onClose={() => setIsInquiryOpen(false)}
-        title="Global Industrial & Commercial Inquiry"
-        subtitle="Connect with technical metallurgy and materials science division directors."
+        title="Textile Sourcing & Consultation Inquiry"
+        subtitle="Connect with our sourcing desk for product curations, wholesale pricing, or hub coordination."
       >
         {inquirySubmitted ? (
           <div className="py-8 text-center space-y-3">
@@ -287,76 +287,77 @@ export default function App() {
               Inquiry Dispatched Successfully
             </h4>
             <p className="text-xs text-slate-500">
-              A designated technical representative from {inquiryData.division} will review your specifications.
+              Our sourcing consultant for {inquiryData.division} will review your requirements and reach out promptly.
             </p>
           </div>
         ) : (
           <form onSubmit={handleInquirySubmit} className="space-y-4">
             <div>
-              <label className="text-xs font-bold text-slate-700 block mb-1">
-                Your Full Name *
+              <label className="text-xs font-medium text-stone-700 block mb-1.5">
+                Your Full Name / Business Name *
               </label>
               <input
                 type="text"
                 required
                 value={inquiryData.name}
                 onChange={(e) => setInquiryData({ ...inquiryData, name: e.target.value })}
-                placeholder="Dr. / Eng. Jane Doe"
-                className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 focus:outline-none focus:border-blue-900"
+                placeholder="Rajesh Kumar / Boutique Name"
+                className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
               />
             </div>
 
             <div>
-              <label className="text-xs font-bold text-slate-700 block mb-1">
-                Corporate Email Address *
+              <label className="text-xs font-medium text-stone-700 block mb-1.5">
+                Email Address or Phone *
               </label>
               <input
-                type="email"
+                type="text"
                 required
                 value={inquiryData.email}
                 onChange={(e) => setInquiryData({ ...inquiryData, email: e.target.value })}
-                placeholder="j.doe@aerospace-oem.com"
-                className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 focus:outline-none focus:border-blue-900"
+                placeholder="buyer@showroom.com / +91 98..."
+                className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
               />
             </div>
 
             <div>
-              <label className="text-xs font-bold text-slate-700 block mb-1">
-                Target Business Division
+              <label className="text-xs font-medium text-stone-700 block mb-1.5">
+                Product Category / Service
               </label>
               <select
                 value={inquiryData.division}
                 onChange={(e) => setInquiryData({ ...inquiryData, division: e.target.value })}
-                className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 focus:outline-none focus:border-blue-900"
+                className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
               >
-                <option>Advanced Materials & Composites</option>
-                <option>Heavy Precision Process Engineering</option>
-                <option>Environmental Solutions (ZLD Water)</option>
-                <option>Textiles & Smart Sustainable Fabrics</option>
-                <option>Industrial IoT & Connected Enterprise</option>
-                <option>Investor Relations / Corporate Office</option>
+                <option>Sarees (Silk, Georgette, Synthetics)</option>
+                <option>Suit Sets & Dress Materials</option>
+                <option>Lehengas & Occasion Wear</option>
+                <option>Fabrics & Running Material</option>
+                <option>Traditional Brocades & Handlooms</option>
+                <option>ThreadLinc Trade Financing</option>
+                <option>General Sourcing Consultation</option>
               </select>
             </div>
 
             <div>
-              <label className="text-xs font-bold text-slate-700 block mb-1">
-                Project Summary / Requirements
+              <label className="text-xs font-medium text-stone-700 block mb-1.5">
+                Requirement Details
               </label>
               <textarea
                 rows={3}
                 value={inquiryData.message}
                 onChange={(e) => setInquiryData({ ...inquiryData, message: e.target.value })}
-                placeholder="Include pressure parameters, volume requirements, or commercial timeline..."
-                className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 focus:outline-none focus:border-blue-900"
+                placeholder="Mention fabric preferences, quantity, target sourcing hub, or sample request..."
+                className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full py-2.5 px-4 text-xs font-semibold uppercase tracking-[0.16em] bg-slate-900 text-white hover:bg-[#9b111e] transition-colors flex items-center justify-center gap-2"
+              className="w-full py-3 px-4 text-xs font-medium uppercase tracking-[0.15em] bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg transition-colors flex items-center justify-center gap-2"
             >
               <Send className="w-3.5 h-3.5" />
-              <span>Submit Commercial Inquiry</span>
+              <span>Submit Sourcing Inquiry</span>
             </button>
           </form>
         )}
@@ -379,19 +380,19 @@ export default function App() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-sm font-semibold text-slate-800 leading-relaxed">
+            <p className="text-base font-serif font-normal text-slate-950 leading-relaxed">
               {selectedArticle.summary}
             </p>
-            <p className="text-xs text-slate-600 leading-relaxed">
+            <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
               {selectedArticle.content}
             </p>
-            <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
-              <span>Arvion Global Press Office</span>
+            <div className="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-400 font-light">
+              <span>Shree Durga Agency Sourcing Desk</span>
               <button
                 onClick={() => setSelectedArticle(null)}
-                className="font-bold text-blue-900 hover:text-blue-950"
+                className="font-medium uppercase tracking-wider text-emerald-800 hover:text-emerald-950"
               >
-                Close Statement
+                Close Advisory
               </button>
             </div>
           </div>
@@ -403,37 +404,37 @@ export default function App() {
         <Modal
           isOpen={true}
           onClose={() => setSelectedJob(null)}
-          title={`Apply: ${selectedJob.title}`}
+          title={`Inquire: ${selectedJob.title}`}
           subtitle={`${selectedJob.department} · ${selectedJob.location} · ${selectedJob.type}`}
         >
           {jobSubmitted ? (
             <div className="py-8 text-center space-y-3">
-              <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
-              <h4 className="text-base font-bold text-slate-900">
-                Application Received
+              <CheckCircle2 className="w-12 h-12 text-emerald-700 mx-auto" />
+              <h4 className="text-xl font-serif font-normal text-slate-950">
+                Inquiry Received
               </h4>
-              <p className="text-xs text-slate-500">
-                Our talent acquisition committee will review your credentials for the {selectedJob.title} role.
+              <p className="text-xs sm:text-sm text-stone-500 font-light">
+                Our sourcing advisory desk will contact you regarding engagement options for the {selectedJob.title} segment.
               </p>
             </div>
           ) : (
             <form onSubmit={handleJobSubmit} className="space-y-4">
               <div>
-                <label className="text-xs font-bold text-slate-700 block mb-1">
-                  Full Name *
+                <label className="text-xs font-medium text-stone-700 block mb-1.5">
+                  Full Name / Contact Person *
                 </label>
                 <input
                   type="text"
                   required
                   value={jobFormData.candidateName}
                   onChange={(e) => setJobFormData({ ...jobFormData, candidateName: e.target.value })}
-                  placeholder="e.g. Johnathan Smith"
-                  className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 focus:outline-none focus:border-blue-900"
+                  placeholder="e.g. Rajesh Sharma"
+                  className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
                 />
               </div>
 
               <div>
-                <label className="text-xs font-bold text-slate-700 block mb-1">
+                <label className="text-xs font-medium text-stone-700 block mb-1.5">
                   Email Address *
                 </label>
                 <input
@@ -441,46 +442,46 @@ export default function App() {
                   required
                   value={jobFormData.candidateEmail}
                   onChange={(e) => setJobFormData({ ...jobFormData, candidateEmail: e.target.value })}
-                  placeholder="name@domain.com"
-                  className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 focus:outline-none focus:border-blue-900"
+                  placeholder="buyer@showroom.com"
+                  className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="text-xs font-bold text-slate-700 block mb-1">
+                  <label className="text-xs font-medium text-stone-700 block mb-1.5">
                     Contact Phone
                   </label>
                   <input
                     type="tel"
                     value={jobFormData.candidatePhone}
                     onChange={(e) => setJobFormData({ ...jobFormData, candidatePhone: e.target.value })}
-                    placeholder="+1 555-0192"
-                    className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 focus:outline-none focus:border-blue-900"
+                    placeholder="+91 98..."
+                    className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
                   />
                 </div>
                 <div>
-                  <label className="text-xs font-bold text-slate-700 block mb-1">
-                    Relevant Experience
+                  <label className="text-xs font-medium text-stone-700 block mb-1.5">
+                    Business Tier / Experience
                   </label>
                   <select
                     value={jobFormData.experienceYears}
                     onChange={(e) => setJobFormData({ ...jobFormData, experienceYears: e.target.value })}
-                    className="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 focus:outline-none focus:border-blue-900"
+                    className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
                   >
-                    <option value="1-3">1 - 3 Years</option>
-                    <option value="4-7">4 - 7 Years</option>
-                    <option value="8-12">8 - 12 Years</option>
-                    <option value="12+">12+ Years</option>
+                    <option value="1-3">Emerging Retailer (1-3 yrs)</option>
+                    <option value="4-7">Established Showroom (4-7 yrs)</option>
+                    <option value="8-12">Wholesale Distributor (8-12 yrs)</option>
+                    <option value="12+">Large Retail Chain (12+ yrs)</option>
                   </select>
                 </div>
               </div>
 
               <button
                 type="submit"
-                className="w-full py-2.5 px-4 text-xs font-semibold uppercase tracking-[0.16em] bg-slate-900 text-white hover:bg-[#9b111e] transition-colors"
+                className="w-full py-3 px-4 text-xs font-medium uppercase tracking-[0.15em] bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg transition-colors"
               >
-                Submit Professional Candidacy
+                Submit Partnership Inquiry
               </button>
             </form>
           )}
@@ -489,12 +490,12 @@ export default function App() {
 
       {/* Floating Download Notification */}
       {downloadNotice && (
-        <div className="fixed bottom-6 left-6 z-50 bg-slate-900 text-white px-5 py-3.5 rounded-xl shadow-2xl border border-slate-700 flex items-center gap-3 animate-fade-in">
-          <Download className="w-5 h-5 text-cyan-400 shrink-0" />
+        <div className="fixed bottom-6 left-6 z-50 card-3d-dark text-white px-5 py-3.5 rounded-xl border border-stone-800 flex items-center gap-3 animate-fade-in shadow-2xl">
+          <Download className="w-5 h-5 text-emerald-400 shrink-0" />
           <div>
-            <p className="text-xs font-bold">Download Initiated</p>
-            <p className="text-[11px] text-slate-300">
-              Generating secure PDF: <span className="text-cyan-300 font-semibold">{downloadNotice}</span>
+            <p className="text-xs font-semibold">Download Initiated</p>
+            <p className="text-[11px] text-stone-300 font-light">
+              Generating secure PDF: <span className="text-emerald-300 font-mono font-medium">{downloadNotice}</span>
             </p>
           </div>
         </div>

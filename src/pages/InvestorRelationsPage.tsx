@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import investorsData from '../content/config/investors.json';
-import { TrendingUp, FileText, Download, ShieldCheck, ExternalLink, Calendar, Users } from 'lucide-react';
+import { TrendingUp, FileText, Download, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 interface InvestorRelationsPageProps {
   onNavigate: (path: string) => void;
@@ -13,52 +13,52 @@ export const InvestorRelationsPage: React.FC<InvestorRelationsPageProps> = ({
   onDownloadReport,
 }) => {
   const stock = investorsData.stockInfo;
-  const [selectedQuarter, setSelectedQuarter] = useState<string>('Q3 FY26');
 
   return (
-    <div className="pt-24 pb-20 bg-white">
+    <div className="pt-24 pb-24 bg-[#FAF9F6]">
       {/* Hero Header */}
-      <div className="bg-slate-900 text-white py-20 lg:py-28 relative overflow-hidden">
+      <div className="bg-[#0B132B] text-white py-20 lg:py-28 relative overflow-hidden border-b border-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 block mb-3">
-            Investor Center & Filings
+          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-400 block mb-3">
+            Trade Financing & Working Capital
           </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight max-w-3xl leading-tight">
-            Transparent Governance, Disciplined Capital Allocation
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-tight max-w-3xl leading-[1.15] text-stone-100">
+            ThreadLinc Financing for Textile Buyers
           </h1>
-          <p className="mt-6 text-lg text-slate-300 max-w-2xl leading-relaxed">
-            Delivering sustained shareholder returns through operational discipline, multi-cycle financial strength, and market-leading positions across high-entry-barrier engineering domains.
+          <p className="mt-6 text-base sm:text-lg text-stone-300 font-light max-w-2xl leading-relaxed">
+            Helping verified retailers, showrooms, and wholesalers manage peak seasonal inventory procurement directly from textile manufacturing hubs without straining day-to-day liquidity.
           </p>
 
-          {/* Stock Ticker Banner */}
-          <div className="mt-10 p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 backdrop-blur-md max-w-4xl grid grid-cols-2 sm:grid-cols-4 gap-6">
+          {/* Trade Credit Banner */}
+          <div className="mt-12 card-3d-dark p-8 rounded-2xl relative overflow-hidden max-w-4xl grid grid-cols-2 sm:grid-cols-4 gap-6">
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent" />
             <div>
-              <span className="text-xs text-slate-400 block">Stock Price ({stock.exchange})</span>
+              <span className="text-xs text-stone-400 block font-light">Program</span>
               <div className="flex items-baseline gap-2 mt-1">
-                <span className="text-2xl sm:text-3xl font-extrabold text-white font-mono">
-                  ₹{stock.price.toFixed(2)}
+                <span className="text-xl sm:text-2xl font-serif font-normal text-stone-100">
+                  {stock.symbol}
                 </span>
-                <span className="text-emerald-400 text-xs font-bold font-mono">
-                  +{stock.change} (+{stock.changePercent}%)
+                <span className="text-emerald-400 text-xs font-medium">
+                  Active
                 </span>
               </div>
             </div>
             <div>
-              <span className="text-xs text-slate-400 block">Market Capitalization</span>
-              <span className="text-lg sm:text-xl font-bold text-white font-mono mt-1 block">
+              <span className="text-xs text-stone-400 block font-light">Assistance Model</span>
+              <span className="text-base sm:text-lg font-serif font-normal text-stone-100 mt-1 block">
                 {stock.marketCap}
               </span>
             </div>
             <div>
-              <span className="text-xs text-slate-400 block">P/E Ratio</span>
-              <span className="text-lg sm:text-xl font-bold text-white font-mono mt-1 block">
-                {stock.peRatio}
+              <span className="text-xs text-stone-400 block font-light">Target Audience</span>
+              <span className="text-base sm:text-lg font-serif font-normal text-stone-100 mt-1 block">
+                Retail & Wholesale
               </span>
             </div>
             <div>
-              <span className="text-xs text-slate-400 block">Dividend Yield</span>
-              <span className="text-lg sm:text-xl font-bold text-white font-mono mt-1 block">
-                {stock.dividendYield}
+              <span className="text-xs text-stone-400 block font-light">Billing Terms</span>
+              <span className="text-base sm:text-lg font-serif font-normal text-stone-100 mt-1 block">
+                Transparent & Direct
               </span>
             </div>
           </div>
@@ -66,41 +66,42 @@ export const InvestorRelationsPage: React.FC<InvestorRelationsPageProps> = ({
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        {/* Quarterly Results Table */}
+        {/* Buyer Segments Table */}
         <div className="mb-20">
           <SectionHeading
-            kicker="Earnings Disclosures"
-            heading="Quarterly Financial Performance"
-            lead="Unaudited consolidated quarterly results as filed with the National Stock Exchange (NSE) and Bombay Stock Exchange (BSE)."
+            kicker="Financing by Segment"
+            heading="ThreadLinc Support Across Business Tiers"
+            lead="Explore how working capital support aligns with showroom stocking, bulk distribution, and boutique curation cycles."
           />
 
-          <div className="mt-8 overflow-x-auto rounded-2xl border border-slate-200">
-            <table className="w-full text-left text-sm text-slate-700 divide-y divide-slate-200">
-              <thead className="bg-slate-50 text-xs uppercase font-bold text-slate-500 tracking-wider">
+          <div className="mt-8 card-3d rounded-2xl overflow-hidden relative">
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/35 to-transparent z-10" />
+            <table className="w-full text-left text-sm text-stone-700 divide-y divide-stone-100">
+              <thead className="bg-[#FAF8F5] text-[11px] uppercase font-semibold text-stone-600 tracking-wider">
                 <tr>
-                  <th className="py-4 px-6">Reporting Period</th>
-                  <th className="py-4 px-6">Fiscal Year</th>
-                  <th className="py-4 px-6">Consolidated Revenue</th>
-                  <th className="py-4 px-6">EBITDA (Margin)</th>
-                  <th className="py-4 px-6">Net Profit (PAT)</th>
-                  <th className="py-4 px-6 text-right">Downloads</th>
+                  <th className="py-4 px-6 font-medium">Buyer Segment</th>
+                  <th className="py-4 px-6 font-medium">Procurement Need</th>
+                  <th className="py-4 px-6 font-medium">Credit Support</th>
+                  <th className="py-4 px-6 font-medium">Settlement Flow</th>
+                  <th className="py-4 px-6 font-medium">Order Validation</th>
+                  <th className="py-4 px-6 text-right font-medium">Program Info</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-100 bg-white">
+              <tbody className="divide-y divide-stone-100/80 bg-white/60">
                 {investorsData.quarterlyResults.map((q, idx) => (
-                  <tr key={idx} className="hover:bg-slate-50 transition-colors">
-                    <td className="py-4 px-6 font-bold text-slate-900">{q.quarter}</td>
-                    <td className="py-4 px-6 text-slate-500">{q.fiscalYear}</td>
-                    <td className="py-4 px-6 font-mono font-semibold text-slate-900">{q.revenue}</td>
-                    <td className="py-4 px-6 font-mono font-semibold text-blue-900">{q.ebitda}</td>
-                    <td className="py-4 px-6 font-mono font-semibold text-emerald-800">{q.pat}</td>
+                  <tr key={idx} className="hover:bg-emerald-50/40 transition-colors">
+                    <td className="py-4 px-6 font-serif font-normal text-slate-950 text-base">{q.quarter}</td>
+                    <td className="py-4 px-6 text-stone-500 font-light">{q.fiscalYear}</td>
+                    <td className="py-4 px-6 font-serif text-slate-900">{q.revenue}</td>
+                    <td className="py-4 px-6 text-emerald-800 font-medium">{q.ebitda}</td>
+                    <td className="py-4 px-6 text-stone-600 font-light">{q.pat}</td>
                     <td className="py-4 px-6 text-right">
                       <button
-                        onClick={() => onDownloadReport(`${q.quarter} Earnings Report`)}
-                        className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-50 hover:bg-blue-100 rounded-md transition-colors"
+                        onClick={() => onDownloadReport(`${q.quarter} Financing Guide`)}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-emerald-800 bg-emerald-50/80 hover:bg-emerald-100 border border-emerald-900/10 rounded-md transition-all shadow-xs"
                       >
                         <Download className="w-3.5 h-3.5" />
-                        <span>PDF Report</span>
+                        <span>Guide PDF</span>
                       </button>
                     </td>
                   </tr>
@@ -110,36 +111,37 @@ export const InvestorRelationsPage: React.FC<InvestorRelationsPageProps> = ({
           </div>
         </div>
 
-        {/* Integrated Annual Reports */}
+        {/* Guides & Handbooks */}
         <div className="mb-20">
           <SectionHeading
-            kicker="Annual Publications"
-            heading="Integrated Annual Reports"
-            lead="Comprehensive disclosures detailing value creation across financial, manufactured, intellectual, and natural capitals."
+            kicker="Sourcing Handbooks"
+            heading="Trade Guides & Working Capital Handbooks"
+            lead="Informational documentation explaining seasonal procurement cycles, inventory planning, and trade settlements."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             {investorsData.annualReports.map((rep, idx) => (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-900/40 transition-colors flex flex-col justify-between"
+                className="card-3d-emerald p-8 rounded-2xl relative overflow-hidden flex flex-col justify-between group"
               >
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/35 to-transparent" />
                 <div>
-                  <span className="text-xs font-bold text-blue-900 font-mono block mb-1">
+                  <span className="text-[11px] font-semibold text-emerald-800 font-mono uppercase tracking-wider block mb-1">
                     {rep.year}
                   </span>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">
+                  <h3 className="text-xl font-serif font-normal text-slate-950 mb-2 group-hover:text-emerald-900 transition-colors">
                     {rep.title}
                   </h3>
-                  <p className="text-xs text-slate-500 mb-4">
-                    Theme: "{rep.theme}"
+                  <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-4">
+                    {rep.theme}
                   </p>
                 </div>
-                <div className="pt-4 border-t border-slate-200 flex items-center justify-between">
-                  <span className="text-xs text-slate-400">{rep.fileSize}</span>
+                <div className="pt-4 border-t border-emerald-950/10 flex items-center justify-between">
+                  <span className="text-xs text-stone-400 font-light">{rep.fileSize}</span>
                   <button
                     onClick={() => onDownloadReport(rep.title)}
-                    className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-blue-900 hover:text-blue-950"
+                    className="inline-flex items-center gap-1 text-xs font-medium uppercase tracking-wider text-emerald-800 hover:text-emerald-950"
                   >
                     <span>Download</span>
                     <Download className="w-3.5 h-3.5" />
@@ -150,26 +152,29 @@ export const InvestorRelationsPage: React.FC<InvestorRelationsPageProps> = ({
           </div>
         </div>
 
-        {/* Governance Committees */}
+        {/* Oversight Panels */}
         <div>
           <SectionHeading
-            kicker="Leadership Oversight"
-            heading="Board Committees & Corporate Governance"
-            lead="Independent director oversight upholding strict regulatory compliance."
+            kicker="Trade Governance"
+            heading="Coordination & Review Panels"
+            lead="Dedicated teams ensuring transparent billing, supplier vetting, and prompt order fulfillment."
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
             {investorsData.governanceCommittees.map((comm, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
-                <ShieldCheck className="w-6 h-6 text-blue-900 mb-3" />
-                <h4 className="text-sm font-bold text-slate-900 mb-2">
+              <div key={idx} className="card-3d p-7 rounded-2xl relative overflow-hidden group">
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/30 to-transparent" />
+                <div className="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-900/10 flex items-center justify-center mb-4 text-emerald-700 shadow-xs">
+                  <ShieldCheck className="w-5 h-5" />
+                </div>
+                <h4 className="text-base font-serif font-normal text-slate-950 mb-1 group-hover:text-emerald-900 transition-colors">
                   {comm.name}
                 </h4>
-                <p className="text-xs text-slate-500 mb-2">
-                  Chair: <span className="text-slate-800 font-medium">{comm.chair}</span>
+                <p className="text-xs text-stone-500 font-light mb-2">
+                  Desk: <span className="text-stone-800 font-medium">{comm.chair}</span>
                 </p>
-                <span className="text-[11px] font-semibold text-blue-900">
-                  {comm.membersCount} Board Committee Members
+                <span className="text-[11px] font-medium text-emerald-800 uppercase tracking-wider">
+                  {comm.membersCount} Panel Advisors
                 </span>
               </div>
             ))}

@@ -19,13 +19,16 @@ export const ContentStudioDrawer: React.FC<ContentStudioDrawerProps> = ({
 
   // Toggle section enabled
   const toggleSection = (sectionKey: keyof HomepageConfig['sections']) => {
-    const updated = {
+    const currentSection = homepageConfig.sections[sectionKey];
+    const isCurrentlyEnabled = currentSection ? currentSection.enabled : true;
+
+    const updated: HomepageConfig = {
       ...homepageConfig,
       sections: {
         ...homepageConfig.sections,
         [sectionKey]: {
-          ...homepageConfig.sections[sectionKey],
-          enabled: !homepageConfig.sections[sectionKey].enabled,
+          ...(currentSection || {}),
+          enabled: !isCurrentlyEnabled,
         },
       },
     };
@@ -93,8 +96,8 @@ export const ContentStudioDrawer: React.FC<ContentStudioDrawerProps> = ({
       <div className="fixed bottom-6 right-6 z-40">
         <button
           onClick={() => setIsOpen(true)}
-          className="flex items-center gap-2 px-3.5 py-2 bg-slate-900/90 backdrop-blur-md text-white font-medium text-[11px] uppercase tracking-[0.16em] rounded-full shadow-xl hover:bg-[#9b111e] transition-all border border-slate-700/60 focus:outline-none"
-          title="Open CMS & GitHub Section Manager"
+          className="flex items-center gap-2 px-3.5 py-2 bg-slate-900/90 backdrop-blur-md text-white font-medium text-[11px] uppercase tracking-[0.16em] rounded-full shadow-xl hover:bg-blue-900 transition-all border border-slate-700/60 focus:outline-none"
+          title="Open CMS & Section Manager"
         >
           <Settings className="w-3.5 h-3.5" />
           <span>Section Studio</span>
@@ -177,18 +180,20 @@ export const ContentStudioDrawer: React.FC<ContentStudioDrawerProps> = ({
                       const isEnabled = section ? section.enabled : true;
 
                       const labelMap: Record<string, string> = {
-                        hero: '01. Cinematic Hero Slider',
-                        intro: '02. Company Heritage Intro',
-                        stats: '03. Operational Highlights & KPIs',
-                        businesses: '04. Five Business Verticals',
-                        capabilities: '05. Infrastructure & Logistics',
-                        innovation: '06. R&D & Technical Patents',
-                        sustainability: '07. ESG & Water Neutrality (ZLD)',
-                        csr: '08. Arvion Foundation (CSR)',
-                        investors: '09. Investor Relations & Filings',
-                        newsroom: '10. Corporate Announcements',
-                        careers: '11. Careers & Culture',
-                        contactCta: '12. Global Inquiry CTA',
+                        hero: '01. Textile Hero Showcase',
+                        customersMarquee: '02. Our Customers Marquee Loop',
+                        intro: '03. Sourcing Agency Intro',
+                        stats: '04. Operational Highlights & Hubs',
+                        businesses: '05. Five Textile Categories',
+                        capabilities: '06. Sourcing & Quality Protocol',
+                        innovation: '07. Sourcing Methodology',
+                        sustainability: '08. Sourcing Hubs & Markets',
+                        csr: '09. Artisan & Weaver Clusters (CSR)',
+                        investors: '10. ThreadLinc Trade Financing',
+                        testimonials: '11. Buyer Reviews & Testimonials',
+                        newsroom: '12. Market Advisories & Updates',
+                        careers: '13. Who We Serve & Partnerships',
+                        contactCta: '14. Sourcing Consultation CTA',
                       };
 
                       return (

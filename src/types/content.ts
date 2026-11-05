@@ -268,5 +268,35 @@ export interface HomepageConfig {
       primaryButtonText: string;
       secondaryButtonText: string;
     };
+    customersMarquee?: {
+      enabled: boolean;
+      kicker?: string;
+      heading?: string;
+      statsText?: string;
+      customers?: {
+        name: string;
+        city: string;
+        segment: string;
+        hubFocus: string;
+      }[];
+    };
+    testimonials?: {
+      enabled: boolean;
+      kicker?: string;
+      heading?: string;
+      subheading?: string;
+      items?: {
+        id: string;
+        quote: string;
+        author: string;
+        role: string;
+        company: string;
+        city: string;
+        segment: string;
+        rating: number;
+        hubSource: string;
+        verified: boolean;
+      }[];
+    };
   };
 }

@@ -1,137 +1,137 @@
 [
   {
     "id": "biz-1",
-    "slug": "advanced-materials",
-    "title": "Advanced Materials & Technical Composites",
-    "category": "High-Performance Materials",
-    "summary": "Engineered multi-axial carbon fibers, heat-resistant meta-aramid fabrics, and nanofiber filtration media for aerospace, defense, and high-spec industrial applications.",
-    "fullDescription": "Arvion Advanced Materials division manufactures high-strength composite fabrics, ballistic protection materials, and thermal barrier systems. Operating certified cleanrooms and precision weaving looms, we partner with aerospace Tier-1 suppliers, emergency response agencies, and automotive innovators worldwide.",
-    "image": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1200&q=80",
+    "slug": "sarees",
+    "title": "Sarees & Traditional Drapes",
+    "category": "Ethnic Sourcing Portfolio",
+    "summary": "Source high-demand sarees including Banarasi silks, Surat georgettes, festive drapes, daily wear prints, and designer collections directly from established weavers and manufacturers.",
+    "fullDescription": "Shree Durga Agency helps retail showrooms, boutiques, and wholesalers source diverse saree collections from premier production centres. Whether you need authentic silk weaves from Varanasi or contemporary printed and embellished sarees from Surat, we streamline supplier discovery, sampling, and order coordination.",
+    "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80",
     "metrics": [
-      { "label": "Tensile Strength", "value": "Up to 4,900 MPa" },
-      { "label": "Thermal Resistance", "value": "1,200°C Continuous" },
-      { "label": "Annual Fabric Capacity", "value": "45 Million Meters" }
+      { "label": "Key Varieties", "value": "Silk, Georgette, Cotton, Organza" },
+      { "label": "Primary Hubs", "value": "Surat, Varanasi, Kolkata" },
+      { "label": "Target Segments", "value": "Showrooms & Boutiques" }
     ],
     "keyOfferings": [
-      "Aerospace pre-pregs and multi-axial structural carbon fiber weaves",
-      "PyroShield™ flame-resistant firefighter and defense turnouts",
-      "Gas and liquid industrial micron-filtration membrane cloths",
-      "Automotive lightweight battery enclosure composite panels"
+      "Banarasi Katan and semi-silk festive sarees",
+      "Surat designer georgette, chiffon, and crepe sarees",
+      "Handloom cotton and linen everyday collection sarees",
+      "Ready-to-ship bridal border and embroidered party drapes"
     ],
-    "certifications": ["EN ISO 11612", "NFPA 1971", "AS9100D Aerospace", "OEKO-TEX Class 1"],
+    "certifications": ["Verified Manufacturers", "Direct Cluster Sourcing", "Pre-Dispatch Inspection"],
     "caseStudy": {
-      "title": "Ultra-Lightweight Thermal Barrier for Next-Gen Electric Mobility",
-      "description": "Engineered an aerogel-infused aramid barrier that prevented thermal runaway propagation between 800V battery cells while trimming pack weight by 18%.",
-      "clientType": "Leading European EV OEM",
-      "impact": "18% Weight Reduction & Zero Thermal Runaway in 300+ crash tests"
+      "title": "Festive Wedding Saree Procurement for Multi-Brand Retail Showroom",
+      "description": "Helped a prominent retail showroom curate a balanced mix of authentic Banarasi wedding drapes and fast-moving party-wear sarees at competitive factory prices ahead of the peak festive season.",
+      "clientType": "Ethnic Wear Retail Showroom",
+      "impact": "Curated over 40 distinct designs directly from verified Varanasi and Surat manufacturers"
     }
   },
   {
     "id": "biz-2",
-    "slug": "heavy-engineering",
-    "title": "Heavy Precision Process Engineering",
-    "category": "Critical Process Equipment",
-    "summary": "ASME-certified design and fabrication of shell-and-tube heat exchangers, high-pressure hydrogenation reactors, and cryogenic pressure vessels for clean energy and petrochemical industries.",
-    "fullDescription": "With a legacy of ultra-heavy metallurgy spanning five decades, Arvion Heavy Engineering manufactures critical static process equipment. Equipped with high-bay clean fabrication facilities, sub-arc narrow gap welding, and in-house non-destructive testing, we deliver custom-engineered equipment weighing up to 350 metric tons.",
-    "image": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+    "slug": "suit-sets-dress-materials",
+    "title": "Suit Sets & Dress Materials",
+    "category": "Salwar Kameez & Unstitched Suits",
+    "summary": "Connect with leading manufacturers for unstitched dress materials, semi-stitched suit sets, kurti fabrics, and ready-to-wear ethnic ensembles across diverse price points.",
+    "fullDescription": "We assist clothing wholesalers and boutique owners in finding reliable suppliers for ladies suit sets. From premium Chanderi and modal silk collections to daily-wear pure cotton dress materials from Jaipur and Surat, we facilitate end-to-end sourcing with complete transparency.",
+    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1200&q=80",
     "metrics": [
-      { "label": "Max Single Lift Weight", "value": "350 Metric Tons" },
-      { "label": "Operating Pressures", "value": "Up to 350 Bar" },
-      { "label": "Fabrication Footprint", "value": "95,000 m²" }
+      { "label": "Key Varieties", "value": "Cotton, Chanderi, Modal, Silk" },
+      { "label": "Primary Hubs", "value": "Jaipur, Surat, Delhi" },
+      { "label": "Target Segments", "value": "Wholesalers & Boutiques" }
     ],
     "keyOfferings": [
-      "HelixCore™ high-efficiency shell & tube heat exchangers",
-      "Thick-walled catalytic hydrogenation reactors in Cr-Mo-V alloy steel",
-      "Cryogenic LNG vaporization units and column pressure towers",
-      "Green hydrogen electrolyzer pressure stack enclosures"
+      "Jaipuri block print and Sanganeri pure cotton suit sets",
+      "Embroidered semi-stitched festive and formal party suits",
+      "Chanderi and Tussar silk dress material sets with fancy dupattas",
+      "Daily-wear unstitched salwar suits with matching bottom and dupatta"
     ],
-    "certifications": ["ASME U, U2, S, R Stamps", "ISO 3834-2", "CE-PED (Module H)", "AD 2000-Merkblatt"],
+    "certifications": ["Quality Checked", "Factory Direct Pricing", "Sample Verification"],
     "caseStudy": {
-      "title": "Cryogenic Ethylene Fractionator for North Sea Energy Facility",
-      "description": "Fabricated and hydro-tested two 280-ton column fractionators using specialized nickel-alloy steel rated for sub-zero -104°C operation under harsh offshore marine conditions.",
-      "clientType": "Global Energy EPC Consortium",
-      "impact": "Delivered 3 weeks ahead of schedule with 100% radiographic weld pass rate"
+      "title": "Summer Cotton Suit Sourcing for Regional Wholesale Distributor",
+      "description": "Assisted a textile distributor in identifying trusted Jaipur cotton fabric printers, ensuring fast sample approval and coordinated batch dispatches for upcoming summer retail demand.",
+      "clientType": "Regional Wholesale Distributor",
+      "impact": "Established reliable supplier connections with transparent pricing and steady dispatch schedules"
     }
   },
   {
     "id": "biz-3",
-    "slug": "environmental-solutions",
-    "title": "Environmental Solutions & Water Stewardship",
-    "category": "Circular Water Systems",
-    "summary": "Turnkey Zero Liquid Discharge (ZLD) plants, municipal water reclamation, and advanced membrane desalination systems enabling circular industrial ecosystems.",
-    "fullDescription": "Arvion Environmental Solutions provides comprehensive wastewater engineering for demanding industrial sectors including textiles, pharmaceuticals, chemicals, and power generation. Our patented low-energy mechanical vapor recompression and crystallization units allow facilities to operate with zero effluent discharge.",
-    "image": "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
+    "slug": "lehengas-occasion-wear",
+    "title": "Lehengas & Occasion Wear",
+    "category": "Bridal & Festive Wear",
+    "summary": "Discover semi-stitched and ready lehengas, bridal silhouettes, crop top sets, and festive party wear sourced from specialist artisan workshops and manufacturing hubs.",
+    "fullDescription": "Bridal and occasion wear demands intricate craftsmanship, timely delivery, and dependable fabric quality. Shree Durga Agency guides boutique owners and bridal studios to trusted makers in Surat and Delhi, helping you procure trend-aligned collections that your customers love.",
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1200&q=80",
     "metrics": [
-      { "label": "Wastewater Recycled Daily", "value": "75 Million Liters" },
-      { "label": "Recovery Efficiency", "value": "98.2% Clean Permeate" },
-      { "label": "Installed ZLD Systems", "value": "42 Turnkey Plants" }
+      { "label": "Key Varieties", "value": "Velvet, Silk, Georgette, Net" },
+      { "label": "Primary Hubs", "value": "Surat, Delhi (Chandni Chowk)" },
+      { "label": "Target Segments", "value": "Bridal Studios & Boutiques" }
     ],
     "keyOfferings": [
-      "Turnkey Zero Liquid Discharge (ZLD) wastewater recovery plants",
-      "Biological anaerobic digesters with methane biogas harvesting",
-      "HydroVortex™ anti-fouling polymeric ultrafiltration membranes",
-      "Salt and mineral recovery crystallizers for industrial reuse"
+      "Heavy zari and dori embroidered bridal lehenga sets",
+      "Lightweight pastel lehengas for sangeet and festive occasions",
+      "Designer semi-stitched skirts, blouses, and dupatta ensembles",
+      "Contemporary fusion silhouettes and crop top skirt sets"
     ],
-    "certifications": ["ISO 14001:2015", "ISO 45001:2018", "Water Positive Benchmark", "ZDHC Verified"],
+    "certifications": ["Embellishment Inspection", "Direct Maker Connect", "Design Confidentiality"],
     "caseStudy": {
-      "title": "Comprehensive ZLD Transformation for Mega Textile Hub",
-      "description": "Commissioned a 12 MLD closed-loop wastewater recovery facility that recycles 98.4% of dye-bath water back into process streams while recovering 14 tons of commercial-grade sodium sulfate daily.",
-      "clientType": "Integrated Textile Complex",
-      "impact": "Saved 4.3 Billion Liters of groundwater annually and reduced freshwater draw to near zero"
+      "title": "Curating an Exclusive Bridal & Festive Collection for a Boutique",
+      "description": "Connected a growing bridal boutique directly with master embroidery units in Surat, enabling custom colour runs and timely fulfillment for wedding season orders.",
+      "clientType": "Designer Fashion Boutique",
+      "impact": "Delivered tailored occasion wear designs aligned with client's exact aesthetic requirements"
     }
   },
   {
     "id": "biz-4",
-    "slug": "textiles-smart-fabrics",
-    "title": "Textiles & Smart Sustainable Fabrics",
-    "category": "Circular Fashion & Technical Apparel",
-    "summary": "Pioneering sustainable denim, organic luxury shirting fabrics, botanical indigo dyes, and IoT-integrated wearable smart sensing textiles.",
-    "fullDescription": "Building on an unbroken 85-year heritage of textile craftsmanship, Arvion Textiles is an innovation partner to the world's leading luxury and performance apparel houses. From pioneering waterless indigo dyeing to weaving recycled post-consumer denim, we define responsible fashion at industrial scale.",
-    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80",
+    "slug": "fabrics-running-material",
+    "title": "Fabrics & Running Materials",
+    "category": "Textile Yardage & Raw Materials",
+    "summary": "Procure plain, printed, dyed, and embroidered running fabrics suitable for fashion designers, garment manufacturers, and custom tailoring boutiques.",
+    "fullDescription": "From versatile pure cottons and rayons to raw silks, brocades, organza, and embroidered yardage, we help designers and apparel businesses source running fabric lots directly from weaving and printing mills across India's premier textile corridors.",
+    "image": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1200&q=80",
     "metrics": [
-      { "label": "Annual Denim Capacity", "value": "110 Million Meters" },
-      { "label": "Freshwater Saved in Dyeing", "value": "90% vs Conventional" },
-      { "label": "Organic & Recycled Fiber", "value": "78% Portfolio Share" }
+      { "label": "Key Varieties", "value": "Cotton, Rayon, Silk, Organza" },
+      { "label": "Primary Hubs", "value": "Surat, Panipat, Ahmedabad" },
+      { "label": "Target Segments", "value": "Designers & Apparel Makers" }
     ],
     "keyOfferings": [
-      "AquaFree™ nitrogen-fixed indigo denim finishing",
-      "100% circular post-consumer recycled cotton and hemp blends",
-      "Thermal-regulating graphene-infused activewear textiles",
-      "Luxury 120s–160s Giza cotton shirting fabrics"
+      "Digital print fabrics in cotton, modal, viscose, and georgette",
+      "Dyed plain running fabrics and breathable cotton cambrics",
+      "All-over embroidered fabric yardage for festive and bridal apparel",
+      "Premium lining fabrics, cambric, santoon, and butter crepe"
     ],
-    "certifications": ["GOTS (Global Organic Textile Standard)", "GRS (Global Recycled Standard)", "OEKO-TEX Made in Green", "Cradle to Cradle Certified Gold"],
+    "certifications": ["Colour Fastness Verification", "Fabric Feel Check", "Batch Uniformity"],
     "caseStudy": {
-      "title": "Zero-Freshwater Denim Collection for Global Apparel Icon",
-      "description": "Developed a full-spectrum authentic vintage indigo collection utilizing 100% recycled domestic wastewater and organic natural mordants.",
-      "clientType": "Global Denim Brand",
-      "impact": "Eliminated 65 liters of freshwater per garment manufactured across 4 million units"
+      "title": "Bulk Fabric Sourcing for a Contemporary Apparel Label",
+      "description": "Guided a ready-made garment brand to reputable Surat digital textile printers, securing consistent fabric hand-feel, shrinkage standards, and prompt sample approvals.",
+      "clientType": "Independent Apparel Label",
+      "impact": "Streamlined fabric procurement across multiple seasonal collections with dependable supplier links"
     }
   },
   {
     "id": "biz-5",
-    "slug": "telecom-digital-iot",
-    "title": "Industrial IoT & Connected Enterprise Solutions",
-    "category": "Smart Industrial Automation",
-    "summary": "Digital twin modeling, edge telematics, AI computer vision for quality inspection, and end-to-end industrial connectivity for smart factories.",
-    "fullDescription": "Arvion Telecom & Digital IoT converts industrial machines into intelligent, self-optimizing nodes. Originating from our internal drive to optimize our own 32 manufacturing centers, our edge platform now powers predictive maintenance and energy analytics for manufacturing conglomerates worldwide.",
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "slug": "traditional-textiles",
+    "title": "Traditional Textiles & Furnishings",
+    "category": "Heritage Weaves & Home Textiles",
+    "summary": "Access authentic handloom weaves, brocade dupattas, festive stoles, and Panipat home textile furnishings for diverse retail and commercial needs.",
+    "fullDescription": "India's traditional textile heritage offers unmatched variety. We assist retailers and wholesalers in sourcing authentic handloom weaves from Varanasi and Kolkata, as well as bed linens, curtains, and home furnishing fabrics from Panipat's renowned manufacturing ecosystem.",
+    "image": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1200&q=80",
     "metrics": [
-      { "label": "Connected Telemetry Nodes", "value": "180,000+ Endpoints" },
-      { "label": "Unplanned Downtime Drop", "value": "42% Average Reduction" },
-      { "label": "Edge Processing Latency", "value": "< 12 Milliseconds" }
+      { "label": "Key Varieties", "value": "Brocade, Handloom, Linen, Cotton" },
+      { "label": "Primary Hubs", "value": "Varanasi, Kolkata, Panipat" },
+      { "label": "Target Segments", "value": "Specialty Stores & Furnishers" }
     ],
     "keyOfferings": [
-      "FactorySense™ industrial edge gateway and telemetry mesh",
-      "AI computer vision optical defect inspection systems",
-      "Energy telemetry and steam boiler heat-loss optimization suite",
-      "Private 5G enterprise wireless networks for manufacturing yards"
+      "Pure and semi-silk brocade fabric pieces and borders",
+      "Traditional Banarasi and Phulkari festive dupattas",
+      "Kolkata handloom cotton tant, jamdani, and linen textiles",
+      "Panipat woven bed linens, throws, and home furnishing fabrics"
     ],
-    "certifications": ["ISO 27001 Information Security", "SOC 2 Type II", "IEC 62443 Industrial Cybersecurity", "CE RED"],
+    "certifications": ["Cluster Authenticity", "Handloom Verification", "Direct Artisan Links"],
     "caseStudy": {
-      "title": "AI Defect Recognition for High-Speed Weaving Looms",
-      "description": "Deployed edge optical sensors inspecting 2,000 picks per minute, detecting warp and weft deviations in real time and automatically halting looms before costly fabric wastage occurs.",
-      "clientType": "High-Precision Technical Mill",
-      "impact": "Fabric defect rates plummeted from 3.2% to 0.18%, saving $1.9M annually in rejected rolls"
+      "title": "Handloom & Brocade Dupatta Line for Ethnic Retail Chain",
+      "description": "Facilitated direct manufacturer partnerships for a retail chain seeking authentic brocade and handloom dupattas to complement their festive readymade collections.",
+      "clientType": "Multi-Store Ethnic Brand",
+      "impact": "Introduced verified handloom clusters with transparent pricing and consistent craftsmanship"
     }
   }
 ]

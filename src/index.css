@@ -2,10 +2,21 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-warm-silk: #FAF8F5;
+  --color-warm-alabaster: #FBFBFA;
+  --color-warm-linen: #F5F2EB;
+  --color-midnight-ink: #0A0F1D;
+  --color-emerald-deep: #064E3B;
+  --color-ochre-gold: #9B783E;
+}
+
 @layer base {
   :root {
-    --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-body: 'Public Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   }
 
   html {
@@ -16,18 +27,22 @@
 
   body {
     font-family: var(--font-body);
-    color: #0f172a;
-    background-color: #ffffff;
+    color: #1e293b;
+    background-color: #FBFBFA;
     overflow-x: hidden;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3 {
     font-family: var(--font-heading);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.015em;
+  }
+
+  p {
+    font-family: var(--font-body);
   }
 }
 
-/* Subtle corporate animations */
+/* Subtle luxury animations & 3D tactile card utilities */
 @keyframes subtlePulse {
   0%, 100% { opacity: 0.95; }
   50% { opacity: 0.75; }
@@ -37,18 +52,89 @@
   animation: subtlePulse 4s ease-in-out infinite;
 }
 
+/* Infinite Marquee Loop */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 40s linear infinite;
+}
+
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* 3D Tactile Card Elevations */
+.card-3d {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 100%);
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.04), 0 12px 28px -6px rgba(15, 23, 42, 0.07);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.card-3d:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px -5px rgba(15, 23, 42, 0.06), 0 24px 44px -10px rgba(15, 23, 42, 0.12);
+  border-color: rgba(6, 78, 59, 0.35);
+}
+
+.card-3d-emerald {
+  background: linear-gradient(180deg, rgba(6, 78, 59, 0.035) 0%, rgba(255, 255, 255, 0.98) 35%, #FFFFFF 100%);
+  border: 1px solid rgba(6, 78, 59, 0.16);
+  box-shadow: 0 4px 14px -2px rgba(6, 78, 59, 0.06), 0 12px 28px -6px rgba(15, 23, 42, 0.06);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.card-3d-emerald:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px -4px rgba(6, 78, 59, 0.12), 0 24px 48px -10px rgba(15, 23, 42, 0.12);
+  border-color: rgba(6, 78, 59, 0.45);
+}
+
+.card-3d-dark {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%), #0D1633;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.card-3d-dark:hover {
+  transform: translateY(-6px);
+  border-color: rgba(52, 211, 153, 0.5);
+  box-shadow: 0 18px 45px -8px rgba(0, 0, 0, 0.65), 0 0 25px rgba(16, 185, 129, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
 /* Custom scrollbar for high-end feel */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f5f2eb;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #d6cfc4;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #a89f91;
 }

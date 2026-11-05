@@ -12,6 +12,8 @@ import { InvestorSection } from '../components/sections/InvestorSection';
 import { NewsroomSection } from '../components/sections/NewsroomSection';
 import { CareersSection } from '../components/sections/CareersSection';
 import { ContactCTASection } from '../components/sections/ContactCTASection';
+import { CustomersMarqueeSection } from '../components/sections/CustomersMarqueeSection';
+import { TestimonialsSection } from '../components/sections/TestimonialsSection';
 
 interface HomePageProps {
   config: HomepageConfig;
@@ -39,6 +41,18 @@ export const HomePage: React.FC<HomePageProps> = ({
             slides={config.sections.hero.slides}
             onNavigate={onNavigate}
             onOpenInquiry={onOpenInquiry}
+          />
+        );
+
+      case 'customersMarquee':
+        if (config.sections.customersMarquee && !config.sections.customersMarquee.enabled) return null;
+        return (
+          <CustomersMarqueeSection
+            key="customersMarquee"
+            kicker={config.sections.customersMarquee?.kicker}
+            heading={config.sections.customersMarquee?.heading}
+            statsText={config.sections.customersMarquee?.statsText}
+            customers={config.sections.customersMarquee?.customers}
           />
         );
 
@@ -150,6 +164,19 @@ export const HomePage: React.FC<HomePageProps> = ({
             subheading={config.sections.investors.subheading}
             onNavigate={onNavigate}
             onDownloadReport={onDownloadReport}
+          />
+        );
+
+      case 'testimonials':
+        if (config.sections.testimonials && !config.sections.testimonials.enabled) return null;
+        return (
+          <TestimonialsSection
+            key="testimonials"
+            kicker={config.sections.testimonials?.kicker}
+            heading={config.sections.testimonials?.heading}
+            subheading={config.sections.testimonials?.subheading}
+            items={config.sections.testimonials?.items}
+            onOpenInquiry={onOpenInquiry}
           />
         );
 

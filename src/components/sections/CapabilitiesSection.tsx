@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionHeading } from '../ui/SectionHeading';
-import { Factory, ShieldCheck, Cog, Globe, ArrowRight } from 'lucide-react';
+import { Layers, ShieldCheck, CheckCircle2, Globe2, ArrowRight } from 'lucide-react';
 
 interface CapabilitiesSectionProps {
   kicker: string;
@@ -21,41 +21,50 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
   pillars,
   onNavigate,
 }) => {
-  const icons = [Factory, ShieldCheck, Cog, Globe];
+  const icons = [Layers, ShieldCheck, CheckCircle2, Globe2];
 
   return (
-    <section className="py-24 sm:py-28 bg-slate-50/50 border-b border-slate-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-28 sm:py-36 bg-[#0B132B] text-white relative overflow-hidden">
+      {/* Subtle organic radial glow */}
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-950/30 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           kicker={kicker}
           heading={heading}
           lead={description}
+          light={true}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* 3D Highlighted Dark Glassmorphic Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 pt-4">
           {pillars.map((pillar, idx) => {
             const Icon = icons[idx % icons.length];
             return (
               <div
                 key={idx}
-                className="p-8 bg-white border border-slate-200/60 flex flex-col justify-between hover:border-slate-300 transition-colors"
+                className="card-3d-dark rounded-2xl p-7 flex flex-col justify-between group relative overflow-hidden"
               >
+                {/* 3D Top Specular Light Catch */}
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent" />
+
                 <div>
-                  <div className="w-10 h-10 border border-slate-200 flex items-center justify-center text-slate-800 mb-6">
-                    <Icon className="w-5 h-5 stroke-[1.5]" />
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500/20 to-emerald-900/30 border border-emerald-400/30 flex items-center justify-center text-emerald-300 mb-6 shadow-[0_4px_12px_rgba(6,78,59,0.3)] group-hover:scale-105 transition-transform">
+                    <Icon className="w-6 h-6 stroke-[1.5]" />
                   </div>
-                  <h3 className="text-base font-semibold text-slate-950 mb-3 break-normal">
+                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-white mb-3 tracking-tight group-hover:text-emerald-300 transition-colors">
                     {pillar.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal mb-6 break-normal">
+                  <p className="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
                     {pillar.description}
                   </p>
                 </div>
-                <div className="pt-4 border-t border-slate-100">
-                  <span className="text-[10px] uppercase font-semibold text-slate-400 block tracking-wider mb-0.5">
+
+                <div className="pt-4 border-t border-white/10 bg-white/[0.02] -mx-7 -mb-7 px-7 py-4 rounded-b-2xl">
+                  <span className="text-[10px] uppercase font-semibold text-slate-400 block tracking-[0.2em] mb-1">
                     Benchmark Metric
                   </span>
-                  <span className="text-xs sm:text-sm font-semibold text-slate-900 font-mono">
+                  <span className="font-serif text-xl sm:text-2xl font-normal text-emerald-300 tracking-tight">
                     {pillar.stat}
                   </span>
                 </div>
@@ -64,24 +73,24 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
           })}
         </div>
 
-        {/* Minimalist Quality Assurance Strip (No heavy gradient boxes) */}
-        <div className="mt-12 p-6 sm:p-8 bg-white border border-slate-200/80 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="space-y-1.5 text-center md:text-left">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#9b111e]">
-              Global Standard Compliance
+        {/* 3D Elevated Quality Assurance Banner */}
+        <div className="mt-16 sm:mt-20 p-8 sm:p-10 rounded-2xl bg-gradient-to-r from-white/[0.08] via-white/[0.04] to-emerald-950/20 border border-white/15 shadow-[0_15px_35px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.15)] flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="space-y-2 text-center md:text-left max-w-2xl">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-400">
+              Sourcing Assurance & Quality Protocol
             </span>
-            <h4 className="text-base sm:text-lg font-normal text-slate-900">
-              ASME, AS9100D, ISO 14001, and ZDHC Level 3 Certified Operations
+            <h4 className="font-serif text-xl sm:text-2xl font-normal text-white">
+              Batch Inspection, GSM Verification & Transparent Sourcing
             </h4>
-            <p className="text-xs text-slate-500 max-w-2xl font-normal leading-relaxed">
-              Every manufacturing center undergoes regular independent third-party audits with full traceability.
+            <p className="text-xs sm:text-sm text-slate-300 font-light leading-relaxed">
+              Every order batch is inspected for fabric count, finish, colorfastness, and weave integrity before dispatch.
             </p>
           </div>
           <button
-            onClick={() => onNavigate('/about')}
-            className="px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] border border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white transition-colors whitespace-nowrap shrink-0"
+            onClick={() => onNavigate('/innovation')}
+            className="px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg shadow-[0_4px_15px_rgba(6,78,59,0.4)] transition-all whitespace-nowrap shrink-0 hover:scale-105"
           >
-            Review Certifications
+            Our Sourcing Process
           </button>
         </div>
       </div>

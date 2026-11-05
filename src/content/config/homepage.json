@@ -1,6 +1,7 @@
 {
   "sectionsOrder": [
     "hero",
+    "customersMarquee",
     "intro",
     "stats",
     "businesses",
@@ -9,6 +10,7 @@
     "sustainability",
     "csr",
     "investors",
+    "testimonials",
     "newsroom",
     "careers",
     "contactCta"
@@ -19,214 +21,313 @@
       "slides": [
         {
           "id": "slide-1",
-          "kicker": "Advanced Materials & Industrial Ingenuity",
-          "heading": "Pioneering the Next Century of Materials Science",
-          "subheading": "From aerospace-grade composites to carbon-smart performance textiles.",
-          "description": "We engineer next-generation advanced materials and critical process infrastructure that drive global energy transitions, protect lives, and reshape sustainable manufacturing.",
-          "desktopImage": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2000&q=80",
-          "mobileImage": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-          "ctaText": "Explore Our Businesses",
+          "kicker": "Textile Sourcing & Consulting Partner",
+          "heading": "Connecting You to India's Premier Textile Production Centres",
+          "subheading": "Helping retailers, wholesalers, and boutiques source sarees, suits, fabrics, and lehengas directly from leading markets.",
+          "description": "Shree Durga Agency helps textile businesses discover reliable manufacturers, compare genuine market prices, and streamline procurement from Surat, Varanasi, Jaipur, Delhi, and beyond.",
+          "desktopImage": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=2000&q=80",
+          "mobileImage": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=800&q=80",
+          "ctaText": "Explore What We Source",
           "ctaLink": "/businesses",
-          "secondaryCtaText": "View Sustainability Roadmap",
+          "secondaryCtaText": "View Sourcing Hubs",
           "secondaryCtaLink": "/sustainability",
           "overlayStrength": 0.65
         },
         {
           "id": "slide-2",
-          "kicker": "Zero Liquid Discharge & Circularity",
-          "heading": "Returning 98% of Industrial Water to Purity",
-          "subheading": "Closed-loop environmental stewardship engineered at unprecedented scale.",
-          "description": "Our proprietary membrane filtration and thermodynamic recovery systems process over 75 million liters of industrial water daily across high-demand processing plants.",
-          "desktopImage": "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=2000&q=80",
-          "mobileImage": "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=800&q=80",
-          "ctaText": "Discover Clean Water Solutions",
-          "ctaLink": "/sustainability",
-          "secondaryCtaText": "Read Impact Report",
-          "secondaryCtaLink": "/investors",
+          "kicker": "Organised Wholesale Procurement",
+          "heading": "Source Saree and Suit Collections with Complete Confidence",
+          "subheading": "Quality inspection, direct manufacturer links, and seasonal collection planning.",
+          "description": "From authentic Varanasi silk sarees to Surat digital prints and Jaipur cottons, we coordinate sampling, price negotiation, and pre-dispatch quality checks for your store.",
+          "desktopImage": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=2000&q=80",
+          "mobileImage": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
+          "ctaText": "Discover Products",
+          "ctaLink": "/businesses",
+          "secondaryCtaText": "Submit Sourcing Enquiry",
+          "secondaryCtaLink": "/contact",
           "overlayStrength": 0.6
         },
         {
           "id": "slide-3",
-          "kicker": "Heavy Process Engineering",
-          "heading": "Critical Energy & Petrochemical Equipment",
-          "subheading": "Precision metallurgy crafted for extreme pressures and critical operating conditions.",
-          "description": "Designing and manufacturing ASME-certified shell-and-tube heat exchangers, high-pressure reactors, and cryogenic systems for the world's most demanding clean energy pioneers.",
-          "desktopImage": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=2000&q=80",
-          "mobileImage": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
-          "ctaText": "Explore Heavy Engineering",
-          "ctaLink": "/businesses/heavy-engineering",
-          "secondaryCtaText": "Global Certifications",
-          "secondaryCtaLink": "/about",
-          "overlayStrength": 0.7
+          "kicker": "ThreadLinc Financing Support",
+          "heading": "Flexible Financing to Scale Your Textile Inventory",
+          "subheading": "Manage working capital and stock seasonal demand smoothly.",
+          "description": "Through ThreadLinc Financing, we assist eligible textile businesses with flexible credit solutions so you can procure inventory ahead of festive and wedding seasons without liquidity strain.",
+          "desktopImage": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=2000&q=80",
+          "mobileImage": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80",
+          "ctaText": "Learn About Financing",
+          "ctaLink": "/investors",
+          "secondaryCtaText": "Consult Our Team",
+          "secondaryCtaLink": "/contact",
+          "overlayStrength": 0.65
         }
       ]
     },
     "intro": {
       "enabled": true,
-      "kicker": "The Arvion Ethos",
-      "heading": "Where Material Science Meets Global Responsibility",
-      "leadParagraph": "Founded in 1938 with a single spinning mill and a profound conviction in national self-reliance, Arvion Global has evolved into a multi-billion dollar diversified industrial powerhouse operating at the frontier of high-performance materials, heavy engineering, and environmental technologies.",
-      "secondaryParagraph": "Today, over 28,000 scientists, engineers, and manufacturing artisans across five continents synthesize advanced chemistry with responsible engineering. We do not merely manufacture products; we design the physical substrate of modern civilization.",
-      "quote": "Real innovation does not compete with nature; it learns from its cycles, honors its boundaries, and creates enduring industrial harmony.",
-      "quoteAuthor": "Vikramaditya Singhania, Executive Chairman",
-      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-      "ctaText": "Read Our 85-Year Heritage",
+      "kicker": "About Shree Durga Agency",
+      "heading": "Your Trusted Sourcing Partner in Indian Textile Hubs",
+      "leadParagraph": "Shree Durga Agency is a textile sourcing and consulting partner helping retailers, wholesalers, boutiques and other textile businesses source products from relevant textile markets and production centres.",
+      "secondaryParagraph": "Navigating diverse textile hubs requires local market knowledge, trusted supplier networks, and careful quality verification. We work closely with buyers to identify reputable manufacturers, verify fabric hand-feel and embellishment standards, and coordinate seamless bulk dispatches.",
+      "quote": "Our mission is to make wholesale textile sourcing transparent, reliable, and hassle-free for retail and trade businesses across India.",
+      "quoteAuthor": "Shree Durga Agency Sourcing Advisory",
+      "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1200&q=80",
+      "ctaText": "Learn About Our Sourcing Approach",
       "ctaLink": "/about"
     },
     "stats": {
       "enabled": true,
-      "heading": "Scale, Precision & Global Influence",
-      "subheading": "Measurable operational excellence validated across global supply chains.",
+      "heading": "Strengths & Sourcing Reach",
+      "subheading": "Connecting trade buyers directly to specialized Indian textile manufacturing corridors.",
       "items": [
         {
           "id": "stat-1",
-          "value": 86,
-          "suffix": "+",
-          "label": "Years of Industrial Heritage",
-          "sublabel": "Continuous operations since 1938"
+          "value": 6,
+          "suffix": "",
+          "label": "Prime Sourcing Hubs",
+          "sublabel": "Surat, Varanasi, Jaipur, Delhi, Kolkata, Panipat"
         },
         {
           "id": "stat-2",
-          "value": 54,
+          "value": 5,
           "suffix": "",
-          "label": "Export Destinations",
-          "sublabel": "Trusted by Fortune 500 corporations"
+          "label": "Core Product Lines",
+          "sublabel": "Sarees, Suits, Lehengas, Fabrics & Brocades"
         },
         {
           "id": "stat-3",
-          "value": 32,
-          "suffix": "",
-          "label": "Advanced Manufacturing Facilities",
-          "sublabel": "Spread across India, Europe & Americas"
+          "value": 100,
+          "suffix": "%",
+          "label": "Transparent Procuring",
+          "sublabel": "Direct maker pricing & verified samples"
         },
         {
           "id": "stat-4",
-          "value": 28500,
-          "prefix": "",
-          "suffix": "+",
-          "label": "Global Workforce",
-          "sublabel": "Engineers, scientists & technicians"
+          "value": 4,
+          "suffix": "",
+          "label": "Customer Groups",
+          "sublabel": "Showrooms, Boutiques, Retailers & Wholesalers"
         },
         {
           "id": "stat-5",
-          "value": 142,
+          "value": 1,
           "suffix": "",
-          "label": "Active Global Patents",
-          "sublabel": "In advanced composites & water recycling"
+          "label": "Dedicated Partner",
+          "sublabel": "End-to-end guidance from enquiry to dispatch"
         }
       ]
     },
     "businesses": {
       "enabled": true,
-      "kicker": "Diversified Portfolio",
-      "heading": "Five Interconnected Pillars of Industrial Growth",
-      "subheading": "Each business unit operates autonomously while drawing synergistic strength from shared metallurgy, polymer science, and digital automation capabilities.",
-      "viewAllText": "View Complete Business Portfolios"
+      "kicker": "What We Source",
+      "heading": "Comprehensive Textile Lines for Retailers & Wholesalers",
+      "subheading": "Explore product categories sourced directly from specialized production centres across India.",
+      "viewAllText": "View All Sourcing Categories"
     },
     "capabilities": {
       "enabled": true,
-      "kicker": "Infrastructure & Footprint",
-      "heading": "World-Class Manufacturing & Global Supply Chain",
-      "description": "With state-of-the-art manufacturing hubs conforming to Industry 4.0 standards, Arvion maintains stringent quality control, end-to-end traceability, and multi-modal logistics reach.",
+      "kicker": "Our Sourcing Process",
+      "heading": "A Structured Approach to Textile Sourcing",
+      "description": "We follow a systematic procurement process ensuring you discover verified suppliers, clear specifications, and timely delivery for your store.",
       "pillars": [
         {
-          "title": "Smart Factory Automation",
-          "description": "IoT-integrated sensor grids and digital twin telemetry across all 32 manufacturing centers monitor thermal efficiency and predict maintenance.",
-          "stat": "99.4% On-Time Reliability"
+          "title": "Requirement Analysis",
+          "description": "Understanding your target price points, desired fabric compositions, and regional aesthetic preferences.",
+          "stat": "Customized Planning"
         },
         {
-          "title": "Cleanroom Polymer Synthesis",
-          "description": "ISO Class 5 cleanrooms dedicated to specialized filtration membranes and aerospace-grade flame retardant woven textiles.",
-          "stat": "12,000 m² Controlled Space"
+          "title": "Market & Supplier Matching",
+          "description": "Connecting you with vetted manufacturers in the production hubs best suited for your product requirements.",
+          "stat": "Direct Hub Links"
         },
         {
-          "title": "Heavy Metallurgy & Forging",
-          "description": "Heavy fabrication bays capable of lifting 350-metric-ton vessels and rolling alloy steel up to 160mm wall thickness.",
-          "stat": "350T Single Lift Capacity"
+          "title": "Sampling & Quality Verification",
+          "description": "Reviewing fabric feel, weave integrity, colour fastness, and embroidery quality before full order placement.",
+          "stat": "Pre-Dispatch Checks"
         },
         {
-          "title": "Global Logistics Corridors",
-          "description": "Direct port access and dedicated logistics hubs in Rotterdam, Singapore, and Mumbai ensuring resilient multi-continental shipping.",
-          "stat": "54 Active Trade Routes"
+          "title": "Dispatch & Logistics Support",
+          "description": "Coordinating transparent factory billing, consolidated packaging, and reliable transport partners.",
+          "stat": "Coordinated Delivery"
         }
       ]
     },
     "innovation": {
       "enabled": true,
-      "kicker": "Research & Development",
-      "heading": "Engineering at the Atomic and Molecular Level",
-      "description": "Our three global R&D centers in Bengaluru, Frankfurt, and Ahmedabad collaborate closely with premier technical universities, converting fundamental material chemistry into commercial realities.",
-      "patentsCount": "140+ Granted Patents",
-      "rdSpendPercent": "3.8% Annual R&D Reinvestment",
+      "kicker": "Consulting & Intelligence",
+      "heading": "Market Knowledge That Powers Better Buying Decisions",
+      "description": "Stay ahead of seasonal retail demand, festive collection launches, and production schedules with guidance from our experienced sourcing consultants.",
+      "patentsCount": "6 Sourcing Corridors",
+      "rdSpendPercent": "Year-Round Sourcing Support",
       "innovations": [
         {
-          "title": "PyroShield™ Ultra-Dense Carbon Weave",
-          "category": "Advanced Protective Composites",
-          "description": "Next-generation flame resistant fabric withstanding direct thermal exposure up to 1,200°C without toxic outgassing or structural degradation."
+          "title": "Seasonal Buying & Inventory Planning",
+          "category": "Retail Strategy",
+          "description": "Plan your procurement ahead of major festive and wedding periods like Diwali, Eid, and regional wedding seasons."
         },
         {
-          "title": "HydroVortex™ Nanofiltration Membrane",
-          "category": "Industrial Water Recovery",
-          "description": "Graphene-augmented polymeric membrane delivering 40% higher flux and 60% lower fouling rate in hyper-saline textile effluents."
+          "title": "Direct Production Cluster Connections",
+          "category": "Manufacturer Discovery",
+          "description": "Bridge the gap between your retail store and verified loom, printing, and embroidery units across India."
         },
         {
-          "title": "HelixCore™ High-Pressure Heat Exchanger",
-          "category": "Thermal Process Engineering",
-          "description": "Proprietary helical baffle geometry reducing fluid bypass by 85% and increasing thermal transfer efficiency by 34%."
+          "title": "Order Sampling & Lot Inspection",
+          "category": "Quality Assurance",
+          "description": "Ensure delivered consignments match approved physical samples in fabric weight, finish, and stitching quality."
         }
       ]
     },
     "sustainability": {
       "enabled": true,
-      "kicker": "ESG & Planet Responsibility",
-      "heading": "Committed to Net-Zero and Absolute Circularity",
-      "description": "We believe industrial growth must replenish ecological systems. Our long-term roadmap aligns with the Science Based Targets initiative (SBTi) with aggressive targets for 2030 and 2040.",
-      "ctaText": "Explore Sustainability Details",
+      "kicker": "Sourcing Hubs & Markets",
+      "heading": "Connecting Buyers to India's Foremost Textile Hubs",
+      "description": "We help retailers and trade buyers source from India's key textile centres including Surat, Varanasi, Jaipur, Delhi, Kolkata, and Panipat.",
+      "ctaText": "Explore Sourcing Hubs",
       "highlights": [
-        { "metric": "98.2%", "label": "Water Recycled via ZLD" },
-        { "metric": "64%", "label": "Renewable Energy Share" },
-        { "metric": "100%", "label": "Zero Hazardous Chemical Discharge (ZDHC Level 3)" },
-        { "metric": "42,000 MT", "label": "Annual CO2 Avoided" }
+        { "metric": "Surat", "label": "Man-Made Fabrics, Sarees & Digital Prints" },
+        { "metric": "Varanasi", "label": "Authentic Silk & Banarasi Weaves" },
+        { "metric": "Jaipur", "label": "Block Prints & Cotton Suit Materials" },
+        { "metric": "Panipat", "label": "Home Textiles & Furnishing Materials" }
       ]
     },
     "csr": {
       "enabled": true,
-      "kicker": "Social Impact",
-      "heading": "Empowering Communities, Transforming Generations",
-      "description": "Through the Arvion Foundation, our investments in educational academies, maternal healthcare clinics, and rural drinking water networks create tangible uplift across 180+ villages.",
-      "impactMetric": "1.2 Million+",
-      "impactLabel": "Lives touched through foundation initiatives over the last decade"
+      "kicker": "Artisan & Cluster Support",
+      "heading": "Championing Indian Textile Craftsmanship",
+      "description": "By connecting retail buyers directly with regional weavers and manufacturing clusters, we promote fair trade practices, transparent pricing, and sustainable livelihoods for Indian textile artisans.",
+      "impactMetric": "Ethical Sourcing",
+      "impactLabel": "Fostering transparent trade across traditional weaving and manufacturing clusters"
     },
     "investors": {
       "enabled": true,
-      "kicker": "Financial Strength",
-      "heading": "Disciplined Capital Allocation, Consistent Shareholder Returns",
-      "subheading": "Robust balance sheet fundamentals, strong operating cash flows, and transparent governance recognized by global credit rating agencies."
+      "kicker": "ThreadLinc Financing",
+      "heading": "Working Capital Solutions for Textile Businesses",
+      "subheading": "Manage bulk inventory purchases and festive stock procurement smoothly with ThreadLinc financing support."
     },
     "newsroom": {
       "enabled": true,
-      "kicker": "Corporate Updates",
-      "heading": "Latest News, Press Announcements & Disclosures",
-      "subheading": "Stay informed on corporate milestones, global partnerships, and sustainability awards."
+      "kicker": "Market Updates",
+      "heading": "Textile Market Insights & Seasonal Buying Guides",
+      "subheading": "Practical market advisories on seasonal arrivals, upcoming collection trends, and procurement tips."
     },
     "careers": {
       "enabled": true,
-      "kicker": "People & Culture",
-      "heading": "Build a Career That Shapes Tomorrow's World",
-      "description": "Join our community of engineers, research scientists, designers, and project managers tackling critical global challenges.",
+      "kicker": "Who We Serve",
+      "heading": "Serving Businesses Across the Indian Textile Industry",
+      "description": "From single-location boutiques to large ethnic wear showrooms and regional wholesalers, we adapt our sourcing services to your business needs.",
       "culturePoints": [
-        "Collaborative meritocracy with rapid career progression pathways",
-        "Continuous learning stipends and executive MBA sponsorships",
-        "Comprehensive health, wellness, and family sabbatical policies",
-        "Cross-continental internal mobility opportunities"
+        "Retail Showrooms (curated seasonal stock, direct factory prices, dependable fulfillment)",
+        "Boutiques & Designers (small-batch sampling, exclusive running fabrics, custom work)",
+        "Wholesalers & Distributors (volume lots from verified mills with regular dispatches)",
+        "Online Brands & Resellers (catalogue variety, verified quality checks, packaging assistance)"
       ]
     },
     "contactCta": {
       "enabled": true,
-      "heading": "Partner with Arvion for Your Next Industrial Breakthrough",
-      "description": "Whether you require mission-critical heat exchangers, lightweight aerospace composites, or enterprise zero liquid discharge systems, our engineering teams are ready to collaborate.",
-      "primaryButtonText": "Connect with an Engineer",
-      "secondaryButtonText": "Locate Global Offices"
+      "heading": "Ready to Streamline Your Textile Sourcing?",
+      "description": "Tell us about your product requirements. Our consulting team will help you identify the right production hubs, reliable manufacturers, and competitive pricing.",
+      "primaryButtonText": "Submit Sourcing Enquiry",
+      "secondaryButtonText": "Explore Product Categories"
+    },
+    "customersMarquee": {
+      "enabled": true,
+      "kicker": "Our Customers & Sourcing Partners",
+      "heading": "Trusted by 250+ Textile Showrooms, Wholesalers & Boutiques Across India",
+      "statsText": "Curating collections from Surat, Varanasi, Jaipur, Kolkata, and Delhi for India's leading ethnic wear retailers.",
+      "customers": [
+        { "name": "Nalli Silk Heritage", "city": "Chennai", "segment": "Retail Showroom", "hubFocus": "Katan & South Silks" },
+        { "name": "Kala Niketan Emporium", "city": "Mumbai", "segment": "Bridal Couture", "hubFocus": "Zari & Designer Sarees" },
+        { "name": "Meena Bazaar Partners", "city": "Delhi NCR", "segment": "Ethnic Showroom", "hubFocus": "Bridal Sets & Lehengas" },
+        { "name": "Pothys Retail Network", "city": "Tamil Nadu", "segment": "Multi-store Retail", "hubFocus": "Silks & Cotton Prints" },
+        { "name": "Sai Silks Kalamandir", "city": "Hyderabad", "segment": "Showroom Chain", "hubFocus": "Kanchipuram & Brocades" },
+        { "name": "Singhania Bridal Studio", "city": "Jaipur", "segment": "Boutique Atelier", "hubFocus": "Gotapatti & Bandhani" },
+        { "name": "Roopam Ethnic Couture", "city": "Kolkata", "segment": "Heritage Boutique", "hubFocus": "Tussar & Jamdani Weaves" },
+        { "name": "Radha Krishna Wholesale", "city": "Surat", "segment": "Wholesale Mart", "hubFocus": "Georgette & Crepe Bulk" },
+        { "name": "Kalyan Silks Partner Group", "city": "Kochi", "segment": "Retail Network", "hubFocus": "Bridal Trousseau & Kasavu" },
+        { "name": "Neeru's Ensembles", "city": "Bengaluru", "segment": "Showroom Chain", "hubFocus": "Festive & Indo-Western" },
+        { "name": "Vandana Sarees Group", "city": "Varanasi", "segment": "Trade Wholesaler", "hubFocus": "Pure Katan & Tanchoi" },
+        { "name": "Shringaar Ethnic Hub", "city": "Ahmedabad", "segment": "Showroom & Studio", "hubFocus": "Chaniya Choli & Dupattas" }
+      ]
+    },
+    "testimonials": {
+      "enabled": true,
+      "kicker": "Buyer Testimonials",
+      "heading": "What Textile Retailers & Wholesalers Say About Sourcing With Us",
+      "subheading": "Verified experiences from showroom owners, wholesale distributors, and boutique curators who rely on Shree Durga Agency for transparent pricing, on-ground inspection, and ThreadLinc financing.",
+      "items": [
+        {
+          "id": "t1",
+          "quote": "Shree Durga Agency transformed our seasonal bridal procurement. Instead of spending weeks navigating unverified brokers in congested markets, we receive curated swatches with guaranteed mill-direct pricing and strict QA before dispatch.",
+          "author": "Vikram Singhania",
+          "role": "Managing Partner",
+          "company": "Singhania Sarees & Bridal Studio",
+          "city": "Jaipur, Rajasthan",
+          "segment": "Bridal & Showroom",
+          "rating": 5,
+          "hubSource": "Varanasi & Surat Hubs",
+          "verified": true
+        },
+        {
+          "id": "t2",
+          "quote": "ThreadLinc Financing combined with Shree Durga Agency's direct Surat polyester and georgette manufacturer connections allowed our wholesale business to scale inventory 40% ahead of Diwali season with absolute liquidity ease.",
+          "author": "Harish Patel",
+          "role": "Procurement Director",
+          "company": "Patel Textile Distributors",
+          "city": "Ahmedabad, Gujarat",
+          "segment": "Wholesale Distributor",
+          "rating": 5,
+          "hubSource": "Surat Textile Hub",
+          "verified": true
+        },
+        {
+          "id": "t3",
+          "quote": "Finding authentic chanderi, tussar silk, and hand-block artisans used to be hit-or-miss. With Shree Durga Agency's artisan cluster linkage, our boutique has established direct provenance with master weavers at fair market rates.",
+          "author": "Ananya Sen",
+          "role": "Creative Founder & Curator",
+          "company": "Paromita Ethnic Couture",
+          "city": "Kolkata, West Bengal",
+          "segment": "Boutique Curator",
+          "rating": 5,
+          "hubSource": "Kolkata & Varanasi Handloom Clusters",
+          "verified": true
+        },
+        {
+          "id": "t4",
+          "quote": "Their on-the-ground inspection team in Surat and Varanasi catches shade variances and weave flaws before lots are packed. That level of operational rigor and transparent invoicing is rare in Indian textile trade.",
+          "author": "R. Sundaram",
+          "role": "Head of Sourcing",
+          "company": "Sri Meenakshi Silks & Sarees",
+          "city": "Madurai, Tamil Nadu",
+          "segment": "Retail Chain",
+          "rating": 5,
+          "hubSource": "Surat & Katan Centers",
+          "verified": true
+        },
+        {
+          "id": "t5",
+          "quote": "We source over 3,000 meters of unstitched salwar suit fabrics every quarter. Shree Durga Agency coordinates sampling, mill price lock-in, and consolidated transport directly to our wholesale hub in Delhi.",
+          "author": "Gaurav Malhotra",
+          "role": "General Partner",
+          "company": "Malhotra Textiles & Fabrics",
+          "city": "Chandni Chowk, Delhi",
+          "segment": "Wholesale Distributor",
+          "rating": 5,
+          "hubSource": "Jaipur & Surat Textile Markets",
+          "verified": true
+        },
+        {
+          "id": "t6",
+          "quote": "For our high-ticket lehenga collection, we needed dependable zari embroidery suppliers who deliver on agreed delivery calendars. Shree Durga Agency has been an indispensable partner for our bridal flagship.",
+          "author": "Meenakshi Kothari",
+          "role": "Design Director",
+          "company": "Kothari Heritage Ensembles",
+          "city": "Hyderabad, Telangana",
+          "segment": "Bridal & Showroom",
+          "rating": 5,
+          "hubSource": "Varanasi & Jaipur Hubs",
+          "verified": true
+        }
+      ]
     }
   }
 }

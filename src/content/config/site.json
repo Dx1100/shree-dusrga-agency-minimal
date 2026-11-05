@@ -1,19 +1,18 @@
 {
-  "companyName": "Arvion Global",
-  "legalEntity": "Arvion Global Industries Limited",
-  "tagline": "Engineering Materials. Empowering Tomorrow.",
-  "foundedYear": 1938,
-  "globalPresenceCountries": 54,
+  "companyName": "Shree Durga Agency",
+  "legalEntity": "Shree Durga Agency",
+  "tagline": "Textile Sourcing & Consulting Partner",
+  "positioning": "A textile sourcing and consulting partner helping retailers, wholesalers, boutiques and other textile businesses source products from relevant textile markets and production centres.",
   "headquarters": {
-    "address": "Arvion House, Innovation Boulevard, Naroda Industrial Estate",
-    "city": "Ahmedabad, Gujarat",
-    "country": "India - 382330",
-    "phone": "+91 (79) 6820 4000",
-    "email": "corporate@arvionglobal.com"
+    "address": "Textile Market Corridor",
+    "city": "Surat & Delhi Sourcing Network",
+    "country": "India",
+    "phone": "Enquiry via Form",
+    "email": "contact@shreedurgaagency.com"
   },
   "social": {
-    "linkedin": "https://linkedin.com/company/arvion-global",
-    "twitter": "https://twitter.com/arvionglobal",
-    "youtube": "https://youtube.com/@arvionglobal"
+    "linkedin": "https://linkedin.com",
+    "twitter": "https://twitter.com",
+    "youtube": "https://youtube.com"
   }
 }

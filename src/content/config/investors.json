@@ -1,81 +1,81 @@
 {
   "stockInfo": {
-    "symbol": "ARVION",
-    "exchange": "NSE / BSE",
-    "price": 384.50,
-    "change": 4.25,
-    "changePercent": 1.12,
-    "currency": "INR",
-    "lastUpdated": "Trading Session Active",
-    "marketCap": "₹10,240 Cr ($1.22B)",
-    "peRatio": "16.8x",
-    "dividendYield": "2.1%"
+    "symbol": "THREADLINC",
+    "exchange": "Trade Credit Program",
+    "price": 100.0,
+    "change": 0.0,
+    "changePercent": 0.0,
+    "currency": "INR Support",
+    "lastUpdated": "Active Trade Assistance",
+    "marketCap": "Working Capital Support",
+    "peRatio": "B2B Credit",
+    "dividendYield": "Transparent"
   },
   "quarterlyResults": [
     {
-      "quarter": "Q3 FY26",
-      "fiscalYear": "FY 2025-26",
-      "revenue": "₹2,480 Cr",
-      "ebitda": "₹342 Cr (13.8%)",
-      "pat": "₹168 Cr",
-      "pdfUrl": "/documents/Arvion_Q3_FY26_Earnings_Report.pdf",
-      "pressReleaseUrl": "/newsroom/q3-fy26-financial-results"
+      "quarter": "Retail Showrooms",
+      "fiscalYear": "Festive Stocking",
+      "revenue": "Working Capital",
+      "ebitda": "Flexible Billing",
+      "pat": "Verified Orders",
+      "pdfUrl": "/documents/ThreadLinc_Showroom_Financing.pdf",
+      "pressReleaseUrl": "/newsroom/threadlinc-financing-overview"
     },
     {
-      "quarter": "Q2 FY26",
-      "fiscalYear": "FY 2025-26",
-      "revenue": "₹2,340 Cr",
-      "ebitda": "₹318 Cr (13.6%)",
-      "pat": "₹152 Cr",
-      "pdfUrl": "/documents/Arvion_Q2_FY26_Earnings_Report.pdf",
-      "pressReleaseUrl": "/newsroom/q2-fy26-financial-results"
+      "quarter": "Wholesale Distributors",
+      "fiscalYear": "Bulk Consignments",
+      "revenue": "Trade Financing",
+      "ebitda": "Batch Settlements",
+      "pat": "Direct Pay to Mills",
+      "pdfUrl": "/documents/ThreadLinc_Wholesale_Financing.pdf",
+      "pressReleaseUrl": "/newsroom/threadlinc-financing-overview"
     },
     {
-      "quarter": "Q1 FY26",
-      "fiscalYear": "FY 2025-26",
-      "revenue": "₹2,210 Cr",
-      "ebitda": "₹295 Cr (13.3%)",
-      "pat": "₹139 Cr",
-      "pdfUrl": "/documents/Arvion_Q1_FY26_Earnings_Report.pdf",
-      "pressReleaseUrl": "/newsroom/q1-fy26-financial-results"
+      "quarter": "Boutiques & Studios",
+      "fiscalYear": "Seasonal Collections",
+      "revenue": "Credit Support",
+      "ebitda": "Sampling Assistance",
+      "pat": "Flexible Re-orders",
+      "pdfUrl": "/documents/ThreadLinc_Boutique_Financing.pdf",
+      "pressReleaseUrl": "/newsroom/threadlinc-financing-overview"
     },
     {
-      "quarter": "Q4 FY25",
-      "fiscalYear": "FY 2024-25",
-      "revenue": "₹2,390 Cr",
-      "ebitda": "₹326 Cr (13.6%)",
-      "pat": "₹158 Cr",
-      "pdfUrl": "/documents/Arvion_Q4_FY25_Earnings_Report.pdf",
-      "pressReleaseUrl": "/newsroom/q4-fy25-financial-results"
+      "quarter": "Apparel Makers",
+      "fiscalYear": "Fabric Procurement",
+      "revenue": "Raw Material Support",
+      "ebitda": "Direct Mill Pay",
+      "pat": "Continuous Supply",
+      "pdfUrl": "/documents/ThreadLinc_Manufacturing_Financing.pdf",
+      "pressReleaseUrl": "/newsroom/threadlinc-financing-overview"
     }
   ],
   "annualReports": [
     {
-      "year": "2024 - 2025",
-      "title": "Integrated Annual Report 2024-25",
-      "theme": "Resilient Chemistry, Sustainable Futures",
-      "fileSize": "14.2 MB PDF",
-      "downloadUrl": "/documents/Arvion_Annual_Report_2025.pdf"
+      "year": "Program Guide",
+      "title": "ThreadLinc Textile Financing Overview",
+      "theme": "Working capital support for textile retailers and trade buyers",
+      "fileSize": "Informational PDF",
+      "downloadUrl": "/documents/ThreadLinc_Textile_Financing_Overview.pdf"
     },
     {
-      "year": "2023 - 2024",
-      "title": "Integrated Annual Report 2023-24",
-      "theme": "Transforming Through Precision",
-      "fileSize": "12.8 MB PDF",
-      "downloadUrl": "/documents/Arvion_Annual_Report_2024.pdf"
+      "year": "Procurement Handbook",
+      "title": "Textile Buyer Working Capital Handbook",
+      "theme": "Managing inventory procurement ahead of peak retail seasons",
+      "fileSize": "Informational PDF",
+      "downloadUrl": "/documents/Textile_Buyer_Working_Capital_Handbook.pdf"
     },
     {
-      "year": "2022 - 2023",
-      "title": "Integrated Annual Report 2022-23",
-      "theme": "Pioneering Green Industrialism",
-      "fileSize": "11.5 MB PDF",
-      "downloadUrl": "/documents/Arvion_Annual_Report_2023.pdf"
+      "year": "Sourcing Advisory",
+      "title": "Shree Durga Agency Sourcing Process Guide",
+      "theme": "Step-by-step advisory from market selection to delivery",
+      "fileSize": "Informational PDF",
+      "downloadUrl": "/documents/Shree_Durga_Agency_Sourcing_Guide.pdf"
     }
   ],
   "governanceCommittees": [
-    { "name": "Audit & Financial Risk Committee", "membersCount": 4, "chair": "Nandita Mehra (Independent Director)" },
-    { "name": "Nomination & Remuneration Committee", "membersCount": 3, "chair": "Kevalram Patel (Independent Director)" },
-    { "name": "Sustainability & ESG Oversight Council", "membersCount": 5, "chair": "Dr. Sunita Rao (Director & ESG Specialist)" },
-    { "name": "Stakeholders Relationship Committee", "membersCount": 3, "chair": "Rajiv Singhania (Non-Executive Director)" }
+    { "name": "Transparent Billing & Settlement Committee", "membersCount": 3, "chair": "Trade Finance Desk" },
+    { "name": "Supplier & Mill Verification Panel", "membersCount": 4, "chair": "Cluster Advisory Lead" },
+    { "name": "Buyer Credit Review Advisory", "membersCount": 3, "chair": "Consulting Support" },
+    { "name": "Sourcing & Procurement Coordination Desk", "membersCount": 4, "chair": "Operations Team" }
   ]
 }

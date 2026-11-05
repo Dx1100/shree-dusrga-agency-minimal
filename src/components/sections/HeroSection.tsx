@@ -67,18 +67,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="max-w-3xl lg:max-w-4xl space-y-5 sm:space-y-6">
           {currentSlide.kicker && (
             <div className="flex items-center gap-3">
-              <span className="w-8 h-[1px] bg-rose-500" />
+              <span className="w-8 h-[1px] bg-emerald-400" />
               <span className="text-xs uppercase tracking-[0.24em] font-medium text-white/85">
                 {currentSlide.kicker}
               </span>
             </div>
           )}
 
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-white leading-[1.12] sm:leading-[1.08] break-normal">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-white leading-[1.14] sm:leading-[1.1] break-normal">
             {currentSlide.heading}
           </h1>
 
-          <p className="text-sm sm:text-base md:text-lg text-white/85 font-normal leading-relaxed max-w-2xl sm:max-w-3xl break-normal">
+          <p className="text-sm sm:text-base md:text-lg text-white/90 font-light leading-relaxed max-w-2xl sm:max-w-3xl break-normal">
             {currentSlide.description}
           </p>
 

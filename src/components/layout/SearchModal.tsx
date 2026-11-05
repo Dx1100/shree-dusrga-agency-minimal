@@ -86,43 +86,46 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         onClick={onClose}
         aria-hidden="true"
       />
-      <div className="relative w-full max-w-2xl bg-white rounded-xl shadow-2xl border border-slate-200 overflow-hidden z-10 flex flex-col">
+      <div className="relative w-full max-w-2xl card-3d rounded-2xl shadow-2xl border border-stone-200/90 overflow-hidden z-10 flex flex-col">
+        {/* Top Specular Bevel Line */}
+        <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-emerald-600/50 to-transparent z-20" />
+        
         {/* Input bar */}
-        <div className="flex items-center gap-3 px-5 py-4 border-b border-slate-200 bg-slate-50/50">
-          <Search className="w-5 h-5 text-slate-400 shrink-0" />
+        <div className="flex items-center gap-3 px-6 py-4 border-b border-stone-200/60 bg-gradient-to-b from-[#FAF8F5] to-white relative z-10">
+          <Search className="w-5 h-5 text-emerald-700 shrink-0" />
           <input
             type="text"
             autoFocus
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search businesses, advanced materials, ESG, investor reports..."
-            className="w-full text-base bg-transparent text-slate-900 placeholder:text-slate-400 focus:outline-none"
+            placeholder="Search sarees, dress materials, bridal lehengas, ThreadLinc..."
+            className="w-full text-sm sm:text-base bg-transparent text-slate-900 placeholder:text-stone-400 focus:outline-none font-light"
           />
           {query && (
             <button
               onClick={() => setQuery('')}
-              className="p-1 text-slate-400 hover:text-slate-600 rounded"
+              className="p-1 text-stone-400 hover:text-stone-600 rounded"
             >
               <X className="w-4 h-4" />
             </button>
           )}
           <button
             onClick={onClose}
-            className="text-xs font-semibold px-2 py-1 rounded bg-slate-200 text-slate-600 hover:bg-slate-300"
+            className="text-[11px] font-medium px-2.5 py-1 rounded bg-stone-200/70 text-stone-600 hover:bg-stone-300 transition-colors"
           >
             ESC
           </button>
         </div>
 
         {/* Results */}
-        <div className="max-h-96 overflow-y-auto p-4 divide-y divide-slate-100">
+        <div className="max-h-96 overflow-y-auto p-4 divide-y divide-stone-100 relative z-10 bg-white/70">
           {query.trim() === '' ? (
-            <div className="py-8 text-center text-sm text-slate-400">
-              Type keywords such as "advanced materials", "water", "reactors", "Q3 results"
+            <div className="py-10 text-center text-xs sm:text-sm text-stone-400 font-light">
+              Type search terms like "sarees", "banarasi", "surat", "jaipur", "threadlinc credit"
             </div>
           ) : results.length === 0 ? (
-            <div className="py-8 text-center text-sm text-slate-500">
-              No results found for "{query}". Try checking another term.
+            <div className="py-10 text-center text-xs sm:text-sm text-stone-500 font-light">
+              No results found for "{query}". Try checking another textile term.
             </div>
           ) : (
             results.map((res, idx) => (
@@ -132,25 +135,25 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                   onNavigate(res.path);
                   onClose();
                 }}
-                className="w-full text-left py-3 px-3 hover:bg-slate-50 rounded-lg transition-colors flex items-center justify-between group"
+                className="w-full text-left py-3 px-3 hover:bg-emerald-50/50 rounded-xl transition-all flex items-center justify-between group"
               >
                 <div className="flex items-start gap-3">
-                  <div className="mt-0.5 p-2 rounded-md bg-slate-100 text-slate-600 group-hover:bg-blue-50 group-hover:text-blue-900 transition-colors shrink-0">
+                  <div className="mt-0.5 p-2 rounded-lg bg-[#FAF8F5] text-stone-600 group-hover:bg-emerald-100/70 group-hover:text-emerald-800 transition-colors shrink-0 border border-stone-200/60 shadow-xs">
                     {res.type === 'business' && <Briefcase className="w-4 h-4" />}
                     {res.type === 'news' && <Newspaper className="w-4 h-4" />}
                     {res.type === 'report' && <FileText className="w-4 h-4" />}
                     {res.type === 'sustainability' && <Leaf className="w-4 h-4" />}
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-slate-900 group-hover:text-blue-900 transition-colors">
+                    <h4 className="text-sm font-serif font-normal text-slate-950 group-hover:text-emerald-800 transition-colors">
                       {res.title}
                     </h4>
-                    <p className="text-xs text-slate-500 line-clamp-1 mt-0.5">
+                    <p className="text-xs text-stone-500 line-clamp-1 mt-0.5 font-light">
                       {res.desc}
                     </p>
                   </div>
                 </div>
-                <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-blue-900 group-hover:translate-x-1 transition-all shrink-0 ml-4" />
+                <ArrowRight className="w-4 h-4 text-stone-300 group-hover:text-emerald-800 group-hover:translate-x-1 transition-all shrink-0 ml-4" />
               </button>
             ))
           )}
