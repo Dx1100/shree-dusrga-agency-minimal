@@ -43,7 +43,7 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
 
             <div className="pt-6">
               <button
-                onClick={() => onNavigate('/careers')}
+                onClick={() => onNavigate('/who-we-serve')}
                 className="px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] border border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white transition-colors"
               >
                 Explore Customer Segments ({careersData.jobOpenings.length})
@@ -61,7 +61,7 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
               {careersData.jobOpenings.slice(0, 3).map((job) => (
                 <div
                   key={job.id}
-                  onClick={() => onNavigate('/careers')}
+                  onClick={() => onNavigate('/who-we-serve')}
                   className="p-4 rounded-xl bg-white/90 border border-stone-200/80 shadow-xs hover:border-emerald-600/40 hover:shadow-md hover:-translate-y-1 transition-all cursor-pointer group/item"
                 >
                   <span className="text-[10px] uppercase tracking-[0.2em] text-emerald-800 font-semibold block mb-1">

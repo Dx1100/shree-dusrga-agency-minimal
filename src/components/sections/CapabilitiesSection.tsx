@@ -87,10 +87,10 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
             </p>
           </div>
           <button
-            onClick={() => onNavigate('/innovation')}
+            onClick={() => onNavigate('/our-process')}
             className="px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg shadow-[0_4px_15px_rgba(6,78,59,0.4)] transition-all whitespace-nowrap shrink-0 hover:scale-105"
           >
-            Our Sourcing Process
+            Our Process
           </button>
         </div>
       </div>

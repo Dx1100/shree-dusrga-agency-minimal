@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Tag } from 'lucide-react';
 import { SectionHeading } from '../ui/SectionHeading';
 import { ImageWithFallback } from '../ui/ImageWithFallback';
 import businessesData from '../../content/config/businesses.json';
@@ -30,7 +30,7 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
             className="mb-0"
           />
           <button
-            onClick={() => onNavigate('/businesses')}
+            onClick={() => onNavigate('/what-we-source')}
             className="hidden md:inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 hover:text-emerald-800 transition-colors pb-2 group whitespace-nowrap"
           >
             <span>{viewAllText}</span>
@@ -43,7 +43,7 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
           {businessesData.map((biz) => (
             <div
               key={biz.id}
-              onClick={() => onNavigate(`/businesses/${biz.slug}`)}
+              onClick={() => onNavigate(`/what-we-source/${biz.slug}`)}
               className="card-3d rounded-2xl p-6 sm:p-7 group cursor-pointer flex flex-col justify-between relative overflow-hidden"
             >
               {/* Subtle 3D Top Bevel Highlight */}
@@ -58,7 +58,7 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
                     fallbackTitle={biz.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-md text-[10px] font-semibold uppercase tracking-[0.2em] text-emerald-950 shadow-sm border border-stone-200/60">
+                  <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-md text-[10px] font-semibold uppercase tracking-[0.2em] text-emerald-950 shadow-sm border border-stone-200/60 font-mono">
                     {biz.category}
                   </div>
                 </div>
@@ -73,18 +73,39 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
                     {biz.summary}
                   </p>
 
+                  {/* Subcategories preview tags */}
+                  {biz.subcategories && biz.subcategories.length > 0 && (
+                    <div className="pt-2">
+                      <div className="flex flex-wrap gap-1.5">
+                        {biz.subcategories.slice(0, 4).map((sub, sIdx) => (
+                          <span
+                            key={sIdx}
+                            className="px-2 py-0.5 rounded text-[11px] font-medium bg-[#FAF8F5] text-stone-700 border border-stone-200/60"
+                          >
+                            {sub}
+                          </span>
+                        ))}
+                        {biz.subcategories.length > 4 && (
+                          <span className="px-2 py-0.5 rounded text-[10px] font-mono text-emerald-800 bg-emerald-50 border border-emerald-900/10">
+                            +{biz.subcategories.length - 4} more
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  )}
+
                   {/* Mild color highlighted provenance strip */}
                   <div className="mt-4 p-3 rounded-xl bg-[#FAF8F5] border border-stone-200/70 flex items-center justify-between text-xs text-stone-600 font-light shadow-xs">
-                    <span>{biz.metrics[0]?.label}: <strong className="font-medium text-slate-900">{biz.metrics[0]?.value}</strong></span>
+                    <span>{biz.metrics[0]?.label}: <strong className="font-medium text-slate-900 truncate max-w-[120px] inline-block align-bottom">{biz.metrics[0]?.value}</strong></span>
                     <span>·</span>
-                    <span>{biz.metrics[1]?.label}: <strong className="font-medium text-slate-900">{biz.metrics[1]?.value}</strong></span>
+                    <span>{biz.metrics[1]?.label}: <strong className="font-medium text-slate-900 truncate max-w-[120px] inline-block align-bottom">{biz.metrics[1]?.value}</strong></span>
                   </div>
                 </div>
               </div>
 
               {/* Action button styled with 3D tactile feel */}
               <div className="pt-5 mt-5 border-t border-stone-100 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 group-hover:text-emerald-800 transition-colors">
-                <span>View Category & Swatches</span>
+                <span>View Subcategories & Specs</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-emerald-800" />
               </div>
             </div>
@@ -93,7 +114,7 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
 
         <div className="mt-14 text-center md:hidden">
           <button
-            onClick={() => onNavigate('/businesses')}
+            onClick={() => onNavigate('/what-we-source')}
             className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-800"
           >
             <span>{viewAllText}</span>

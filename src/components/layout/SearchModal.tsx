@@ -28,18 +28,20 @@ export const SearchModal: React.FC<SearchModalProps> = ({
       path: string;
     }[] = [];
 
-    // Search businesses
+    // Search what we source categories & subcategories
     businessesData.forEach((biz) => {
+      const matchesSubcategory = biz.subcategories?.some((s) => s.toLowerCase().includes(q));
       if (
         biz.title.toLowerCase().includes(q) ||
         biz.summary.toLowerCase().includes(q) ||
-        biz.category.toLowerCase().includes(q)
+        biz.category.toLowerCase().includes(q) ||
+        matchesSubcategory
       ) {
         matches.push({
           type: 'business',
           title: biz.title,
-          desc: biz.summary,
-          path: `/businesses/${biz.slug}`,
+          desc: biz.sourcingSupport || biz.summary,
+          path: `/what-we-source/${biz.slug}`,
         });
       }
     });

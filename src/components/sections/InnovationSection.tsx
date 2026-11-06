@@ -81,7 +81,7 @@ export const InnovationSection: React.FC<InnovationSectionProps> = ({
 
               <div className="pt-6 mt-6 border-t border-stone-200/60 flex items-center justify-between">
                 <button
-                  onClick={() => onNavigate('/innovation')}
+                  onClick={() => onNavigate('/our-process')}
                   className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 group-hover:text-emerald-800 transition-colors"
                 >
                   <span>Process Details</span>

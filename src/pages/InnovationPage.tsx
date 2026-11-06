@@ -57,11 +57,11 @@ export const InnovationPage: React.FC<InnovationPageProps> = ({ onNavigate, onOp
       {/* Hero Header */}
       <div className="bg-[#0B132B] text-white py-20 lg:py-28 relative overflow-hidden border-b border-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-400 block mb-3">
-            Sourcing Methodology & Consulting
+          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-400 block mb-3 font-mono">
+            Sourcing Lifecycle & Methodology
           </span>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-tight max-w-3xl leading-[1.15] text-stone-100">
-            A Structured, Transparent Approach to Textile Sourcing
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal tracking-tight max-w-3xl leading-[1.15] text-stone-100">
+            Our Process
           </h1>
           <p className="mt-6 text-base sm:text-lg text-stone-300 font-light max-w-2xl leading-relaxed">
             Eliminate sourcing uncertainty. Our end-to-end consulting framework guides your procurement from initial requirement mapping to sample approval, factory audit, and secured doorstep dispatch.
@@ -69,12 +69,12 @@ export const InnovationPage: React.FC<InnovationPageProps> = ({ onNavigate, onOp
         </div>
       </div>
 
-      {/* Sourcing Pillars Showcase with 3D tactile elevation */}
+      {/* Sourcing Strategy Showcase with 3D tactile elevation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           <div className="card-3d-emerald rounded-3xl p-8 sm:p-9 relative overflow-hidden group">
             <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-emerald-600/50 to-transparent" />
-            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-800 block mb-2 px-3 py-1 bg-emerald-50 rounded-md border border-emerald-100/60 w-fit">Pillar 01</span>
+            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-800 block mb-2 px-3 py-1 bg-emerald-50 rounded-md border border-emerald-100/60 w-fit font-mono">Direct Mill Access</span>
             <h3 className="text-2xl font-serif font-normal text-slate-950 mb-3 group-hover:text-emerald-900 transition-colors">Cluster-Direct Access</h3>
             <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-6">
               Direct integration with Surat mills, Varanasi karkhanas, Jaipur block printers, and Kolkata handlooms.
@@ -84,7 +84,7 @@ export const InnovationPage: React.FC<InnovationPageProps> = ({ onNavigate, onOp
 
           <div className="card-3d-emerald rounded-3xl p-8 sm:p-9 relative overflow-hidden group">
             <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-emerald-600/50 to-transparent" />
-            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-800 block mb-2 px-3 py-1 bg-emerald-50 rounded-md border border-emerald-100/60 w-fit">Pillar 02</span>
+            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-800 block mb-2 px-3 py-1 bg-emerald-50 rounded-md border border-emerald-100/60 w-fit font-mono">Quality Assurance</span>
             <h3 className="text-2xl font-serif font-normal text-slate-950 mb-3 group-hover:text-emerald-900 transition-colors">Rigorous Quality Checks</h3>
             <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-6">
               Lot-wise checking for yarn count, weight consistency, border alignment, and colorfastness standards.
@@ -94,7 +94,7 @@ export const InnovationPage: React.FC<InnovationPageProps> = ({ onNavigate, onOp
 
           <div className="card-3d-emerald rounded-3xl p-8 sm:p-9 relative overflow-hidden group">
             <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-emerald-600/50 to-transparent" />
-            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-800 block mb-2 px-3 py-1 bg-emerald-50 rounded-md border border-emerald-100/60 w-fit">Pillar 03</span>
+            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-800 block mb-2 px-3 py-1 bg-emerald-50 rounded-md border border-emerald-100/60 w-fit font-mono">Consolidated Logistics</span>
             <h3 className="text-2xl font-serif font-normal text-slate-950 mb-3 group-hover:text-emerald-900 transition-colors">Consolidated Logistics & Credit</h3>
             <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-6">
               Multi-supplier consignment consolidation with single billing and ThreadLinc working capital financing options.

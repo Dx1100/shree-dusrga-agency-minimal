@@ -72,7 +72,7 @@ export const SustainabilitySection: React.FC<SustainabilitySectionProps> = ({
 
             <div className="pt-2">
               <button
-                onClick={() => onNavigate('/sustainability')}
+                onClick={() => onNavigate('/sourcing-ecosystem')}
                 className="inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-950 hover:text-emerald-800 transition-colors group"
               >
                 <span>{ctaText}</span>

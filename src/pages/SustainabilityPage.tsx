@@ -15,11 +15,11 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
       {/* Hero Header */}
       <div className="bg-[#0B132B] text-white py-20 lg:py-28 relative overflow-hidden border-b border-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-400 block mb-3">
-            Sourcing Hubs & Production Centres
+          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-400 block mb-3 font-mono">
+            Production Clusters & Regional Hubs
           </span>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-tight max-w-3xl leading-[1.15] text-stone-100">
-            Direct Access to India's Primary Textile Manufacturing Markets
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal tracking-tight max-w-3xl leading-[1.15] text-stone-100">
+            Our Sourcing Ecosystem
           </h1>
           <p className="mt-6 text-base sm:text-lg text-stone-300 font-light max-w-2xl leading-relaxed">
             {sustainabilityData.heroSummary}

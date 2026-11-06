@@ -1,137 +1,232 @@
 [
   {
     "id": "biz-1",
-    "slug": "sarees",
-    "title": "Sarees & Traditional Drapes",
-    "category": "Ethnic Sourcing Portfolio",
-    "summary": "Source high-demand sarees including Banarasi silks, Surat georgettes, festive drapes, daily wear prints, and designer collections directly from established weavers and manufacturers.",
-    "fullDescription": "Shree Durga Agency helps retail showrooms, boutiques, and wholesalers source diverse saree collections from premier production centres. Whether you need authentic silk weaves from Varanasi or contemporary printed and embellished sarees from Surat, we streamline supplier discovery, sampling, and order coordination.",
-    "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80",
+    "slug": "menswear",
+    "title": "Menswear",
+    "category": "Ethnic & Western Apparel",
+    "summary": "Ethnic and western apparel sourcing support connecting buyers with suitable suppliers across styles, designs, and quality preferences.",
+    "fullDescription": "Shree Durga Agency coordinates end-to-end sourcing for Menswear spanning both traditional heritage attire and everyday western wear. From hand-embellished wedding sherwanis and classic kurta-pyjama sets to precision-stitched three-piece suits, formal shirts, denim jeans, trousers, and casual lowers, we connect trade buyers with certified garment manufacturers across Delhi NCR, Ludhiana, Surat, and Ahmedabad.",
+    "sourcingSupport": "Ethnic and western apparel, connecting buyers with suitable suppliers across styles, designs, and quality preferences. We coordinate direct factory pricing, fabric verification, fit consistency, and seasonal dispatch calendars.",
+    "subcategories": [
+      "kurta-pyjama",
+      "sherwani",
+      "three-piece suits",
+      "shirts",
+      "trousers",
+      "jeans",
+      "lowers",
+      "t-shirts"
+    ],
+    "productTypes": [
+      "Festive & Wedding Kurta-Pyjama Sets",
+      "Royal Embroidered Sherwanis & Indo-Westerns",
+      "Tailored Three-Piece Formal Suits & Tuxedos",
+      "Formal & Casual Cotton Shirts",
+      "Smart Trousers & Chinos",
+      "Denim Jeans (Regular, Slim & Stretch Fits)",
+      "Casual Daily Lowers & Track Pants",
+      "Cotton & Bio-Washed T-Shirts"
+    ],
+    "image": "https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&w=1200&q=80",
     "metrics": [
-      { "label": "Key Varieties", "value": "Silk, Georgette, Cotton, Organza" },
-      { "label": "Primary Hubs", "value": "Surat, Varanasi, Kolkata" },
-      { "label": "Target Segments", "value": "Showrooms & Boutiques" }
+      { "label": "Key Varieties", "value": "Kurta-Pyjama, Sherwani, Suits, Shirts, Jeans" },
+      { "label": "Primary Hubs", "value": "Delhi NCR, Ludhiana, Surat, Ahmedabad" },
+      { "label": "Target Segments", "value": "Menswear Showrooms & Wholesalers" }
     ],
     "keyOfferings": [
-      "Banarasi Katan and semi-silk festive sarees",
-      "Surat designer georgette, chiffon, and crepe sarees",
-      "Handloom cotton and linen everyday collection sarees",
-      "Ready-to-ship bridal border and embroidered party drapes"
+      "Kurta-Pyjama & Dhoti Sets (festive cottons, dupion silk, lucknowi chikankari)",
+      "Sherwanis & Indo-Western Groom Attire (intricate zari, zardozi & threadwork)",
+      "Three-Piece Suits & Tuxedos (structured blazers, waistcoats & trousers)",
+      "Casual & Formal Shirts, Denim Jeans, Chinos, Lowers & Premium T-Shirts"
     ],
-    "certifications": ["Verified Manufacturers", "Direct Cluster Sourcing", "Pre-Dispatch Inspection"],
+    "certifications": ["Verified Garment Mills", "Size Specification Audited", "Pre-Dispatch Inspection"],
     "caseStudy": {
-      "title": "Festive Wedding Saree Procurement for Multi-Brand Retail Showroom",
-      "description": "Helped a prominent retail showroom curate a balanced mix of authentic Banarasi wedding drapes and fast-moving party-wear sarees at competitive factory prices ahead of the peak festive season.",
-      "clientType": "Ethnic Wear Retail Showroom",
-      "impact": "Curated over 40 distinct designs directly from verified Varanasi and Surat manufacturers"
+      "title": "Festive Wedding Kurta & Sherwani Sourcing for Multi-Store Retail Chain",
+      "description": "Assisted a regional menswear retail chain in curating an exclusive wedding season collection of sherwanis and silk kurta sets at direct manufacturing rates with strict stitch quality oversight.",
+      "clientType": "Menswear Retail Showroom Chain",
+      "impact": "Curated over 35 distinct ethnic styles directly from verified Delhi and Surat manufacturing workshops"
     }
   },
   {
     "id": "biz-2",
-    "slug": "suit-sets-dress-materials",
-    "title": "Suit Sets & Dress Materials",
-    "category": "Salwar Kameez & Unstitched Suits",
-    "summary": "Connect with leading manufacturers for unstitched dress materials, semi-stitched suit sets, kurti fabrics, and ready-to-wear ethnic ensembles across diverse price points.",
-    "fullDescription": "We assist clothing wholesalers and boutique owners in finding reliable suppliers for ladies suit sets. From premium Chanderi and modal silk collections to daily-wear pure cotton dress materials from Jaipur and Surat, we facilitate end-to-end sourcing with complete transparency.",
-    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1200&q=80",
+    "slug": "womenswear",
+    "title": "Womenswear",
+    "category": "Fashion & Ethnic Wear",
+    "summary": "Fashion and ethnic wear sourced around buyer preferences, current trends, and design requirements.",
+    "fullDescription": "We provide comprehensive sourcing consulting for Womenswear, bridging the gap between showroom buyers and India's finest women's fashion manufacturers. Whether your retail focus is high-ticket bridal lehengas, authentic Banarasi and Surat sarees, festive Sharara Garara sets, unstitched suit fabrics, readymade suits, daily kurtis, or contemporary co-ord sets, western wear, crop tops, and jeans, we ensure trend accuracy, fabric reliability, and verified manufacturer pricing.",
+    "sourcingSupport": "Fashion and ethnic wear sourced around buyer preferences, current trends, and design requirements. We coordinate boutique sample verifications, bridal zari checks, fabric lot tests, and festive batch deliveries.",
+    "subcategories": [
+      "unstitched suits",
+      "readymade suits",
+      "kurtis",
+      "sarees",
+      "lehengas",
+      "gowns",
+      "crop tops",
+      "jeans",
+      "co-ord sets",
+      "western wear",
+      "lowers",
+      "Sharara Garara"
+    ],
+    "productTypes": [
+      "Unstitched Suits & Dress Materials",
+      "Readymade Festive & Daily Suits",
+      "Designer & Everyday Kurtis",
+      "Sarees (Banarasi Silk, Georgette, Chiffon, Cotton)",
+      "Bridal & Festive Lehengas",
+      "Indo-Western Evening Gowns",
+      "Crop Tops & Fusion Blouses",
+      "Women's Denim Jeans & Jeggings",
+      "Matching Co-Ord Sets",
+      "Contemporary Western Wear",
+      "Lowers, Palazzos & Trousers",
+      "Traditional Sharara & Garara Ensembles"
+    ],
+    "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80",
     "metrics": [
-      { "label": "Key Varieties", "value": "Cotton, Chanderi, Modal, Silk" },
-      { "label": "Primary Hubs", "value": "Jaipur, Surat, Delhi" },
-      { "label": "Target Segments", "value": "Wholesalers & Boutiques" }
+      { "label": "Key Varieties", "value": "Sarees, Lehengas, Suits, Kurtis, Co-ords" },
+      { "label": "Primary Hubs", "value": "Surat, Varanasi, Jaipur, Delhi, Kolkata" },
+      { "label": "Target Segments", "value": "Ethnic Showrooms & Boutiques" }
     ],
     "keyOfferings": [
-      "Jaipuri block print and Sanganeri pure cotton suit sets",
-      "Embroidered semi-stitched festive and formal party suits",
-      "Chanderi and Tussar silk dress material sets with fancy dupattas",
-      "Daily-wear unstitched salwar suits with matching bottom and dupatta"
-    ],
-    "certifications": ["Quality Checked", "Factory Direct Pricing", "Sample Verification"],
-    "caseStudy": {
-      "title": "Summer Cotton Suit Sourcing for Regional Wholesale Distributor",
-      "description": "Assisted a textile distributor in identifying trusted Jaipur cotton fabric printers, ensuring fast sample approval and coordinated batch dispatches for upcoming summer retail demand.",
-      "clientType": "Regional Wholesale Distributor",
-      "impact": "Established reliable supplier connections with transparent pricing and steady dispatch schedules"
-    }
-  },
-  {
-    "id": "biz-3",
-    "slug": "lehengas-occasion-wear",
-    "title": "Lehengas & Occasion Wear",
-    "category": "Bridal & Festive Wear",
-    "summary": "Discover semi-stitched and ready lehengas, bridal silhouettes, crop top sets, and festive party wear sourced from specialist artisan workshops and manufacturing hubs.",
-    "fullDescription": "Bridal and occasion wear demands intricate craftsmanship, timely delivery, and dependable fabric quality. Shree Durga Agency guides boutique owners and bridal studios to trusted makers in Surat and Delhi, helping you procure trend-aligned collections that your customers love.",
-    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1200&q=80",
-    "metrics": [
-      { "label": "Key Varieties", "value": "Velvet, Silk, Georgette, Net" },
-      { "label": "Primary Hubs", "value": "Surat, Delhi (Chandni Chowk)" },
-      { "label": "Target Segments", "value": "Bridal Studios & Boutiques" }
-    ],
-    "keyOfferings": [
-      "Heavy zari and dori embroidered bridal lehenga sets",
-      "Lightweight pastel lehengas for sangeet and festive occasions",
-      "Designer semi-stitched skirts, blouses, and dupatta ensembles",
-      "Contemporary fusion silhouettes and crop top skirt sets"
+      "Sarees & Traditional Drapes (Banarasi Katan, Surat Georgette, Organza, Cotton)",
+      "Bridal Lehengas, Festive Sharara Garara & Indo-Western Evening Gowns",
+      "Unstitched Suit Materials & Readymade Festive Salwar Suits with Dupattas",
+      "Designer Kurtis, Fusion Co-Ord Sets, Western Wear, Crop Tops & Jeans"
     ],
     "certifications": ["Embellishment Inspection", "Direct Maker Connect", "Design Confidentiality"],
     "caseStudy": {
       "title": "Curating an Exclusive Bridal & Festive Collection for a Boutique",
-      "description": "Connected a growing bridal boutique directly with master embroidery units in Surat, enabling custom colour runs and timely fulfillment for wedding season orders.",
+      "description": "Connected a growing bridal boutique directly with master embroidery and saree weaving units in Surat and Varanasi, enabling custom color runs and timely delivery ahead of the wedding season.",
       "clientType": "Designer Fashion Boutique",
-      "impact": "Delivered tailored occasion wear designs aligned with client's exact aesthetic requirements"
+      "impact": "Delivered tailored occasion wear and saree collections aligned with client's exact aesthetic requirements"
+    }
+  },
+  {
+    "id": "biz-3",
+    "slug": "kidswear",
+    "title": "Kidswear",
+    "category": "Children’s Apparel Across Age Groups",
+    "summary": "Children’s apparel across age groups and styles, tailored to the needs of retailers and businesses.",
+    "fullDescription": "Shree Durga Agency helps apparel retailers and volume distributors source Kidswear lines that balance child-safe comfort, vibrant aesthetics, and commercial durability. From newborn and toddler essentials to festive mini-sherwanis, ethnic lehengas for girls, everyday cotton t-shirts, shorts, frocks, dungarees, and partywear, we connect you with specialized garment units in Tirupur, Kolkata, Surat, and Delhi.",
+    "sourcingSupport": "Children’s apparel across age groups and styles, tailored to the needs of retailers and businesses. We ensure soft skin-friendly fabric compliance, reliable stitching, durability, and bulk sizing consistency.",
+    "subcategories": [
+      "children’s apparel"
+    ],
+    "productTypes": [
+      "Infant & Toddler Essentials (Rompers, Sleepsuits & Sets)",
+      "Boys' Ethnic Wear (Kurta-Pyjama Sets, Waistcoats & Mini-Sherwanis)",
+      "Girls' Festive Attire (Lehengas, Frocks, Anarkalis & Gowns)",
+      "Daily Casual T-Shirts, Shorts & Track Pants",
+      "Dungarees & Denim Jeans for Kids",
+      "Partywear & Occasion Sets for All Age Groups"
+    ],
+    "image": "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1200&q=80",
+    "metrics": [
+      { "label": "Key Varieties", "value": "Ethnic Sets, Frocks, Casuals, Rompers" },
+      { "label": "Primary Hubs", "value": "Tirupur, Kolkata, Delhi, Surat" },
+      { "label": "Target Segments", "value": "Kids' Retailers & Department Stores" }
+    ],
+    "keyOfferings": [
+      "Boys' Festive Attire (kurta-pyjamas, waistcoats, dhoti sets, mini-sherwanis)",
+      "Girls' Occasion & Party Wear (anarkalis, miniature lehengas, frocks, gowns)",
+      "Infant & Toddler Essentials (soft organic cotton rompers, sets, sleepwear)",
+      "Everyday Casual Wear (t-shirts, shorts, track pants, denim jeans, dungarees)"
+    ],
+    "certifications": ["Skin-Safe Fabric Verification", "Stitch Strength Tested", "Age-Appropriate Sizing"],
+    "caseStudy": {
+      "title": "Summer Cotton Kidswear & Festive Set Sourcing for Family Department Store",
+      "description": "Guided a multi-store department chain to verified Tirupur knitwear units and Kolkata ethnic garment makers, securing hypoallergenic fabrics and consistent bulk grading.",
+      "clientType": "Regional Family Department Store",
+      "impact": "Supplied over 15,000 units across infant, toddler, and junior size runs with zero defect returns"
     }
   },
   {
     "id": "biz-4",
-    "slug": "fabrics-running-material",
-    "title": "Fabrics & Running Materials",
-    "category": "Textile Yardage & Raw Materials",
-    "summary": "Procure plain, printed, dyed, and embroidered running fabrics suitable for fashion designers, garment manufacturers, and custom tailoring boutiques.",
-    "fullDescription": "From versatile pure cottons and rayons to raw silks, brocades, organza, and embroidered yardage, we help designers and apparel businesses source running fabric lots directly from weaving and printing mills across India's premier textile corridors.",
-    "image": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1200&q=80",
+    "slug": "home-textiles",
+    "title": "Home Textiles",
+    "category": "Home Furnishing & Linen",
+    "summary": "Bedsheets, towels, and comforters sourced for diverse retail and wholesale requirements.",
+    "fullDescription": "Our home textiles sourcing desk assists department stores, hotel supply contractors, retail showrooms, and wholesale distributors in procuring premium bedding and bath essentials. We verify yarn thread counts, microfiber fills, wash-fastness, and GSM specifications across pure cotton and blended bedsheets, ultra-absorbent bath towels, and all-weather microfiber and down comforters sourced directly from Panipat, Solapur, Ahmedabad, and Jaipur manufacturing clusters.",
+    "sourcingSupport": "Bedsheets, towels, and comforters sourced for diverse retail and wholesale requirements. We verify yarn thread counts, microfiber fills, wash-fastness, and packaging specifications directly from India's primary furnishing corridors.",
+    "subcategories": [
+      "Bedsheets",
+      "towels",
+      "comforters"
+    ],
+    "productTypes": [
+      "Pure Cotton & Glace Cotton Bedsheets (Single, Queen & King Sizes)",
+      "Hotel-Grade Satin Stripe & Fitted Bed Sheets",
+      "100% Cotton Terry Bath Towels (400-600 GSM)",
+      "Hand Towels, Face Towels & Bath Mats",
+      "All-Season Microfiber Comforters & Duvets",
+      "Traditional Jaipuri Razai, Quilts & Summer Dohars"
+    ],
+    "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80",
     "metrics": [
-      { "label": "Key Varieties", "value": "Cotton, Rayon, Silk, Organza" },
-      { "label": "Primary Hubs", "value": "Surat, Panipat, Ahmedabad" },
-      { "label": "Target Segments", "value": "Designers & Apparel Makers" }
+      { "label": "Key Varieties", "value": "Bedsheets, Towels, Comforters, Quilts" },
+      { "label": "Primary Hubs", "value": "Panipat, Solapur, Ahmedabad, Jaipur" },
+      { "label": "Target Segments", "value": "Home Furnishers, Hotels & Wholesalers" }
     ],
     "keyOfferings": [
-      "Digital print fabrics in cotton, modal, viscose, and georgette",
-      "Dyed plain running fabrics and breathable cotton cambrics",
-      "All-over embroidered fabric yardage for festive and bridal apparel",
-      "Premium lining fabrics, cambric, santoon, and butter crepe"
+      "Bedsheets (pure cotton, glace cotton, satin stripe, king/queen sizes, fitted sheets)",
+      "Towels (100% cotton terry bath towels, hand towels, face towels, 400-600 GSM)",
+      "Comforters & Quilts (microfiber all-season comforters, traditional Jaipuri razai, dohars)",
+      "Bedding Ensembles (duvet covers, mattress protectors, coordinated pillow sham sets)"
     ],
-    "certifications": ["Colour Fastness Verification", "Fabric Feel Check", "Batch Uniformity"],
+    "certifications": ["Thread Count Verified", "Colour Fastness Checked", "Cluster Mill Direct"],
     "caseStudy": {
-      "title": "Bulk Fabric Sourcing for a Contemporary Apparel Label",
-      "description": "Guided a ready-made garment brand to reputable Surat digital textile printers, securing consistent fabric hand-feel, shrinkage standards, and prompt sample approvals.",
-      "clientType": "Independent Apparel Label",
-      "impact": "Streamlined fabric procurement across multiple seasonal collections with dependable supplier links"
+      "title": "Bulk Sourcing of 300 TC Bedsheets & Comforters for a Furnishing Chain",
+      "description": "Negotiated direct mill contracts in Panipat and Ahmedabad for a regional home furnishing chain, locking in consistent weave quality, reactive print fastness, and bespoke retail packaging.",
+      "clientType": "Home Furnishing Retail Chain",
+      "impact": "Reduced procurement cycle time by 3 weeks while securing transparent mill-direct pricing"
     }
   },
   {
     "id": "biz-5",
-    "slug": "traditional-textiles",
-    "title": "Traditional Textiles & Furnishings",
-    "category": "Heritage Weaves & Home Textiles",
-    "summary": "Access authentic handloom weaves, brocade dupattas, festive stoles, and Panipat home textile furnishings for diverse retail and commercial needs.",
-    "fullDescription": "India's traditional textile heritage offers unmatched variety. We assist retailers and wholesalers in sourcing authentic handloom weaves from Varanasi and Kolkata, as well as bed linens, curtains, and home furnishing fabrics from Panipat's renowned manufacturing ecosystem.",
-    "image": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1200&q=80",
+    "slug": "fabrics-fashion-accessories",
+    "title": "Fabrics & Fashion Accessories",
+    "category": "Fabrics & Lifestyle Accessories",
+    "summary": "Printed fabrics across patterns, designs, and quality options for varied textile and apparel needs, alongside curated fashion accessories and travel goods.",
+    "fullDescription": "Shree Durga Agency offers a unified sourcing channel for running yardage and complementary fashion accessories. We source screen and digital printed fabrics across multiple substrates (cotton, rayon, modal, georgette, organza) for designers and garment makers, while connecting lifestyle retailers with trusted accessory craftsmen for genuine and vegan leather wallets, belts, travel luggage, trolley suitcases, and handcrafted ladies ethnic wear bags, embroidered potlis, and bridal clutches.",
+    "sourcingSupport": "Printed fabrics across patterns, designs, and quality options for varied textile and apparel needs, alongside curated fashion accessories including leather goods, travel luggage, and ethnic bags.",
+    "subcategories": [
+      "printed fabrics",
+      "Wallets",
+      "belts",
+      "bags",
+      "suitcase",
+      "ladies ethnic wear bags"
+    ],
+    "productTypes": [
+      "Digital & Screen Printed Cotton & Rayon Fabrics",
+      "Printed Modal, Georgette, Organza & Silk Yardage",
+      "Men's & Women's Genuine & Vegan Leather Wallets",
+      "Formal Dress Belts & Casual Denim Belts",
+      "Duffel Bags, Backpacks & Travel Luggage",
+      "Hard-Shell & Soft-Shell Trolley Suitcases",
+      "Ladies Ethnic Wear Bags, Embroidered Potlis & Clutches"
+    ],
+    "image": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1200&q=80",
     "metrics": [
-      { "label": "Key Varieties", "value": "Brocade, Handloom, Linen, Cotton" },
-      { "label": "Primary Hubs", "value": "Varanasi, Kolkata, Panipat" },
-      { "label": "Target Segments", "value": "Specialty Stores & Furnishers" }
+      { "label": "Key Varieties", "value": "Printed Fabrics, Wallets, Belts, Bags, Luggage, Potlis" },
+      { "label": "Primary Hubs", "value": "Surat, Jaipur, Kanpur, Mumbai, Delhi" },
+      { "label": "Target Segments", "value": "Designers, Lifestyle Stores & Retailers" }
     ],
     "keyOfferings": [
-      "Pure and semi-silk brocade fabric pieces and borders",
-      "Traditional Banarasi and Phulkari festive dupattas",
-      "Kolkata handloom cotton tant, jamdani, and linen textiles",
-      "Panipat woven bed linens, throws, and home furnishing fabrics"
+      "Printed Fabrics (digital prints, rotary screen prints, discharge prints on cotton, rayon & silk)",
+      "Men's & Women's Wallets (genuine leather, vegan leather, cardholders & bifold wallets)",
+      "Belts (formal dress belts, casual denim belts, reversible and auto-lock buckles)",
+      "Bags & Suitcases (travel duffels, canvas backpacks, hard-shell and soft-shell trolley suitcases)",
+      "Ladies Ethnic Wear Bags (zari-embroidered potli bags, raw silk clutches, batwas, party slings)"
     ],
-    "certifications": ["Cluster Authenticity", "Handloom Verification", "Direct Artisan Links"],
+    "certifications": ["Print Fastness Tested", "Leather & Hardware Quality Checked", "Luggage Drop Tested"],
     "caseStudy": {
-      "title": "Handloom & Brocade Dupatta Line for Ethnic Retail Chain",
-      "description": "Facilitated direct manufacturer partnerships for a retail chain seeking authentic brocade and handloom dupattas to complement their festive readymade collections.",
-      "clientType": "Multi-Store Ethnic Brand",
-      "impact": "Introduced verified handloom clusters with transparent pricing and consistent craftsmanship"
+      "title": "Coordinated Sourcing of Digital Printed Cotton Yardage & Ethnic Potli Bags",
+      "description": "Supplied a festive apparel boutique with coordinated digital printed fabrics alongside bespoke handcrafted zari potli bags and matching clutches for their festive festive campaign.",
+      "clientType": "Boutique & Lifestyle Retailer",
+      "impact": "Delivered complete coordinated collection with verified fabric hand-feel and immaculate accessories craftsmanship"
     }
   }
 ]

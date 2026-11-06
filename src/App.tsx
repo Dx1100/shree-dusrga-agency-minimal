@@ -151,7 +151,7 @@ export default function App() {
       );
     }
 
-    if (currentPath === '/businesses') {
+    if (currentPath === '/what-we-source' || currentPath === '/businesses') {
       return (
         <BusinessesPage
           onNavigate={handleNavigate}
@@ -160,8 +160,8 @@ export default function App() {
       );
     }
 
-    if (currentPath.startsWith('/businesses/')) {
-      const slug = currentPath.replace('/businesses/', '');
+    if (currentPath.startsWith('/what-we-source/') || currentPath.startsWith('/businesses/')) {
+      const slug = currentPath.replace('/what-we-source/', '').replace('/businesses/', '');
       return (
         <BusinessDetailPage
           slug={slug}
@@ -171,7 +171,7 @@ export default function App() {
       );
     }
 
-    if (currentPath === '/innovation') {
+    if (currentPath === '/our-process' || currentPath === '/innovation') {
       return (
         <InnovationPage
           onNavigate={handleNavigate}
@@ -180,7 +180,7 @@ export default function App() {
       );
     }
 
-    if (currentPath === '/sustainability') {
+    if (currentPath === '/sourcing-ecosystem' || currentPath === '/sustainability') {
       return (
         <SustainabilityPage
           onNavigate={handleNavigate}
@@ -198,7 +198,7 @@ export default function App() {
       );
     }
 
-    if (currentPath === '/investors') {
+    if (currentPath === '/capital-support' || currentPath === '/investors') {
       return (
         <InvestorRelationsPage
           onNavigate={handleNavigate}
@@ -211,7 +211,7 @@ export default function App() {
       return <NewsroomPage onOpenArticle={handleOpenArticle} />;
     }
 
-    if (currentPath === '/careers') {
+    if (currentPath === '/who-we-serve' || currentPath === '/careers') {
       return (
         <CareersPage
           onApplyJob={(job) => setSelectedJob(job)}

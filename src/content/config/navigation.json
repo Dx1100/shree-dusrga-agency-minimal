@@ -22,60 +22,60 @@
     ]
   },
   {
-    "id": "businesses",
-    "label": "Businesses",
-    "path": "/businesses",
+    "id": "what-we-source",
+    "label": "What We Source",
+    "path": "/what-we-source",
     "dropdown": [
       {
-        "title": "Sarees",
-        "description": "Banarasi silk, georgette, chiffon, cotton, and party-wear saree collections.",
-        "path": "/businesses/sarees"
+        "title": "Menswear",
+        "description": "Kurta-pyjama, sherwani, three-piece suits, shirts, trousers, jeans, lowers, t-shirts.",
+        "path": "/what-we-source/menswear"
       },
       {
-        "title": "Suit Sets & Dress Materials",
-        "description": "Cotton, chanderi, georgette, unstitched and semi-stitched ethnic sets.",
-        "path": "/businesses/suit-sets-dress-materials"
+        "title": "Womenswear",
+        "description": "Suits, kurtis, sarees, lehengas, gowns, crop tops, jeans, co-ord sets, western wear, lowers, sharara garara.",
+        "path": "/what-we-source/womenswear"
       },
       {
-        "title": "Lehengas & Occasion Wear",
-        "description": "Bridal lehengas, festive collections, and semi-stitched occasion wear.",
-        "path": "/businesses/lehengas-occasion-wear"
+        "title": "Kidswear",
+        "description": "Children's apparel across age groups, festive ethnic sets, daily casuals, and infants.",
+        "path": "/what-we-source/kidswear"
       },
       {
-        "title": "Fabrics & Running Material",
-        "description": "Printed, dyed, embroidered, raw silk, and boutique running materials.",
-        "path": "/businesses/fabrics-running-material"
+        "title": "Home Textiles",
+        "description": "Bedsheets, towels, comforters, quilts, and diverse home furnishing linens.",
+        "path": "/what-we-source/home-textiles"
       },
       {
-        "title": "Traditional Textiles & Brocades",
-        "description": "Authentic jacquard, brocades, dupattas, and heritage handloom weaves.",
-        "path": "/businesses/traditional-textiles"
+        "title": "Fabrics & Fashion Accessories",
+        "description": "Printed fabrics, wallets, belts, bags, suitcases, and ladies ethnic wear bags.",
+        "path": "/what-we-source/fabrics-fashion-accessories"
       }
     ]
   },
   {
-    "id": "innovation",
-    "label": "Innovation",
-    "path": "/innovation"
+    "id": "our-process",
+    "label": "Our Process",
+    "path": "/our-process"
   },
   {
-    "id": "sustainability",
-    "label": "Sustainability",
-    "path": "/sustainability"
+    "id": "sourcing-ecosystem",
+    "label": "Our Sourcing Ecosystem",
+    "path": "/sourcing-ecosystem"
   },
   {
-    "id": "investors",
-    "label": "Investors",
-    "path": "/investors"
+    "id": "capital-support",
+    "label": "Capital Support",
+    "path": "/capital-support"
+  },
+  {
+    "id": "who-we-serve",
+    "label": "Who We Serve",
+    "path": "/who-we-serve"
   },
   {
     "id": "newsroom",
     "label": "Media",
     "path": "/newsroom"
-  },
-  {
-    "id": "careers",
-    "label": "Careers",
-    "path": "/careers"
   }
 ]

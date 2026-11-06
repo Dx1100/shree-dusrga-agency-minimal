@@ -22,13 +22,16 @@ export const CareersPage: React.FC<CareersPageProps> = ({ onApplyJob }) => {
       {/* Hero Header */}
       <div className="bg-[#0B132B] text-white py-20 lg:py-28 relative overflow-hidden border-b border-stone-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-400 block mb-3">
-            Who We Serve & Partnerships
+          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-400 block mb-3 font-mono">
+            Customer Segments & Trade Partnerships
           </span>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-tight max-w-3xl leading-[1.15] text-stone-100">
-            {careersData.heading}
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal tracking-tight max-w-3xl leading-[1.15] text-stone-100">
+            Who We Serve
           </h1>
-          <p className="mt-6 text-base sm:text-lg text-stone-300 font-light max-w-2xl leading-relaxed">
+          <p className="mt-4 text-emerald-300 font-serif text-lg sm:text-xl font-normal">
+            {careersData.heading}
+          </p>
+          <p className="mt-4 text-base sm:text-lg text-stone-300 font-light max-w-2xl leading-relaxed">
             {careersData.description}
           </p>
         </div>

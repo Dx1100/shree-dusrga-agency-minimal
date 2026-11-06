@@ -32,10 +32,10 @@ export const InvestorSection: React.FC<InvestorSectionProps> = ({
             className="mb-0"
           />
           <button
-            onClick={() => onNavigate('/investors')}
+            onClick={() => onNavigate('/capital-support')}
             className="hidden md:inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 hover:text-emerald-800 transition-colors pb-2 group whitespace-nowrap"
           >
-            <span>ThreadLinc Overview</span>
+            <span>Capital Support Overview</span>
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
@@ -99,7 +99,7 @@ export const InvestorSection: React.FC<InvestorSectionProps> = ({
                 Transparent credit facilitation for verified retail and wholesale buyers.
               </span>
               <button
-                onClick={() => onNavigate('/investors')}
+                onClick={() => onNavigate('/capital-support')}
                 className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 hover:text-emerald-800 inline-flex items-center gap-1.5 transition-colors"
               >
                 <span>Financing Details</span>
@@ -150,10 +150,10 @@ export const InvestorSection: React.FC<InvestorSectionProps> = ({
 
             <div className="pt-6 mt-6 border-t border-stone-200/60">
               <button
-                onClick={() => onNavigate('/investors')}
+                onClick={() => onNavigate('/capital-support')}
                 className="w-full py-3.5 px-4 text-xs font-semibold uppercase tracking-[0.16em] bg-emerald-700 hover:bg-emerald-600 text-white rounded-xl shadow-xs transition-colors text-center"
               >
-                Explore ThreadLinc Financing Options
+                Explore Capital Support & ThreadLinc Options
               </button>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Search, Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import navigationData from '../../content/config/navigation.json';
 import { NavigationLink } from '../../types/content';
@@ -193,9 +194,9 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
       </div>
 
-      {/* Mobile Drawer Menu */}
-      {isMobileMenuOpen && (
-        <div className="xl:hidden fixed inset-0 z-50 animate-fade-in">
+      {/* Mobile Drawer Menu rendered via createPortal directly into document.body */}
+      {isMobileMenuOpen && typeof document !== 'undefined' && createPortal(
+        <div className="fixed inset-0 z-[9999] xl:hidden flex justify-end animate-fade-in" role="dialog" aria-modal="true">
           {/* Backdrop Overlay */}
           <div
             className="fixed inset-0 bg-slate-950/70 backdrop-blur-sm transition-opacity"
@@ -204,7 +205,7 @@ export const Header: React.FC<HeaderProps> = ({
           />
 
           {/* Full-Height Drawer Box */}
-          <div className="relative w-full max-w-sm ml-auto bg-white h-full max-h-[100dvh] shadow-2xl flex flex-col z-10 overflow-hidden">
+          <div className="relative w-full max-w-sm bg-white h-screen max-h-[100dvh] shadow-2xl flex flex-col z-10 overflow-hidden">
             {/* Drawer Top Header */}
             <div className="p-5 border-b border-stone-200/80 bg-[#FAF8F5] flex items-center justify-between shrink-0">
               <div>
@@ -241,8 +242,8 @@ export const Header: React.FC<HeaderProps> = ({
                       <div className="flex items-center justify-between">
                         <button
                           onClick={() => {
-                            onNavigate(link.path);
                             setIsMobileMenuOpen(false);
+                            onNavigate(link.path);
                           }}
                           className={`font-serif text-base tracking-wide text-left font-normal transition-colors ${
                             isActive ? 'text-emerald-900 font-semibold' : 'text-slate-900 hover:text-emerald-800'
@@ -271,8 +272,8 @@ export const Header: React.FC<HeaderProps> = ({
                             <button
                               key={sIdx}
                               onClick={() => {
-                                onNavigate(sub.path);
                                 setIsMobileMenuOpen(false);
+                                onNavigate(sub.path);
                               }}
                               className="block text-left text-xs text-stone-700 hover:text-emerald-800 py-1.5 font-light transition-colors w-full"
                             >
@@ -304,7 +305,8 @@ export const Header: React.FC<HeaderProps> = ({
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </header>
   );

@@ -44,10 +44,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
           </div>
           <div className="flex items-center gap-4 text-slate-400 text-xs">
             <button
-              onClick={() => onNavigate('/investors')}
+              onClick={() => onNavigate('/capital-support')}
               className="hover:text-white transition-colors flex items-center gap-1 font-medium uppercase tracking-wider"
             >
-              <span>ThreadLinc Financing</span>
+              <span>Capital Support (ThreadLinc)</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
             <span className="hidden sm:inline">·</span>
@@ -88,42 +88,42 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
             <ul className="space-y-2.5 text-xs text-slate-400">
               <li>
                 <button
-                  onClick={() => onNavigate('/businesses/sarees')}
+                  onClick={() => onNavigate('/what-we-source/menswear')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Sarees (Silk, Chiffon, Georgette)
+                  Menswear (Sherwani, Kurta, Suits)
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('/businesses/suit-sets-dress-materials')}
+                  onClick={() => onNavigate('/what-we-source/womenswear')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Suit Sets & Dress Materials
+                  Womenswear (Sarees, Suits, Lehengas)
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('/businesses/lehengas-occasion-wear')}
+                  onClick={() => onNavigate('/what-we-source/kidswear')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Lehengas & Occasion Wear
+                  Kidswear (Children's Apparel)
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('/businesses/fabrics-running-material')}
+                  onClick={() => onNavigate('/what-we-source/home-textiles')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Fabrics & Running Material
+                  Home Textiles (Bedsheets, Towels)
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('/businesses/traditional-textiles')}
+                  onClick={() => onNavigate('/what-we-source/fabrics-fashion-accessories')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Traditional Brocades & Handlooms
+                  Fabrics & Fashion Accessories
                 </button>
               </li>
             </ul>
@@ -145,18 +145,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('/innovation')}
+                  onClick={() => onNavigate('/our-process')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Sourcing Methodology
+                  Our Process
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('/sustainability')}
+                  onClick={() => onNavigate('/sourcing-ecosystem')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Sourcing Hubs & Markets
+                  Our Sourcing Ecosystem
                 </button>
               </li>
               <li>
@@ -169,15 +169,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('/investors')}
+                  onClick={() => onNavigate('/capital-support')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  ThreadLinc Financing
+                  Capital Support
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('/careers')}
+                  onClick={() => onNavigate('/who-we-serve')}
                   className="hover:text-white transition-colors text-left"
                 >
                   Who We Serve
@@ -260,7 +260,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
             <button onClick={() => onNavigate('/about')} className="hover:text-slate-400 transition-colors">
               Terms of Engagement
             </button>
-            <button onClick={() => onNavigate('/investors')} className="hover:text-slate-400 transition-colors">
+            <button onClick={() => onNavigate('/capital-support')} className="hover:text-slate-400 transition-colors">
               Trade Credit Terms
             </button>
             <button onClick={() => onNavigate('/contact')} className="hover:text-slate-400 transition-colors">

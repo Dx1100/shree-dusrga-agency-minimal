@@ -30,6 +30,9 @@ export interface BusinessItem {
   summary: string;
   fullDescription: string;
   image: string;
+  subcategories: string[];
+  sourcingSupport: string;
+  productTypes: string[];
   metrics: { label: string; value: string }[];
   keyOfferings: string[];
   certifications: string[];
