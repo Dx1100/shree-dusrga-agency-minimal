@@ -227,7 +227,15 @@ export const HomePage: React.FC<HomePageProps> = ({
 
   return (
     <div className="flex flex-col">
-      {config.sectionsOrder.map((sectionKey) => renderSection(sectionKey))}
+      {config.sectionsOrder.map((sectionKey) => {
+        const content = renderSection(sectionKey);
+        if (!content) return null;
+        return (
+          <div key={sectionKey} id={`section-${sectionKey}`} className="relative transition-all">
+            {content}
+          </div>
+        );
+      })}
     </div>
   );
 };
