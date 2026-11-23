@@ -8,7 +8,6 @@
     "testimonials",
     "capabilities",
     "sustainability",
-    "newsroom",
     "careers",
     "contactCta"
   ],
@@ -196,7 +195,7 @@
       "subheading": "Manage bulk inventory purchases and seasonal stock procurement smoothly with ThreadLinc financing support."
     },
     "newsroom": {
-      "enabled": true,
+      "enabled": false,
       "kicker": "Market Updates",
       "heading": "Textile Market Insights & Seasonal Buying Guides",
       "subheading": "Practical market advisories on seasonal arrivals, upcoming collection trends, and procurement tips."
