@@ -55,7 +55,7 @@ export const InnovationPage: React.FC<InnovationPageProps> = ({ onNavigate, onOp
   return (
     <div className="pt-20 pb-24 bg-[#F5F0E6]">
       {/* Hero Header */}
-      <div className="bg-[#173D35] text-[#F5F0E6] py-20 lg:py-28 relative overflow-hidden border-b border-[#F5F0E6]/10">
+      <div className="bg-[#173D35] text-[#F5F0E6] py-14 sm:py-18 relative overflow-hidden border-b border-[#F5F0E6]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex items-center gap-3 mb-4">
             <span className="h-[2px] w-7 bg-[#D97845]" />
@@ -74,7 +74,7 @@ export const InnovationPage: React.FC<InnovationPageProps> = ({ onNavigate, onOp
 
       {/* Sourcing Strategy Showcase */}
       <div className="bg-white border-b border-[#173D35]/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card-3d-emerald rounded-3xl p-8 sm:p-9 relative overflow-hidden group">
               <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845]/70 to-transparent" />

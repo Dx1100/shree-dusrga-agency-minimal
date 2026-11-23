@@ -41,7 +41,7 @@ export const CustomersMarqueeSection: React.FC<CustomersMarqueeSectionProps> = (
   const reversedList = [...customers.slice().reverse(), ...customers.slice().reverse()];
 
   return (
-    <section className="py-16 sm:py-20 bg-[#F5F0E6] border-b border-[#173D35]/10 relative overflow-hidden">
+    <section className="py-10 sm:py-14 bg-[#F5F0E6] border-b border-[#173D35]/10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-10 sm:mb-12 relative z-10">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#D97845]/30 text-[#D97845] text-[11px] font-semibold uppercase tracking-[0.2em] mb-3.5">
           <Sparkles className="w-3.5 h-3.5 text-[#D97845]" />

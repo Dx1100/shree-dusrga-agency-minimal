@@ -20,7 +20,7 @@ export const ContactCTASection: React.FC<ContactCTASectionProps> = ({
   onOpenInquiry,
 }) => {
   return (
-    <section className="py-28 sm:py-36 bg-[#173D35] text-[#F5F0E6] relative overflow-hidden">
+    <section className="py-14 sm:py-20 bg-[#173D35] text-[#F5F0E6] relative overflow-hidden">
       {/* Warm ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#D97845]/10 rounded-full blur-3xl pointer-events-none" />
 

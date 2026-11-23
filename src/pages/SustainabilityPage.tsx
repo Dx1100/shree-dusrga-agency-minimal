@@ -13,7 +13,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
   return (
     <div className="pt-20 pb-24 bg-[#F5F0E6]">
       {/* Hero Header */}
-      <div className="bg-[#173D35] text-[#F5F0E6] py-20 lg:py-28 relative overflow-hidden border-b border-[#F5F0E6]/10">
+      <div className="bg-[#173D35] text-[#F5F0E6] py-14 sm:py-18 relative overflow-hidden border-b border-[#F5F0E6]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex items-center gap-3 mb-4">
             <span className="h-[2px] w-7 bg-[#D97845]" />
@@ -32,7 +32,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
 
       {/* Sourcing Hubs Highlight */}
       <div className="bg-white border-b border-[#173D35]/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <div className="p-8 sm:p-12 rounded-3xl bg-[#173D35] text-[#F5F0E6] border border-[#173D35] shadow-xl relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent" />
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">

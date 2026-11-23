@@ -24,7 +24,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
   const icons = [Layers, ShieldCheck, CheckCircle2, Globe2];
 
   return (
-    <section className="py-28 sm:py-36 bg-[#173D35] text-[#F5F0E6] relative overflow-hidden">
+    <section className="py-14 sm:py-20 bg-[#173D35] text-[#F5F0E6] relative overflow-hidden">
       {/* Subtle warm radial glow */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#D97845]/10 rounded-full blur-3xl pointer-events-none" />
 

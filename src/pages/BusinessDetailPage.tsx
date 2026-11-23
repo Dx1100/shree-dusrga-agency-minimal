@@ -19,7 +19,7 @@ export const BusinessDetailPage: React.FC<BusinessDetailPageProps> = ({
   return (
     <div className="pt-20 pb-24 bg-[#F5F0E6]">
       {/* Top Breadcrumb Header */}
-      <div className="bg-[#173D35] text-[#F5F0E6] py-16 lg:py-24 relative overflow-hidden border-b border-[#F5F0E6]/10">
+      <div className="bg-[#173D35] text-[#F5F0E6] py-12 sm:py-16 relative overflow-hidden border-b border-[#F5F0E6]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <button
             onClick={() => onNavigate('/what-we-source')}
@@ -42,7 +42,7 @@ export const BusinessDetailPage: React.FC<BusinessDetailPageProps> = ({
       </div>
 
       {/* Main Body */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Main Column */}
           <div className="lg:col-span-8 space-y-10">

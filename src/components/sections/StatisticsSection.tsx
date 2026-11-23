@@ -14,7 +14,7 @@ export const StatisticsSection: React.FC<StatisticsSectionProps> = ({
   items,
 }) => {
   return (
-    <section className="py-20 sm:py-24 bg-white border-b border-[#173D35]/10">
+    <section className="py-12 sm:py-16 bg-white border-b border-[#173D35]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 sm:mb-16 max-w-3xl">
           <div className="flex items-center gap-2.5 mb-3.5">

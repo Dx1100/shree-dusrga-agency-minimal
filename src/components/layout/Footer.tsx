@@ -228,7 +228,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
               </a>
               <span>·</span>
               <a
-                href={siteConfig.social.twitter}
+                href="https://wa.me/?text=Hello%20Shree%20Durga%20Agency,%20I%20am%20interested%20in%20textile%20sourcing"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-[#E89A6F] transition-colors font-medium"
