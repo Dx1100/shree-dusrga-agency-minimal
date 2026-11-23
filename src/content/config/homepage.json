@@ -7,8 +7,6 @@
     "businesses",
     "capabilities",
     "sustainability",
-    "csr",
-    "investors",
     "newsroom",
     "careers",
     "testimonials",
@@ -184,7 +182,7 @@
       ]
     },
     "csr": {
-      "enabled": true,
+      "enabled": false,
       "kicker": "Artisan & Cluster Support",
       "heading": "Championing Indian Textile Craftsmanship",
       "description": "Promoting fair trade practices, transparent pricing, and sustainable livelihoods by linking buyers directly to regional handloom weaving clusters.",
@@ -192,7 +190,7 @@
       "impactLabel": "Fostering transparent trade across traditional weaving and manufacturing clusters"
     },
     "investors": {
-      "enabled": true,
+      "enabled": false,
       "kicker": "Capital Support",
       "heading": "Working Capital Solutions for Textile Businesses",
       "subheading": "Manage bulk inventory purchases and seasonal stock procurement smoothly with ThreadLinc financing support."
