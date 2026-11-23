@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Tag } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { SectionHeading } from '../ui/SectionHeading';
 import { ImageWithFallback } from '../ui/ImageWithFallback';
 import businessesData from '../../content/config/businesses.json';
@@ -12,6 +12,33 @@ interface BusinessShowcaseSectionProps {
   onNavigate: (path: string) => void;
 }
 
+const categoryMeta: Record<
+  string,
+  { badge: string; displayTitle?: string; subtitle: string }
+> = {
+  menswear: {
+    badge: '01 / Apparel',
+    subtitle: 'Sherwanis · Kurtas · Suits · Denim',
+  },
+  womenswear: {
+    badge: '02 / Ethnic & Western',
+    subtitle: 'Sarees · Lehengas · Suits · Kurtis',
+  },
+  kidswear: {
+    badge: '03 / Childrenswear',
+    subtitle: 'Ethnic Sets · Frocks · Daily Casuals',
+  },
+  'home-textiles': {
+    badge: '04 / Furnishing',
+    subtitle: 'Bedsheets · Towels · Comforters',
+  },
+  'fabrics-fashion-accessories': {
+    badge: '05 / Yardage & Goods',
+    displayTitle: 'Fabrics & Accessories',
+    subtitle: 'Prints · Wallets · Belts · Luggage',
+  },
+};
+
 export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = ({
   kicker,
   heading,
@@ -20,9 +47,10 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
   onNavigate,
 }) => {
   return (
-    <section className="py-24 sm:py-32 bg-[#F5F0E6] border-b border-[#173D35]/10">
+    <section className="py-14 sm:py-18 bg-[#F5F0E6] border-b border-[#173D35]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-20">
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10">
           <SectionHeading
             kicker={kicker}
             heading={heading}
@@ -31,88 +59,68 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
           />
           <button
             onClick={() => onNavigate('/what-we-source')}
-            className="hidden md:inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#173D35] hover:text-[#D97845] transition-colors pb-2 group whitespace-nowrap"
+            className="hidden md:inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#173D35] hover:text-[#D97845] transition-colors pb-1 group whitespace-nowrap shrink-0 border-b border-transparent hover:border-[#D97845]"
           >
             <span>{viewAllText}</span>
             <ArrowRight className="w-3.5 h-3.5 text-[#D97845] group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
 
-        {/* 3D Highlighted Editorial Business Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
-          {businessesData.map((biz) => (
-            <div
-              key={biz.id}
-              onClick={() => onNavigate(`/what-we-source/${biz.slug}`)}
-              className="card-3d rounded-2xl p-6 sm:p-7 group cursor-pointer flex flex-col justify-between relative overflow-hidden"
-            >
-              {/* Subtle 3D Top Bevel Highlight */}
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/70 to-transparent" />
+        {/* 5-Column Luxury Editorial Square Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 sm:gap-4 lg:gap-5">
+          {businessesData.map((biz) => {
+            const meta = categoryMeta[biz.slug] || {
+              badge: biz.category,
+              subtitle: biz.metrics[0]?.value || '',
+            };
+            const title = meta.displayTitle || biz.title;
 
-              <div>
-                {/* Image Container */}
-                <div className="relative aspect-[16/11] overflow-hidden rounded-xl bg-[#F5F0E6] mb-6 border border-[#173D35]/10 shadow-[0_4px_12px_rgba(23,61,53,0.06)]">
-                  <ImageWithFallback
-                    src={biz.image}
-                    alt={biz.title}
-                    fallbackTitle={biz.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                  />
-                  <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-md text-[10px] font-semibold uppercase tracking-[0.18em] text-[#173D35] shadow-sm border border-[#173D35]/10">
-                    {biz.category}
-                  </div>
+            return (
+              <div
+                key={biz.id}
+                onClick={() => onNavigate(`/what-we-source/${biz.slug}`)}
+                className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-xs hover:shadow-xl transition-all duration-500 bg-[#173D35] flex flex-col justify-between p-4 sm:p-5 last:col-span-2 sm:last:col-span-1 lg:last:col-span-1 border border-[#173D35]/10"
+              >
+                {/* Full-Bleed Background Image with Micro Zoom */}
+                <ImageWithFallback
+                  src={biz.image}
+                  alt={biz.title}
+                  fallbackTitle={biz.title}
+                  className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
+                />
+
+                {/* Deep Forest Scrim Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#102B25] via-[#102B25]/50 to-black/25 group-hover:via-[#102B25]/60 transition-colors duration-500" />
+
+                {/* Terracotta Top Accent Glow */}
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                {/* Top Badge & Corner Micro Action */}
+                <div className="relative z-10 flex items-center justify-between">
+                  <span className="px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.18em] bg-black/45 backdrop-blur-md text-[#F5F0E6] border border-white/10">
+                    {meta.badge}
+                  </span>
+                  <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white/75 group-hover:text-white group-hover:bg-[#D97845] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300">
+                    <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                  </span>
                 </div>
 
-                {/* Content */}
-                <div className="space-y-3">
-                  <h3 className="font-serif text-2xl font-normal text-[#173D35] tracking-tight leading-snug group-hover:text-[#D97845] transition-colors break-normal">
-                    {biz.title}
+                {/* Bottom Content: Title & Curated 1-Line Items */}
+                <div className="relative z-10 space-y-1">
+                  <h3 className="font-serif text-lg sm:text-xl lg:text-xl text-white font-normal tracking-wide group-hover:text-[#E89A6F] transition-colors leading-snug">
+                    {title}
                   </h3>
-
-                  <p className="text-xs sm:text-sm text-[#173D35]/75 font-normal leading-relaxed break-normal">
-                    {biz.summary}
+                  <p className="text-[11px] sm:text-xs text-[#F5F0E6]/75 font-normal line-clamp-1 leading-normal">
+                    {meta.subtitle}
                   </p>
-
-                  {/* Subcategories preview tags */}
-                  {biz.subcategories && biz.subcategories.length > 0 && (
-                    <div className="pt-2">
-                      <div className="flex flex-wrap gap-1.5">
-                        {biz.subcategories.slice(0, 4).map((sub, sIdx) => (
-                          <span
-                            key={sIdx}
-                            className="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#F5F0E6] text-[#173D35] border border-[#173D35]/10"
-                          >
-                            {sub}
-                          </span>
-                        ))}
-                        {biz.subcategories.length > 4 && (
-                          <span className="px-2.5 py-0.5 rounded text-[11px] font-semibold text-[#D97845] bg-[#D97845]/10 border border-[#D97845]/20">
-                            +{biz.subcategories.length - 4} more
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Highlighted provenance strip */}
-                  <div className="mt-4 p-3 rounded-xl bg-[#F5F0E6]/75 border border-[#173D35]/10 flex items-center justify-between text-xs text-[#173D35]/75 font-normal">
-                    <span>{biz.metrics[0]?.label}: <strong className="font-semibold text-[#173D35] truncate max-w-[120px] inline-block align-bottom">{biz.metrics[0]?.value}</strong></span>
-                    <span className="text-[#D97845]">·</span>
-                    <span>{biz.metrics[1]?.label}: <strong className="font-semibold text-[#173D35] truncate max-w-[120px] inline-block align-bottom">{biz.metrics[1]?.value}</strong></span>
-                  </div>
                 </div>
               </div>
-
-              {/* Action row */}
-              <div className="pt-5 mt-5 border-t border-[#173D35]/10 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.16em] text-[#173D35] group-hover:text-[#D97845] transition-colors">
-                <span>View Subcategories & Specs</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-[#D97845]" />
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
-        <div className="mt-14 text-center md:hidden">
+        {/* Mobile View All Link */}
+        <div className="mt-8 text-center md:hidden">
           <button
             onClick={() => onNavigate('/what-we-source')}
             className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#D97845]"
