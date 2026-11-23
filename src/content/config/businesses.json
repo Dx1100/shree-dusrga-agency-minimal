@@ -27,11 +27,20 @@
       "Casual Daily Lowers & Track Pants",
       "Cotton & Bio-Washed T-Shirts"
     ],
-    "image": "https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&w=1200&q=80",
+    "image": "/images/categories/category_menswear.jpg",
     "metrics": [
-      { "label": "Key Varieties", "value": "Kurta-Pyjama, Sherwani, Suits, Shirts, Jeans" },
-      { "label": "Primary Hubs", "value": "Delhi NCR, Ludhiana, Surat, Ahmedabad" },
-      { "label": "Target Segments", "value": "Menswear Showrooms & Wholesalers" }
+      {
+        "label": "Key Varieties",
+        "value": "Kurta-Pyjama, Sherwani, Suits, Shirts, Jeans"
+      },
+      {
+        "label": "Primary Hubs",
+        "value": "Delhi NCR, Ludhiana, Surat, Ahmedabad"
+      },
+      {
+        "label": "Target Segments",
+        "value": "Menswear Showrooms & Wholesalers"
+      }
     ],
     "keyOfferings": [
       "Kurta-Pyjama & Dhoti Sets (festive cottons, dupion silk, lucknowi chikankari)",
@@ -39,7 +48,11 @@
       "Three-Piece Suits & Tuxedos (structured blazers, waistcoats & trousers)",
       "Casual & Formal Shirts, Denim Jeans, Chinos, Lowers & Premium T-Shirts"
     ],
-    "certifications": ["Verified Garment Mills", "Size Specification Audited", "Pre-Dispatch Inspection"],
+    "certifications": [
+      "Verified Garment Mills",
+      "Size Specification Audited",
+      "Pre-Dispatch Inspection"
+    ],
     "caseStudy": {
       "title": "Festive Wedding Kurta & Sherwani Sourcing for Multi-Store Retail Chain",
       "description": "Assisted a regional menswear retail chain in curating an exclusive wedding season collection of sherwanis and silk kurta sets at direct manufacturing rates with strict stitch quality oversight.",
@@ -83,11 +96,20 @@
       "Lowers, Palazzos & Trousers",
       "Traditional Sharara & Garara Ensembles"
     ],
-    "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80",
+    "image": "/images/categories/category_womenswear.jpg",
     "metrics": [
-      { "label": "Key Varieties", "value": "Sarees, Lehengas, Suits, Kurtis, Co-ords" },
-      { "label": "Primary Hubs", "value": "Surat, Varanasi, Jaipur, Delhi, Kolkata" },
-      { "label": "Target Segments", "value": "Ethnic Showrooms & Boutiques" }
+      {
+        "label": "Key Varieties",
+        "value": "Sarees, Lehengas, Suits, Kurtis, Co-ords"
+      },
+      {
+        "label": "Primary Hubs",
+        "value": "Surat, Varanasi, Jaipur, Delhi, Kolkata"
+      },
+      {
+        "label": "Target Segments",
+        "value": "Ethnic Showrooms & Boutiques"
+      }
     ],
     "keyOfferings": [
       "Sarees & Traditional Drapes (Banarasi Katan, Surat Georgette, Organza, Cotton)",
@@ -95,7 +117,11 @@
       "Unstitched Suit Materials & Readymade Festive Salwar Suits with Dupattas",
       "Designer Kurtis, Fusion Co-Ord Sets, Western Wear, Crop Tops & Jeans"
     ],
-    "certifications": ["Embellishment Inspection", "Direct Maker Connect", "Design Confidentiality"],
+    "certifications": [
+      "Embellishment Inspection",
+      "Direct Maker Connect",
+      "Design Confidentiality"
+    ],
     "caseStudy": {
       "title": "Curating an Exclusive Bridal & Festive Collection for a Boutique",
       "description": "Connected a growing bridal boutique directly with master embroidery and saree weaving units in Surat and Varanasi, enabling custom color runs and timely delivery ahead of the wedding season.",
@@ -122,11 +148,20 @@
       "Dungarees & Denim Jeans for Kids",
       "Partywear & Occasion Sets for All Age Groups"
     ],
-    "image": "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=1200&q=80",
+    "image": "/images/categories/category_kidswear.jpg",
     "metrics": [
-      { "label": "Key Varieties", "value": "Ethnic Sets, Frocks, Casuals, Rompers" },
-      { "label": "Primary Hubs", "value": "Tirupur, Kolkata, Delhi, Surat" },
-      { "label": "Target Segments", "value": "Kids' Retailers & Department Stores" }
+      {
+        "label": "Key Varieties",
+        "value": "Ethnic Sets, Frocks, Casuals, Rompers"
+      },
+      {
+        "label": "Primary Hubs",
+        "value": "Tirupur, Kolkata, Delhi, Surat"
+      },
+      {
+        "label": "Target Segments",
+        "value": "Kids' Retailers & Department Stores"
+      }
     ],
     "keyOfferings": [
       "Boys' Festive Attire (kurta-pyjamas, waistcoats, dhoti sets, mini-sherwanis)",
@@ -134,7 +169,11 @@
       "Infant & Toddler Essentials (soft organic cotton rompers, sets, sleepwear)",
       "Everyday Casual Wear (t-shirts, shorts, track pants, denim jeans, dungarees)"
     ],
-    "certifications": ["Skin-Safe Fabric Verification", "Stitch Strength Tested", "Age-Appropriate Sizing"],
+    "certifications": [
+      "Skin-Safe Fabric Verification",
+      "Stitch Strength Tested",
+      "Age-Appropriate Sizing"
+    ],
     "caseStudy": {
       "title": "Summer Cotton Kidswear & Festive Set Sourcing for Family Department Store",
       "description": "Guided a multi-store department chain to verified Tirupur knitwear units and Kolkata ethnic garment makers, securing hypoallergenic fabrics and consistent bulk grading.",
@@ -163,11 +202,20 @@
       "All-Season Microfiber Comforters & Duvets",
       "Traditional Jaipuri Razai, Quilts & Summer Dohars"
     ],
-    "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80",
+    "image": "/images/categories/category_hometextiles.jpg",
     "metrics": [
-      { "label": "Key Varieties", "value": "Bedsheets, Towels, Comforters, Quilts" },
-      { "label": "Primary Hubs", "value": "Panipat, Solapur, Ahmedabad, Jaipur" },
-      { "label": "Target Segments", "value": "Home Furnishers, Hotels & Wholesalers" }
+      {
+        "label": "Key Varieties",
+        "value": "Bedsheets, Towels, Comforters, Quilts"
+      },
+      {
+        "label": "Primary Hubs",
+        "value": "Panipat, Solapur, Ahmedabad, Jaipur"
+      },
+      {
+        "label": "Target Segments",
+        "value": "Home Furnishers, Hotels & Wholesalers"
+      }
     ],
     "keyOfferings": [
       "Bedsheets (pure cotton, glace cotton, satin stripe, king/queen sizes, fitted sheets)",
@@ -175,7 +223,11 @@
       "Comforters & Quilts (microfiber all-season comforters, traditional Jaipuri razai, dohars)",
       "Bedding Ensembles (duvet covers, mattress protectors, coordinated pillow sham sets)"
     ],
-    "certifications": ["Thread Count Verified", "Colour Fastness Checked", "Cluster Mill Direct"],
+    "certifications": [
+      "Thread Count Verified",
+      "Colour Fastness Checked",
+      "Cluster Mill Direct"
+    ],
     "caseStudy": {
       "title": "Bulk Sourcing of 300 TC Bedsheets & Comforters for a Furnishing Chain",
       "description": "Negotiated direct mill contracts in Panipat and Ahmedabad for a regional home furnishing chain, locking in consistent weave quality, reactive print fastness, and bespoke retail packaging.",
@@ -208,11 +260,20 @@
       "Hard-Shell & Soft-Shell Trolley Suitcases",
       "Ladies Ethnic Wear Bags, Embroidered Potlis & Clutches"
     ],
-    "image": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1200&q=80",
+    "image": "/images/categories/category_fabrics_accessories.jpg",
     "metrics": [
-      { "label": "Key Varieties", "value": "Printed Fabrics, Wallets, Belts, Bags, Luggage, Potlis" },
-      { "label": "Primary Hubs", "value": "Surat, Jaipur, Kanpur, Mumbai, Delhi" },
-      { "label": "Target Segments", "value": "Designers, Lifestyle Stores & Retailers" }
+      {
+        "label": "Key Varieties",
+        "value": "Printed Fabrics, Wallets, Belts, Bags, Luggage, Potlis"
+      },
+      {
+        "label": "Primary Hubs",
+        "value": "Surat, Jaipur, Kanpur, Mumbai, Delhi"
+      },
+      {
+        "label": "Target Segments",
+        "value": "Designers, Lifestyle Stores & Retailers"
+      }
     ],
     "keyOfferings": [
       "Printed Fabrics (digital prints, rotary screen prints, discharge prints on cotton, rayon & silk)",
@@ -221,7 +282,11 @@
       "Bags & Suitcases (travel duffels, canvas backpacks, hard-shell and soft-shell trolley suitcases)",
       "Ladies Ethnic Wear Bags (zari-embroidered potli bags, raw silk clutches, batwas, party slings)"
     ],
-    "certifications": ["Print Fastness Tested", "Leather & Hardware Quality Checked", "Luggage Drop Tested"],
+    "certifications": [
+      "Print Fastness Tested",
+      "Leather & Hardware Quality Checked",
+      "Luggage Drop Tested"
+    ],
     "caseStudy": {
       "title": "Coordinated Sourcing of Digital Printed Cotton Yardage & Ethnic Potli Bags",
       "description": "Supplied a festive apparel boutique with coordinated digital printed fabrics alongside bespoke handcrafted zari potli bags and matching clutches for their festive festive campaign.",
