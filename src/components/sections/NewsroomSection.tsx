@@ -23,7 +23,7 @@ export const NewsroomSection: React.FC<NewsroomSectionProps> = ({
   const secondaryNews = newsData.slice(1, 3);
 
   return (
-    <section className="py-24 sm:py-32 bg-white border-b border-stone-200/60">
+    <section className="py-24 sm:py-32 bg-[#F5F0E6] border-b border-[#173D35]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-20">
           <SectionHeading
@@ -34,10 +34,10 @@ export const NewsroomSection: React.FC<NewsroomSectionProps> = ({
           />
           <button
             onClick={() => onNavigate('/newsroom')}
-            className="hidden md:inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 hover:text-emerald-800 transition-colors pb-2 group whitespace-nowrap"
+            className="hidden md:inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#173D35] hover:text-[#D97845] transition-colors pb-2 group whitespace-nowrap"
           >
             <span>All Market Advisories</span>
-            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-3.5 h-3.5 text-[#D97845] group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
 
@@ -48,38 +48,38 @@ export const NewsroomSection: React.FC<NewsroomSectionProps> = ({
               onClick={() => onOpenArticle(featuredNews.id)}
               className="lg:col-span-7 card-3d rounded-3xl p-7 sm:p-8 cursor-pointer group flex flex-col justify-between relative overflow-hidden"
             >
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/40 to-transparent" />
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/75 to-transparent" />
               <div>
-                <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-stone-100 mb-6 border border-stone-200/80 shadow-[0_4px_14px_rgba(0,0,0,0.06)]">
+                <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-[#F5F0E6] mb-6 border border-[#173D35]/10 shadow-[0_4px_14px_rgba(23,61,53,0.06)]">
                   <ImageWithFallback
                     src={featuredNews.image}
                     alt={featuredNews.title}
                     fallbackTitle={featuredNews.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-md text-[10px] font-semibold uppercase tracking-[0.2em] text-emerald-950 shadow-xs border border-stone-200/60">
+                  <div className="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-md text-[10px] font-semibold uppercase tracking-[0.2em] text-[#173D35] shadow-xs border border-[#173D35]/10">
                     {featuredNews.category}
                   </div>
                 </div>
 
                 <div className="space-y-3">
-                  <div className="flex items-center gap-2 text-xs text-stone-400 font-light">
+                  <div className="flex items-center gap-2 text-xs text-[#173D35]/60 font-medium">
                     <span>{featuredNews.date}</span>
-                    <span>·</span>
+                    <span className="text-[#D97845]">·</span>
                     <span>{featuredNews.readTime}</span>
                   </div>
-                  <h3 className="font-serif text-2xl sm:text-3xl font-normal text-slate-950 group-hover:text-emerald-900 transition-colors leading-snug tracking-tight break-normal">
+                  <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#173D35] group-hover:text-[#D97845] transition-colors leading-snug tracking-tight break-normal">
                     {featuredNews.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed break-normal">
+                  <p className="text-xs sm:text-sm text-[#173D35]/75 font-normal leading-relaxed break-normal">
                     {featuredNews.summary}
                   </p>
                 </div>
               </div>
 
-              <div className="pt-6 mt-4 border-t border-stone-100 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 group-hover:text-emerald-800 transition-colors">
+              <div className="pt-6 mt-4 border-t border-[#173D35]/10 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.16em] text-[#173D35] group-hover:text-[#D97845] transition-colors">
                 <span>Read Full Advisory</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-emerald-800" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-[#D97845]" />
               </div>
             </div>
           )}
@@ -92,23 +92,23 @@ export const NewsroomSection: React.FC<NewsroomSectionProps> = ({
                 onClick={() => onOpenArticle(news.id)}
                 className="card-3d rounded-2xl p-7 sm:p-8 cursor-pointer group flex-1 flex flex-col justify-between relative overflow-hidden"
               >
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/30 to-transparent" />
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/60 to-transparent" />
                 <div>
-                  <div className="flex items-center gap-2 text-[11px] text-stone-400 font-light mb-2.5">
-                    <span className="font-semibold text-emerald-800 uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-50 border border-emerald-100/60">{news.category}</span>
+                  <div className="flex items-center gap-2 text-[11px] text-[#173D35]/60 font-medium mb-2.5">
+                    <span className="font-semibold text-[#D97845] uppercase tracking-wider px-2 py-0.5 rounded bg-[#F5F0E6] border border-[#D97845]/25">{news.category}</span>
                     <span>·</span>
                     <span>{news.date}</span>
                   </div>
-                  <h4 className="font-serif text-xl font-normal text-slate-950 group-hover:text-emerald-900 transition-colors leading-snug tracking-tight break-normal">
+                  <h4 className="font-serif text-xl font-normal text-[#173D35] group-hover:text-[#D97845] transition-colors leading-snug tracking-tight break-normal">
                     {news.title}
                   </h4>
-                  <p className="text-xs sm:text-sm text-stone-600 font-light mt-2.5 leading-relaxed break-normal line-clamp-3">
+                  <p className="text-xs sm:text-sm text-[#173D35]/75 font-normal mt-2.5 leading-relaxed break-normal line-clamp-3">
                     {news.summary}
                   </p>
                 </div>
-                <div className="pt-4 mt-4 border-t border-stone-200/60 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 group-hover:text-emerald-800">
+                <div className="pt-4 mt-4 border-t border-[#173D35]/10 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.16em] text-[#173D35] group-hover:text-[#D97845]">
                   <span>Read Article</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-emerald-800" />
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-[#D97845]" />
                 </div>
               </div>
             ))}

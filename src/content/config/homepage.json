@@ -1,18 +1,17 @@
 {
   "sectionsOrder": [
     "hero",
+    "stats",
     "customersMarquee",
     "intro",
-    "stats",
     "businesses",
     "capabilities",
-    "innovation",
     "sustainability",
     "csr",
     "investors",
-    "testimonials",
     "newsroom",
     "careers",
+    "testimonials",
     "contactCta"
   ],
   "sections": {
@@ -30,7 +29,7 @@
           "ctaText": "Explore What We Source",
           "ctaLink": "/what-we-source",
           "secondaryCtaText": "View Sourcing Hubs",
-          "secondaryCtaLink": "/sustainability",
+          "secondaryCtaLink": "/sourcing-ecosystem",
           "overlayStrength": 0.65
         },
         {
@@ -56,7 +55,7 @@
           "desktopImage": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=2000&q=80",
           "mobileImage": "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80",
           "ctaText": "Learn About Financing",
-          "ctaLink": "/investors",
+          "ctaLink": "/capital-support",
           "secondaryCtaText": "Consult Our Team",
           "secondaryCtaLink": "/contact",
           "overlayStrength": 0.65
@@ -77,43 +76,37 @@
     },
     "stats": {
       "enabled": true,
-      "heading": "Strengths & Sourcing Reach",
-      "subheading": "Connecting trade buyers directly to specialized Indian textile manufacturing corridors.",
+      "heading": "Trusted Scale Across India's Textile Trade",
+      "subheading": "Dependable sourcing performance built through direct factory partnerships, rigorous quality checks, and transparent trade execution.",
       "items": [
         {
           "id": "stat-1",
-          "value": 6,
-          "suffix": "",
-          "label": "Prime Sourcing Hubs",
-          "sublabel": "Surat, Varanasi, Jaipur, Delhi, Kolkata, Panipat"
+          "value": 98.4,
+          "suffix": "%",
+          "label": "On-Time Dispatch Rate",
+          "sublabel": "Consistent delivery reliability across festive, wedding, and bulk procurement cycles"
         },
         {
           "id": "stat-2",
-          "value": 5,
-          "suffix": "",
-          "label": "Core Product Categories",
-          "sublabel": "Menswear, Womenswear, Kidswear, Home Textiles, Fabrics & Accessories"
+          "value": 500,
+          "prefix": "₹",
+          "suffix": "+ Cr",
+          "label": "Trade Value Facilitated",
+          "sublabel": "Products sourced and textile business facilitated directly across Indian production hubs"
         },
         {
           "id": "stat-3",
-          "value": 100,
-          "suffix": "%",
-          "label": "Transparent Procuring",
-          "sublabel": "Direct maker pricing & verified samples"
+          "value": 1,
+          "suffix": " Lakh+",
+          "label": "Orders Facilitated",
+          "sublabel": "Wholesale and retail consignments coordinated smoothly from inquiry to delivery"
         },
         {
           "id": "stat-4",
-          "value": 4,
-          "suffix": "",
-          "label": "Customer Groups",
-          "sublabel": "Showrooms, Boutiques, Retailers & Wholesalers"
-        },
-        {
-          "id": "stat-5",
-          "value": 1,
-          "suffix": "",
-          "label": "Dedicated Partner",
-          "sublabel": "End-to-end guidance from enquiry to dispatch"
+          "value": 2500,
+          "suffix": "+",
+          "label": "Happy Customers",
+          "sublabel": "Showrooms, boutiques, retailers, and wholesale distributors across India"
         }
       ]
     },
@@ -126,34 +119,34 @@
     },
     "capabilities": {
       "enabled": true,
-      "kicker": "Our Sourcing Process",
-      "heading": "A Structured Approach to Textile Sourcing",
-      "description": "We follow a systematic procurement process ensuring you discover verified suppliers, clear specifications, and timely delivery for your store.",
+      "kicker": "Our Process",
+      "heading": "Structured Sourcing & Market Guidance from Inquiry to Dispatch",
+      "description": "We combine seasonal market intelligence with a systematic procurement protocol — helping you discover verified manufacturers, approve physical samples, and receive reliable dispatches.",
       "pillars": [
         {
-          "title": "Requirement Analysis",
-          "description": "Understanding your target price points, desired fabric compositions, and regional aesthetic preferences.",
-          "stat": "Customized Planning"
+          "title": "Requirement & Seasonal Planning",
+          "description": "Mapping your target price bands, fabric specifications, and regional demand ahead of festive and wedding seasons.",
+          "stat": "Seasonal Strategy"
         },
         {
-          "title": "Market & Supplier Matching",
-          "description": "Connecting you with vetted manufacturers in the production hubs best suited for your product requirements.",
+          "title": "Direct Production Hub Matching",
+          "description": "Connecting your store directly with vetted looms, printing, and embroidery units across Surat, Varanasi, Jaipur, Delhi, and Kolkata.",
           "stat": "Direct Hub Links"
         },
         {
-          "title": "Sampling & Quality Verification",
-          "description": "Reviewing fabric feel, weave integrity, colour fastness, and embroidery quality before full order placement.",
-          "stat": "Pre-Dispatch Checks"
+          "title": "Physical Sampling & Lot Inspection",
+          "description": "Verifying fabric weight, weave integrity, colour fastness, and finish against approved samples before bulk packing.",
+          "stat": "Pre-Dispatch QA"
         },
         {
-          "title": "Dispatch & Logistics Support",
-          "description": "Coordinating transparent factory billing, consolidated packaging, and reliable transport partners.",
+          "title": "Consolidated Dispatch & Logistics",
+          "description": "Coordinating transparent direct-maker billing, multi-supplier consolidation, and dependable transport to your doorstep.",
           "stat": "Coordinated Delivery"
         }
       ]
     },
     "innovation": {
-      "enabled": true,
+      "enabled": false,
       "kicker": "Our Process",
       "heading": "Structured Sourcing & Quality Protocol from Inquiry to Dispatch",
       "description": "Stay ahead of seasonal retail demand, festive collection launches, and production schedules with guidance from our experienced sourcing consultants.",
@@ -232,7 +225,7 @@
     "customersMarquee": {
       "enabled": true,
       "kicker": "Our Customers & Sourcing Partners",
-      "heading": "Trusted by 250+ Textile Showrooms, Wholesalers & Boutiques Across India",
+      "heading": "Trusted by 2,500+ Textile Showrooms, Wholesalers & Boutiques Across India",
       "statsText": "Curating collections from Surat, Varanasi, Jaipur, Kolkata, and Delhi for India's leading ethnic wear retailers.",
       "customers": [
         { "name": "Nalli Silk Heritage", "city": "Chennai", "segment": "Retail Showroom", "hubFocus": "Katan & South Silks" },

@@ -42,64 +42,74 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenInquiry 
   ];
 
   return (
-    <div className="pt-24 pb-24 bg-[#FAF9F6]">
+    <div className="pt-20 pb-24 bg-[#F5F0E6]">
       {/* Hero Header */}
-      <div className="bg-[#0B132B] text-white py-20 lg:py-28 relative overflow-hidden border-b border-stone-800">
+      <div className="bg-[#173D35] text-[#F5F0E6] py-20 lg:py-28 relative overflow-hidden border-b border-[#F5F0E6]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.26em] text-emerald-400 block mb-3">
-            About Shree Durga Agency
-          </span>
-          <h1 className="font-serif text-3xl sm:text-5xl font-normal tracking-tight max-w-3xl leading-tight text-stone-100">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="h-[2px] w-7 bg-[#D97845]" />
+            <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#E89A6F]">
+              About Shree Durga Agency
+            </span>
+          </div>
+          <h1 className="font-serif text-3xl sm:text-5xl font-medium tracking-tight max-w-3xl leading-tight text-[#F5F0E6]">
             Your Trusted Textile Sourcing and Consulting Partner
           </h1>
-          <p className="mt-6 text-base sm:text-lg text-stone-300 max-w-2xl leading-relaxed font-light">
+          <p className="mt-6 text-base sm:text-lg text-[#F5F0E6]/80 max-w-2xl leading-relaxed">
             Helping retailers, wholesalers, boutiques and other textile businesses source products from relevant textile markets and production centres with transparent rates, strict quality checks, and reliable logistics.
           </p>
         </div>
       </div>
 
       {/* Main Philosophy */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-6 space-y-6">
-            <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.26em] text-emerald-800 block">
-              Our Value Proposition
-            </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-normal text-slate-950 leading-tight">
-              Bridging Retail Buyers Directly with India's Premier Textile Hubs
-            </h2>
-            <p className="text-stone-600 font-light leading-relaxed">
-              Navigating fragmented textile markets can be challenging for growing businesses. Shree Durga Agency serves as your dedicated on-the-ground sourcing extension—gathering your requirements, identifying vetted weavers and mills, verifying quality, and managing end-to-end dispatch.
-            </p>
-            <div className="grid grid-cols-2 gap-4 pt-4">
-              <div className="card-3d-emerald rounded-2xl p-6 relative overflow-hidden group">
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/40 to-transparent" />
-                <Shield className="w-6 h-6 text-emerald-800 mb-2.5" />
-                <h4 className="font-serif text-base font-normal text-slate-950">Direct Mill Rates</h4>
-                <p className="text-xs text-stone-600 font-light mt-1 leading-relaxed">Access genuine factory wholesale prices without redundant middleman markups.</p>
+      <div className="bg-white border-b border-[#173D35]/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-6 space-y-6">
+              <div className="flex items-center gap-3">
+                <span className="h-[2px] w-6 bg-[#D97845]" />
+                <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#D97845]">
+                  Our Value Proposition
+                </span>
               </div>
-              <div className="card-3d-emerald rounded-2xl p-6 relative overflow-hidden group">
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/40 to-transparent" />
-                <Target className="w-6 h-6 text-emerald-800 mb-2.5" />
-                <h4 className="font-serif text-base font-normal text-slate-950">Batch Inspection</h4>
-                <p className="text-xs text-stone-600 font-light mt-1 leading-relaxed">Pre-dispatch fabric inspection covering weave consistency, colorfastness, and defects.</p>
+              <h2 className="font-serif text-3xl sm:text-4xl font-medium text-[#173D35] leading-tight">
+                Bridging Retail Buyers Directly with India's Premier Textile Hubs
+              </h2>
+              <p className="text-[#173D35]/75 leading-relaxed">
+                Navigating fragmented textile markets can be challenging for growing businesses. Shree Durga Agency serves as your dedicated on-the-ground sourcing extension—gathering your requirements, identifying vetted weavers and mills, verifying quality, and managing end-to-end dispatch.
+              </p>
+              <div className="grid grid-cols-2 gap-4 pt-4">
+                <div className="card-3d-emerald rounded-2xl p-6 relative overflow-hidden group">
+                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/60 to-transparent" />
+                  <Shield className="w-6 h-6 text-[#D97845] mb-2.5" />
+                  <h4 className="font-serif text-base font-medium text-[#173D35]">Direct Mill Rates</h4>
+                  <p className="text-xs text-[#173D35]/75 mt-1 leading-relaxed">Access genuine factory wholesale prices without redundant middleman markups.</p>
+                </div>
+                <div className="card-3d-emerald rounded-2xl p-6 relative overflow-hidden group">
+                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/60 to-transparent" />
+                  <Target className="w-6 h-6 text-[#D97845] mb-2.5" />
+                  <h4 className="font-serif text-base font-medium text-[#173D35]">Batch Inspection</h4>
+                  <p className="text-xs text-[#173D35]/75 mt-1 leading-relaxed">Pre-dispatch fabric inspection covering weave consistency, colorfastness, and defects.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="lg:col-span-6">
-            <div className="rounded-3xl overflow-hidden shadow-xl border border-stone-200/90 group">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80"
-                alt="Shree Durga Agency Textile Sourcing"
-                fallbackTitle="Shree Durga Agency Sourcing Desk"
-                className="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-              />
+            <div className="lg:col-span-6">
+              <div className="rounded-3xl overflow-hidden shadow-xl border border-[#173D35]/15 group">
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80"
+                  alt="Shree Durga Agency Textile Sourcing"
+                  fallbackTitle="Shree Durga Agency Sourcing Desk"
+                  className="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         {/* Timeline */}
-        <div className="mt-28">
+        <div>
           <SectionHeading
             kicker="Our Journey"
             heading="Evolving with India's Textile Trade Ecosystem"
@@ -108,14 +118,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenInquiry 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-10">
             {milestones.map((m, idx) => (
               <div key={idx} className="card-3d rounded-2xl p-7 relative overflow-hidden group">
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/30 to-transparent" />
-                <span className="text-xl font-serif font-normal text-emerald-800 block mb-2">
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/50 to-transparent" />
+                <span className="text-lg font-serif font-medium text-[#D97845] block mb-2">
                   {m.year}
                 </span>
-                <h3 className="font-serif text-lg font-normal text-slate-950 mb-2 group-hover:text-emerald-900 transition-colors">
+                <h3 className="font-serif text-lg font-medium text-[#173D35] mb-2 group-hover:text-[#D97845] transition-colors">
                   {m.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+                <p className="text-sm text-[#173D35]/75 leading-relaxed">
                   {m.desc}
                 </p>
               </div>
@@ -124,7 +134,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenInquiry 
         </div>
 
         {/* Leadership Section */}
-        <div id="leadership" className="mt-28">
+        <div id="leadership" className="mt-24">
           <SectionHeading
             kicker="Sourcing Advisory"
             heading="Specialized Trade Coordination Team"
@@ -132,19 +142,19 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenInquiry 
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
             {leaders.map((ldr, idx) => (
-              <div key={idx} className="card-3d-emerald rounded-2xl p-7 flex flex-col justify-between relative overflow-hidden group">
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/40 to-transparent" />
+              <div key={idx} className="card-3d rounded-2xl p-7 flex flex-col justify-between relative overflow-hidden group">
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/60 to-transparent" />
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200/60 flex items-center justify-center font-serif text-lg mb-4 shadow-xs">
+                  <div className="w-12 h-12 rounded-xl bg-[#F5F0E6] text-[#D97845] border border-[#D97845]/20 flex items-center justify-center font-serif text-lg font-medium mb-4 shadow-xs">
                     {ldr.name.split(' ').map(n => n[0]).join('')}
                   </div>
-                  <h3 className="font-serif text-lg font-normal text-slate-950 group-hover:text-emerald-900 transition-colors">
+                  <h3 className="font-serif text-lg font-medium text-[#173D35] group-hover:text-[#D97845] transition-colors">
                     {ldr.name}
                   </h3>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-emerald-800 block mb-3 mt-1">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-[#D97845] block mb-3 mt-1">
                     {ldr.title}
                   </span>
-                  <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+                  <p className="text-sm text-[#173D35]/75 leading-relaxed">
                     {ldr.bio}
                   </p>
                 </div>
@@ -154,20 +164,20 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenInquiry 
         </div>
 
         {/* Sourcing Hubs Footprint CTA */}
-        <div id="footprint" className="mt-28 card-3d-dark rounded-3xl p-10 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent" />
+        <div id="footprint" className="mt-24 card-3d-dark rounded-3xl p-10 sm:p-12 text-[#F5F0E6] flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+          <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent" />
           <div className="space-y-2">
-            <span className="text-xs font-semibold uppercase tracking-wider text-emerald-400 block mb-1">
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#E89A6F] block mb-1">
               Multi-Market Access
             </span>
-            <h3 className="font-serif text-2xl sm:text-3xl font-normal text-stone-100">Connected to Major Textile Hubs Across India</h3>
-            <p className="text-sm text-stone-300 font-light mt-2 max-w-xl leading-relaxed">
+            <h3 className="font-serif text-2xl sm:text-3xl font-medium text-[#F5F0E6]">Connected to Major Textile Hubs Across India</h3>
+            <p className="text-sm text-[#F5F0E6]/80 mt-2 max-w-xl leading-relaxed">
               Accessing Surat, Varanasi, Jaipur, Delhi NCR, Kolkata, and Panipat for comprehensive retail and wholesale requirements.
             </p>
           </div>
           <button
             onClick={onOpenInquiry}
-            className="px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] bg-emerald-700 hover:bg-emerald-600 text-white rounded-xl shadow-[0_4px_14px_rgba(6,78,59,0.4)] transition-all whitespace-nowrap shrink-0 hover:scale-105"
+            className="px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-xl shadow-lg transition-all whitespace-nowrap shrink-0 hover:scale-105"
           >
             Start Sourcing Consultation
           </button>

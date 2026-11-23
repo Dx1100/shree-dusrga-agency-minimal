@@ -24,36 +24,36 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
   };
 
   return (
-    <footer className="bg-slate-950 text-slate-300 border-t border-slate-900">
+    <footer className="bg-[#102B25] text-[#F5F0E6]/85 border-t border-[#D97845]/30">
       {/* Top Banner: Trade Financing Bar */}
-      <div className="border-b border-white/10 bg-slate-900/40 py-3.5 px-4 sm:px-6 lg:px-8 text-xs">
+      <div className="border-b border-[#F5F0E6]/10 bg-[#173D35]/70 py-3.5 px-4 sm:px-6 lg:px-8 text-xs">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <span className="font-semibold text-slate-400 uppercase tracking-widest text-[11px]">
+            <span className="font-semibold text-[#F5F0E6]/65 uppercase tracking-widest text-[11px]">
               {investorsData.stockInfo.symbol}
             </span>
-            <span className="font-mono tabular-nums font-semibold text-white text-xs">
+            <span className="font-semibold text-white text-xs">
               {investorsData.stockInfo.exchange}
             </span>
-            <span className="text-emerald-400 font-mono tabular-nums font-semibold flex items-center gap-0.5">
+            <span className="text-[#E89A6F] font-semibold flex items-center gap-0.5">
               {investorsData.stockInfo.lastUpdated}
             </span>
-            <span className="text-slate-500 hidden sm:inline text-xs">
+            <span className="text-[#F5F0E6]/55 hidden sm:inline text-xs">
               · {investorsData.stockInfo.marketCap}
             </span>
           </div>
-          <div className="flex items-center gap-4 text-slate-400 text-xs">
+          <div className="flex items-center gap-4 text-[#F5F0E6]/75 text-xs">
             <button
               onClick={() => onNavigate('/capital-support')}
-              className="hover:text-white transition-colors flex items-center gap-1 font-medium uppercase tracking-wider"
+              className="hover:text-white transition-colors flex items-center gap-1 font-semibold uppercase tracking-wider"
             >
               <span>Capital Support (ThreadLinc)</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#D97845]" />
             </button>
-            <span className="hidden sm:inline">·</span>
+            <span className="hidden sm:inline text-[#F5F0E6]/30">·</span>
             <button
               onClick={onOpenInquiry}
-              className="text-white hover:text-emerald-400 transition-colors font-medium uppercase tracking-wider"
+              className="text-[#E89A6F] hover:text-white transition-colors font-semibold uppercase tracking-wider"
             >
               Sourcing Consultation
             </button>
@@ -66,26 +66,26 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Column 1: Brand & Identity */}
           <div className="lg:col-span-2 space-y-4">
-            <span className="font-serif text-2xl font-normal tracking-[0.14em] uppercase text-white block">
+            <span className="font-serif text-2xl font-normal tracking-[0.12em] uppercase text-[#F5F0E6] block">
               Shree Durga Agency
             </span>
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm font-light break-normal">
+            <p className="text-xs sm:text-sm text-[#F5F0E6]/75 leading-relaxed max-w-sm font-normal break-normal">
               A textile sourcing and consulting partner helping retailers, wholesalers, boutiques and other textile businesses source products from relevant textile markets and production centres.
             </p>
-            <div className="text-xs text-slate-500 space-y-1 font-normal pt-2">
+            <div className="text-xs text-[#F5F0E6]/60 space-y-1 font-normal pt-2">
               <p>{siteConfig.legalEntity}</p>
               <p>{siteConfig.headquarters.address}</p>
               <p>{siteConfig.headquarters.city}, {siteConfig.headquarters.country}</p>
-              <p className="pt-2 text-slate-400">Contact: {siteConfig.headquarters.phone}</p>
+              <p className="pt-2 text-[#F5F0E6]/80">Contact: {siteConfig.headquarters.phone}</p>
             </div>
           </div>
 
           {/* Column 2: What We Source */}
           <div>
-            <h4 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white mb-4">
+            <h4 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#E89A6F] mb-4">
               What We Source
             </h4>
-            <ul className="space-y-2.5 text-xs text-slate-400">
+            <ul className="space-y-2.5 text-xs text-[#F5F0E6]/75">
               <li>
                 <button
                   onClick={() => onNavigate('/what-we-source/menswear')}
@@ -131,10 +131,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
 
           {/* Column 3: Corporate & Network */}
           <div>
-            <h4 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white mb-4">
+            <h4 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#E89A6F] mb-4">
               Sourcing Network
             </h4>
-            <ul className="space-y-2.5 text-xs text-slate-400">
+            <ul className="space-y-2.5 text-xs text-[#F5F0E6]/75">
               <li>
                 <button
                   onClick={() => onNavigate('/about')}
@@ -188,15 +188,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
 
           {/* Column 4: Sourcing Updates & Newsletter */}
           <div>
-            <h4 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white mb-4">
+            <h4 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#E89A6F] mb-4">
               Trade Updates
             </h4>
-            <p className="text-xs text-slate-400 mb-4 leading-relaxed font-normal">
+            <p className="text-xs text-[#F5F0E6]/75 mb-4 leading-relaxed font-normal">
               Receive seasonal market advisories, cluster price movements, and new catalog previews.
             </p>
             {isSubscribed ? (
-              <div className="p-3 bg-emerald-950/60 border border-emerald-800 rounded-md text-emerald-300 text-xs flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 shrink-0" />
+              <div className="p-3 bg-[#173D35] border border-[#D97845]/50 rounded-md text-[#F5F0E6] text-xs flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 shrink-0 text-[#D97845]" />
                 <span>Subscription confirmed. Thank you.</span>
               </div>
             ) : (
@@ -207,22 +207,22 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="name@business.com"
-                  className="w-full px-3 py-2 text-xs bg-slate-900 border border-slate-800 rounded text-white placeholder:text-slate-500 focus:outline-none focus:border-white"
+                  className="w-full px-3 py-2 text-xs bg-[#173D35] border border-[#F5F0E6]/20 rounded text-white placeholder:text-[#F5F0E6]/45 focus:outline-none focus:border-[#D97845]"
                 />
                 <button
                   type="submit"
-                  className="w-full py-2 px-3 text-xs font-semibold uppercase tracking-wider bg-white hover:bg-slate-200 text-slate-950 rounded transition-colors"
+                  className="w-full py-2.5 px-3 text-xs font-semibold uppercase tracking-wider bg-[#D97845] hover:bg-[#C26534] text-white rounded transition-colors"
                 >
                   Subscribe
                 </button>
               </form>
             )}
-            <div className="mt-6 pt-4 border-t border-white/10 flex items-center gap-3 text-xs text-slate-500">
+            <div className="mt-6 pt-4 border-t border-[#F5F0E6]/10 flex items-center gap-3 text-xs text-[#F5F0E6]/65">
               <a
                 href={siteConfig.social.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-white transition-colors"
+                className="hover:text-[#E89A6F] transition-colors font-medium"
               >
                 LinkedIn
               </a>
@@ -231,7 +231,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
                 href={siteConfig.social.twitter}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-white transition-colors"
+                className="hover:text-[#E89A6F] transition-colors font-medium"
               >
                 WhatsApp Business
               </a>
@@ -240,7 +240,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
                 href={siteConfig.social.youtube}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-white transition-colors"
+                className="hover:text-[#E89A6F] transition-colors font-medium"
               >
                 Catalog Channel
               </a>
@@ -249,21 +249,21 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
         </div>
 
         {/* Bottom Legal bar */}
-        <div className="mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="mt-14 pt-8 border-t border-[#F5F0E6]/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#F5F0E6]/55">
           <p>
             © {new Date().getFullYear()} {siteConfig.legalEntity}. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center gap-6">
-            <button onClick={() => onNavigate('/about')} className="hover:text-slate-400 transition-colors">
+            <button onClick={() => onNavigate('/about')} className="hover:text-[#F5F0E6] transition-colors">
               Privacy Policy
             </button>
-            <button onClick={() => onNavigate('/about')} className="hover:text-slate-400 transition-colors">
+            <button onClick={() => onNavigate('/about')} className="hover:text-[#F5F0E6] transition-colors">
               Terms of Engagement
             </button>
-            <button onClick={() => onNavigate('/capital-support')} className="hover:text-slate-400 transition-colors">
+            <button onClick={() => onNavigate('/capital-support')} className="hover:text-[#F5F0E6] transition-colors">
               Trade Credit Terms
             </button>
-            <button onClick={() => onNavigate('/contact')} className="hover:text-slate-400 transition-colors">
+            <button onClick={() => onNavigate('/contact')} className="hover:text-[#F5F0E6] transition-colors">
               Sourcing Hub Directory
             </button>
           </div>

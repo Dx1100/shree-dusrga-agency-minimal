@@ -91,20 +91,20 @@ export const ContentStudioDrawer: React.FC<ContentStudioDrawerProps> = ({
   }, []);
 
   const labelMap: Record<string, string> = {
-    hero: '01. Textile Hero Showcase',
-    customersMarquee: '02. Our Customers Marquee Loop',
-    intro: '03. Sourcing Agency Intro',
-    stats: '04. Operational Highlights & Hubs',
-    businesses: '05. What We Source Categories',
-    capabilities: '06. Sourcing & Quality Protocol',
-    innovation: '07. Our Process',
-    sustainability: '08. Our Sourcing Ecosystem',
-    csr: '09. Artisan & Weaver Clusters (CSR)',
-    investors: '10. Capital Support (ThreadLinc)',
-    testimonials: '11. Buyer Reviews & Testimonials',
-    newsroom: '12. Market Advisories & Updates',
-    careers: '13. Who We Serve',
-    contactCta: '14. Sourcing Consultation CTA',
+    hero: '01. Hook — Textile Hero Showcase',
+    stats: '02. Authority — Credibility & Business Stats',
+    customersMarquee: '03. Authority — Our Customers Marquee',
+    intro: '04. Value — Sourcing Agency Intro',
+    businesses: '05. Value — What We Source Categories',
+    capabilities: '06. Value — Our Process & Quality Protocol',
+    sustainability: '07. Value — Our Sourcing Ecosystem',
+    csr: '08. Value — Artisan & Weaver Clusters',
+    investors: '09. Value — Capital Support (ThreadLinc)',
+    newsroom: '10. Value — Market Advisories & Updates',
+    careers: '11. Value — Who We Serve',
+    testimonials: '12. Proof — Buyer Reviews & Testimonials',
+    contactCta: '13. Engage — Sourcing Consultation CTA',
+    innovation: 'Legacy — Sourcing Advisory (Merged)',
   };
 
   // Scroll to section on page

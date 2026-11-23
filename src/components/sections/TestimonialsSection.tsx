@@ -122,7 +122,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
   const featured = items[0];
 
   return (
-    <section className="py-20 lg:py-28 bg-[#FAF9F6] border-t border-stone-200/80 relative">
+    <section className="py-20 lg:py-28 bg-[#F5F0E6] border-b border-[#173D35]/10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <SectionHeading
@@ -132,16 +132,16 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
             className="mb-0"
           />
 
-          {/* Category Filter Pills */}
+          {/* Category Filter Tabs */}
           <div className="flex flex-wrap gap-2 shrink-0">
             {filters.map((f) => (
               <button
                 key={f.id}
                 onClick={() => setSelectedFilter(f.id)}
-                className={`px-3.5 py-2 text-xs font-medium rounded-lg transition-all ${
+                className={`px-3.5 py-2 text-xs font-semibold rounded-lg transition-all ${
                   selectedFilter === f.id
-                    ? 'bg-[#0B132B] text-white shadow-md'
-                    : 'card-3d text-stone-700 hover:text-slate-950 hover:bg-stone-50'
+                    ? 'bg-[#D97845] text-white shadow-md'
+                    : 'card-3d text-[#173D35] hover:text-[#D97845]'
                 }`}
               >
                 {f.label}
@@ -152,47 +152,47 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
 
         {/* Featured Spotlight Testimonial */}
         {featured && selectedFilter === 'all' && (
-          <div className="mb-10 card-3d-dark rounded-3xl p-8 sm:p-12 relative overflow-hidden text-white group">
+          <div className="mb-10 card-3d-dark rounded-3xl p-8 sm:p-12 relative overflow-hidden text-[#F5F0E6] group">
             {/* Top Specular Bevel Line */}
-            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent" />
-            
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/80 to-transparent" />
+
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-8 space-y-5">
                 <div className="flex items-center gap-3">
-                  <div className="flex text-amber-400">
+                  <div className="flex text-[#D97845]">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                      <Star key={i} className="w-4 h-4 fill-[#D97845] text-[#D97845]" />
                     ))}
                   </div>
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-emerald-300 bg-emerald-950/80 px-2.5 py-0.5 rounded border border-emerald-500/30">
+                  <span className="text-[11px] font-semibold uppercase tracking-wider text-[#E89A6F] bg-[#173D35] px-2.5 py-0.5 rounded border border-[#D97845]/35">
                     Spotlight Partner Story
                   </span>
                 </div>
 
-                <blockquote className="text-xl sm:text-2xl font-serif font-normal text-stone-100 leading-snug">
+                <blockquote className="text-xl sm:text-2xl font-serif font-normal text-[#F5F0E6] leading-snug">
                   "{featured.quote}"
                 </blockquote>
 
-                <div className="flex flex-wrap items-center gap-3 text-xs text-stone-300 font-light pt-2">
-                  <span className="flex items-center gap-1.5 text-emerald-400 font-medium">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                <div className="flex flex-wrap items-center gap-3 text-xs text-[#F5F0E6]/80 font-normal pt-2">
+                  <span className="flex items-center gap-1.5 text-[#E89A6F] font-semibold">
+                    <CheckCircle2 className="w-4 h-4 text-[#D97845]" />
                     Verified Sourcing Account
                   </span>
                   <span>·</span>
-                  <span className="text-stone-400">{featured.hubSource}</span>
+                  <span className="text-[#F5F0E6]/70">{featured.hubSource}</span>
                 </div>
               </div>
 
-              <div className="lg:col-span-4 lg:border-l lg:border-white/10 lg:pl-8 space-y-3">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-600 to-emerald-950 text-white font-serif text-xl font-bold flex items-center justify-center shadow-md border border-white/20">
+              <div className="lg:col-span-4 lg:border-l lg:border-[#F5F0E6]/15 lg:pl-8 space-y-3">
+                <div className="w-14 h-14 rounded-2xl bg-[#D97845] text-white font-serif text-xl font-semibold flex items-center justify-center shadow-md border border-[#F5F0E6]/20">
                   {featured.author.split(' ').map(w => w[0]).join('')}
                 </div>
                 <div>
                   <h4 className="text-lg font-serif font-normal text-white">{featured.author}</h4>
-                  <p className="text-xs text-emerald-300 font-medium">{featured.role}</p>
-                  <p className="text-xs text-stone-300 font-light mt-0.5">{featured.company}</p>
-                  <p className="text-[11px] text-stone-400 flex items-center gap-1 mt-1">
-                    <MapPin className="w-3 h-3 text-emerald-400" />
+                  <p className="text-xs text-[#E89A6F] font-semibold">{featured.role}</p>
+                  <p className="text-xs text-[#F5F0E6]/85 font-normal mt-0.5">{featured.company}</p>
+                  <p className="text-[11px] text-[#F5F0E6]/65 flex items-center gap-1 mt-1">
+                    <MapPin className="w-3 h-3 text-[#D97845]" />
                     {featured.city}
                   </p>
                 </div>
@@ -209,46 +209,46 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
               className="card-3d p-7 sm:p-8 rounded-2xl relative overflow-hidden flex flex-col justify-between group"
             >
               {/* Top Specular Bevel Line */}
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/35 to-transparent" />
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/65 to-transparent" />
 
               <div>
                 {/* Rating & Hub Source */}
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex text-amber-500">
+                  <div className="flex text-[#D97845]">
                     {[...Array(item.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
+                      <Star key={i} className="w-3.5 h-3.5 fill-[#D97845] text-[#D97845]" />
                     ))}
                   </div>
-                  <span className="text-[10px] font-mono text-emerald-800 uppercase tracking-wider bg-emerald-50 px-2 py-0.5 rounded border border-emerald-900/10 font-medium">
+                  <span className="text-[10px] text-[#D97845] uppercase tracking-wider bg-[#F5F0E6] px-2 py-0.5 rounded border border-[#D97845]/25 font-semibold">
                     {item.segment}
                   </span>
                 </div>
 
                 {/* Quote */}
-                <p className="text-xs sm:text-sm text-stone-700 font-light leading-relaxed mb-6 line-clamp-4 group-hover:text-slate-950 transition-colors">
+                <p className="text-xs sm:text-sm text-[#173D35]/80 font-normal leading-relaxed mb-6 line-clamp-4 group-hover:text-[#173D35] transition-colors">
                   "{item.quote}"
                 </p>
               </div>
 
               {/* Author & Provenance Info */}
-              <div className="pt-4 border-t border-stone-200/60 flex items-start gap-3">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0B132B] to-[#1E293B] text-emerald-300 font-serif font-bold text-sm flex items-center justify-center shrink-0 shadow-xs border border-stone-200">
+              <div className="pt-4 border-t border-[#173D35]/10 flex items-start gap-3">
+                <div className="w-10 h-10 rounded-xl bg-[#173D35] text-[#F5F0E6] font-serif font-semibold text-sm flex items-center justify-center shrink-0 shadow-xs">
                   {item.author.split(' ').map(w => w[0]).slice(0, 2).join('')}
                 </div>
                 <div className="space-y-0.5 min-w-0">
                   <div className="flex items-center gap-1">
-                    <h4 className="text-sm font-serif font-normal text-slate-950 truncate">
+                    <h4 className="text-sm font-serif font-medium text-[#173D35] truncate">
                       {item.author}
                     </h4>
                     {item.verified && (
-                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-700 shrink-0" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#D97845] shrink-0" />
                     )}
                   </div>
-                  <p className="text-[11px] text-emerald-800 font-medium truncate">
+                  <p className="text-[11px] text-[#D97845] font-semibold truncate">
                     {item.role} · {item.company}
                   </p>
-                  <p className="text-[10px] text-stone-500 flex items-center gap-1 font-light">
-                    <MapPin className="w-3 h-3 text-stone-400" />
+                  <p className="text-[10px] text-[#173D35]/65 flex items-center gap-1 font-normal">
+                    <MapPin className="w-3 h-3 text-[#D97845]" />
                     {item.city}
                   </p>
                 </div>
@@ -257,53 +257,12 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
           ))}
         </div>
 
-        {/* Bottom Trust Indicators Strip */}
-        <div className="mt-14 card-3d-emerald rounded-2xl p-6 sm:p-8 relative overflow-hidden grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/40 to-transparent" />
-          
-          <div className="space-y-1">
-            <span className="font-serif text-2xl sm:text-3xl font-normal text-emerald-900 block">
-              98.4%
-            </span>
-            <span className="text-[11px] uppercase tracking-wider text-stone-600 font-light block">
-              On-Time Dispatch Rate
-            </span>
-          </div>
-
-          <div className="space-y-1">
-            <span className="font-serif text-2xl sm:text-3xl font-normal text-emerald-900 block">
-              ₹0 Hidden
-            </span>
-            <span className="text-[11px] uppercase tracking-wider text-stone-600 font-light block">
-              Direct Mill Invoices
-            </span>
-          </div>
-
-          <div className="space-y-1">
-            <span className="font-serif text-2xl sm:text-3xl font-normal text-emerald-900 block">
-              100% QA
-            </span>
-            <span className="text-[11px] uppercase tracking-wider text-stone-600 font-light block">
-              Pre-Dispatch Inspection
-            </span>
-          </div>
-
-          <div className="space-y-1">
-            <span className="font-serif text-2xl sm:text-3xl font-normal text-emerald-900 block">
-              250+ Stores
-            </span>
-            <span className="text-[11px] uppercase tracking-wider text-stone-600 font-light block">
-              Partner Accounts Across India
-            </span>
-          </div>
-        </div>
-
         {/* CTA prompt */}
         {onOpenInquiry && (
-          <div className="mt-8 text-center">
+          <div className="mt-10 text-center">
             <button
               onClick={onOpenInquiry}
-              className="inline-flex items-center gap-2 px-6 py-3 text-xs font-medium uppercase tracking-[0.18em] bg-[#0B132B] hover:bg-emerald-800 text-white rounded-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
             >
               <span>Connect with a Sourcing Advisor</span>
               <ArrowUpRight className="w-4 h-4" />

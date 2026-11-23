@@ -46,7 +46,7 @@ export default function App() {
   const [inquiryData, setInquiryData] = useState({
     name: '',
     email: '',
-    division: 'Advanced Materials & Composites',
+    division: 'General Sourcing Consultation',
     message: '',
   });
   const [inquirySubmitted, setInquirySubmitted] = useState(false);
@@ -103,7 +103,7 @@ export default function App() {
         setInquiryData({
           name: '',
           email: '',
-          division: 'Advanced Materials & Composites',
+          division: 'General Sourcing Consultation',
           message: '',
         });
       }, 2500);
@@ -238,7 +238,7 @@ export default function App() {
   const isHome = currentPath === '/';
 
   return (
-    <div className="min-h-screen bg-white flex flex-col font-sans selection:bg-slate-950 selection:text-white">
+    <div className="min-h-screen bg-white text-[#173D35] flex flex-col font-sans selection:bg-[#173D35] selection:text-[#F5F0E6]">
       {/* Top Header */}
       <Header
         currentPath={currentPath}
@@ -282,18 +282,18 @@ export default function App() {
       >
         {inquirySubmitted ? (
           <div className="py-8 text-center space-y-3">
-            <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
-            <h4 className="text-base font-bold text-slate-900">
+            <CheckCircle2 className="w-12 h-12 text-[#D97845] mx-auto" />
+            <h4 className="text-xl font-serif font-medium text-[#173D35]">
               Inquiry Dispatched Successfully
             </h4>
-            <p className="text-xs text-slate-500">
+            <p className="text-sm text-[#173D35]/75">
               Our sourcing consultant for {inquiryData.division} will review your requirements and reach out promptly.
             </p>
           </div>
         ) : (
           <form onSubmit={handleInquirySubmit} className="space-y-4">
             <div>
-              <label className="text-xs font-medium text-stone-700 block mb-1.5">
+              <label className="text-xs font-semibold text-[#173D35] block mb-1.5">
                 Your Full Name / Business Name *
               </label>
               <input
@@ -302,12 +302,12 @@ export default function App() {
                 value={inquiryData.name}
                 onChange={(e) => setInquiryData({ ...inquiryData, name: e.target.value })}
                 placeholder="Rajesh Kumar / Boutique Name"
-                className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
+                className="w-full text-sm p-3 bg-[#F5F0E6]/60 border border-[#173D35]/15 rounded-lg text-[#173D35] placeholder:text-[#173D35]/40 focus:outline-none focus:border-[#D97845]"
               />
             </div>
 
             <div>
-              <label className="text-xs font-medium text-stone-700 block mb-1.5">
+              <label className="text-xs font-semibold text-[#173D35] block mb-1.5">
                 Email Address or Phone *
               </label>
               <input
@@ -316,18 +316,18 @@ export default function App() {
                 value={inquiryData.email}
                 onChange={(e) => setInquiryData({ ...inquiryData, email: e.target.value })}
                 placeholder="buyer@showroom.com / +91 98..."
-                className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
+                className="w-full text-sm p-3 bg-[#F5F0E6]/60 border border-[#173D35]/15 rounded-lg text-[#173D35] placeholder:text-[#173D35]/40 focus:outline-none focus:border-[#D97845]"
               />
             </div>
 
             <div>
-              <label className="text-xs font-medium text-stone-700 block mb-1.5">
+              <label className="text-xs font-semibold text-[#173D35] block mb-1.5">
                 Product Category / Service
               </label>
               <select
                 value={inquiryData.division}
                 onChange={(e) => setInquiryData({ ...inquiryData, division: e.target.value })}
-                className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
+                className="w-full text-sm p-3 bg-[#F5F0E6]/60 border border-[#173D35]/15 rounded-lg text-[#173D35] focus:outline-none focus:border-[#D97845]"
               >
                 <option>Sarees (Silk, Georgette, Synthetics)</option>
                 <option>Suit Sets & Dress Materials</option>
@@ -340,7 +340,7 @@ export default function App() {
             </div>
 
             <div>
-              <label className="text-xs font-medium text-stone-700 block mb-1.5">
+              <label className="text-xs font-semibold text-[#173D35] block mb-1.5">
                 Requirement Details
               </label>
               <textarea
@@ -348,13 +348,13 @@ export default function App() {
                 value={inquiryData.message}
                 onChange={(e) => setInquiryData({ ...inquiryData, message: e.target.value })}
                 placeholder="Mention fabric preferences, quantity, target sourcing hub, or sample request..."
-                className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
+                className="w-full text-sm p-3 bg-[#F5F0E6]/60 border border-[#173D35]/15 rounded-lg text-[#173D35] placeholder:text-[#173D35]/40 focus:outline-none focus:border-[#D97845]"
               />
             </div>
 
             <button
               type="submit"
-              className="w-full py-3 px-4 text-xs font-medium uppercase tracking-[0.15em] bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg transition-colors flex items-center justify-center gap-2"
+              className="w-full py-3.5 px-4 text-xs font-semibold uppercase tracking-[0.15em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm"
             >
               <Send className="w-3.5 h-3.5" />
               <span>Submit Sourcing Inquiry</span>
@@ -373,24 +373,24 @@ export default function App() {
           maxWidth="2xl"
         >
           <div className="space-y-4">
-            <div className="rounded-xl overflow-hidden max-h-72">
+            <div className="rounded-xl overflow-hidden max-h-72 border border-[#173D35]/10">
               <img
                 src={selectedArticle.image}
                 alt={selectedArticle.title}
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-base font-serif font-normal text-slate-950 leading-relaxed">
+            <p className="text-base font-serif font-normal text-[#173D35] leading-relaxed">
               {selectedArticle.summary}
             </p>
-            <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed">
+            <p className="text-sm text-[#173D35]/80 leading-relaxed">
               {selectedArticle.content}
             </p>
-            <div className="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-400 font-light">
+            <div className="pt-4 border-t border-[#173D35]/10 flex items-center justify-between text-xs text-[#173D35]/60">
               <span>Shree Durga Agency Sourcing Desk</span>
               <button
                 onClick={() => setSelectedArticle(null)}
-                className="font-medium uppercase tracking-wider text-emerald-800 hover:text-emerald-950"
+                className="font-semibold uppercase tracking-wider text-[#D97845] hover:text-[#C26534]"
               >
                 Close Advisory
               </button>
@@ -409,18 +409,18 @@ export default function App() {
         >
           {jobSubmitted ? (
             <div className="py-8 text-center space-y-3">
-              <CheckCircle2 className="w-12 h-12 text-emerald-700 mx-auto" />
-              <h4 className="text-xl font-serif font-normal text-slate-950">
+              <CheckCircle2 className="w-12 h-12 text-[#D97845] mx-auto" />
+              <h4 className="text-xl font-serif font-medium text-[#173D35]">
                 Inquiry Received
               </h4>
-              <p className="text-xs sm:text-sm text-stone-500 font-light">
+              <p className="text-sm text-[#173D35]/75">
                 Our sourcing advisory desk will contact you regarding engagement options for the {selectedJob.title} segment.
               </p>
             </div>
           ) : (
             <form onSubmit={handleJobSubmit} className="space-y-4">
               <div>
-                <label className="text-xs font-medium text-stone-700 block mb-1.5">
+                <label className="text-xs font-semibold text-[#173D35] block mb-1.5">
                   Full Name / Contact Person *
                 </label>
                 <input
@@ -429,12 +429,12 @@ export default function App() {
                   value={jobFormData.candidateName}
                   onChange={(e) => setJobFormData({ ...jobFormData, candidateName: e.target.value })}
                   placeholder="e.g. Rajesh Sharma"
-                  className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
+                  className="w-full text-sm p-3 bg-[#F5F0E6]/60 border border-[#173D35]/15 rounded-lg text-[#173D35] placeholder:text-[#173D35]/40 focus:outline-none focus:border-[#D97845]"
                 />
               </div>
 
               <div>
-                <label className="text-xs font-medium text-stone-700 block mb-1.5">
+                <label className="text-xs font-semibold text-[#173D35] block mb-1.5">
                   Email Address *
                 </label>
                 <input
@@ -443,13 +443,13 @@ export default function App() {
                   value={jobFormData.candidateEmail}
                   onChange={(e) => setJobFormData({ ...jobFormData, candidateEmail: e.target.value })}
                   placeholder="buyer@showroom.com"
-                  className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
+                  className="w-full text-sm p-3 bg-[#F5F0E6]/60 border border-[#173D35]/15 rounded-lg text-[#173D35] placeholder:text-[#173D35]/40 focus:outline-none focus:border-[#D97845]"
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="text-xs font-medium text-stone-700 block mb-1.5">
+                  <label className="text-xs font-semibold text-[#173D35] block mb-1.5">
                     Contact Phone
                   </label>
                   <input
@@ -457,17 +457,17 @@ export default function App() {
                     value={jobFormData.candidatePhone}
                     onChange={(e) => setJobFormData({ ...jobFormData, candidatePhone: e.target.value })}
                     placeholder="+91 98..."
-                    className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
+                    className="w-full text-sm p-3 bg-[#F5F0E6]/60 border border-[#173D35]/15 rounded-lg text-[#173D35] placeholder:text-[#173D35]/40 focus:outline-none focus:border-[#D97845]"
                   />
                 </div>
                 <div>
-                  <label className="text-xs font-medium text-stone-700 block mb-1.5">
+                  <label className="text-xs font-semibold text-[#173D35] block mb-1.5">
                     Business Tier / Experience
                   </label>
                   <select
                     value={jobFormData.experienceYears}
                     onChange={(e) => setJobFormData({ ...jobFormData, experienceYears: e.target.value })}
-                    className="w-full text-xs p-3 bg-[#FAF9F6] border border-stone-200 rounded-lg text-slate-900 focus:outline-none focus:border-emerald-700"
+                    className="w-full text-sm p-3 bg-[#F5F0E6]/60 border border-[#173D35]/15 rounded-lg text-[#173D35] focus:outline-none focus:border-[#D97845]"
                   >
                     <option value="1-3">Emerging Retailer (1-3 yrs)</option>
                     <option value="4-7">Established Showroom (4-7 yrs)</option>
@@ -479,7 +479,7 @@ export default function App() {
 
               <button
                 type="submit"
-                className="w-full py-3 px-4 text-xs font-medium uppercase tracking-[0.15em] bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg transition-colors"
+                className="w-full py-3.5 px-4 text-xs font-semibold uppercase tracking-[0.15em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-lg transition-colors shadow-sm"
               >
                 Submit Partnership Inquiry
               </button>
@@ -490,12 +490,12 @@ export default function App() {
 
       {/* Floating Download Notification */}
       {downloadNotice && (
-        <div className="fixed bottom-6 left-6 z-50 card-3d-dark text-white px-5 py-3.5 rounded-xl border border-stone-800 flex items-center gap-3 animate-fade-in shadow-2xl">
-          <Download className="w-5 h-5 text-emerald-400 shrink-0" />
+        <div className="fixed bottom-6 left-6 z-50 card-3d-dark text-[#F5F0E6] px-5 py-3.5 rounded-xl border border-[#F5F0E6]/15 flex items-center gap-3 animate-fade-in shadow-2xl">
+          <Download className="w-5 h-5 text-[#E89A6F] shrink-0" />
           <div>
             <p className="text-xs font-semibold">Download Initiated</p>
-            <p className="text-[11px] text-stone-300 font-light">
-              Generating secure PDF: <span className="text-emerald-300 font-mono font-medium">{downloadNotice}</span>
+            <p className="text-[11px] text-[#F5F0E6]/80">
+              Generating secure PDF: <span className="text-[#E89A6F] font-mono font-medium">{downloadNotice}</span>
             </p>
           </div>
         </div>

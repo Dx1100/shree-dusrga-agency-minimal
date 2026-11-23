@@ -58,15 +58,15 @@ export const Header: React.FC<HeaderProps> = ({
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-xs border-b border-stone-200/60 py-4'
+          ? 'bg-white/95 backdrop-blur-md shadow-xs border-b border-[#173D35]/10 py-4'
           : isTransparentHero
-          ? 'bg-gradient-to-b from-black/70 via-black/30 to-transparent py-5 sm:py-6'
-          : 'bg-white border-b border-stone-200/60 py-4'
+          ? 'bg-gradient-to-b from-[#102B25]/80 via-[#102B25]/35 to-transparent py-5 sm:py-6'
+          : 'bg-white border-b border-[#173D35]/10 py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-8">
-          {/* Zone 1: Clean Editorial Brand Wordmark (No dots, no subtitle clutter) */}
+          {/* Zone 1: Clean Editorial Brand Wordmark */}
           <button
             onClick={() => {
               onNavigate('/');
@@ -76,8 +76,8 @@ export const Header: React.FC<HeaderProps> = ({
             aria-label="Shree Durga Agency Home"
           >
             <span
-              className={`font-serif text-lg sm:text-xl font-normal tracking-[0.14em] uppercase transition-colors ${
-                isLightMode ? 'text-white' : 'text-slate-950'
+              className={`font-serif text-lg sm:text-xl font-medium tracking-[0.12em] uppercase transition-colors ${
+                isLightMode ? 'text-[#F5F0E6]' : 'text-[#173D35]'
               }`}
             >
               Shree Durga Agency
@@ -99,21 +99,21 @@ export const Header: React.FC<HeaderProps> = ({
                 >
                   <button
                     onClick={() => onNavigate(link.path)}
-                    className={`flex items-center gap-1.5 text-[11px] uppercase tracking-[0.18em] font-medium whitespace-nowrap transition-colors py-1 group focus:outline-none ${
+                    className={`flex items-center gap-1.5 text-[11px] uppercase tracking-[0.18em] font-semibold whitespace-nowrap transition-colors py-1 group focus:outline-none ${
                       isLightMode
                         ? isActive
-                          ? 'text-white font-semibold border-b border-white'
-                          : 'text-white/85 hover:text-white'
+                          ? 'text-[#F5F0E6] border-b-2 border-[#D97845]'
+                          : 'text-[#F5F0E6]/85 hover:text-white'
                         : isActive
-                        ? 'text-emerald-900 font-semibold border-b border-emerald-800'
-                        : 'text-stone-700 hover:text-slate-950'
+                        ? 'text-[#173D35] border-b-2 border-[#D97845]'
+                        : 'text-[#173D35]/75 hover:text-[#173D35]'
                     }`}
                   >
                     <span>{link.label}</span>
                     {hasDropdown && (
                       <ChevronDown
                         className={`w-3 h-3 transition-transform duration-200 ${
-                          activeDropdown === link.id ? 'rotate-180' : ''
+                          activeDropdown === link.id ? 'rotate-180 text-[#D97845]' : ''
                         }`}
                       />
                     )}
@@ -123,7 +123,7 @@ export const Header: React.FC<HeaderProps> = ({
                   {hasDropdown && activeDropdown === link.id && (
                     <div className="absolute top-full left-0 pt-3 w-80 animate-fade-in z-50">
                       <div className="card-3d rounded-xl p-2.5 overflow-hidden relative shadow-2xl">
-                        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/40 to-transparent" />
+                        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/70 to-transparent" />
                         {link.dropdown!.map((sub, idx) => (
                           <button
                             key={idx}
@@ -131,15 +131,15 @@ export const Header: React.FC<HeaderProps> = ({
                               onNavigate(sub.path);
                               setActiveDropdown(null);
                             }}
-                            className="w-full text-left p-3 rounded-lg hover:bg-emerald-50/50 transition-all group/item block"
+                            className="w-full text-left p-3 rounded-lg hover:bg-[#F5F0E6] transition-all group/item block"
                           >
                             <div className="flex items-center justify-between">
-                              <span className="font-serif text-sm font-normal text-slate-900 group-hover/item:text-emerald-900">
+                              <span className="font-serif text-sm font-medium text-[#173D35] group-hover/item:text-[#D97845] transition-colors">
                                 {sub.title}
                               </span>
-                              <ArrowRight className="w-3.5 h-3.5 text-stone-400 group-hover/item:text-emerald-700 group-hover/item:translate-x-1 transition-all" />
+                              <ArrowRight className="w-3.5 h-3.5 text-[#173D35]/40 group-hover/item:text-[#D97845] group-hover/item:translate-x-1 transition-all" />
                             </div>
-                            <p className="text-[11px] text-stone-500 mt-1 line-clamp-2 font-light">
+                            <p className="text-[11px] text-[#173D35]/70 mt-1 line-clamp-2 font-normal">
                               {sub.description}
                             </p>
                           </button>
@@ -158,8 +158,8 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={onOpenSearch}
               className={`p-2 rounded-full transition-colors focus:outline-none ${
                 isLightMode
-                  ? 'text-white/80 hover:text-white hover:bg-white/10'
-                  : 'text-stone-600 hover:text-slate-950 hover:bg-stone-100'
+                  ? 'text-[#F5F0E6]/85 hover:text-white hover:bg-white/10'
+                  : 'text-[#173D35]/75 hover:text-[#173D35] hover:bg-[#F5F0E6]'
               }`}
               title="Search (Cmd+K)"
               aria-label="Search"
@@ -169,10 +169,10 @@ export const Header: React.FC<HeaderProps> = ({
 
             <button
               onClick={onOpenInquiry}
-              className={`hidden md:inline-flex items-center justify-center px-5 py-2 text-[10px] font-semibold uppercase tracking-[0.22em] transition-all whitespace-nowrap shrink-0 border ${
+              className={`hidden md:inline-flex items-center justify-center px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] rounded-md transition-all whitespace-nowrap shrink-0 ${
                 isLightMode
-                  ? 'border-white/60 text-white hover:bg-white hover:text-slate-950'
-                  : 'border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white'
+                  ? 'bg-[#D97845] hover:bg-[#C26534] text-white shadow-sm'
+                  : 'bg-[#D97845] hover:bg-[#C26534] text-white shadow-xs'
               }`}
             >
               Consultation
@@ -183,8 +183,8 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`xl:hidden p-2 rounded-md transition-colors ${
                 isLightMode
-                  ? 'text-white hover:bg-white/10'
-                  : 'text-slate-800 hover:bg-stone-100'
+                  ? 'text-[#F5F0E6] hover:bg-white/10'
+                  : 'text-[#173D35] hover:bg-[#F5F0E6]'
               }`}
               aria-label="Toggle navigation menu"
             >
@@ -199,7 +199,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="fixed inset-0 z-[9999] xl:hidden flex justify-end animate-fade-in" role="dialog" aria-modal="true">
           {/* Backdrop Overlay */}
           <div
-            className="fixed inset-0 bg-slate-950/70 backdrop-blur-sm transition-opacity"
+            className="fixed inset-0 bg-[#102B25]/70 backdrop-blur-sm transition-opacity"
             onClick={() => setIsMobileMenuOpen(false)}
             aria-hidden="true"
           />
@@ -207,18 +207,18 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Full-Height Drawer Box */}
           <div className="relative w-full max-w-sm bg-white h-screen max-h-[100dvh] shadow-2xl flex flex-col z-10 overflow-hidden">
             {/* Drawer Top Header */}
-            <div className="p-5 border-b border-stone-200/80 bg-[#FAF8F5] flex items-center justify-between shrink-0">
+            <div className="p-5 border-b border-[#173D35]/10 bg-[#F5F0E6] flex items-center justify-between shrink-0">
               <div>
-                <span className="font-serif text-base font-normal tracking-[0.14em] uppercase text-slate-950 block">
+                <span className="font-serif text-base font-medium tracking-[0.12em] uppercase text-[#173D35] block">
                   Shree Durga Agency
                 </span>
-                <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-emerald-800 block mt-0.5">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D97845] block mt-0.5">
                   Textile Sourcing Partner
                 </span>
               </div>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="p-2 -mr-1.5 text-stone-500 hover:text-slate-950 rounded-lg hover:bg-stone-200/60 transition-colors"
+                className="p-2 -mr-1.5 text-[#173D35]/65 hover:text-[#173D35] rounded-lg hover:bg-white/70 transition-colors"
                 aria-label="Close navigation menu"
               >
                 <X className="w-5 h-5" />
@@ -227,11 +227,11 @@ export const Header: React.FC<HeaderProps> = ({
 
             {/* Scrollable Navigation Link Body */}
             <div className="flex-1 overflow-y-auto p-5 space-y-4">
-              <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-stone-400 block pb-1 border-b border-stone-100">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#173D35]/50 block pb-1 border-b border-[#173D35]/10">
                 Menu Directory
               </span>
 
-              <div className="divide-y divide-stone-100">
+              <div className="divide-y divide-[#173D35]/10">
                 {links.map((link) => {
                   const hasDropdown = Boolean(link.dropdown && link.dropdown.length > 0);
                   const isExpanded = mobileExpanded === link.id;
@@ -246,7 +246,7 @@ export const Header: React.FC<HeaderProps> = ({
                             onNavigate(link.path);
                           }}
                           className={`font-serif text-base tracking-wide text-left font-normal transition-colors ${
-                            isActive ? 'text-emerald-900 font-semibold' : 'text-slate-900 hover:text-emerald-800'
+                            isActive ? 'text-[#D97845] font-semibold' : 'text-[#173D35] hover:text-[#D97845]'
                           }`}
                         >
                           {link.label}
@@ -254,12 +254,12 @@ export const Header: React.FC<HeaderProps> = ({
                         {hasDropdown && (
                           <button
                             onClick={() => setMobileExpanded(isExpanded ? null : link.id)}
-                            className="p-1.5 text-stone-400 hover:text-slate-700 transition-colors"
+                            className="p-1.5 text-[#173D35]/50 hover:text-[#173D35] transition-colors"
                             aria-label={`Toggle ${link.label} categories`}
                           >
                             <ChevronDown
                               className={`w-4 h-4 transition-transform duration-200 ${
-                                isExpanded ? 'rotate-180 text-emerald-800' : ''
+                                isExpanded ? 'rotate-180 text-[#D97845]' : ''
                               }`}
                             />
                           </button>
@@ -267,7 +267,7 @@ export const Header: React.FC<HeaderProps> = ({
                       </div>
 
                       {hasDropdown && isExpanded && (
-                        <div className="mt-2 pl-3 border-l-2 border-emerald-800/40 space-y-1.5 py-1 bg-stone-50/70 rounded-r-lg">
+                        <div className="mt-2 pl-3 border-l-2 border-[#D97845]/70 space-y-1.5 py-1.5 bg-[#F5F0E6]/70 rounded-r-lg">
                           {link.dropdown!.map((sub, sIdx) => (
                             <button
                               key={sIdx}
@@ -275,7 +275,7 @@ export const Header: React.FC<HeaderProps> = ({
                                 setIsMobileMenuOpen(false);
                                 onNavigate(sub.path);
                               }}
-                              className="block text-left text-xs text-stone-700 hover:text-emerald-800 py-1.5 font-light transition-colors w-full"
+                              className="block text-left text-xs font-medium text-[#173D35]/85 hover:text-[#D97845] py-1.5 transition-colors w-full"
                             >
                               {sub.title}
                             </button>
@@ -289,19 +289,19 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
 
             {/* Pinned Bottom Consultation Action */}
-            <div className="p-5 border-t border-stone-200/80 bg-white space-y-3 shrink-0 shadow-lg">
+            <div className="p-5 border-t border-[#173D35]/10 bg-[#F5F0E6] space-y-3 shrink-0 shadow-lg">
               <button
                 onClick={() => {
                   setIsMobileMenuOpen(false);
                   onOpenInquiry();
                 }}
-                className="w-full py-3.5 px-4 text-xs font-semibold uppercase tracking-[0.2em] bg-[#0B132B] hover:bg-emerald-800 text-white text-center rounded-lg transition-all shadow-md hover:shadow-lg active:scale-[0.99]"
+                className="w-full py-3.5 px-4 text-xs font-semibold uppercase tracking-[0.2em] bg-[#D97845] hover:bg-[#C26534] text-white text-center rounded-lg transition-all shadow-md active:scale-[0.99]"
               >
                 Sourcing Consultation
               </button>
-              <div className="flex items-center justify-between text-[10px] text-stone-400 font-light">
+              <div className="flex items-center justify-between text-[10px] text-[#173D35]/60 font-medium">
                 <span>Shree Durga Agency</span>
-                <span className="font-mono">Est. 1998 · India</span>
+                <span>Textile Sourcing · India</span>
               </div>
             </div>
           </div>

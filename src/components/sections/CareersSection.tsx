@@ -19,7 +19,7 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
   onNavigate,
 }) => {
   return (
-    <section className="py-24 sm:py-32 bg-[#FAF9F6] border-b border-stone-200/60">
+    <section className="py-24 sm:py-32 bg-white border-b border-[#173D35]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7 space-y-6">
@@ -33,8 +33,8 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
             <div className="space-y-4 pt-2">
               {culturePoints.map((point, idx) => (
                 <div key={idx} className="flex items-start gap-3.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-700 shrink-0 mt-2" />
-                  <span className="text-sm sm:text-[15px] text-stone-700 font-light leading-relaxed break-normal">
+                  <span className="w-2 h-2 rounded-full bg-[#D97845] shrink-0 mt-2" />
+                  <span className="text-sm sm:text-[15px] text-[#173D35]/85 font-normal leading-relaxed break-normal">
                     {point}
                   </span>
                 </div>
@@ -44,7 +44,7 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
             <div className="pt-6">
               <button
                 onClick={() => onNavigate('/who-we-serve')}
-                className="px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] border border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white transition-colors"
+                className="px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-lg shadow-xs transition-colors"
               >
                 Explore Customer Segments ({careersData.jobOpenings.length})
               </button>
@@ -53,8 +53,8 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
 
           {/* Right Highlights: Customer Segments 3D Card */}
           <div className="lg:col-span-5 card-3d-emerald rounded-3xl p-8 sm:p-10 relative overflow-hidden group">
-            <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-emerald-600/50 to-transparent" />
-            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-800 block mb-6 px-3 py-1 bg-emerald-50/80 rounded-md border border-emerald-100/60 w-fit">
+            <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845]/75 to-transparent" />
+            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#D97845] block mb-6 px-3 py-1 bg-[#F5F0E6] rounded-md border border-[#D97845]/25 w-fit">
               Who We Partner With
             </span>
             <div className="space-y-4">
@@ -62,15 +62,15 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
                 <div
                   key={job.id}
                   onClick={() => onNavigate('/who-we-serve')}
-                  className="p-4 rounded-xl bg-white/90 border border-stone-200/80 shadow-xs hover:border-emerald-600/40 hover:shadow-md hover:-translate-y-1 transition-all cursor-pointer group/item"
+                  className="p-4 rounded-xl bg-white border border-[#173D35]/12 shadow-xs hover:border-[#D97845]/60 hover:shadow-md hover:-translate-y-1 transition-all cursor-pointer group/item"
                 >
-                  <span className="text-[10px] uppercase tracking-[0.2em] text-emerald-800 font-semibold block mb-1">
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-[#D97845] font-semibold block mb-1">
                     {job.department} · {job.type}
                   </span>
-                  <h4 className="font-serif text-lg font-normal text-slate-950 group-hover/item:text-emerald-900 transition-colors break-normal leading-snug">
+                  <h4 className="font-serif text-lg font-normal text-[#173D35] group-hover/item:text-[#D97845] transition-colors break-normal leading-snug">
                     {job.title}
                   </h4>
-                  <span className="text-xs text-stone-500 block mt-1 font-light">
+                  <span className="text-xs text-[#173D35]/65 block mt-1 font-normal">
                     {job.location}
                   </span>
                 </div>

@@ -20,7 +20,7 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
   onNavigate,
 }) => {
   return (
-    <section className="py-24 sm:py-32 bg-white border-b border-stone-200/60">
+    <section className="py-24 sm:py-32 bg-[#F5F0E6] border-b border-[#173D35]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-20">
           <SectionHeading
@@ -31,10 +31,10 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
           />
           <button
             onClick={() => onNavigate('/what-we-source')}
-            className="hidden md:inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 hover:text-emerald-800 transition-colors pb-2 group whitespace-nowrap"
+            className="hidden md:inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#173D35] hover:text-[#D97845] transition-colors pb-2 group whitespace-nowrap"
           >
             <span>{viewAllText}</span>
-            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-3.5 h-3.5 text-[#D97845] group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
 
@@ -47,29 +47,29 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
               className="card-3d rounded-2xl p-6 sm:p-7 group cursor-pointer flex flex-col justify-between relative overflow-hidden"
             >
               {/* Subtle 3D Top Bevel Highlight */}
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-600/40 to-transparent" />
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/70 to-transparent" />
 
               <div>
-                {/* Image Container with 3D inset shadow */}
-                <div className="relative aspect-[16/11] overflow-hidden rounded-xl bg-stone-100 mb-6 border border-stone-200/80 shadow-[0_4px_12px_rgba(0,0,0,0.06)]">
+                {/* Image Container */}
+                <div className="relative aspect-[16/11] overflow-hidden rounded-xl bg-[#F5F0E6] mb-6 border border-[#173D35]/10 shadow-[0_4px_12px_rgba(23,61,53,0.06)]">
                   <ImageWithFallback
                     src={biz.image}
                     alt={biz.title}
                     fallbackTitle={biz.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-md text-[10px] font-semibold uppercase tracking-[0.2em] text-emerald-950 shadow-sm border border-stone-200/60 font-mono">
+                  <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-md text-[10px] font-semibold uppercase tracking-[0.18em] text-[#173D35] shadow-sm border border-[#173D35]/10">
                     {biz.category}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="space-y-3">
-                  <h3 className="font-serif text-2xl font-normal text-slate-950 tracking-tight leading-snug group-hover:text-emerald-900 transition-colors break-normal">
+                  <h3 className="font-serif text-2xl font-normal text-[#173D35] tracking-tight leading-snug group-hover:text-[#D97845] transition-colors break-normal">
                     {biz.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-stone-600 font-light leading-relaxed break-normal">
+                  <p className="text-xs sm:text-sm text-[#173D35]/75 font-normal leading-relaxed break-normal">
                     {biz.summary}
                   </p>
 
@@ -80,13 +80,13 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
                         {biz.subcategories.slice(0, 4).map((sub, sIdx) => (
                           <span
                             key={sIdx}
-                            className="px-2 py-0.5 rounded text-[11px] font-medium bg-[#FAF8F5] text-stone-700 border border-stone-200/60"
+                            className="px-2.5 py-0.5 rounded text-[11px] font-medium bg-[#F5F0E6] text-[#173D35] border border-[#173D35]/10"
                           >
                             {sub}
                           </span>
                         ))}
                         {biz.subcategories.length > 4 && (
-                          <span className="px-2 py-0.5 rounded text-[10px] font-mono text-emerald-800 bg-emerald-50 border border-emerald-900/10">
+                          <span className="px-2.5 py-0.5 rounded text-[11px] font-semibold text-[#D97845] bg-[#D97845]/10 border border-[#D97845]/20">
                             +{biz.subcategories.length - 4} more
                           </span>
                         )}
@@ -94,19 +94,19 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
                     </div>
                   )}
 
-                  {/* Mild color highlighted provenance strip */}
-                  <div className="mt-4 p-3 rounded-xl bg-[#FAF8F5] border border-stone-200/70 flex items-center justify-between text-xs text-stone-600 font-light shadow-xs">
-                    <span>{biz.metrics[0]?.label}: <strong className="font-medium text-slate-900 truncate max-w-[120px] inline-block align-bottom">{biz.metrics[0]?.value}</strong></span>
-                    <span>·</span>
-                    <span>{biz.metrics[1]?.label}: <strong className="font-medium text-slate-900 truncate max-w-[120px] inline-block align-bottom">{biz.metrics[1]?.value}</strong></span>
+                  {/* Highlighted provenance strip */}
+                  <div className="mt-4 p-3 rounded-xl bg-[#F5F0E6]/75 border border-[#173D35]/10 flex items-center justify-between text-xs text-[#173D35]/75 font-normal">
+                    <span>{biz.metrics[0]?.label}: <strong className="font-semibold text-[#173D35] truncate max-w-[120px] inline-block align-bottom">{biz.metrics[0]?.value}</strong></span>
+                    <span className="text-[#D97845]">·</span>
+                    <span>{biz.metrics[1]?.label}: <strong className="font-semibold text-[#173D35] truncate max-w-[120px] inline-block align-bottom">{biz.metrics[1]?.value}</strong></span>
                   </div>
                 </div>
               </div>
 
-              {/* Action button styled with 3D tactile feel */}
-              <div className="pt-5 mt-5 border-t border-stone-100 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.16em] text-slate-900 group-hover:text-emerald-800 transition-colors">
+              {/* Action row */}
+              <div className="pt-5 mt-5 border-t border-[#173D35]/10 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.16em] text-[#173D35] group-hover:text-[#D97845] transition-colors">
                 <span>View Subcategories & Specs</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-emerald-800" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-[#D97845]" />
               </div>
             </div>
           ))}
@@ -115,7 +115,7 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
         <div className="mt-14 text-center md:hidden">
           <button
             onClick={() => onNavigate('/what-we-source')}
-            className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-800"
+            className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#D97845]"
           >
             <span>{viewAllText}</span>
             <ArrowRight className="w-3.5 h-3.5" />

@@ -26,13 +26,13 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
       {kicker && (
         <div className={`flex items-center gap-2.5 mb-3.5 ${align === 'center' ? 'justify-center' : ''}`}>
           <span
-            className={`w-5 h-[1px] ${
-              light ? 'bg-emerald-400/80' : 'bg-emerald-700/70'
+            className={`w-6 h-[1.5px] ${
+              light ? 'bg-[#D97845]' : 'bg-[#D97845]'
             }`}
           />
           <span
-            className={`text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.26em] ${
-              light ? 'text-emerald-300' : 'text-emerald-800'
+            className={`text-[11px] font-semibold uppercase tracking-[0.24em] ${
+              light ? 'text-[#E89A6F]' : 'text-[#D97845]'
             }`}
           >
             {kicker}
@@ -41,15 +41,15 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
       )}
       <h2
         className={`font-serif text-3xl sm:text-4xl md:text-[42px] lg:text-[46px] font-normal tracking-tight leading-[1.16] break-normal ${
-          light ? 'text-white' : 'text-slate-950'
+          light ? 'text-[#F5F0E6]' : 'text-[#173D35]'
         }`}
       >
         {heading}
       </h2>
       {lead && (
         <p
-          className={`mt-4 text-sm sm:text-base md:text-lg leading-relaxed font-light ${
-            light ? 'text-slate-300' : 'text-stone-600'
+          className={`mt-4 text-sm sm:text-base md:text-lg leading-relaxed font-normal ${
+            light ? 'text-[#F5F0E6]/80' : 'text-[#173D35]/75'
           }`}
         >
           {lead}

@@ -24,9 +24,9 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
   const icons = [Layers, ShieldCheck, CheckCircle2, Globe2];
 
   return (
-    <section className="py-28 sm:py-36 bg-[#0B132B] text-white relative overflow-hidden">
-      {/* Subtle organic radial glow */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-950/30 rounded-full blur-3xl pointer-events-none" />
+    <section className="py-28 sm:py-36 bg-[#173D35] text-[#F5F0E6] relative overflow-hidden">
+      {/* Subtle warm radial glow */}
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#D97845]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -36,7 +36,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
           light={true}
         />
 
-        {/* 3D Highlighted Dark Glassmorphic Cards Grid */}
+        {/* 3D Highlighted Dark Pine Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 pt-4">
           {pillars.map((pillar, idx) => {
             const Icon = icons[idx % icons.length];
@@ -46,26 +46,26 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
                 className="card-3d-dark rounded-2xl p-7 flex flex-col justify-between group relative overflow-hidden"
               >
                 {/* 3D Top Specular Light Catch */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent" />
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/80 to-transparent" />
 
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500/20 to-emerald-900/30 border border-emerald-400/30 flex items-center justify-center text-emerald-300 mb-6 shadow-[0_4px_12px_rgba(6,78,59,0.3)] group-hover:scale-105 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-[#D97845]/15 border border-[#D97845]/35 flex items-center justify-center text-[#E89A6F] mb-6 group-hover:scale-105 transition-transform">
                     <Icon className="w-6 h-6 stroke-[1.5]" />
                   </div>
-                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-white mb-3 tracking-tight group-hover:text-emerald-300 transition-colors">
+                  <h3 className="font-serif text-xl sm:text-2xl font-normal text-[#F5F0E6] mb-3 tracking-tight group-hover:text-[#E89A6F] transition-colors">
                     {pillar.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                  <p className="text-xs sm:text-sm text-[#F5F0E6]/80 font-normal leading-relaxed mb-6">
                     {pillar.description}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-white/10 bg-white/[0.02] -mx-7 -mb-7 px-7 py-4 rounded-b-2xl">
-                  <span className="text-[10px] uppercase font-semibold text-slate-400 block tracking-[0.2em] mb-1">
-                    Benchmark Metric
-                  </span>
-                  <span className="font-serif text-xl sm:text-2xl font-normal text-emerald-300 tracking-tight">
+                <div className="pt-4 border-t border-[#F5F0E6]/10 bg-[#F5F0E6]/[0.03] -mx-7 -mb-7 px-7 py-4 rounded-b-2xl flex items-center justify-between">
+                  <span className="font-serif text-lg sm:text-xl font-normal text-[#E89A6F] tracking-tight">
                     {pillar.stat}
+                  </span>
+                  <span className="text-[11px] font-semibold text-[#F5F0E6]/50">
+                    0{idx + 1}
                   </span>
                 </div>
               </div>
@@ -74,23 +74,24 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
         </div>
 
         {/* 3D Elevated Quality Assurance Banner */}
-        <div className="mt-16 sm:mt-20 p-8 sm:p-10 rounded-2xl bg-gradient-to-r from-white/[0.08] via-white/[0.04] to-emerald-950/20 border border-white/15 shadow-[0_15px_35px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.15)] flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="mt-16 sm:mt-20 p-8 sm:p-10 rounded-2xl bg-[#102B25]/85 border border-[#F5F0E6]/15 shadow-[0_15px_35px_rgba(10,28,24,0.45),inset_0_1px_0_rgba(245,240,230,0.12)] flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-2 text-center md:text-left max-w-2xl">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-emerald-400">
-              Sourcing Assurance & Quality Protocol
+            <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#E89A6F]">
+              End-to-End Sourcing Assurance
             </span>
-            <h4 className="font-serif text-xl sm:text-2xl font-normal text-white">
-              Batch Inspection, GSM Verification & Transparent Sourcing
+            <h4 className="font-serif text-xl sm:text-2xl font-normal text-[#F5F0E6]">
+              Seasonal Planning, Physical Sampling & Pre-Dispatch Lot Inspection
             </h4>
-            <p className="text-xs sm:text-sm text-slate-300 font-light leading-relaxed">
-              Every order batch is inspected for fabric count, finish, colorfastness, and weave integrity before dispatch.
+            <p className="text-xs sm:text-sm text-[#F5F0E6]/80 font-normal leading-relaxed">
+              Every consignment is checked against approved physical swatches for fabric weight, finish, colour fastness, and stitching quality before release.
             </p>
           </div>
           <button
             onClick={() => onNavigate('/our-process')}
-            className="px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] bg-emerald-700 hover:bg-emerald-600 text-white rounded-lg shadow-[0_4px_15px_rgba(6,78,59,0.4)] transition-all whitespace-nowrap shrink-0 hover:scale-105"
+            className="inline-flex items-center gap-2 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-lg shadow-lg transition-all whitespace-nowrap shrink-0 hover:scale-105"
           >
-            Our Process
+            <span>Explore Our Process</span>
+            <ArrowRight className="w-4 h-4" />
           </button>
         </div>
       </div>

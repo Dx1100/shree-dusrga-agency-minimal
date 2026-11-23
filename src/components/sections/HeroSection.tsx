@@ -31,7 +31,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
   return (
     <section
-      className="relative h-screen min-h-[660px] max-h-[1080px] flex flex-col justify-between pt-28 pb-10 sm:pb-14 bg-slate-950 text-white overflow-hidden select-none"
+      className="relative h-screen min-h-[660px] max-h-[1080px] flex flex-col justify-between pt-28 pb-10 sm:pb-14 bg-[#102B25] text-[#F5F0E6] overflow-hidden select-none"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       aria-label="Cinematic Corporate Showcase"
@@ -55,20 +55,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 transform: isActive ? 'scale(1.05)' : 'scale(1.0)',
               }}
             />
-            {/* Minimalist Arvind-style contrast wash: deep gradient allowing crisp legibility without muddying */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30" />
+            {/* Deep forest editorial wash for warm, high-contrast legibility */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#102B25]/90 via-[#173D35]/65 to-[#102B25]/35" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#102B25]/80 via-transparent to-[#102B25]/35" />
           </div>
         );
       })}
 
-      {/* Main Content Area: Centered with generous margins and no clipping */}
+      {/* Main Content Area */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto">
         <div className="max-w-3xl lg:max-w-4xl space-y-5 sm:space-y-6">
           {currentSlide.kicker && (
             <div className="flex items-center gap-3">
-              <span className="w-8 h-[1px] bg-emerald-400" />
-              <span className="text-xs uppercase tracking-[0.24em] font-medium text-white/85">
+              <span className="w-8 h-[2px] bg-[#D97845]" />
+              <span className="text-xs uppercase tracking-[0.24em] font-semibold text-[#F5F0E6]/90">
                 {currentSlide.kicker}
               </span>
             </div>
@@ -78,11 +78,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {currentSlide.heading}
           </h1>
 
-          <p className="text-sm sm:text-base md:text-lg text-white/90 font-light leading-relaxed max-w-2xl sm:max-w-3xl break-normal">
+          <p className="text-sm sm:text-base md:text-lg text-[#F5F0E6]/90 font-normal leading-relaxed max-w-2xl sm:max-w-3xl break-normal">
             {currentSlide.description}
           </p>
 
-          {/* Minimalist Arvind-style CTAs */}
+          {/* Editorial CTAs */}
           <div className="pt-4 sm:pt-6 flex flex-wrap items-center gap-5 sm:gap-6">
             <button
               onClick={() => {
@@ -92,7 +92,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   onOpenInquiry();
                 }
               }}
-              className="px-6 sm:px-8 py-3 sm:py-3.5 text-[11px] font-semibold uppercase tracking-[0.2em] border border-white text-white hover:bg-white hover:text-slate-950 transition-all duration-300 inline-flex items-center gap-2 group"
+              className="px-6 sm:px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-md transition-all duration-300 inline-flex items-center gap-2 group shadow-lg"
             >
               <span>{currentSlide.ctaText}</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -105,7 +105,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     onNavigate(currentSlide.secondaryCtaLink);
                   }
                 }}
-                className="text-[11px] font-medium uppercase tracking-[0.2em] text-white/80 hover:text-white underline underline-offset-8 transition-colors py-2"
+                className="text-xs font-semibold uppercase tracking-[0.18em] text-[#F5F0E6]/90 hover:text-white underline decoration-[#D97845] decoration-2 underline-offset-8 transition-colors py-2"
               >
                 {currentSlide.secondaryCtaText}
               </button>
@@ -114,17 +114,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
       </div>
 
-      {/* Minimal Bottom Bar: Slide Counter & Progress (Arvind style) */}
+      {/* Minimal Bottom Bar: Slide Counter & Progress */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-end justify-between">
         {/* Left: Clean slide number & progress indicator */}
         <div className="flex items-center gap-4">
-          <span className="text-xs font-mono font-medium tracking-widest text-white/80">
-            0{currentSlideIndex + 1} <span className="text-white/40">/ 0{slides.length}</span>
+          <span className="text-xs font-semibold tracking-widest text-[#F5F0E6]/85">
+            0{currentSlideIndex + 1} <span className="text-[#F5F0E6]/45">/ 0{slides.length}</span>
           </span>
 
-          <div className="w-20 sm:w-36 h-[1.5px] bg-white/20 relative overflow-hidden">
+          <div className="w-20 sm:w-36 h-[2px] bg-[#F5F0E6]/20 relative overflow-hidden">
             <div
-              className="absolute top-0 bottom-0 left-0 bg-white transition-all duration-500 ease-out"
+              className="absolute top-0 bottom-0 left-0 bg-[#D97845] transition-all duration-500 ease-out"
               style={{
                 width: `${((currentSlideIndex + 1) / slides.length) * 100}%`,
               }}
@@ -139,8 +139,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 onClick={() => setCurrentSlideIndex(idx)}
                 className={`h-1.5 rounded-full transition-all ${
                   idx === currentSlideIndex
-                    ? 'w-6 bg-white'
-                    : 'w-1.5 bg-white/30 hover:bg-white/60'
+                    ? 'w-6 bg-[#D97845]'
+                    : 'w-1.5 bg-[#F5F0E6]/35 hover:bg-[#F5F0E6]/70'
                 }`}
                 aria-label={`Slide ${idx + 1}`}
               />
@@ -150,25 +150,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Right: Controls & Scroll prompt */}
         <div className="flex items-center gap-4">
-          <div className="hidden md:flex flex-col items-center gap-1 mr-4 text-white/50">
+          <div className="hidden md:flex flex-col items-center gap-1 mr-4 text-[#F5F0E6]/60">
             <span className="text-[10px] font-semibold tracking-[0.2em] uppercase">Scroll</span>
-            <span className="w-[1px] h-6 bg-gradient-to-b from-white/60 to-transparent" />
+            <span className="w-[1px] h-6 bg-gradient-to-b from-[#D97845] to-transparent" />
           </div>
 
-          <div className="flex items-center gap-1 border border-white/20 p-1">
+          <div className="flex items-center gap-1 border border-[#F5F0E6]/25 rounded-md p-1">
             <button
               onClick={() =>
                 setCurrentSlideIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1))
               }
-              className="p-1.5 text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+              className="p-1.5 text-[#F5F0E6]/80 hover:text-white hover:bg-[#D97845]/30 rounded transition-colors"
               aria-label="Previous slide"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
-            <span className="w-[1px] h-3 bg-white/20" />
+            <span className="w-[1px] h-3 bg-[#F5F0E6]/25" />
             <button
               onClick={() => setCurrentSlideIndex((prev) => (prev + 1) % slides.length)}
-              className="p-1.5 text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+              className="p-1.5 text-[#F5F0E6]/80 hover:text-white hover:bg-[#D97845]/30 rounded transition-colors"
               aria-label="Next slide"
             >
               <ChevronRight className="w-4 h-4" />
