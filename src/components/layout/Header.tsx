@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { Search, Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
+import { Search, Menu, X, ChevronDown } from 'lucide-react';
 import navigationData from '../../content/config/navigation.json';
 import { NavigationLink } from '../../types/content';
 
@@ -21,7 +21,6 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
 
   useEffect(() => {
@@ -84,76 +83,8 @@ export const Header: React.FC<HeaderProps> = ({
             </span>
           </button>
 
-          {/* Zone 2: Navigation Links */}
-          <nav className="hidden xl:flex items-center gap-7 2xl:gap-8">
-            {links.map((link) => {
-              const hasDropdown = Boolean(link.dropdown && link.dropdown.length > 0);
-              const isActive = currentPath === link.path || (link.path !== '/' && currentPath.startsWith(link.path));
-
-              return (
-                <div
-                  key={link.id}
-                  className="relative"
-                  onMouseEnter={() => hasDropdown && setActiveDropdown(link.id)}
-                  onMouseLeave={() => hasDropdown && setActiveDropdown(null)}
-                >
-                  <button
-                    onClick={() => onNavigate(link.path)}
-                    className={`flex items-center gap-1.5 text-[11px] uppercase tracking-[0.18em] font-semibold whitespace-nowrap transition-colors py-1 group focus:outline-none ${
-                      isLightMode
-                        ? isActive
-                          ? 'text-[#F5F0E6] border-b-2 border-[#D97845]'
-                          : 'text-[#F5F0E6]/85 hover:text-white'
-                        : isActive
-                        ? 'text-[#173D35] border-b-2 border-[#D97845]'
-                        : 'text-[#173D35]/75 hover:text-[#173D35]'
-                    }`}
-                  >
-                    <span>{link.label}</span>
-                    {hasDropdown && (
-                      <ChevronDown
-                        className={`w-3 h-3 transition-transform duration-200 ${
-                          activeDropdown === link.id ? 'rotate-180 text-[#D97845]' : ''
-                        }`}
-                      />
-                    )}
-                  </button>
-
-                  {/* Dropdown Menu */}
-                  {hasDropdown && activeDropdown === link.id && (
-                    <div className="absolute top-full left-0 pt-3 w-80 animate-fade-in z-50">
-                      <div className="card-3d rounded-xl p-2.5 overflow-hidden relative shadow-2xl">
-                        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/70 to-transparent" />
-                        {link.dropdown!.map((sub, idx) => (
-                          <button
-                            key={idx}
-                            onClick={() => {
-                              onNavigate(sub.path);
-                              setActiveDropdown(null);
-                            }}
-                            className="w-full text-left p-3 rounded-lg hover:bg-[#F5F0E6] transition-all group/item block"
-                          >
-                            <div className="flex items-center justify-between">
-                              <span className="font-serif text-sm font-medium text-[#173D35] group-hover/item:text-[#D97845] transition-colors">
-                                {sub.title}
-                              </span>
-                              <ArrowRight className="w-3.5 h-3.5 text-[#173D35]/40 group-hover/item:text-[#D97845] group-hover/item:translate-x-1 transition-all" />
-                            </div>
-                            <p className="text-[11px] text-[#173D35]/70 mt-1 line-clamp-2 font-normal">
-                              {sub.description}
-                            </p>
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </nav>
-
-          {/* Zone 3: Actions (Search & Quick Consultation) */}
-          <div className="flex items-center gap-4 shrink-0">
+          {/* Actions: Search, Get In Touch & Hamburger Menu (All Devices) */}
+          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
             <button
               onClick={onOpenSearch}
               className={`p-2 rounded-full transition-colors focus:outline-none ${
@@ -169,7 +100,7 @@ export const Header: React.FC<HeaderProps> = ({
 
             <button
               onClick={onOpenInquiry}
-              className={`hidden md:inline-flex items-center justify-center px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] rounded-md transition-all whitespace-nowrap shrink-0 ${
+              className={`hidden sm:inline-flex items-center justify-center px-4 sm:px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] rounded-md transition-all whitespace-nowrap shrink-0 ${
                 isLightMode
                   ? 'bg-[#D97845] hover:bg-[#C26534] text-white shadow-sm'
                   : 'bg-[#D97845] hover:bg-[#C26534] text-white shadow-xs'
@@ -178,25 +109,26 @@ export const Header: React.FC<HeaderProps> = ({
               Get In Touch
             </button>
 
-            {/* Mobile Menu Toggle Button */}
+            {/* Hamburger Menu Toggle Button (All Devices) */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`xl:hidden p-2 rounded-md transition-colors ${
+              className={`inline-flex items-center gap-2 px-3 py-2 rounded-md transition-all font-semibold uppercase tracking-[0.16em] text-[11px] focus:outline-none ${
                 isLightMode
-                  ? 'text-[#F5F0E6] hover:bg-white/10'
-                  : 'text-[#173D35] hover:bg-[#F5F0E6]'
+                  ? 'text-[#F5F0E6] hover:bg-white/10 border border-white/20'
+                  : 'text-[#173D35] hover:bg-[#F5F0E6] border border-[#173D35]/20'
               }`}
               aria-label="Toggle navigation menu"
             >
-              {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              <span className="font-semibold tracking-[0.18em]">Menu</span>
+              {isMobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Drawer Menu rendered via createPortal directly into document.body */}
+      {/* Slide-Out Drawer Menu (All Devices) rendered via createPortal directly into document.body */}
       {isMobileMenuOpen && typeof document !== 'undefined' && createPortal(
-        <div className="fixed inset-0 z-[9999] xl:hidden flex justify-end animate-fade-in" role="dialog" aria-modal="true">
+        <div className="fixed inset-0 z-[9999] flex justify-end animate-fade-in" role="dialog" aria-modal="true">
           {/* Backdrop Overlay */}
           <div
             className="fixed inset-0 bg-[#102B25]/70 backdrop-blur-sm transition-opacity"
@@ -205,7 +137,7 @@ export const Header: React.FC<HeaderProps> = ({
           />
 
           {/* Full-Height Drawer Box */}
-          <div className="relative w-full max-w-sm bg-white h-screen max-h-[100dvh] shadow-2xl flex flex-col z-10 overflow-hidden">
+          <div className="relative w-full max-w-sm sm:max-w-md bg-white h-screen max-h-[100dvh] shadow-2xl flex flex-col z-10 overflow-hidden">
             {/* Drawer Top Header */}
             <div className="p-5 border-b border-[#173D35]/10 bg-[#F5F0E6] flex items-center justify-between shrink-0">
               <div>

@@ -46,21 +46,6 @@ export const SearchModal: React.FC<SearchModalProps> = ({
       }
     });
 
-    // Search news
-    newsData.forEach((news) => {
-      if (
-        news.title.toLowerCase().includes(q) ||
-        news.summary.toLowerCase().includes(q)
-      ) {
-        matches.push({
-          type: 'news',
-          title: news.title,
-          desc: `${news.date} · ${news.category}`,
-          path: `/newsroom`,
-        });
-      }
-    });
-
     // Search reports
     investorsData.annualReports.forEach((rep) => {
       if (

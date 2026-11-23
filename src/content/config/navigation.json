@@ -72,10 +72,5 @@
     "id": "who-we-serve",
     "label": "Who We Serve",
     "path": "/who-we-serve"
-  },
-  {
-    "id": "newsroom",
-    "label": "Media",
-    "path": "/newsroom"
   }
 ]

@@ -25,7 +25,6 @@ import { InnovationPage } from './pages/InnovationPage';
 import { SustainabilityPage } from './pages/SustainabilityPage';
 import { CSRPage } from './pages/CSRPage';
 import { InvestorRelationsPage } from './pages/InvestorRelationsPage';
-import { NewsroomPage } from './pages/NewsroomPage';
 import { CareersPage } from './pages/CareersPage';
 import { ContactPage } from './pages/ContactPage';
 
@@ -205,10 +204,6 @@ export default function App() {
           onDownloadReport={handleDownloadReport}
         />
       );
-    }
-
-    if (currentPath === '/newsroom') {
-      return <NewsroomPage onOpenArticle={handleOpenArticle} />;
     }
 
     if (currentPath === '/who-we-serve' || currentPath === '/careers') {
