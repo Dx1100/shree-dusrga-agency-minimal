@@ -175,7 +175,7 @@ export const Header: React.FC<HeaderProps> = ({
                   : 'bg-[#D97845] hover:bg-[#C26534] text-white shadow-xs'
               }`}
             >
-              Consultation
+              Get In Touch
             </button>
 
             {/* Mobile Menu Toggle Button */}
@@ -297,7 +297,7 @@ export const Header: React.FC<HeaderProps> = ({
                 }}
                 className="w-full py-3.5 px-4 text-xs font-semibold uppercase tracking-[0.2em] bg-[#D97845] hover:bg-[#C26534] text-white text-center rounded-lg transition-all shadow-md active:scale-[0.99]"
               >
-                Sourcing Consultation
+                Get In Touch
               </button>
               <div className="flex items-center justify-between text-[10px] text-[#173D35]/60 font-medium">
                 <span>Shree Durga Agency</span>
