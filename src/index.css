@@ -3,19 +3,20 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-serif: "Playfair Display", Georgia, serif;
+  --font-serif: "DM Serif Display", Georgia, serif;
   --font-sans: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --color-brand-text: #173D35;
-  --color-brand-deep: #102B25;
-  --color-brand-muted: #46635C;
-  --color-brand-cream: #F5F0E6;
-  --color-brand-accent: #D97845;
-  --color-brand-accent-hover: #C26534;
+  --color-brand-text: #243B35;
+  --color-brand-deep: #243B35;
+  --color-brand-muted: #746F66;
+  --color-brand-cream: #F5F1E9;
+  --color-brand-sand: #D9CBB8;
+  --color-brand-accent: #A66C45;
+  --color-brand-accent-hover: #8F5834;
 }
 
 @layer base {
   :root {
-    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-heading: 'DM Serif Display', Georgia, serif;
     --font-body: 'Manrope', system-ui, -apple-system, sans-serif;
   }
 
@@ -27,8 +28,8 @@
 
   body {
     font-family: var(--font-body);
-    color: #173D35;
-    background-color: #F5F0E6;
+    color: #243B35;
+    background-color: #F5F1E9;
     overflow-x: hidden;
   }
 

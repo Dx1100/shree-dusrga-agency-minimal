@@ -92,7 +92,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   onOpenInquiry();
                 }
               }}
-              className="px-6 sm:px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-md transition-all duration-300 inline-flex items-center gap-2 group shadow-lg"
+              className="px-6 sm:px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] bg-[#A66C45] hover:bg-[#8F5834] text-white rounded-md transition-all duration-300 inline-flex items-center gap-2 group shadow-lg"
             >
               <span>{currentSlide.ctaText}</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -101,11 +101,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {currentSlide.secondaryCtaText && (
               <button
                 onClick={() => {
-                  if (currentSlide.secondaryCtaLink) {
+                  if (currentSlide.secondaryCtaLink?.startsWith('#')) {
+                    const el = document.querySelector(currentSlide.secondaryCtaLink);
+                    if (el) {
+                      el.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  } else if (currentSlide.secondaryCtaLink) {
                     onNavigate(currentSlide.secondaryCtaLink);
                   }
                 }}
-                className="text-xs font-semibold uppercase tracking-[0.18em] text-[#F5F0E6]/90 hover:text-white underline decoration-[#D97845] decoration-2 underline-offset-8 transition-colors py-2"
+                className="text-xs font-semibold uppercase tracking-[0.18em] text-[#F5F0E6]/90 hover:text-white underline decoration-[#A66C45] decoration-2 underline-offset-8 transition-colors py-2"
               >
                 {currentSlide.secondaryCtaText}
               </button>
@@ -124,7 +129,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           <div className="w-20 sm:w-36 h-[2px] bg-[#F5F0E6]/20 relative overflow-hidden">
             <div
-              className="absolute top-0 bottom-0 left-0 bg-[#D97845] transition-all duration-500 ease-out"
+              className="absolute top-0 bottom-0 left-0 bg-[#A66C45] transition-all duration-500 ease-out"
               style={{
                 width: `${((currentSlideIndex + 1) / slides.length) * 100}%`,
               }}
@@ -139,7 +144,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 onClick={() => setCurrentSlideIndex(idx)}
                 className={`h-1.5 rounded-full transition-all ${
                   idx === currentSlideIndex
-                    ? 'w-6 bg-[#D97845]'
+                    ? 'w-6 bg-[#A66C45]'
                     : 'w-1.5 bg-[#F5F0E6]/35 hover:bg-[#F5F0E6]/70'
                 }`}
                 aria-label={`Slide ${idx + 1}`}
@@ -152,7 +157,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="flex items-center gap-4">
           <div className="hidden md:flex flex-col items-center gap-1 mr-4 text-[#F5F0E6]/60">
             <span className="text-[10px] font-semibold tracking-[0.2em] uppercase">Scroll</span>
-            <span className="w-[1px] h-6 bg-gradient-to-b from-[#D97845] to-transparent" />
+            <span className="w-[1px] h-6 bg-gradient-to-b from-[#A66C45] to-transparent" />
           </div>
 
           <div className="flex items-center gap-1 border border-[#F5F0E6]/25 rounded-md p-1">
@@ -160,7 +165,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               onClick={() =>
                 setCurrentSlideIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1))
               }
-              className="p-1.5 text-[#F5F0E6]/80 hover:text-white hover:bg-[#D97845]/30 rounded transition-colors"
+              className="p-1.5 text-[#F5F0E6]/80 hover:text-white hover:bg-[#A66C45]/30 rounded transition-colors"
               aria-label="Previous slide"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -168,7 +173,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <span className="w-[1px] h-3 bg-[#F5F0E6]/25" />
             <button
               onClick={() => setCurrentSlideIndex((prev) => (prev + 1) % slides.length)}
-              className="p-1.5 text-[#F5F0E6]/80 hover:text-white hover:bg-[#D97845]/30 rounded transition-colors"
+              className="p-1.5 text-[#F5F0E6]/80 hover:text-white hover:bg-[#A66C45]/30 rounded transition-colors"
               aria-label="Next slide"
             >
               <ChevronRight className="w-4 h-4" />
