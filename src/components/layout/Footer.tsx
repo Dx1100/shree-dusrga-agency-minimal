@@ -91,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
                   onClick={() => onNavigate('/what-we-source/menswear')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Menswear (Sherwani, Kurta, Suits)
+                  Menswear
                 </button>
               </li>
               <li>
@@ -99,7 +99,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
                   onClick={() => onNavigate('/what-we-source/womenswear')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Womenswear (Sarees, Suits, Lehengas)
+                  Womenswear
                 </button>
               </li>
               <li>
@@ -107,7 +107,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
                   onClick={() => onNavigate('/what-we-source/kidswear')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Kidswear (Children's Apparel)
+                  Kidswear
                 </button>
               </li>
               <li>
@@ -115,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
                   onClick={() => onNavigate('/what-we-source/home-textiles')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Home Textiles (Bedsheets, Towels)
+                  Home Textiles
                 </button>
               </li>
               <li>
