@@ -124,20 +124,57 @@ export const BusinessesPage: React.FC<BusinessesPageProps> = ({ onNavigate, onOp
                   </div>
                 )}
 
-                {/* Relevant Product Types */}
+                {/* Relevant Product Types Highlight Card with Dynamic Category Background Image */}
                 {biz.productTypes && biz.productTypes.length > 0 && (
-                  <div className="space-y-2 pt-2">
-                    <span className="text-xs font-semibold text-[#173D35] uppercase tracking-wider block">
-                      Relevant Product Types:
-                    </span>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#173D35]/75">
-                      {biz.productTypes.map((pt, pIdx) => (
-                        <li key={pIdx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-[#D97845] shrink-0 mt-1" />
-                          <span>{pt}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  <div className="relative rounded-2xl overflow-hidden border border-[#173D35]/20 shadow-lg bg-[#102B25] p-5 sm:p-6 text-[#F5F0E6] group/card">
+                    {/* Background Image Layer with Luxury Dark Gradient Overlay */}
+                    <div className="absolute inset-0 pointer-events-none">
+                      <img
+                        src={biz.image}
+                        alt=""
+                        className="w-full h-full object-cover object-center opacity-20 scale-105 group-hover/card:scale-110 transition-transform duration-700 ease-out"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#102B25]/95 via-[#102B25]/85 to-[#173D35]/90 mix-blend-multiply" />
+                      <div className="absolute inset-0 bg-radial from-transparent via-[#102B25]/50 to-[#102B25]/90" />
+                    </div>
+
+                    {/* Top Terracotta Accent Line */}
+                    <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent" />
+
+                    {/* Card Content */}
+                    <div className="relative z-10 space-y-4">
+                      {/* Header with Beacon & Count Pill */}
+                      <div className="flex items-center justify-between gap-3 flex-wrap">
+                        <div className="flex items-center gap-2">
+                          <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D97845] opacity-75" />
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D97845]" />
+                          </span>
+                          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#E89A6F]">
+                            Relevant Product Types
+                          </span>
+                        </div>
+                        <span className="text-[10px] font-semibold uppercase tracking-wider text-[#F5F0E6]/75 bg-white/10 px-2.5 py-0.5 rounded-full border border-white/15 backdrop-blur-xs">
+                          {biz.productTypes.length} Core Lines
+                        </span>
+                      </div>
+
+                      {/* Product Types Grid of Glassmorphic Micro-Cards */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                        {biz.productTypes.map((pt, pIdx) => (
+                          <div
+                            key={pIdx}
+                            className="flex items-start gap-2.5 p-2.5 sm:p-3 rounded-xl bg-white/[0.07] hover:bg-white/[0.13] border border-white/10 hover:border-[#D97845]/40 transition-all duration-200 backdrop-blur-xs group/item"
+                          >
+                            <CheckCircle2 className="w-3.5 h-3.5 text-[#D97845] shrink-0 mt-0.5 group-hover/item:text-[#E89A6F] transition-colors" />
+                            <span className="text-xs sm:text-[13px] text-[#F5F0E6]/95 font-medium leading-snug">
+                              {pt}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 )}
 

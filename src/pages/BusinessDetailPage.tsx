@@ -102,27 +102,50 @@ export const BusinessDetailPage: React.FC<BusinessDetailPageProps> = ({
               </p>
             </div>
 
-            {/* Relevant Product Types */}
+            {/* Relevant Product Types Highlight Card with Dynamic Category Background Image */}
             {business.productTypes && business.productTypes.length > 0 && (
-              <div className="card-3d rounded-3xl p-8 sm:p-10 space-y-6 relative overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/60 to-transparent" />
-                <div className="flex items-center justify-between">
-                  <h3 className="text-2xl font-serif font-medium text-[#173D35]">
-                    Relevant Product Types & Lines
-                  </h3>
-                  <span className="text-[11px] font-semibold text-[#D97845] uppercase tracking-wider bg-[#D97845]/10 px-2.5 py-1 rounded border border-[#D97845]/20">
-                    Verified Lines
-                  </span>
+              <div className="relative rounded-3xl overflow-hidden border border-[#173D35]/20 shadow-xl bg-[#102B25] p-8 sm:p-10 text-[#F5F0E6] group/card">
+                {/* Background Image Layer with Luxury Dark Gradient Overlay */}
+                <div className="absolute inset-0 pointer-events-none">
+                  <img
+                    src={business.image}
+                    alt=""
+                    className="w-full h-full object-cover object-center opacity-20 scale-105 group-hover/card:scale-110 transition-transform duration-700 ease-out"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#102B25]/95 via-[#102B25]/85 to-[#173D35]/90 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-radial from-transparent via-[#102B25]/50 to-[#102B25]/90" />
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {business.productTypes.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-3 bg-[#F5F0E6]/70 p-4 rounded-xl border border-[#173D35]/10 hover:border-[#D97845]/40 hover:-translate-y-0.5 transition-all">
-                      <CheckCircle2 className="w-4 h-4 text-[#D97845] shrink-0 mt-0.5" />
-                      <span className="text-xs sm:text-sm text-[#173D35] font-medium leading-relaxed">
-                        {item}
+
+                {/* Top Terracotta Accent Line */}
+                <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent" />
+
+                <div className="relative z-10 space-y-6">
+                  <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div className="flex items-center gap-3">
+                      <span className="relative flex h-2.5 w-2.5">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D97845] opacity-75" />
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#D97845]" />
                       </span>
+                      <h3 className="text-2xl font-serif font-medium text-white">
+                        Relevant Product Types & Lines
+                      </h3>
                     </div>
-                  ))}
+                    <span className="text-[11px] font-semibold text-[#E89A6F] uppercase tracking-wider bg-white/10 px-3.5 py-1.5 rounded-full border border-white/15 backdrop-blur-xs">
+                      {business.productTypes.length} Verified Lines
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {business.productTypes.map((item, idx) => (
+                      <div key={idx} className="flex items-start gap-3 bg-white/[0.08] hover:bg-white/[0.14] p-4 rounded-xl border border-white/10 hover:border-[#D97845]/40 hover:-translate-y-0.5 transition-all backdrop-blur-xs group/item">
+                        <CheckCircle2 className="w-4 h-4 text-[#D97845] shrink-0 mt-0.5 group-hover/item:text-[#E89A6F] transition-colors" />
+                        <span className="text-xs sm:text-sm text-[#F5F0E6] font-medium leading-relaxed">
+                          {item}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             )}
