@@ -5,6 +5,7 @@ interface StatCounterProps {
   prefix?: string;
   suffix?: string;
   durationMs?: number;
+  className?: string;
 }
 
 export const StatCounter: React.FC<StatCounterProps> = ({
@@ -12,6 +13,7 @@ export const StatCounter: React.FC<StatCounterProps> = ({
   prefix = '',
   suffix = '',
   durationMs = 1800,
+  className = '',
 }) => {
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -76,7 +78,7 @@ export const StatCounter: React.FC<StatCounterProps> = ({
       : count.toLocaleString();
 
   return (
-    <span ref={elementRef} className="font-mono tabular-nums inline-flex items-baseline">
+    <span ref={elementRef} className={`font-serif tabular-nums inline-flex items-baseline ${className}`}>
       {prefix && <span>{prefix}</span>}
       <span>{formattedCount}</span>
       {suffix && <span>{suffix}</span>}
