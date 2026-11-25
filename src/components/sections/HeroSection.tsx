@@ -46,15 +46,31 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               isActive ? 'opacity-100 z-0' : 'opacity-0 -z-10 pointer-events-none'
             }`}
           >
-            <ImageWithFallback
-              src={slide.desktopImage}
-              alt={slide.heading}
-              fallbackTitle={slide.heading}
-              className="w-full h-full object-cover transition-transform duration-[9000ms] ease-out"
-              style={{
-                transform: isActive ? 'scale(1.05)' : 'scale(1.0)',
-              }}
-            />
+            {slide.video ? (
+              <video
+                key={slide.video}
+                src={slide.video}
+                poster={slide.desktopImage}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover transition-transform duration-[9000ms] ease-out"
+                style={{
+                  transform: isActive ? 'scale(1.04)' : 'scale(1.0)',
+                }}
+              />
+            ) : (
+              <ImageWithFallback
+                src={slide.desktopImage}
+                alt={slide.heading}
+                fallbackTitle={slide.heading}
+                className="w-full h-full object-cover transition-transform duration-[9000ms] ease-out"
+                style={{
+                  transform: isActive ? 'scale(1.05)' : 'scale(1.0)',
+                }}
+              />
+            )}
             {/* Deep forest editorial wash for warm, high-contrast legibility */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#102B25]/90 via-[#173D35]/65 to-[#102B25]/35" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#102B25]/80 via-transparent to-[#102B25]/35" />

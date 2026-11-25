@@ -6,6 +6,7 @@ export interface HeroSlide {
   description: string;
   desktopImage: string;
   mobileImage: string;
+  video?: string;
   ctaText: string;
   ctaLink: string;
   secondaryCtaText?: string;
