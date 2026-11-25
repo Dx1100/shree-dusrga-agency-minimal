@@ -19,7 +19,7 @@
           "id": "slide-video-1",
           "kicker": "END-TO-END TEXTILE PROCUREMENT · PAN-INDIA",
           "heading": "Source Better. Buy Smarter. Grow Your Textile Business.",
-          "subheading": "On-ground sampling, verified mill pricing, and end-to-end dispatch tracking.",
+          "subheading": "On-ground sampling, verified factory pricing, and end-to-end dispatch tracking.",
           "description": "Direct factory connections in Surat, Varanasi, Jaipur, and Delhi. We manage on-ground sampling, price negotiation, and pre-dispatch quality checks for your store.",
           "video": "/videos/hero/erm-sda-01-hs.mp4",
           "desktopImage": "/images/hero/erm-sda-01-poster.jpg",
@@ -32,10 +32,10 @@
         },
         {
           "id": "slide-video-2",
-          "kicker": "AUTHENTIC CRAFTSMANSHIP & MILL HERITAGE",
-          "heading": "Direct Access to India's Finest Weaving Mills & Master Artisans",
+          "kicker": "AUTHENTIC CRAFTSMANSHIP & WEAVING HERITAGE",
+          "heading": "Direct Access to India's Finest Weaving Clusters & Master Artisans",
           "subheading": "Preserving generational textile craft while powering modern retail supply chains.",
-          "description": "Connect directly with verified master weavers, hand-block printers, and mill-gate producers across India's premier textile corridors with zero broker markups.",
+          "description": "Connect directly with verified master weavers, hand-block printers, and factory-gate producers across India's premier textile corridors with zero broker markups.",
           "video": "/videos/hero/erm-sda-02-hs.mp4",
           "desktopImage": "/images/hero/erm-sda-02-poster.jpg",
           "mobileImage": "/images/hero/erm-sda-02-poster.jpg",
@@ -55,8 +55,8 @@
           "mobileImage": "/images/hero/hero_slide_2_craft.jpg",
           "ctaText": "Discuss Your Sourcing Requirements",
           "ctaLink": "inquiry",
-          "secondaryCtaText": "Explore Our Mill Network",
-          "secondaryCtaLink": "/mills",
+          "secondaryCtaText": "Explore Our Sourcing Network",
+          "secondaryCtaLink": "/sourcing-ecosystem",
           "overlayStrength": 0.6
         }
       ]
@@ -65,7 +65,7 @@
       "enabled": true,
       "kicker": "About Shree Durga Agency",
       "heading": "Your Trusted Sourcing Partner in Indian Textile Hubs",
-      "leadParagraph": "We connect retail showrooms, boutiques, and wholesalers directly with verified looms, mills, and artisan clusters across India's primary production corridors.",
+      "leadParagraph": "We connect retail showrooms, boutiques, and wholesalers directly with verified looms, factories, and artisan clusters across India's primary production corridors.",
       "secondaryParagraph": "By managing on-the-ground sampling, price negotiation, and pre-dispatch quality checks, we eliminate broker markups and sourcing risk for your store.",
       "quote": "Transparent procurement, verified quality checks, and dependable bulk delivery across India.",
       "quoteAuthor": "Shree Durga Agency Sourcing Advisory",
@@ -129,7 +129,7 @@
         },
         {
           "title": "Direct Production Hub Matching",
-          "description": "Direct linkage with vetted mills, looms, and printing units across Surat, Varanasi, Jaipur, and Delhi.",
+          "description": "Direct linkage with vetted factories, looms, and printing units across Surat, Varanasi, Jaipur, and Delhi.",
           "stat": "Direct Hub Links"
         },
         {
@@ -208,9 +208,9 @@
       "heading": "Serving Businesses Across the Indian Textile Industry",
       "description": "From single-location boutiques to multi-door showrooms and regional wholesalers, our sourcing solutions adapt to your volume and style requirements.",
       "culturePoints": [
-        "Retail Showrooms: Curated seasonal stock, mill-direct pricing, and dependable fulfillment.",
+        "Retail Showrooms: Curated seasonal stock, factory-direct pricing, and dependable fulfillment.",
         "Boutiques & Designers: Small-batch sampling, exclusive running fabrics, and custom work.",
-        "Wholesalers & Distributors: Volume lots from verified mills with regular scheduled dispatches.",
+        "Wholesalers & Distributors: Volume lots from verified manufacturers with regular scheduled dispatches.",
         "Online Brands & Resellers: Catalog variety, verified lot checks, and packaging assistance."
       ]
     },
@@ -249,7 +249,7 @@
       "items": [
         {
           "id": "t1",
-          "quote": "Shree Durga Agency transformed our seasonal bridal procurement. Instead of spending weeks navigating unverified brokers in congested markets, we receive curated swatches with guaranteed mill-direct pricing and strict QA before dispatch.",
+          "quote": "Shree Durga Agency transformed our seasonal bridal procurement. Instead of spending weeks navigating unverified brokers in congested markets, we receive curated swatches with guaranteed factory-direct pricing and strict QA before dispatch.",
           "author": "Vikram Singhania",
           "role": "Managing Partner",
           "company": "Singhania Sarees & Bridal Studio",
@@ -297,7 +297,7 @@
         },
         {
           "id": "t5",
-          "quote": "We source over 3,000 meters of unstitched salwar suit fabrics every quarter. Shree Durga Agency coordinates sampling, mill price lock-in, and consolidated transport directly to our wholesale hub in Delhi.",
+          "quote": "We source over 3,000 meters of unstitched salwar suit fabrics every quarter. Shree Durga Agency coordinates sampling, factory price lock-in, and consolidated transport directly to our wholesale hub in Delhi.",
           "author": "Gaurav Malhotra",
           "role": "General Partner",
           "company": "Malhotra Textiles & Fabrics",

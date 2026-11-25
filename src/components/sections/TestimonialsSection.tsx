@@ -26,7 +26,7 @@ interface TestimonialsSectionProps {
 const defaultTestimonials: TestimonialItem[] = [
   {
     id: 't1',
-    quote: 'Shree Durga Agency transformed our seasonal bridal procurement. Instead of spending weeks navigating unverified brokers in congested markets, we receive curated swatches with guaranteed mill-direct pricing and strict QA before dispatch.',
+    quote: 'Shree Durga Agency transformed our seasonal bridal procurement. Instead of spending weeks navigating unverified brokers in congested markets, we receive curated swatches with guaranteed factory-direct pricing and strict QA before dispatch.',
     author: 'Vikram Singhania',
     role: 'Managing Partner',
     company: 'Singhania Sarees & Bridal Studio',
@@ -74,7 +74,7 @@ const defaultTestimonials: TestimonialItem[] = [
   },
   {
     id: 't5',
-    quote: 'We source over 3,000 meters of unstitched salwar suit fabrics every quarter. Shree Durga Agency coordinates sampling, mill price lock-in, and consolidated transport directly to our wholesale hub in Delhi.',
+    quote: 'We source over 3,000 meters of unstitched salwar suit fabrics every quarter. Shree Durga Agency coordinates sampling, factory price lock-in, and consolidated transport directly to our wholesale hub in Delhi.',
     author: 'Gaurav Malhotra',
     role: 'General Partner',
     company: 'Malhotra Textiles & Fabrics',

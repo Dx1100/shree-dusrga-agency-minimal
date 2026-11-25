@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
 import siteConfig from '../../content/config/site.json';
 
@@ -19,13 +19,40 @@ export const ContactCTASection: React.FC<ContactCTASectionProps> = ({
   onNavigate,
   onOpenInquiry,
 }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.15 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="py-14 sm:py-20 bg-[#173D35] text-[#F5F0E6] relative overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="py-14 sm:py-20 bg-[#173D35] text-[#F5F0E6] relative overflow-hidden"
+    >
       {/* Warm ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#D97845]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center space-y-7">
+        <div
+          className={`max-w-3xl mx-auto text-center space-y-7 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+            isVisible
+              ? 'opacity-100 scale-100 translate-y-0'
+              : 'opacity-0 scale-95 translate-y-8'
+          }`}
+        >
           <div className="flex items-center justify-center gap-3">
             <span className="w-6 h-[1.5px] bg-[#D97845]" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-[#E89A6F]">
@@ -45,7 +72,7 @@ export const ContactCTASection: React.FC<ContactCTASectionProps> = ({
           <div className="pt-4 flex flex-wrap items-center justify-center gap-5 sm:gap-6">
             <button
               onClick={onOpenInquiry}
-              className="px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-md transition-all inline-flex items-center gap-2 group shadow-xl"
+              className="px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-md transition-all inline-flex items-center gap-2 group shadow-xl hover:scale-105 active:scale-95"
             >
               <span>{primaryButtonText}</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

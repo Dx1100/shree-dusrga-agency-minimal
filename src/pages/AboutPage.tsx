@@ -10,7 +10,7 @@ interface AboutPageProps {
 
 export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenInquiry }) => {
   const milestones = [
-    { year: 'Phase 1', title: 'Textile Market Grounding', desc: 'Established direct relationships with primary weaving mills and karkhanas in Surat and Varanasi.' },
+    { year: 'Phase 1', title: 'Textile Market Grounding', desc: 'Established direct relationships with primary weaving looms and karkhanas in Surat and Varanasi.' },
     { year: 'Phase 2', title: 'Regional Cluster Expansion', desc: 'Extended sourcing access to Jaipur block-print artisans, Kolkata handlooms, and Delhi wholesale markets.' },
     { year: 'Phase 3', title: 'Standardized Quality Protocols', desc: 'Instituted pre-dispatch inspection protocols covering fabric GSM, yarn counts, and colorfastness verification.' },
     { year: 'Phase 4', title: 'Digital Catalog & Swatch Access', desc: 'Introduced digital catalog updates and rapid physical swatch courier dispatch for outstation retail buyers.' },
@@ -26,8 +26,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenInquiry 
     },
     {
       name: 'Cluster Coordination Team',
-      title: 'Lead Mill & Weaver Liaison',
-      bio: 'Coordinates directly with weaving units, master artisans, and dye mills for timely production and shade lot consistency.',
+      title: 'Lead Production & Weaver Liaison',
+      bio: 'Coordinates directly with weaving units, master artisans, and dye houses for timely production and shade lot consistency.',
     },
     {
       name: 'Quality Assurance Cell',
@@ -76,13 +76,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenInquiry 
                 Bridging Retail Buyers Directly with India's Premier Textile Hubs
               </h2>
               <p className="text-[#173D35]/75 leading-relaxed">
-                Navigating fragmented textile markets can be challenging for growing businesses. Shree Durga Agency serves as your dedicated on-the-ground sourcing extension—gathering your requirements, identifying vetted weavers and mills, verifying quality, and managing end-to-end dispatch.
+                Navigating fragmented textile markets can be challenging for growing businesses. Shree Durga Agency serves as your dedicated on-the-ground sourcing extension—gathering your requirements, identifying vetted weavers and manufacturers, verifying quality, and managing end-to-end dispatch.
               </p>
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="card-3d-emerald rounded-2xl p-6 relative overflow-hidden group">
                   <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/60 to-transparent" />
                   <Shield className="w-6 h-6 text-[#D97845] mb-2.5" />
-                  <h4 className="font-serif text-base font-medium text-[#173D35]">Direct Mill Rates</h4>
+                  <h4 className="font-serif text-base font-medium text-[#173D35]">Direct Factory Rates</h4>
                   <p className="text-xs text-[#173D35]/75 mt-1 leading-relaxed">Access genuine factory wholesale prices without redundant middleman markups.</p>
                 </div>
                 <div className="card-3d-emerald rounded-2xl p-6 relative overflow-hidden group">

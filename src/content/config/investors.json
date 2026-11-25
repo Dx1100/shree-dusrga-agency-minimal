@@ -26,7 +26,7 @@
       "fiscalYear": "Bulk Consignments",
       "revenue": "Trade Financing",
       "ebitda": "Batch Settlements",
-      "pat": "Direct Pay to Mills",
+      "pat": "Direct Pay to Manufacturers",
       "pdfUrl": "/documents/ThreadLinc_Wholesale_Financing.pdf",
       "pressReleaseUrl": "/newsroom/threadlinc-financing-overview"
     },
@@ -43,7 +43,7 @@
       "quarter": "Apparel Makers",
       "fiscalYear": "Fabric Procurement",
       "revenue": "Raw Material Support",
-      "ebitda": "Direct Mill Pay",
+      "ebitda": "Direct Factory Pay",
       "pat": "Continuous Supply",
       "pdfUrl": "/documents/ThreadLinc_Manufacturing_Financing.pdf",
       "pressReleaseUrl": "/newsroom/threadlinc-financing-overview"
@@ -74,7 +74,7 @@
   ],
   "governanceCommittees": [
     { "name": "Transparent Billing & Settlement Committee", "membersCount": 3, "chair": "Trade Finance Desk" },
-    { "name": "Supplier & Mill Verification Panel", "membersCount": 4, "chair": "Cluster Advisory Lead" },
+    { "name": "Supplier & Factory Verification Panel", "membersCount": 4, "chair": "Cluster Advisory Lead" },
     { "name": "Buyer Credit Review Advisory", "membersCount": 3, "chair": "Consulting Support" },
     { "name": "Sourcing & Procurement Coordination Desk", "membersCount": 4, "chair": "Operations Team" }
   ]

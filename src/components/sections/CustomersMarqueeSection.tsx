@@ -33,7 +33,7 @@ const defaultCustomers: CustomerItem[] = [
 export const CustomersMarqueeSection: React.FC<CustomersMarqueeSectionProps> = ({
   kicker = 'Our Customers',
   heading = 'Trusted by 2,500+ Textile Showrooms, Wholesalers & Boutiques Across India',
-  statsText = 'Direct mill procurement & sourcing advisory across Surat, Varanasi, Jaipur, Kolkata, and Delhi.',
+  statsText = 'Direct factory procurement & sourcing advisory across Surat, Varanasi, Jaipur, Kolkata, and Delhi.',
   customers = defaultCustomers,
 }) => {
   // Double list for continuous seamless infinite loop

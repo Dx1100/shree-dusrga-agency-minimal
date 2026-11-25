@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { SectionHeading } from '../ui/SectionHeading';
 import { ArrowRight } from 'lucide-react';
 import careersData from '../../content/config/careers.json';
@@ -18,11 +18,39 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
   culturePoints,
   onNavigate,
 }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.15 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="py-14 sm:py-20 bg-white border-b border-[#173D35]/10">
+    <section
+      ref={sectionRef}
+      className="py-14 sm:py-20 bg-white border-b border-[#173D35]/10 overflow-hidden relative"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          <div className="lg:col-span-7 space-y-6">
+          {/* Left Column: Text & Culture Points (Slides in from Left) */}
+          <div
+            className={`lg:col-span-7 space-y-6 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+              isVisible
+                ? 'opacity-100 translate-x-0'
+                : 'opacity-0 -translate-x-12 sm:-translate-x-20'
+            }`}
+          >
             <SectionHeading
               kicker={kicker}
               heading={heading}
@@ -51,8 +79,14 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
             </div>
           </div>
 
-          {/* Right Highlights: Customer Segments 3D Card */}
-          <div className="lg:col-span-5 card-3d-emerald rounded-3xl p-8 sm:p-10 relative overflow-hidden group">
+          {/* Right Highlights: Customer Segments 3D Card (Slides in from Right) */}
+          <div
+            className={`lg:col-span-5 card-3d-emerald rounded-3xl p-8 sm:p-10 relative overflow-hidden group transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] delay-150 ${
+              isVisible
+                ? 'opacity-100 translate-x-0'
+                : 'opacity-0 translate-x-12 sm:translate-x-20'
+            }`}
+          >
             <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845]/75 to-transparent" />
             <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#D97845] block mb-6 px-3 py-1 bg-[#F5F0E6] rounded-md border border-[#D97845]/25 w-fit">
               Who We Partner With

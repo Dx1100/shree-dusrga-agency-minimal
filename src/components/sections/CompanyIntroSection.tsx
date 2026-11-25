@@ -119,7 +119,7 @@ export const CompanyIntroSection: React.FC<CompanyIntroSectionProps> = ({
             </div>
             <div className="mt-3.5 flex items-center justify-between text-[10px] uppercase tracking-[0.22em] text-[#173D35]/60 font-semibold">
               <span>Primary Textile Hubs</span>
-              <span className="text-[#D97845]">Direct Mill & Weaver Linkages</span>
+              <span className="text-[#D97845]">Direct Factory & Weaver Linkages</span>
             </div>
           </div>
         </div>

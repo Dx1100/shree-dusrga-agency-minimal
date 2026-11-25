@@ -26,7 +26,7 @@ export const InnovationPage: React.FC<InnovationPageProps> = ({ onNavigate, onOp
       impact: 'Couriered fabric swatches, border samples, and shade cards allow you to verify drape and finish before production.',
     },
     {
-      title: '3. Direct Mill & Weaver Price Negotiation',
+      title: '3. Direct Factory & Weaver Price Negotiation',
       domain: 'quality',
       number: 'Step 03',
       year: 'Execution Phase',
@@ -78,12 +78,12 @@ export const InnovationPage: React.FC<InnovationPageProps> = ({ onNavigate, onOp
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card-3d-emerald rounded-3xl p-8 sm:p-9 relative overflow-hidden group">
               <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845]/70 to-transparent" />
-              <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#D97845] block mb-3 px-3 py-1 bg-[#D97845]/10 rounded-md border border-[#D97845]/20 w-fit">Direct Mill Access</span>
+              <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#D97845] block mb-3 px-3 py-1 bg-[#D97845]/10 rounded-md border border-[#D97845]/20 w-fit">Direct Factory Access</span>
               <h3 className="text-2xl font-serif font-medium text-[#173D35] mb-3 group-hover:text-[#D97845] transition-colors">Cluster-Direct Access</h3>
               <p className="text-sm text-[#173D35]/75 leading-relaxed mb-6">
-                Direct integration with Surat mills, Varanasi karkhanas, Jaipur block printers, and Kolkata handlooms.
+                Direct integration with Surat factories, Varanasi karkhanas, Jaipur block printers, and Kolkata handlooms.
               </p>
-              <span className="text-[11px] font-semibold text-[#173D35]/65 uppercase tracking-wider block pt-4 border-t border-[#173D35]/10">Verified Mill & Weaver Base</span>
+              <span className="text-[11px] font-semibold text-[#173D35]/65 uppercase tracking-wider block pt-4 border-t border-[#173D35]/10">Verified Factory & Weaver Base</span>
             </div>
 
             <div className="card-3d-emerald rounded-3xl p-8 sm:p-9 relative overflow-hidden group">

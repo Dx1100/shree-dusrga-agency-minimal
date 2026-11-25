@@ -57,7 +57,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({ onNaviga
                   <div>
                     <span className="text-xs text-[#F5F0E6]/65 block mb-1">Supplier Coordination</span>
                     <span className="text-3xl font-serif font-medium text-[#E89A6F]">
-                      Direct Mill Link
+                      Direct Factory Link
                     </span>
                   </div>
                 </div>

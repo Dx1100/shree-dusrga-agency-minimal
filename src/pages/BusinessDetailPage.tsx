@@ -64,7 +64,7 @@ export const BusinessDetailPage: React.FC<BusinessDetailPageProps> = ({
                 <span>Sourcing Support Offered</span>
               </div>
               <h3 className="font-serif text-2xl font-medium text-[#173D35]">
-                End-to-End Buyer Assistance & Mill Coordination
+                End-to-End Buyer Assistance & Factory Coordination
               </h3>
               <p className="text-[#173D35]/80 leading-relaxed text-sm sm:text-base">
                 {business.sourcingSupport || business.summary}

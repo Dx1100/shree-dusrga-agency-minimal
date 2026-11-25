@@ -3,7 +3,7 @@
   "subheading": "Whether you run an established saree showroom or an emerging boutique, we align directly with your sourcing goals.",
   "description": "Shree Durga Agency collaborates with businesses across every scale of Indian retail and distribution. Our on-the-ground presence in primary manufacturing centers simplifies product discovery, rate negotiation, and dispatch coordination.",
   "perks": [
-    { "title": "Direct Mill & Weaver Pricing", "description": "Bypass multiple middle layers and access genuine wholesale price structures directly from production looms and mills." },
+    { "title": "Direct Factory & Weaver Pricing", "description": "Bypass multiple middle layers and access genuine wholesale price structures directly from production looms and manufacturing units." },
     { "title": "Sample Swatch & Catalog Access", "description": "Review fabric weights, drape, color swatches, and digital catalogs before committing to bulk seasonal production runs." },
     { "title": "Flexible Sourcing Volumes", "description": "Support for tailored batch sizes suitable for boutique collections as well as high-volume showroom requirements." },
     { "title": "ThreadLinc Credit Assistance", "description": "Structured working capital support and flexible payment cycles designed for verified textile retailers." }
@@ -34,7 +34,7 @@
       "location": "Tier 1 & Tier 2 Markets",
       "type": "Bulk Contracts",
       "experience": "Volume Fabrics & Dress Materials",
-      "description": "Continuous stock replenishments, container consolidation, and direct-from-mill fabric roll dispatches."
+      "description": "Continuous stock replenishments, container consolidation, and direct-from-factory fabric roll dispatches."
     },
     {
       "id": "segment-4",
