@@ -164,7 +164,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenInquiry 
         </div>
 
         {/* Sourcing Hubs Footprint CTA */}
-        <div id="footprint" className="mt-24 card-3d-dark rounded-3xl p-10 sm:p-12 text-[#F5F0E6] flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+        <div id="footprint" className="mt-16 sm:mt-24 card-3d-dark rounded-2xl sm:rounded-3xl p-6 sm:p-12 text-[#F5F0E6] flex flex-col md:flex-row items-stretch sm:items-center justify-between gap-6 sm:gap-8 relative overflow-hidden">
           <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent" />
           <div className="space-y-2">
             <span className="text-xs font-semibold uppercase tracking-wider text-[#E89A6F] block mb-1">

@@ -179,13 +179,13 @@ export const BusinessesPage: React.FC<BusinessesPageProps> = ({ onNavigate, onOp
                 )}
 
                 {/* Highlights strip */}
-                <div className="grid grid-cols-3 gap-3 p-4 rounded-xl bg-[#F5F0E6]/70 border border-[#173D35]/10">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 sm:gap-4 p-4 rounded-xl bg-[#F5F0E6]/70 border border-[#173D35]/10">
                   {biz.metrics.map((m, mIdx) => (
                     <div key={mIdx}>
-                      <span className="text-[10px] uppercase font-semibold text-[#173D35]/60 block">
+                      <span className="text-[10px] uppercase font-semibold text-[#173D35]/60 block mb-0.5">
                         {m.label}
                       </span>
-                      <span className="text-sm sm:text-base font-serif font-medium text-[#173D35] truncate block">
+                      <span className="text-sm sm:text-base font-serif font-medium text-[#173D35] break-words block leading-snug">
                         {m.value}
                       </span>
                     </div>
@@ -193,17 +193,17 @@ export const BusinessesPage: React.FC<BusinessesPageProps> = ({ onNavigate, onOp
                 </div>
 
                 {/* Actions */}
-                <div className="pt-2 flex flex-wrap items-center gap-4">
+                <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
                   <button
                     onClick={() => onNavigate(`/what-we-source/${biz.slug}`)}
-                    className="px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-xl shadow-sm transition-colors inline-flex items-center gap-2 group/btn"
+                    className="w-full sm:w-auto px-5 sm:px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] sm:tracking-[0.15em] bg-[#D97845] hover:bg-[#C26534] text-white rounded-xl shadow-sm transition-colors inline-flex items-center justify-center gap-2 group/btn text-center"
                   >
                     <span>{biz.title} Sourcing Guide & Details</span>
-                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform shrink-0" />
                   </button>
                   <button
                     onClick={onOpenInquiry}
-                    className="text-xs font-semibold uppercase tracking-wider text-[#173D35] hover:text-[#D97845] transition-colors"
+                    className="text-xs font-semibold uppercase tracking-wider text-[#173D35] hover:text-[#D97845] transition-colors text-center py-2 sm:py-0"
                   >
                     Request Sourcing Enquiry
                   </button>

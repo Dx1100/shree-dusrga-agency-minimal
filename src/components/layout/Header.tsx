@@ -63,24 +63,24 @@ export const Header: React.FC<HeaderProps> = ({
           : 'bg-white border-b border-[#173D35]/10 py-4'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-2 sm:gap-4 lg:gap-8">
           {/* Zone 1: Official Brand Logo & Wordmark */}
           <button
             onClick={() => {
               onNavigate('/');
               setIsMobileMenuOpen(false);
             }}
-            className="flex items-center gap-2.5 sm:gap-3 text-left group shrink-0 focus:outline-none"
+            className="flex items-center gap-2 sm:gap-2.5 lg:gap-3 text-left group shrink min-w-0 focus:outline-none"
             aria-label="Shree Durga Agency Home"
           >
             <img
               src={isLightMode ? '/images/logo/logo-mark-light.png' : '/images/logo/logo-mark.png'}
               alt="Shree Durga Agency Logo"
-              className="h-8 sm:h-9 w-auto object-contain transition-transform group-hover:scale-105 duration-200"
+              className="h-7 min-[380px]:h-8 sm:h-9 w-auto object-contain transition-transform group-hover:scale-105 duration-200 shrink-0"
             />
             <span
-              className={`font-serif text-lg sm:text-xl font-medium tracking-[0.12em] uppercase transition-colors ${
+              className={`font-serif text-sm min-[380px]:text-base sm:text-lg lg:text-xl font-medium tracking-[0.06em] min-[380px]:tracking-[0.1em] sm:tracking-[0.12em] uppercase transition-colors truncate sm:whitespace-nowrap ${
                 isLightMode ? 'text-[#F5F0E6]' : 'text-[#173D35]'
               }`}
             >
@@ -89,7 +89,7 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           {/* Actions: Search, Get In Touch & Hamburger Menu (All Devices) */}
-          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+          <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 shrink-0">
             <button
               onClick={onOpenSearch}
               className={`p-2 rounded-full transition-colors focus:outline-none ${

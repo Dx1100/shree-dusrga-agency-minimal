@@ -80,22 +80,22 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
       {/* Main Content Area */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto">
-        <div className="max-w-3xl lg:max-w-4xl space-y-5 sm:space-y-6">
+        <div className="max-w-3xl lg:max-w-4xl space-y-4 sm:space-y-6">
           {currentSlide.kicker && (
-            <div className="flex items-center gap-3">
-              <span className="w-8 h-[2px] bg-[#D97845]" />
-              <span className="text-xs uppercase tracking-[0.24em] font-semibold text-[#F5F0E6]/90">
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <span className="w-6 sm:w-8 h-[2px] bg-[#D97845] shrink-0" />
+              <span className="text-[10px] min-[380px]:text-xs uppercase tracking-[0.2em] sm:tracking-[0.24em] font-semibold text-[#F5F0E6]/90 break-words">
                 {currentSlide.kicker}
               </span>
             </div>
           )}
 
-          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-white leading-[1.14] sm:leading-[1.1] break-normal">
+          <h1 className="font-serif text-2xl min-[380px]:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-white leading-[1.18] sm:leading-[1.1] break-words">
             {currentSlide.heading}
           </h1>
 
           {/* Editorial CTAs */}
-          <div className="pt-4 sm:pt-6 flex flex-wrap items-center gap-5 sm:gap-6">
+          <div className="pt-3 sm:pt-6 flex flex-col min-[480px]:flex-row items-stretch min-[480px]:items-center gap-3.5 sm:gap-6">
             <button
               onClick={() => {
                 if (currentSlide.ctaLink.startsWith('/')) {
@@ -104,10 +104,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   onOpenInquiry();
                 }
               }}
-              className="px-6 sm:px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] bg-[#A66C45] hover:bg-[#8F5834] text-white rounded-md transition-all duration-300 inline-flex items-center gap-2 group shadow-lg"
+              className="px-6 sm:px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.16em] sm:tracking-[0.18em] bg-[#A66C45] hover:bg-[#8F5834] text-white rounded-md transition-all duration-300 inline-flex items-center justify-center gap-2 group shadow-lg text-center"
             >
               <span>{currentSlide.ctaText}</span>
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform shrink-0" />
             </button>
 
             {currentSlide.secondaryCtaText && (
@@ -122,7 +122,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     onNavigate(currentSlide.secondaryCtaLink);
                   }
                 }}
-                className="text-xs font-semibold uppercase tracking-[0.18em] text-[#F5F0E6]/90 hover:text-white underline decoration-[#A66C45] decoration-2 underline-offset-8 transition-colors py-2"
+                className="text-xs font-semibold uppercase tracking-[0.16em] sm:tracking-[0.18em] text-[#F5F0E6]/90 hover:text-white underline decoration-[#A66C45] decoration-2 underline-offset-8 transition-colors py-2 text-center min-[480px]:text-left"
               >
                 {currentSlide.secondaryCtaText}
               </button>

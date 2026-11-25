@@ -336,100 +336,95 @@ export const InnovationPage: React.FC<InnovationPageProps> = ({ onNavigate, onOp
           {/* ────────────────────────────────────────────────────────
               VERTICAL KINETIC CONDUIT RAIL CONTAINER
           ──────────────────────────────────────────────────────── */}
-          <div className="relative pl-4 sm:pl-12 lg:pl-16">
-            {/* The Continuous Vertical Conduit Rail Backbone */}
-            <div
-              className="absolute left-[23px] sm:left-[39px] lg:left-[47px] top-6 bottom-6 w-[3px] bg-white/15 rounded-full overflow-hidden pointer-events-none"
-              aria-hidden="true"
-            >
-              {/* Dynamic illuminated terracotta energy beam filling as user scrolls */}
-              <div
-                className="w-full bg-gradient-to-b from-[#D97845] via-[#E89A6F] to-[#D97845] transition-all duration-1000 ease-out shadow-[0_0_12px_rgba(217,120,69,0.7)]"
-                style={{
-                  height: isVisible ? '100%' : '0%',
-                }}
-              />
-            </div>
-
-            {/* Step Cards Stack */}
-            <div className="space-y-10 sm:space-y-12">
-              {filteredSteps.map((st, idx) => {
-                const StepIcon = st.icon;
-                return (
-                  <div
-                    key={st.id}
-                    className={`relative flex flex-col md:flex-row items-start gap-6 sm:gap-8 transition-all duration-700 ease-out ${
-                      isVisible
-                        ? 'opacity-100 translate-x-0'
-                        : 'opacity-0 translate-x-8'
-                    }`}
-                    style={{
-                      transitionDelay: isVisible ? `${idx * 140}ms` : '0ms',
-                    }}
-                  >
-                    {/* Node on the rail with live beacon */}
-                    <div className="relative z-10 shrink-0">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#173D35] border-2 border-[#D97845] flex items-center justify-center font-serif text-base sm:text-lg font-bold text-white shadow-[0_0_24px_rgba(217,120,69,0.35)] relative group-hover:scale-105 transition-transform">
-                        {/* Live pulsating radar ring */}
-                        <span className="animate-ping absolute inset-0 rounded-2xl bg-[#D97845] opacity-25" />
-                        <span>{st.number}</span>
-                      </div>
+          <div className="space-y-6 sm:space-y-8 relative">
+            {filteredSteps.map((st, idx) => {
+              const StepIcon = st.icon;
+              const isLast = idx === filteredSteps.length - 1;
+              return (
+                <div
+                  key={st.id}
+                  className={`relative flex items-stretch gap-3 sm:gap-6 lg:gap-8 transition-all duration-700 ease-out ${
+                    isVisible
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-0 translate-x-8'
+                  }`}
+                  style={{
+                    transitionDelay: isVisible ? `${idx * 140}ms` : '0ms',
+                  }}
+                >
+                  {/* Dedicated Left Column: Milestone Node + Connecting Conduit Rail */}
+                  <div className="relative flex flex-col items-center shrink-0">
+                    <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-2xl bg-[#173D35] border-2 border-[#D97845] flex items-center justify-center font-serif text-sm sm:text-lg font-bold text-white shadow-[0_0_24px_rgba(217,120,69,0.35)] relative shrink-0 group-hover:scale-105 transition-transform">
+                      {/* Live pulsating radar ring */}
+                      <span className="animate-ping absolute inset-0 rounded-2xl bg-[#D97845] opacity-25" />
+                      <span>{st.number}</span>
                     </div>
 
-                    {/* Step Content Card */}
-                    <div className="flex-1 w-full rounded-3xl bg-white/[0.07] hover:bg-white/[0.12] border border-white/12 hover:border-[#D97845]/60 backdrop-blur-md p-6 sm:p-9 relative overflow-hidden group shadow-xl transition-all duration-300 hover:-translate-y-1">
-                      {/* Top Terracotta Accent Line */}
-                      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/70 to-transparent" />
+                    {!isLast && (
+                      <div className="w-[2px] sm:w-[3px] flex-1 my-2 bg-white/15 rounded-full overflow-hidden relative min-h-[30px]">
+                        <div
+                          className="w-full bg-gradient-to-b from-[#D97845] via-[#E89A6F] to-[#D97845] transition-all duration-1000 ease-out shadow-[0_0_12px_rgba(217,120,69,0.7)]"
+                          style={{
+                            height: isVisible ? '100%' : '0%',
+                          }}
+                        />
+                      </div>
+                    )}
+                  </div>
 
-                      {/* Card Content Header */}
-                      <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
-                        <div className="flex items-center gap-2.5">
-                          <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#E89A6F] bg-[#D97845]/15 border border-[#D97845]/25 px-3 py-1 rounded-full">
-                            {st.phase}
-                          </span>
-                        </div>
-                        <span className="text-xs text-[#F5F0E6]/60 font-medium">
-                          Expected Timeline: <strong className="text-white">{st.turnaround}</strong>
+                  {/* Right Column: Step Content Card */}
+                  <div className="flex-1 min-w-0 rounded-2xl sm:rounded-3xl bg-white/[0.07] hover:bg-white/[0.12] border border-white/12 hover:border-[#D97845]/60 backdrop-blur-md p-5 sm:p-8 lg:p-9 relative overflow-hidden group shadow-xl transition-all duration-300 hover:-translate-y-1 mb-2">
+                    {/* Top Terracotta Accent Line */}
+                    <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/70 to-transparent" />
+
+                    {/* Card Content Header */}
+                    <div className="flex flex-wrap items-center justify-between gap-2.5 mb-3 sm:mb-4">
+                      <div className="flex items-center gap-2">
+                        <span className="text-[10px] font-semibold uppercase tracking-[0.16em] sm:tracking-[0.2em] text-[#E89A6F] bg-[#D97845]/15 border border-[#D97845]/25 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full">
+                          {st.phase}
                         </span>
                       </div>
+                      <span className="text-[11px] sm:text-xs text-[#F5F0E6]/60 font-medium">
+                        Timeline: <strong className="text-white">{st.turnaround}</strong>
+                      </span>
+                    </div>
 
-                      {/* Main Title */}
-                      <h3 className="text-xl sm:text-2xl font-serif font-medium text-white group-hover:text-[#E89A6F] transition-colors mb-3">
-                        {st.title}
-                      </h3>
+                    {/* Main Title */}
+                    <h3 className="text-lg sm:text-2xl font-serif font-medium text-white group-hover:text-[#E89A6F] transition-colors mb-2 sm:mb-3 leading-snug break-words">
+                      {st.title}
+                    </h3>
 
-                      {/* Description */}
-                      <p className="text-sm sm:text-base text-[#F5F0E6]/85 leading-relaxed font-normal mb-6">
-                        {st.impact}
-                      </p>
+                    {/* Description */}
+                    <p className="text-xs sm:text-base text-[#F5F0E6]/85 leading-relaxed font-normal mb-5 break-words">
+                      {st.impact}
+                    </p>
 
-                      {/* Deliverables Checklist Chips */}
-                      <div className="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
-                        <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
-                          {st.deliverables.map((del, dIdx) => (
-                            <span
-                              key={dIdx}
-                              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-medium bg-white/5 border border-white/10 text-[#F5F0E6]/90"
-                            >
-                              <CheckCircle2 className="w-3.5 h-3.5 text-[#D97845] shrink-0" />
-                              <span>{del}</span>
-                            </span>
-                          ))}
-                        </div>
-
-                        <button
-                          onClick={onOpenInquiry}
-                          className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#E89A6F] hover:text-white transition-colors group/cta"
-                        >
-                          <span>Consult on Step {st.number}</span>
-                          <ArrowRight className="w-3.5 h-3.5 group-hover/cta:translate-x-1 transition-transform" />
-                        </button>
+                    {/* Deliverables Checklist Chips */}
+                    <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
+                      <div className="flex flex-wrap items-center gap-1.5 sm:gap-2.5">
+                        {st.deliverables.map((del, dIdx) => (
+                          <span
+                            key={dIdx}
+                            className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-lg text-[11px] sm:text-xs font-medium bg-white/5 border border-white/10 text-[#F5F0E6]/90 break-words"
+                          >
+                            <CheckCircle2 className="w-3.5 h-3.5 text-[#D97845] shrink-0" />
+                            <span>{del}</span>
+                          </span>
+                        ))}
                       </div>
+
+                      <button
+                        onClick={onOpenInquiry}
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#E89A6F] hover:text-white transition-colors group/cta self-start sm:self-auto py-1"
+                      >
+                        <span>Consult on Step {st.number}</span>
+                        <ArrowRight className="w-3.5 h-3.5 group-hover/cta:translate-x-1 transition-transform shrink-0" />
+                      </button>
                     </div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

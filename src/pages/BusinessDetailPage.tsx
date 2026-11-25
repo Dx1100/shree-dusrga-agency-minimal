@@ -104,7 +104,7 @@ export const BusinessDetailPage: React.FC<BusinessDetailPageProps> = ({
 
             {/* Relevant Product Types Highlight Card with Dynamic Category Background Image */}
             {business.productTypes && business.productTypes.length > 0 && (
-              <div className="relative rounded-3xl overflow-hidden border border-[#173D35]/20 shadow-xl bg-[#102B25] p-8 sm:p-10 text-[#F5F0E6] group/card">
+              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#173D35]/20 shadow-xl bg-[#102B25] p-5 sm:p-8 lg:p-10 text-[#F5F0E6] group/card">
                 {/* Background Image Layer with Luxury Dark Gradient Overlay */}
                 <div className="absolute inset-0 pointer-events-none">
                   <img
@@ -151,14 +151,14 @@ export const BusinessDetailPage: React.FC<BusinessDetailPageProps> = ({
             )}
 
             {/* Key Offerings Grid */}
-            <div className="card-3d rounded-3xl p-8 sm:p-10 space-y-6 relative overflow-hidden">
+            <div className="card-3d rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-10 space-y-6 relative overflow-hidden">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/60 to-transparent" />
-              <h3 className="text-2xl font-serif font-medium text-[#173D35]">
+              <h3 className="text-xl sm:text-2xl font-serif font-medium text-[#173D35]">
                 Key Sourcing Services & Variety Highlights
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
                 {business.keyOfferings.map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3 bg-[#F5F0E6]/70 p-4 rounded-xl border border-[#173D35]/10 hover:border-[#D97845]/40 hover:-translate-y-0.5 transition-all">
+                  <div key={idx} className="flex items-start gap-3 bg-[#F5F0E6]/70 p-3.5 sm:p-4 rounded-xl border border-[#173D35]/10 hover:border-[#D97845]/40 hover:-translate-y-0.5 transition-all">
                     <CheckCircle2 className="w-4 h-4 text-[#D97845] shrink-0 mt-0.5" />
                     <span className="text-xs sm:text-sm text-[#173D35] font-medium leading-relaxed">
                       {item}
@@ -169,7 +169,7 @@ export const BusinessDetailPage: React.FC<BusinessDetailPageProps> = ({
             </div>
 
             {/* Case Study Section */}
-            <div className="card-3d-dark rounded-3xl p-8 sm:p-10 text-[#F5F0E6] space-y-6 relative overflow-hidden group">
+            <div className="card-3d-dark rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-10 text-[#F5F0E6] space-y-6 relative overflow-hidden group">
               <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent" />
               <div className="flex items-center gap-2 text-[#E89A6F] text-[11px] font-semibold uppercase tracking-[0.18em]">
                 <FileSpreadsheet className="w-4 h-4" />
