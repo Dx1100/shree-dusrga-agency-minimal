@@ -14,26 +14,21 @@ interface BusinessShowcaseSectionProps {
 
 const categoryMeta: Record<
   string,
-  { badge: string; displayTitle?: string; subtitle: string }
+  { displayTitle?: string; subtitle: string }
 > = {
   menswear: {
-    badge: '01 / Apparel',
     subtitle: 'Sherwanis · Kurtas · Suits · Denim',
   },
   womenswear: {
-    badge: '02 / Ethnic & Western',
     subtitle: 'Sarees · Lehengas · Suits · Kurtis',
   },
   kidswear: {
-    badge: '03 / Childrenswear',
     subtitle: 'Ethnic Sets · Frocks · Daily Casuals',
   },
   'home-textiles': {
-    badge: '04 / Furnishing',
     subtitle: 'Bedsheets · Towels · Comforters',
   },
   'fabrics-fashion-accessories': {
-    badge: '05 / Yardage & Goods',
     displayTitle: 'Fabrics & Accessories',
     subtitle: 'Prints · Wallets · Belts · Luggage',
   },
@@ -70,7 +65,6 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 sm:gap-4 lg:gap-5">
           {businessesData.map((biz) => {
             const meta = categoryMeta[biz.slug] || {
-              badge: biz.category,
               subtitle: biz.metrics[0]?.value || '',
             };
             const title = meta.displayTitle || biz.title;
@@ -95,11 +89,8 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
                 {/* Terracotta Top Accent Glow */}
                 <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                {/* Top Badge & Corner Micro Action */}
-                <div className="relative z-10 flex items-center justify-between">
-                  <span className="px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.18em] bg-black/45 backdrop-blur-md text-[#F5F0E6] border border-white/10">
-                    {meta.badge}
-                  </span>
+                {/* Top Corner Micro Action */}
+                <div className="relative z-10 flex items-center justify-end">
                   <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white/75 group-hover:text-white group-hover:bg-[#D97845] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300">
                     <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                   </span>
