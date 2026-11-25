@@ -29,9 +29,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Column 1: Brand & Identity */}
           <div className="lg:col-span-2 space-y-4">
-            <span className="font-serif text-2xl font-normal tracking-[0.12em] uppercase text-[#F5F0E6] block">
-              Shree Durga Agency
-            </span>
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/logo/logo-mark-light.png"
+                alt="Shree Durga Agency Logo"
+                className="h-10 w-auto object-contain"
+              />
+              <span className="font-serif text-2xl font-normal tracking-[0.12em] uppercase text-[#F5F0E6] block">
+                Shree Durga Agency
+              </span>
+            </div>
             <p className="text-xs sm:text-sm text-[#F5F0E6]/75 leading-relaxed max-w-sm font-normal break-normal">
               A textile sourcing and consulting partner helping retailers, wholesalers, boutiques and other textile businesses source products from relevant textile markets and production centres.
             </p>

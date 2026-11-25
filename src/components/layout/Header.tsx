@@ -65,15 +65,20 @@ export const Header: React.FC<HeaderProps> = ({
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-8">
-          {/* Zone 1: Clean Editorial Brand Wordmark */}
+          {/* Zone 1: Official Brand Logo & Wordmark */}
           <button
             onClick={() => {
               onNavigate('/');
               setIsMobileMenuOpen(false);
             }}
-            className="flex items-center text-left group shrink-0 focus:outline-none"
+            className="flex items-center gap-2.5 sm:gap-3 text-left group shrink-0 focus:outline-none"
             aria-label="Shree Durga Agency Home"
           >
+            <img
+              src={isLightMode ? '/images/logo/logo-mark-light.png' : '/images/logo/logo-mark.png'}
+              alt="Shree Durga Agency Logo"
+              className="h-8 sm:h-9 w-auto object-contain transition-transform group-hover:scale-105 duration-200"
+            />
             <span
               className={`font-serif text-lg sm:text-xl font-medium tracking-[0.12em] uppercase transition-colors ${
                 isLightMode ? 'text-[#F5F0E6]' : 'text-[#173D35]'
@@ -140,13 +145,20 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="relative w-full max-w-sm sm:max-w-md bg-white h-screen max-h-[100dvh] shadow-2xl flex flex-col z-10 overflow-hidden">
             {/* Drawer Top Header */}
             <div className="p-5 border-b border-[#173D35]/10 bg-[#F5F0E6] flex items-center justify-between shrink-0">
-              <div>
-                <span className="font-serif text-base font-medium tracking-[0.12em] uppercase text-[#173D35] block">
-                  Shree Durga Agency
-                </span>
-                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D97845] block mt-0.5">
-                  Textile Sourcing Partner
-                </span>
+              <div className="flex items-center gap-3">
+                <img
+                  src="/images/logo/logo-mark.png"
+                  alt="Shree Durga Agency Logo"
+                  className="h-9 w-auto object-contain"
+                />
+                <div>
+                  <span className="font-serif text-base font-medium tracking-[0.12em] uppercase text-[#173D35] block">
+                    Shree Durga Agency
+                  </span>
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#D97845] block mt-0.5">
+                    Textile Sourcing Partner
+                  </span>
+                </div>
               </div>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
