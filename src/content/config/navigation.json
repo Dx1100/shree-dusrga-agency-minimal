@@ -2,24 +2,7 @@
   {
     "id": "about",
     "label": "About",
-    "path": "/about",
-    "dropdown": [
-      {
-        "title": "About Shree Durga Agency",
-        "description": "Your trusted textile sourcing and consulting partner across key Indian manufacturing hubs.",
-        "path": "/about"
-      },
-      {
-        "title": "Our Sourcing Approach",
-        "description": "Transparent procurement, quality checks, and direct producer connections.",
-        "path": "/about#leadership"
-      },
-      {
-        "title": "Sourcing Reach",
-        "description": "Connecting businesses to leading textile markets across India.",
-        "path": "/about#footprint"
-      }
-    ]
+    "path": "/about"
   },
   {
     "id": "what-we-source",
