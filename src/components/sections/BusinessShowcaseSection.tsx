@@ -73,7 +73,7 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
               <div
                 key={biz.id}
                 onClick={() => onNavigate(`/what-we-source/${biz.slug}`)}
-                className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-xs hover:shadow-xl transition-all duration-500 bg-[#173D35] flex flex-col justify-between p-4 sm:p-5 last:col-span-2 sm:last:col-span-1 lg:last:col-span-1 border border-[#173D35]/10"
+                className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-xs hover:shadow-xl transition-all duration-500 bg-[#173D35] flex flex-col justify-end p-4 sm:p-5 last:col-span-2 sm:last:col-span-1 lg:last:col-span-1 border border-[#173D35]/10"
               >
                 {/* Full-Bleed Background Image with Micro Zoom */}
                 <ImageWithFallback
@@ -88,13 +88,6 @@ export const BusinessShowcaseSection: React.FC<BusinessShowcaseSectionProps> = (
 
                 {/* Terracotta Top Accent Glow */}
                 <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                {/* Top Corner Micro Action */}
-                <div className="relative z-10 flex items-center justify-end">
-                  <span className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white/75 group-hover:text-white group-hover:bg-[#D97845] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300">
-                    <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
-                  </span>
-                </div>
 
                 {/* Bottom Content: Title & Curated 1-Line Items */}
                 <div className="relative z-10 space-y-1">
