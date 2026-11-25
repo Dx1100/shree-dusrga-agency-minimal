@@ -94,10 +94,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {currentSlide.heading}
           </h1>
 
-          <p className="text-sm sm:text-base md:text-lg text-[#F5F0E6]/90 font-normal leading-relaxed max-w-2xl sm:max-w-3xl break-normal">
-            {currentSlide.description}
-          </p>
-
           {/* Editorial CTAs */}
           <div className="pt-4 sm:pt-6 flex flex-wrap items-center gap-5 sm:gap-6">
             <button
