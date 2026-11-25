@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import siteConfig from '../../content/config/site.json';
-import investorsData from '../../content/config/investors.json';
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -25,42 +24,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenInquiry }) => 
 
   return (
     <footer className="bg-[#102B25] text-[#F5F0E6]/85 border-t border-[#D97845]/30">
-      {/* Top Banner: Trade Financing Bar */}
-      <div className="border-b border-[#F5F0E6]/10 bg-[#173D35]/70 py-3.5 px-4 sm:px-6 lg:px-8 text-xs">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <span className="font-semibold text-[#F5F0E6]/65 uppercase tracking-widest text-[11px]">
-              {investorsData.stockInfo.symbol}
-            </span>
-            <span className="font-semibold text-white text-xs">
-              {investorsData.stockInfo.exchange}
-            </span>
-            <span className="text-[#E89A6F] font-semibold flex items-center gap-0.5">
-              {investorsData.stockInfo.lastUpdated}
-            </span>
-            <span className="text-[#F5F0E6]/55 hidden sm:inline text-xs">
-              · {investorsData.stockInfo.marketCap}
-            </span>
-          </div>
-          <div className="flex items-center gap-4 text-[#F5F0E6]/75 text-xs">
-            <button
-              onClick={() => onNavigate('/capital-support')}
-              className="hover:text-white transition-colors flex items-center gap-1 font-semibold uppercase tracking-wider"
-            >
-              <span>Capital Support (ThreadLinc)</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-[#D97845]" />
-            </button>
-            <span className="hidden sm:inline text-[#F5F0E6]/30">·</span>
-            <button
-              onClick={onOpenInquiry}
-              className="text-[#E89A6F] hover:text-white transition-colors font-semibold uppercase tracking-wider"
-            >
-              Sourcing Consultation
-            </button>
-          </div>
-        </div>
-      </div>
-
       {/* Main Footer Links */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
