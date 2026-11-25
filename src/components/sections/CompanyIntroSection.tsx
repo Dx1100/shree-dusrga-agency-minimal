@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from '../ui/ImageWithFallback';
 
@@ -27,12 +27,39 @@ export const CompanyIntroSection: React.FC<CompanyIntroSectionProps> = ({
   ctaLink,
   onNavigate,
 }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.15 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="py-14 sm:py-20 bg-white border-b border-[#173D35]/10">
+    <section
+      ref={sectionRef}
+      className="py-14 sm:py-20 bg-white border-b border-[#173D35]/10 overflow-hidden relative"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Column: Editorial Content */}
-          <div className="lg:col-span-7 space-y-6">
+          {/* Left Column: Editorial Content (Slides in from Left) */}
+          <div
+            className={`lg:col-span-7 space-y-6 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+              isVisible
+                ? 'opacity-100 translate-x-0'
+                : 'opacity-0 -translate-x-12 sm:-translate-x-20'
+            }`}
+          >
             <div className="flex items-center gap-3">
               <span className="w-6 h-[1.5px] bg-[#D97845]" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#D97845]">
@@ -74,8 +101,14 @@ export const CompanyIntroSection: React.FC<CompanyIntroSectionProps> = ({
             </div>
           </div>
 
-          {/* Right Column: High-Aspect Photography with 3D Depth */}
-          <div className="lg:col-span-5">
+          {/* Right Column: High-Aspect Photography with 3D Depth (Slides in from Right) */}
+          <div
+            className={`lg:col-span-5 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] delay-150 ${
+              isVisible
+                ? 'opacity-100 translate-x-0'
+                : 'opacity-0 translate-x-12 sm:translate-x-20'
+            }`}
+          >
             <div className="relative overflow-hidden rounded-2xl bg-[#F5F0E6] shadow-[0_20px_45px_-10px_rgba(23,61,53,0.16)] border border-[#173D35]/12 group">
               <ImageWithFallback
                 src={image}
