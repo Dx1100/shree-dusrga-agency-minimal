@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { SectionHeading } from '../ui/SectionHeading';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Store, Sparkles, Building2, Globe, CheckCircle2 } from 'lucide-react';
 import careersData from '../../content/config/careers.json';
 
 interface CareersSectionProps {
@@ -58,15 +58,68 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
               className="mb-8"
             />
 
-            <div className="space-y-4 pt-2">
-              {culturePoints.map((point, idx) => (
-                <div key={idx} className="flex items-start gap-3.5">
-                  <span className="w-2 h-2 rounded-full bg-[#D97845] shrink-0 mt-2" />
-                  <span className="text-sm sm:text-[15px] text-[#173D35]/85 font-normal leading-relaxed break-normal">
-                    {point}
+            {/* 4 Pointers Highlighted Background Card */}
+            <div className="relative rounded-2xl overflow-hidden p-5 sm:p-6 bg-gradient-to-br from-[#FCFAF6] via-[#F7F2E8] to-[#EFE7D8] border border-[#173D35]/14 shadow-[0_8px_25px_-5px_rgba(23,61,53,0.08)] group my-2">
+              {/* Subtle Textile Texture Backdrop */}
+              <div className="absolute inset-0 pointer-events-none opacity-[0.06] mix-blend-multiply">
+                <img
+                  src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80"
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Top Terracotta Gradient Accent Line */}
+              <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent" />
+
+              {/* Card Header Strip */}
+              <div className="relative z-10 flex items-center justify-between gap-3 mb-4 pb-3 border-b border-[#173D35]/10">
+                <div className="flex items-center gap-2">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D97845] opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D97845]" />
+                  </span>
+                  <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#D97845]">
+                    Core Partner Segments
                   </span>
                 </div>
-              ))}
+                <span className="text-[10px] font-semibold uppercase tracking-wider text-[#173D35]/65 bg-[#173D35]/5 px-2.5 py-0.5 rounded-full border border-[#173D35]/10">
+                  4 Business Categories
+                </span>
+              </div>
+
+              {/* 4 Pointers Grid */}
+              <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
+                {culturePoints.map((point, idx) => {
+                  const parts = point.split(':');
+                  const title = parts.length > 1 ? parts[0].trim() : point;
+                  const desc = parts.length > 1 ? parts.slice(1).join(':').trim() : '';
+                  const Icon = [Store, Sparkles, Building2, Globe][idx % 4] || CheckCircle2;
+
+                  return (
+                    <div
+                      key={idx}
+                      className="p-3.5 sm:p-4 rounded-xl bg-white/95 border border-[#173D35]/10 hover:border-[#D97845]/50 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group/item flex flex-col justify-between"
+                    >
+                      <div>
+                        <div className="flex items-center gap-2.5 mb-1.5">
+                          <div className="w-7 h-7 rounded-lg bg-[#D97845]/10 text-[#D97845] flex items-center justify-center shrink-0 group-hover/item:bg-[#D97845] group-hover/item:text-white transition-colors duration-200">
+                            <Icon className="w-3.5 h-3.5" />
+                          </div>
+                          <h4 className="font-serif text-sm sm:text-[15px] font-semibold text-[#173D35] group-hover/item:text-[#D97845] transition-colors leading-snug">
+                            {title}
+                          </h4>
+                        </div>
+                        {desc && (
+                          <p className="text-xs text-[#173D35]/75 font-normal leading-relaxed">
+                            {desc}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
 
             <div className="pt-6">
