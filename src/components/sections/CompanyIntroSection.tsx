@@ -79,14 +79,23 @@ export const CompanyIntroSection: React.FC<CompanyIntroSectionProps> = ({
               {secondaryParagraph}
             </p>
 
-            {/* Editorial Pull Quote 3D Highlighted Box */}
-            <div className="card-3d-emerald rounded-2xl p-6 sm:p-7 space-y-2.5 my-6 relative overflow-hidden group">
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/75 to-transparent" />
-              <blockquote className="font-serif italic text-lg sm:text-xl text-[#173D35] leading-relaxed font-normal">
+            {/* Editorial Pull Quote Forest Green 3D Box */}
+            <div className="card-3d-dark rounded-2xl p-6 sm:p-7 space-y-3 my-6 relative overflow-hidden group shadow-[0_12px_32px_-8px_rgba(16,43,37,0.35)]">
+              {/* Top Terracotta Accent Line */}
+              <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent" />
+
+              {/* Decorative Subtle Ambient Glow */}
+              <div className="absolute -right-10 -bottom-10 w-32 h-32 bg-[#D97845]/15 rounded-full blur-2xl pointer-events-none" />
+
+              <blockquote className="relative z-10 font-serif italic text-lg sm:text-xl text-[#F5F0E6] leading-relaxed font-normal">
                 "{quote}"
               </blockquote>
-              <div className="text-[11px] uppercase tracking-[0.22em] font-semibold text-[#D97845]">
-                — {quoteAuthor}
+
+              <div className="relative z-10 flex items-center gap-2">
+                <span className="w-4 h-[1.5px] bg-[#D97845]" />
+                <span className="text-[11px] uppercase tracking-[0.24em] font-semibold text-[#E89A6F]">
+                  {quoteAuthor}
+                </span>
               </div>
             </div>
 
