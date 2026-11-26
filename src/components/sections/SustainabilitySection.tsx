@@ -85,18 +85,23 @@ export const SustainabilitySection: React.FC<SustainabilitySectionProps> = ({
               className="mb-8"
             />
 
-            {/* 3D Highlighted Hubs Grid */}
+            {/* 3D Highlighted Hubs Grid in Heritage Forest Green */}
             <div className="grid grid-cols-2 gap-4 sm:gap-6 pt-2 pb-4">
               {highlights.map((h, idx) => (
                 <div
                   key={idx}
-                  className="card-3d-emerald rounded-xl p-5 sm:p-6 group relative overflow-hidden hover:-translate-y-1 transition-all duration-300"
+                  className="card-3d-dark rounded-xl p-5 sm:p-6 group relative overflow-hidden hover:-translate-y-1 transition-all duration-300 shadow-[0_10px_26px_-6px_rgba(16,43,37,0.35)]"
                 >
-                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845]/70 to-transparent" />
-                  <span className="font-serif text-3xl sm:text-4xl font-normal text-[#173D35] block tracking-tight group-hover:text-[#D97845] transition-colors mb-1.5">
+                  {/* Top Terracotta Accent Line */}
+                  <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent" />
+
+                  {/* Ambient Hover Glow */}
+                  <div className="absolute -right-8 -bottom-8 w-24 h-24 bg-[#D97845]/15 rounded-full blur-xl pointer-events-none group-hover:scale-150 transition-transform duration-500" />
+
+                  <span className="relative z-10 font-serif text-2xl sm:text-3xl lg:text-4xl font-normal text-[#F5F0E6] block tracking-tight group-hover:text-[#E89A6F] transition-colors mb-2">
                     {h.metric}
                   </span>
-                  <p className="text-xs sm:text-sm font-normal text-[#173D35]/75 leading-relaxed break-normal">
+                  <p className="relative z-10 text-xs sm:text-sm font-normal text-[#F5F0E6]/80 group-hover:text-[#F5F0E6] leading-relaxed break-normal transition-colors">
                     {h.label}
                   </p>
                 </div>
