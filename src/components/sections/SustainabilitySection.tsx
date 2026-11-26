@@ -31,7 +31,7 @@ export const SustainabilitySection: React.FC<SustainabilitySectionProps> = ({
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.15 }
+      { threshold: 0.25, rootMargin: '0px 0px -50px 0px' }
     );
 
     if (sectionRef.current) {
@@ -50,10 +50,10 @@ export const SustainabilitySection: React.FC<SustainabilitySectionProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Image (Slides in from Left) */}
           <div
-            className={`lg:col-span-5 order-2 lg:order-1 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+            className={`lg:col-span-5 order-2 lg:order-1 transition-all duration-1100 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isVisible
                 ? 'opacity-100 translate-x-0'
-                : 'opacity-0 -translate-x-12 sm:-translate-x-20'
+                : 'opacity-0 -translate-x-8 sm:-translate-x-12'
             }`}
           >
             <div className="relative rounded-2xl bg-[#F5F0E6] overflow-hidden shadow-lg border border-[#173D35]/12 group">
@@ -72,10 +72,10 @@ export const SustainabilitySection: React.FC<SustainabilitySectionProps> = ({
 
           {/* Right Column: Editorial Copy & Open Cards (Slides in from Right) */}
           <div
-            className={`lg:col-span-7 order-1 lg:order-2 space-y-6 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] delay-150 ${
+            className={`lg:col-span-7 order-1 lg:order-2 space-y-6 transition-all duration-1100 ease-[cubic-bezier(0.22,1,0.36,1)] delay-150 ${
               isVisible
                 ? 'opacity-100 translate-x-0'
-                : 'opacity-0 translate-x-12 sm:translate-x-20'
+                : 'opacity-0 translate-x-8 sm:translate-x-12'
             }`}
           >
             <SectionHeading

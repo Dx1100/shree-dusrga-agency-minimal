@@ -26,7 +26,7 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.15 }
+      { threshold: 0.25, rootMargin: '0px 0px -50px 0px' }
     );
 
     if (sectionRef.current) {
@@ -45,10 +45,10 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Text & Culture Points (Slides in from Left) */}
           <div
-            className={`lg:col-span-7 space-y-6 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+            className={`lg:col-span-7 space-y-6 transition-all duration-1100 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isVisible
                 ? 'opacity-100 translate-x-0'
-                : 'opacity-0 -translate-x-12 sm:-translate-x-20'
+                : 'opacity-0 -translate-x-8 sm:-translate-x-12'
             }`}
           >
             <SectionHeading
@@ -81,10 +81,10 @@ export const CareersSection: React.FC<CareersSectionProps> = ({
 
           {/* Right Highlights: Customer Segments 3D Card (Slides in from Right) */}
           <div
-            className={`lg:col-span-5 card-3d-emerald rounded-3xl p-8 sm:p-10 relative overflow-hidden group transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] delay-150 ${
+            className={`lg:col-span-5 card-3d-emerald rounded-3xl p-8 sm:p-10 relative overflow-hidden group transition-all duration-1100 ease-[cubic-bezier(0.22,1,0.36,1)] delay-150 ${
               isVisible
                 ? 'opacity-100 translate-x-0'
-                : 'opacity-0 translate-x-12 sm:translate-x-20'
+                : 'opacity-0 translate-x-8 sm:translate-x-12'
             }`}
           >
             <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845]/75 to-transparent" />

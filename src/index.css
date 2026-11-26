@@ -66,6 +66,61 @@
   animation: subtlePulse 4s ease-in-out infinite;
 }
 
+/* Live Power Conduit & Traveling Laser Gradient Animations */
+@keyframes liveGradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes powerPulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(217, 120, 69, 0.45), 0 0 16px rgba(217, 120, 69, 0.2);
+    opacity: 0.88;
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(217, 120, 69, 0.9), 0 0 32px rgba(232, 154, 111, 0.65), 0 0 45px rgba(217, 120, 69, 0.35);
+    opacity: 1;
+  }
+}
+
+@keyframes laserSweepPulse {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(350%);
+    opacity: 0;
+  }
+}
+
+.animate-live-power-rail {
+  background: linear-gradient(90deg, #D97845 0%, #E89A6F 25%, #F7C08A 50%, #E89A6F 75%, #D97845 100%);
+  background-size: 200% 100%;
+  animation: liveGradientFlow 3.2s ease infinite, powerPulseGlow 2.4s ease-in-out infinite;
+}
+
+.animate-laser-sweep {
+  animation: laserSweepPulse 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-power-glow {
+  animation: powerPulseGlow 2.2s ease-in-out infinite;
+}
+
 /* Infinite Marquee Loop */
 @keyframes marquee {
   0% { transform: translateX(0%); }

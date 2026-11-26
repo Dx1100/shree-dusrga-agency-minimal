@@ -30,7 +30,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.15 }
+      { threshold: 0.25, rootMargin: '0px 0px -40px 0px' }
     );
 
     if (sectionRef.current) {
@@ -58,7 +58,7 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Animated Section Header */}
         <div
-          className={`transition-all duration-700 ease-out ${
+          className={`transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
           }`}
         >
@@ -85,16 +85,27 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
         <div className="relative pt-2">
           {/* Desktop Horizontal Loom Conduit Rail (Behind Cards) */}
           <div
-            className="hidden lg:block absolute top-[52px] left-8 right-8 h-[2px] bg-white/10 z-0 pointer-events-none overflow-hidden"
+            className="hidden lg:block absolute top-[52px] left-8 right-8 h-[3px] bg-white/10 z-0 pointer-events-none rounded-full overflow-hidden"
             aria-hidden="true"
           >
-            {/* Glowing Terracotta Energy Beam that travels left-to-right on scroll */}
+            {/* Glowing Terracotta Energy Beam with Continuous Moving Power Gradient & Traveling Laser Sweep */}
             <div
-              className="h-full bg-gradient-to-r from-[#D97845] via-[#E89A6F] to-[#D97845] shadow-[0_0_12px_#D97845] transition-all duration-[2200ms] ease-out"
+              className="h-full rounded-full transition-all duration-[1400ms] ease-out relative overflow-hidden"
               style={{
                 width: isVisible ? '100%' : '0%',
               }}
-            />
+            >
+              {/* Base Continuous Live Gradient Flow & Pulsing Glow */}
+              <div className="w-full h-full animate-live-power-rail" />
+
+              {/* Sweeping High-Intensity Laser Pulse Packet */}
+              <div
+                className="absolute inset-y-0 w-36 bg-gradient-to-r from-transparent via-white to-transparent animate-laser-sweep opacity-95"
+                style={{
+                  boxShadow: '0 0 16px rgba(255, 255, 255, 0.9), 0 0 28px rgba(217, 120, 69, 0.9)',
+                }}
+              />
+            </div>
           </div>
 
           {/* Cards Grid */}
@@ -102,17 +113,17 @@ export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
             {pillars.map((pillar, idx) => {
               const Icon = icons[idx % icons.length];
               const delayStyle = {
-                transitionDelay: `${idx * 160 + 100}ms`,
+                transitionDelay: `${idx * 140 + 80}ms`,
               };
 
               return (
                 <div
                   key={idx}
                   style={delayStyle}
-                  className={`card-3d-dark rounded-2xl p-6 sm:p-7 flex flex-col justify-between group relative overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-2 hover:shadow-[0_22px_45px_-10px_rgba(10,28,24,0.7),0_0_24px_rgba(217,120,69,0.18)] ${
+                  className={`card-3d-dark rounded-2xl p-6 sm:p-7 flex flex-col justify-between group relative overflow-hidden transition-all duration-[1000ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-2 hover:shadow-[0_22px_45px_-10px_rgba(10,28,24,0.7),0_0_24px_rgba(217,120,69,0.22)] ${
                     isVisible
                       ? 'opacity-100 translate-y-0'
-                      : 'opacity-0 translate-y-8'
+                      : 'opacity-0 translate-y-6'
                   }`}
                 >
                   {/* Top Specular Hairline Light Catch */}

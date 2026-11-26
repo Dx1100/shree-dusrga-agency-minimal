@@ -139,13 +139,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             0{currentSlideIndex + 1} <span className="text-[#F5F0E6]/45">/ 0{slides.length}</span>
           </span>
 
-          <div className="w-20 sm:w-36 h-[2px] bg-[#F5F0E6]/20 relative overflow-hidden">
+          <div className="w-20 sm:w-36 h-[3px] bg-[#F5F0E6]/20 relative overflow-hidden rounded-full shadow-[0_0_8px_rgba(217,120,69,0.3)]">
             <div
-              className="absolute top-0 bottom-0 left-0 bg-[#A66C45] transition-all duration-500 ease-out"
+              className="absolute top-0 bottom-0 left-0 animate-live-power-rail transition-all duration-500 ease-out h-full"
               style={{
                 width: `${((currentSlideIndex + 1) / slides.length) * 100}%`,
               }}
-            />
+            >
+              {/* Traveling white-hot laser sweep pulse */}
+              <div className="absolute inset-0 w-24 h-full bg-gradient-to-r from-transparent via-white/80 to-transparent animate-laser-sweep pointer-events-none" />
+            </div>
           </div>
 
           {/* Quick Dots */}

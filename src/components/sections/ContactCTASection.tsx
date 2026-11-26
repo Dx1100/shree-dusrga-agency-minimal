@@ -27,7 +27,7 @@ export const ContactCTASection: React.FC<ContactCTASectionProps> = ({
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.15 }
+      { threshold: 0.25, rootMargin: '0px 0px -40px 0px' }
     );
 
     if (sectionRef.current) {
@@ -47,10 +47,10 @@ export const ContactCTASection: React.FC<ContactCTASectionProps> = ({
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
-          className={`max-w-3xl mx-auto text-center space-y-7 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          className={`max-w-3xl mx-auto text-center space-y-7 transition-all duration-1100 ease-[cubic-bezier(0.22,1,0.36,1)] ${
             isVisible
               ? 'opacity-100 scale-100 translate-y-0'
-              : 'opacity-0 scale-95 translate-y-8'
+              : 'opacity-0 scale-[0.98] translate-y-6'
           }`}
         >
           <div className="flex items-center justify-center gap-3">

@@ -27,12 +27,9 @@ export const StatisticsSection: React.FC<StatisticsSectionProps> = ({
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
+        setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.15 }
+      { threshold: 0.25, rootMargin: '0px 0px -40px 0px' }
     );
 
     if (sectionRef.current) {
@@ -96,8 +93,8 @@ export const StatisticsSection: React.FC<StatisticsSectionProps> = ({
               <div
                 key={stat.id}
                 style={delayStyle}
-                className={`card-3d-emerald rounded-2xl p-6 sm:p-7 flex flex-col justify-between group relative overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-2 hover:shadow-[0_20px_45px_-12px_rgba(23,61,53,0.15)] ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                className={`card-3d-emerald rounded-2xl p-6 sm:p-7 flex flex-col justify-between group relative overflow-hidden transition-all duration-[1000ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-2 hover:shadow-[0_20px_45px_-12px_rgba(23,61,53,0.15)] ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
                 }`}
               >
                 {/* Kinetic Top Hairline Glow that Sweeps on Hover */}
@@ -112,7 +109,7 @@ export const StatisticsSection: React.FC<StatisticsSectionProps> = ({
                 </span>
 
                 <div className="relative z-10">
-                  {/* Metric Value */}
+                  {/* Metric Value Counter */}
                   <div className="font-serif text-3xl sm:text-4xl lg:text-[40px] font-normal text-[#173D35] tracking-tight mb-2 group-hover:text-[#D97845] transition-colors whitespace-nowrap leading-none">
                     <StatCounter
                       value={stat.value}
@@ -122,17 +119,24 @@ export const StatisticsSection: React.FC<StatisticsSectionProps> = ({
                     />
                   </div>
 
-                  {/* Kinetic Fill Meter Rail */}
-                  <div className="w-full h-[3px] bg-[#173D35]/10 rounded-full my-3.5 relative overflow-hidden">
+                  {/* Kinetic Fill Meter Rail with Moving Power Live Effect */}
+                  <div className="w-full h-[3.5px] bg-[#173D35]/10 rounded-full my-3.5 relative overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-[#173D35] via-[#D97845] to-[#D97845] rounded-full transition-all duration-[1800ms] ease-out relative"
+                      className="h-full rounded-full transition-all duration-[1500ms] ease-out relative overflow-hidden"
                       style={{
                         width: isVisible ? `${fillPercent}%` : '0%',
-                        transitionDelay: `${idx * 150 + 200}ms`,
+                        transitionDelay: `${idx * 140 + 120}ms`,
                       }}
                     >
-                      {/* Glowing dot on leading edge */}
-                      <span className="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-[#D97845] shadow-[0_0_6px_#D97845]" />
+                      {/* Constant Moving Color Gradient Flow */}
+                      <div className="w-full h-full animate-live-power-rail" />
+
+                      {/* Continuous Traveling Laser Pulse Packet */}
+                      <div className="absolute inset-y-0 w-20 bg-gradient-to-r from-transparent via-white to-transparent animate-laser-sweep opacity-90" />
+
+                      {/* Pulsating live radar dot on leading edge */}
+                      <span className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-[#D97845] shadow-[0_0_8px_#D97845,0_0_14px_#E89A6F] animate-ping opacity-75" />
+                      <span className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-[#D97845] shadow-[0_0_6px_#D97845]" />
                     </div>
                   </div>
 

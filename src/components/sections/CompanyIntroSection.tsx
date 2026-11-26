@@ -35,7 +35,7 @@ export const CompanyIntroSection: React.FC<CompanyIntroSectionProps> = ({
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.15 }
+      { threshold: 0.25, rootMargin: '0px 0px -50px 0px' }
     );
 
     if (sectionRef.current) {
@@ -54,10 +54,10 @@ export const CompanyIntroSection: React.FC<CompanyIntroSectionProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Editorial Content (Slides in from Left) */}
           <div
-            className={`lg:col-span-7 space-y-6 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+            className={`lg:col-span-7 space-y-6 transition-all duration-1100 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isVisible
                 ? 'opacity-100 translate-x-0'
-                : 'opacity-0 -translate-x-12 sm:-translate-x-20'
+                : 'opacity-0 -translate-x-8 sm:-translate-x-12'
             }`}
           >
             <div className="flex items-center gap-3">
@@ -103,10 +103,10 @@ export const CompanyIntroSection: React.FC<CompanyIntroSectionProps> = ({
 
           {/* Right Column: High-Aspect Photography with 3D Depth (Slides in from Right) */}
           <div
-            className={`lg:col-span-5 transition-all duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] delay-150 ${
+            className={`lg:col-span-5 transition-all duration-1100 ease-[cubic-bezier(0.22,1,0.36,1)] delay-150 ${
               isVisible
                 ? 'opacity-100 translate-x-0'
-                : 'opacity-0 translate-x-12 sm:translate-x-20'
+                : 'opacity-0 translate-x-8 sm:translate-x-12'
             }`}
           >
             <div className="relative overflow-hidden rounded-2xl bg-[#F5F0E6] shadow-[0_20px_45px_-10px_rgba(23,61,53,0.16)] border border-[#173D35]/12 group">
