@@ -61,6 +61,129 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenInquiry 
         </div>
       </div>
 
+      {/* Our Founder Section */}
+      <div id="our-founder" className="bg-[#FAF7F2] border-b border-[#173D35]/10 relative overflow-hidden">
+        {/* Ambient Warm Glow */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#D97845]/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#173D35]/5 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            {/* Left: Founder Portrait Frame */}
+            <div className="lg:col-span-5 order-2 lg:order-1">
+              <div className="relative mx-auto max-w-md lg:max-w-none">
+                {/* Decorative Background Offset Border */}
+                <div className="absolute -inset-3 rounded-3xl border-2 border-[#D97845]/30 -rotate-1 pointer-events-none" />
+
+                {/* Main 3D Portrait Card */}
+                <div className="relative rounded-2xl overflow-hidden bg-[#173D35] shadow-[0_20px_50px_-10px_rgba(23,61,53,0.25)] border border-[#173D35]/15 group">
+                  {/* Top Terracotta Accent Line */}
+                  <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent z-10" />
+
+                  <ImageWithFallback
+                    src="/images/about/founder-vinayak.jpg"
+                    alt="Mr. Vinayak - Founder of Shree Durga Agency"
+                    fallbackTitle="Mr. Vinayak · Founder"
+                    className="w-full h-[420px] sm:h-[480px] object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+
+                  {/* Gradient Overlay for Text Readability */}
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#102B25] via-[#102B25]/85 to-transparent pt-16 pb-6 px-6" />
+
+                  {/* Founder Identification Plaque */}
+                  <div className="absolute inset-x-0 bottom-0 p-6 z-10 space-y-1">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="w-2 h-2 rounded-full bg-[#D97845] animate-pulse" />
+                      <span className="text-[10px] uppercase tracking-[0.24em] font-semibold text-[#E89A6F]">
+                        Visionary & Founder
+                      </span>
+                    </div>
+                    <h3 className="font-serif text-2xl sm:text-3xl font-normal text-white tracking-tight">
+                      Mr. Vinayak
+                    </h3>
+                    <p className="text-xs text-[#F5F0E6]/80 font-normal">
+                      Founder & Chief Sourcing Strategist · Shree Durga Agency
+                    </p>
+                    <div className="pt-2 flex items-center gap-2 text-[10px] uppercase tracking-wider text-[#D97845] font-semibold">
+                      <span>Surat</span>
+                      <span>·</span>
+                      <span>Varanasi</span>
+                      <span>·</span>
+                      <span>Jaipur</span>
+                      <span>·</span>
+                      <span>Delhi</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Editorial Narrative & Vision */}
+            <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
+              <div className="flex items-center gap-3">
+                <span className="h-[2px] w-6 bg-[#D97845]" />
+                <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#D97845]">
+                  Our Founder
+                </span>
+              </div>
+
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-[#173D35] leading-[1.18] tracking-tight">
+                Pioneering Direct, Transparent Textile Sourcing for India’s Retailers
+              </h2>
+
+              <p className="text-base sm:text-lg text-[#173D35]/85 font-normal leading-relaxed">
+                Founded by <strong className="font-semibold text-[#173D35]">Mr. Vinayak</strong>, Shree Durga Agency was established to solve one fundamental imbalance in the Indian textile trade: the distance, informational friction, and hidden broker markups separating regional retail showrooms from direct manufacturing hubs.
+              </p>
+
+              <p className="text-sm sm:text-base text-[#173D35]/75 font-normal leading-relaxed">
+                With over two decades of ground-level immersion across India's foremost production centers—including Surat’s synthetic and printing mills, Varanasi’s traditional handloom karkhanas, and Jaipur’s artisan block-print clusters—Mr. Vinayak built personal, generational relationships with master weavers, mill owners, and processing houses.
+              </p>
+
+              {/* Founder Principle Highlight Card */}
+              <div className="card-3d-dark rounded-2xl p-5 sm:p-6 relative overflow-hidden group shadow-[0_10px_25px_-5px_rgba(16,43,37,0.3)]">
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97845] to-transparent" />
+                <blockquote className="relative z-10 font-serif italic text-base sm:text-lg text-[#F5F0E6] leading-relaxed">
+                  "Our mission has never been just brokering fabric deals. It is about protecting the retailer’s hard-earned margins and guaranteeing quality before a single roll leaves the production floor."
+                </blockquote>
+                <div className="relative z-10 mt-3 flex items-center gap-2">
+                  <span className="w-4 h-[1.5px] bg-[#D97845]" />
+                  <span className="text-[11px] uppercase tracking-[0.22em] font-semibold text-[#E89A6F]">
+                    Mr. Vinayak — Founding Philosophy
+                  </span>
+                </div>
+              </div>
+
+              {/* 3 Core Impact Credentials */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2">
+                <div className="p-3.5 rounded-xl bg-white border border-[#173D35]/10 shadow-xs">
+                  <span className="text-[10px] font-semibold uppercase tracking-wider text-[#D97845] block mb-1">
+                    Industry Experience
+                  </span>
+                  <div className="font-serif text-xl font-normal text-[#173D35]">20+ Years</div>
+                  <p className="text-[11px] text-[#173D35]/70 mt-0.5">On-ground textile market leadership</p>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-white border border-[#173D35]/10 shadow-xs">
+                  <span className="text-[10px] font-semibold uppercase tracking-wider text-[#D97845] block mb-1">
+                    Direct Connections
+                  </span>
+                  <div className="font-serif text-xl font-normal text-[#173D35]">Verified Hubs</div>
+                  <p className="text-[11px] text-[#173D35]/70 mt-0.5">Direct mill & artisan cluster linkages</p>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-white border border-[#173D35]/10 shadow-xs">
+                  <span className="text-[10px] font-semibold uppercase tracking-wider text-[#D97845] block mb-1">
+                    Quality Standard
+                  </span>
+                  <div className="font-serif text-xl font-normal text-[#173D35]">Strict QA</div>
+                  <p className="text-[11px] text-[#173D35]/70 mt-0.5">Physical lot audits prior to dispatch</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Main Philosophy */}
       <div className="bg-white border-b border-[#173D35]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
